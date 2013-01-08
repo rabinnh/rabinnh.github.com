@@ -1,0 +1,656 @@
+\hypertarget{class_c_g_i_c_plus_plus}{\section{\-C\-G\-I\-C\-Plus\-Plus \-Class \-Reference}
+\label{class_c_g_i_c_plus_plus}\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}}
+}
+
+
+\-Wrapper to simplify \-C++ creation of \-C\-G\-I programs.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-G\-I\-C\-Plus\-Plus.\-h$>$}
+
+\-Inheritance diagram for \-C\-G\-I\-C\-Plus\-Plus\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_g_i_c_plus_plus}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}{\-C\-G\-I\-C\-Plus\-Plus} ()
+\item 
+virtual \hyperlink{class_c_g_i_c_plus_plus_ad2053bb2b45984aa8ea326b3e1baa805}{$\sim$\-C\-G\-I\-C\-Plus\-Plus} ()
+\item 
+int \hyperlink{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}{\-Get\-Variable\-Count} ()
+\begin{DoxyCompactList}\small\item\em \-Get the number of variables that we found. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_g_i_c_plus_plus_a202b1ce20242b0556003c8771bd32563}{\-Get\-Environment\-Value} (const char $\ast$p\-Variable)
+\begin{DoxyCompactList}\small\item\em \-Return the value of an environment variable. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_g_i_c_plus_plus_a1789fec84be38c186f166011368c9beb}{\-Get\-C\-G\-I\-Variable} (const char $\ast$p\-Key)
+\begin{DoxyCompactList}\small\item\em \-Get the value of a \-C\-G\-I variable. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}{\-Set\-Response\-Mime\-Type} (const char $\ast$p\-Mime\-Type)
+\begin{DoxyCompactList}\small\item\em \-Add response header. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}{\-Add\-To\-Header} (const char $\ast$p\-Content)
+\begin{DoxyCompactList}\small\item\em \-Add to header. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}{\-Add\-To\-Response} (const char $\ast$p\-Content)
+\begin{DoxyCompactList}\small\item\em \-Add to response. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}{\-Output\-Response} ()
+\begin{DoxyCompactList}\small\item\em \-Output the response. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}{\-Process\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-This function will direct to one of the following 4 function based on the http verb. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}{\-Process\-H\-E\-A\-D\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}{\-Process\-G\-E\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}{\-Process\-P\-O\-S\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}{\-Process\-D\-E\-L\-E\-T\-E\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}{\-Process\-P\-U\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+\hyperlink{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}{\-C\-G\-I\-C\-Plus\-Plus} ()
+\item 
+virtual \hyperlink{class_c_g_i_c_plus_plus_a908b30bdf28a2050775727046e5db7b4}{$\sim$\-C\-G\-I\-C\-Plus\-Plus} ()
+\item 
+int \hyperlink{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}{\-Get\-Variable\-Count} ()
+\begin{DoxyCompactList}\small\item\em \-Get the number of variables that we found. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_g_i_c_plus_plus_a02f0d93c958335a894ab723ca8491ac0}{\-Get\-Environment\-Value} (const char $\ast$p\-Variable)
+\begin{DoxyCompactList}\small\item\em \-Return the value of an environment variable. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_g_i_c_plus_plus_a9ebd4e6761873133a6d1ca312a63bf33}{\-Get\-C\-G\-I\-Variable} (const char $\ast$p\-Key)
+\begin{DoxyCompactList}\small\item\em \-Get the value of a \-C\-G\-I variable. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}{\-Set\-Response\-Mime\-Type} (const char $\ast$p\-Mime\-Type)
+\begin{DoxyCompactList}\small\item\em \-Add response header. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}{\-Add\-To\-Header} (const char $\ast$p\-Content)
+\begin{DoxyCompactList}\small\item\em \-Add to header. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}{\-Add\-To\-Response} (const char $\ast$p\-Content)
+\begin{DoxyCompactList}\small\item\em \-Add to response. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}{\-Output\-Response} ()
+\begin{DoxyCompactList}\small\item\em \-Output the response. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}{\-Process\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-This function will direct to one of the following 4 function based on the http verb. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}{\-Process\-H\-E\-A\-D\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}{\-Process\-G\-E\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}{\-Process\-P\-O\-S\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}{\-Process\-D\-E\-L\-E\-T\-E\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}{\-Process\-P\-U\-T\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-You must implement this method in a derived class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}{x2c} (char $\ast$what)
+\begin{DoxyCompactList}\small\item\em \-Convert a two-\/char hex string into a char. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}{unescape\-\_\-url} (char $\ast$url)
+\begin{DoxyCompactList}\small\item\em \-Reduce any xx escape sequences to the characters they represent. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}{\-Parse\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-Parse request. \end{DoxyCompactList}\item 
+char \hyperlink{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}{x2c} (char $\ast$what)
+\begin{DoxyCompactList}\small\item\em \-Convert a two-\/char hex string into a char. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}{unescape\-\_\-url} (char $\ast$url)
+\begin{DoxyCompactList}\small\item\em \-Reduce any xx escape sequences to the characters they represent. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}{\-Parse\-Request} ()
+\begin{DoxyCompactList}\small\item\em \-Parse request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_g_i_c_plus_plus_8h_a4dec09a80640f7bd2995d58d468076c8}{\-M\-A\-P\-\_\-\-C\-G\-I\-\_\-\-V\-A\-L\-U\-E\-S} \hyperlink{class_c_g_i_c_plus_plus_ab9e93ef40ff2c7a9e5281148814793b3}{m\-Cgi\-Map}
+\item 
+\hyperlink{_c_g_i_c_plus_plus_8h_af7e8a42feb278a380f7c0926876e028d}{\-C\-V\-Iter} \hyperlink{class_c_g_i_c_plus_plus_a7af1db5a11ab0700b407c22403e7435d}{c\-Iter}
+\item 
+string \hyperlink{class_c_g_i_c_plus_plus_af2082316224a148d5efb74b7567eaf45}{s\-Response}
+\item 
+string \hyperlink{class_c_g_i_c_plus_plus_af469f49b966f4c8609c048115eab5a9b}{s\-Header}
+\item 
+string \hyperlink{class_c_g_i_c_plus_plus_abf093cd7afffe33ae0d514a7cf38ea24}{s\-Env\-Var}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Wrapper to simplify \-C++ creation of \-C\-G\-I programs. 
+
+\-Definition at line 48 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-C\-G\-I\-C\-Plus\-Plus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-C\-G\-I\-C\-Plus\-Plus} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}
+
+
+\-Definition at line 25 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_ad2053bb2b45984aa8ea326b3e1baa805}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!$\sim$\-C\-G\-I\-C\-Plus\-Plus@{$\sim$\-C\-G\-I\-C\-Plus\-Plus}}
+\index{$\sim$\-C\-G\-I\-C\-Plus\-Plus@{$\sim$\-C\-G\-I\-C\-Plus\-Plus}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{$\sim$\-C\-G\-I\-C\-Plus\-Plus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-G\-I\-C\-Plus\-Plus\-::$\sim$\-C\-G\-I\-C\-Plus\-Plus} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_ad2053bb2b45984aa8ea326b3e1baa805}
+
+
+\-Definition at line 39 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-C\-G\-I\-C\-Plus\-Plus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-C\-G\-I\-C\-Plus\-Plus} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a9fca234b02a37170066c13e139cf304c}
+\hypertarget{class_c_g_i_c_plus_plus_a908b30bdf28a2050775727046e5db7b4}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!$\sim$\-C\-G\-I\-C\-Plus\-Plus@{$\sim$\-C\-G\-I\-C\-Plus\-Plus}}
+\index{$\sim$\-C\-G\-I\-C\-Plus\-Plus@{$\sim$\-C\-G\-I\-C\-Plus\-Plus}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{$\sim$\-C\-G\-I\-C\-Plus\-Plus}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-C\-G\-I\-C\-Plus\-Plus\-::$\sim$\-C\-G\-I\-C\-Plus\-Plus} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a908b30bdf28a2050775727046e5db7b4}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Add\-To\-Header@{\-Add\-To\-Header}}
+\index{\-Add\-To\-Header@{\-Add\-To\-Header}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Add\-To\-Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Add\-To\-Header} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Content}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}
+
+
+\-Add to header. 
+
+
+
+\-Definition at line 145 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Add\-To\-Header@{\-Add\-To\-Header}}
+\index{\-Add\-To\-Header@{\-Add\-To\-Header}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Add\-To\-Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Add\-To\-Header} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Content}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_ac8ca7c0557a670b8232ff3d8a6ed6280}
+
+
+\-Add to header. 
+
+\hypertarget{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Add\-To\-Response@{\-Add\-To\-Response}}
+\index{\-Add\-To\-Response@{\-Add\-To\-Response}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Add\-To\-Response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Add\-To\-Response} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Content}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}
+
+
+\-Add to response. 
+
+\hypertarget{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Add\-To\-Response@{\-Add\-To\-Response}}
+\index{\-Add\-To\-Response@{\-Add\-To\-Response}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Add\-To\-Response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Add\-To\-Response} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Content}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_afe65eb134d2a50350cd84aa5dbf93a77}
+
+
+\-Add to response. 
+
+
+
+\-Definition at line 139 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a9ebd4e6761873133a6d1ca312a63bf33}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-C\-G\-I\-Variable@{\-Get\-C\-G\-I\-Variable}}
+\index{\-Get\-C\-G\-I\-Variable@{\-Get\-C\-G\-I\-Variable}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-C\-G\-I\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-C\-G\-I\-Variable} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a9ebd4e6761873133a6d1ca312a63bf33}
+
+
+\-Get the value of a \-C\-G\-I variable. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a1789fec84be38c186f166011368c9beb}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-C\-G\-I\-Variable@{\-Get\-C\-G\-I\-Variable}}
+\index{\-Get\-C\-G\-I\-Variable@{\-Get\-C\-G\-I\-Variable}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-C\-G\-I\-Variable}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-C\-G\-I\-Variable} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Key}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a1789fec84be38c186f166011368c9beb}
+
+
+\-Get the value of a \-C\-G\-I variable. 
+
+
+
+\-Definition at line 189 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a02f0d93c958335a894ab723ca8491ac0}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-Environment\-Value@{\-Get\-Environment\-Value}}
+\index{\-Get\-Environment\-Value@{\-Get\-Environment\-Value}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-Environment\-Value}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-Environment\-Value} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Variable}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a02f0d93c958335a894ab723ca8491ac0}
+
+
+\-Return the value of an environment variable. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a202b1ce20242b0556003c8771bd32563}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-Environment\-Value@{\-Get\-Environment\-Value}}
+\index{\-Get\-Environment\-Value@{\-Get\-Environment\-Value}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-Environment\-Value}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-Environment\-Value} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Variable}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a202b1ce20242b0556003c8771bd32563}
+
+
+\-Return the value of an environment variable. 
+
+
+
+\-Definition at line 180 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-Variable\-Count@{\-Get\-Variable\-Count}}
+\index{\-Get\-Variable\-Count@{\-Get\-Variable\-Count}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-Variable\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-Variable\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}
+
+
+\-Get the number of variables that we found. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Get\-Variable\-Count@{\-Get\-Variable\-Count}}
+\index{\-Get\-Variable\-Count@{\-Get\-Variable\-Count}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Get\-Variable\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Get\-Variable\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a53a8d30eb76e65d6da90c804dea755dc}
+
+
+\-Get the number of variables that we found. 
+
+
+
+\-Definition at line 172 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Output\-Response@{\-Output\-Response}}
+\index{\-Output\-Response@{\-Output\-Response}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Output\-Response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Output\-Response} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}
+
+
+\-Output the response. 
+
+\hypertarget{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Output\-Response@{\-Output\-Response}}
+\index{\-Output\-Response@{\-Output\-Response}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Output\-Response}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Output\-Response} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_aa4d752cb80937e653cdea73ee7761d6d}
+
+
+\-Output the response. 
+
+
+
+\-Definition at line 162 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Parse\-Request@{\-Parse\-Request}}
+\index{\-Parse\-Request@{\-Parse\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Parse\-Request}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Parse\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}
+
+
+\-Parse request. 
+
+
+
+\-Definition at line 45 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Parse\-Request@{\-Parse\-Request}}
+\index{\-Parse\-Request@{\-Parse\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Parse\-Request}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Parse\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a12301e8929d6ef34d219152b442bdb06}
+
+
+\-Parse request. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-D\-E\-L\-E\-T\-E\-Request@{\-Process\-D\-E\-L\-E\-T\-E\-Request}}
+\index{\-Process\-D\-E\-L\-E\-T\-E\-Request@{\-Process\-D\-E\-L\-E\-T\-E\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-D\-E\-L\-E\-T\-E\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-D\-E\-L\-E\-T\-E\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 77 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-D\-E\-L\-E\-T\-E\-Request@{\-Process\-D\-E\-L\-E\-T\-E\-Request}}
+\index{\-Process\-D\-E\-L\-E\-T\-E\-Request@{\-Process\-D\-E\-L\-E\-T\-E\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-D\-E\-L\-E\-T\-E\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-D\-E\-L\-E\-T\-E\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a86c58f739d561752f70330f321a5351b}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 77 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-G\-E\-T\-Request@{\-Process\-G\-E\-T\-Request}}
+\index{\-Process\-G\-E\-T\-Request@{\-Process\-G\-E\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-G\-E\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-G\-E\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Reimplemented in \hyperlink{class_h_w_cgi_response_a1a4b4b8f0f682f9dc0a9e71dd6fa2fe5}{\-H\-W\-Cgi\-Response}.
+
+
+
+\-Definition at line 73 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-G\-E\-T\-Request@{\-Process\-G\-E\-T\-Request}}
+\index{\-Process\-G\-E\-T\-Request@{\-Process\-G\-E\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-G\-E\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-G\-E\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a378fb441bed59d816017d7e1ea6296f2}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Reimplemented in \hyperlink{class_h_w_cgi_response_a1a4b4b8f0f682f9dc0a9e71dd6fa2fe5}{\-H\-W\-Cgi\-Response}.
+
+
+
+\-Definition at line 73 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-H\-E\-A\-D\-Request@{\-Process\-H\-E\-A\-D\-Request}}
+\index{\-Process\-H\-E\-A\-D\-Request@{\-Process\-H\-E\-A\-D\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-H\-E\-A\-D\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-H\-E\-A\-D\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 71 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-H\-E\-A\-D\-Request@{\-Process\-H\-E\-A\-D\-Request}}
+\index{\-Process\-H\-E\-A\-D\-Request@{\-Process\-H\-E\-A\-D\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-H\-E\-A\-D\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-H\-E\-A\-D\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a9769c9cb4d5d9245257816ff39891764}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 71 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-P\-O\-S\-T\-Request@{\-Process\-P\-O\-S\-T\-Request}}
+\index{\-Process\-P\-O\-S\-T\-Request@{\-Process\-P\-O\-S\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-P\-O\-S\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-P\-O\-S\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Reimplemented in \hyperlink{class_h_w_cgi_response_aec2b369683ddd63bad010575451aaec3}{\-H\-W\-Cgi\-Response}.
+
+
+
+\-Definition at line 75 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-P\-O\-S\-T\-Request@{\-Process\-P\-O\-S\-T\-Request}}
+\index{\-Process\-P\-O\-S\-T\-Request@{\-Process\-P\-O\-S\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-P\-O\-S\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-P\-O\-S\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a2f2776ae8909abdf3769c84415d64952}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Reimplemented in \hyperlink{class_h_w_cgi_response_aec2b369683ddd63bad010575451aaec3}{\-H\-W\-Cgi\-Response}.
+
+
+
+\-Definition at line 75 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-P\-U\-T\-Request@{\-Process\-P\-U\-T\-Request}}
+\index{\-Process\-P\-U\-T\-Request@{\-Process\-P\-U\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-P\-U\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-P\-U\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 79 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-P\-U\-T\-Request@{\-Process\-P\-U\-T\-Request}}
+\index{\-Process\-P\-U\-T\-Request@{\-Process\-P\-U\-T\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-P\-U\-T\-Request}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-P\-U\-T\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_g_i_c_plus_plus_af903fb45e8aea8b38d2d5f49b59c8e47}
+
+
+\-You must implement this method in a derived class. 
+
+
+
+\-Definition at line 79 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-Request@{\-Process\-Request}}
+\index{\-Process\-Request@{\-Process\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}
+
+
+\-This function will direct to one of the following 4 function based on the http verb. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Process\-Request@{\-Process\-Request}}
+\index{\-Process\-Request@{\-Process\-Request}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Process\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Process\-Request} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a526b66e47624baadbf21e43004907256}
+
+
+\-This function will direct to one of the following 4 function based on the http verb. 
+
+
+
+\-Definition at line 120 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Set\-Response\-Mime\-Type@{\-Set\-Response\-Mime\-Type}}
+\index{\-Set\-Response\-Mime\-Type@{\-Set\-Response\-Mime\-Type}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Set\-Response\-Mime\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Set\-Response\-Mime\-Type} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Mime\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}
+
+
+\-Add response header. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!\-Set\-Response\-Mime\-Type@{\-Set\-Response\-Mime\-Type}}
+\index{\-Set\-Response\-Mime\-Type@{\-Set\-Response\-Mime\-Type}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{\-Set\-Response\-Mime\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::\-Set\-Response\-Mime\-Type} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Mime\-Type}
+\end{DoxyParamCaption}
+)}}\label{class_c_g_i_c_plus_plus_a715711e9f674fff734a64120c5600ab2}
+
+
+\-Add response header. 
+
+
+
+\-Definition at line 153 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!unescape\-\_\-url@{unescape\-\_\-url}}
+\index{unescape\-\_\-url@{unescape\-\_\-url}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{unescape\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::unescape\-\_\-url} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}
+
+
+\-Reduce any xx escape sequences to the characters they represent. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!unescape\-\_\-url@{unescape\-\_\-url}}
+\index{unescape\-\_\-url@{unescape\-\_\-url}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{unescape\-\_\-url}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::unescape\-\_\-url} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a3f269cbf0c5a66de7fa1fdadf5a4bb26}
+
+
+\-Reduce any xx escape sequences to the characters they represent. 
+
+
+
+\-Definition at line 213 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+\hypertarget{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!x2c@{x2c}}
+\index{x2c@{x2c}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{x2c}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-G\-I\-C\-Plus\-Plus\-::x2c} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}
+
+
+\-Convert a two-\/char hex string into a char. 
+
+\hypertarget{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!x2c@{x2c}}
+\index{x2c@{x2c}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{x2c}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-G\-I\-C\-Plus\-Plus\-::x2c} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{what}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a52641ea9cc0d1e4862e8d7c488f8a81b}
+
+
+\-Convert a two-\/char hex string into a char. 
+
+
+
+\-Definition at line 200 of file \-C\-G\-I\-C\-Plus\-Plus.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_g_i_c_plus_plus_a7af1db5a11ab0700b407c22403e7435d}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!c\-Iter@{c\-Iter}}
+\index{c\-Iter@{c\-Iter}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{c\-Iter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-V\-Iter} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::c\-Iter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_a7af1db5a11ab0700b407c22403e7435d}
+
+
+\-Definition at line 90 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_ab9e93ef40ff2c7a9e5281148814793b3}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!m\-Cgi\-Map@{m\-Cgi\-Map}}
+\index{m\-Cgi\-Map@{m\-Cgi\-Map}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{m\-Cgi\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-M\-A\-P\-\_\-\-C\-G\-I\-\_\-\-V\-A\-L\-U\-E\-S} {\bf \-C\-G\-I\-C\-Plus\-Plus\-::m\-Cgi\-Map}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_ab9e93ef40ff2c7a9e5281148814793b3}
+
+
+\-Definition at line 89 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_abf093cd7afffe33ae0d514a7cf38ea24}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!s\-Env\-Var@{s\-Env\-Var}}
+\index{s\-Env\-Var@{s\-Env\-Var}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{s\-Env\-Var}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-G\-I\-C\-Plus\-Plus\-::s\-Env\-Var}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_abf093cd7afffe33ae0d514a7cf38ea24}
+
+
+\-Definition at line 93 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_af469f49b966f4c8609c048115eab5a9b}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!s\-Header@{s\-Header}}
+\index{s\-Header@{s\-Header}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{s\-Header}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-G\-I\-C\-Plus\-Plus\-::s\-Header}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_af469f49b966f4c8609c048115eab5a9b}
+
+
+\-Definition at line 92 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+\hypertarget{class_c_g_i_c_plus_plus_af2082316224a148d5efb74b7567eaf45}{\index{\-C\-G\-I\-C\-Plus\-Plus@{\-C\-G\-I\-C\-Plus\-Plus}!s\-Response@{s\-Response}}
+\index{s\-Response@{s\-Response}!CGICPlusPlus@{\-C\-G\-I\-C\-Plus\-Plus}}
+\subsubsection[{s\-Response}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-G\-I\-C\-Plus\-Plus\-::s\-Response}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_g_i_c_plus_plus_af2082316224a148d5efb74b7567eaf45}
+
+
+\-Definition at line 91 of file \-C\-G\-I\-C\-Plus\-Plus.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_g_i_c_plus_plus_8h}{\-C\-G\-I\-C\-Plus\-Plus.\-h}\item 
+common/examples/\-C\-G\-Iexample/\hyperlink{examples_2_c_g_iexample_2_c_g_i_c_plus_plus_8h}{\-C\-G\-I\-C\-Plus\-Plus.\-h}\item 
+common/\hyperlink{_c_g_i_c_plus_plus_8cpp}{\-C\-G\-I\-C\-Plus\-Plus.\-cpp}\item 
+common/examples/\-C\-G\-Iexample/\hyperlink{examples_2_c_g_iexample_2_c_g_i_c_plus_plus_8cpp}{\-C\-G\-I\-C\-Plus\-Plus.\-cpp}\end{DoxyCompactItemize}

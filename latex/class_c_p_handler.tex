@@ -1,0 +1,311 @@
+\hypertarget{class_c_p_handler}{\section{\-C\-P\-Handler \-Class \-Reference}
+\label{class_c_p_handler}\index{\-C\-P\-Handler@{\-C\-P\-Handler}}
+}
+
+
+\hyperlink{class_c_p_handler}{\-C\-P\-Handler} handles all the connections in a pool, adding, removing, etc.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-P\-Handler.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_p_handler}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_handler_abc3513acf9f6991bfebf101de8a38895}{\-C\-P\-Handler} ()
+\item 
+virtual \hyperlink{class_c_p_handler_a83a7da1e9bed8683a9e0e2fa9392f6c0}{$\sim$\-C\-P\-Handler} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_handler_a0abd34f077a742459ae703aeee7947bc}{\-Add\-Connection} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connections, \hyperlink{_x_plat_8h_a8dc8083897335125630f1af5dafd5831}{\-S\-O\-C\-K\-E\-T} \-New\-Socket=\-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-O\-C\-K\-E\-T)
+\begin{DoxyCompactList}\small\item\em \-Add a connection to handle. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_handler_acd86dd5d6a05124b5c100607aed40bf6}{\-Remove\-Connection} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connection)
+\begin{DoxyCompactList}\small\item\em \-Remove a connection from our purview. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_p_handler_a8f68180d698a456edb91c3e10d8dacc8}{\-Get\-Last\-Size} ()
+\begin{DoxyCompactList}\small\item\em \-Get the last size (not necesssarily current) \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_p_handler_a1610a41117b27ab2805e245eee1a28b1}{\-Get\-Current\-Size} ()
+\begin{DoxyCompactList}\small\item\em \-Get the current size (will wait for critical seection) \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_p_handler_abe1898023c829d3af4b5d1c4efa89479}{\-Call\-Handle\-Connection} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connection)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)=0
+\begin{DoxyCompactList}\small\item\em \-Function that does the work. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_handler_a439e2cfd01babb8ba9464a4300e90efe}{\-Call\-Disconnected} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connection)
+\begin{DoxyCompactList}\small\item\em \-If we want to call the sockets \-Disconnected member. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_handler_aaa931abc001648da48c2ff82e7071c50}{\-Disconnect\-All} ()
+\begin{DoxyCompactList}\small\item\em \-Called in the case of an unrecoverable error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_p_handler_a58ba2190209441a5fd44cd4bd1605d79}{c\-Crit\-Map}
+\begin{DoxyCompactList}\small\item\em \-To protect c\-Live\-Connections. \end{DoxyCompactList}\item 
+\hyperlink{_c_p_handler_8h_ae505ccb84a814fad400e0daede272812}{\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-M\-A\-P} \hyperlink{class_c_p_handler_a7ca8fa5c60e6aad56b2b1a2cac68a2e2}{c\-Live\-Connections}
+\begin{DoxyCompactList}\small\item\em \-Active connections. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_p_handler_a7ffaac647fdd73d143c342bbb88cd379}{c\-Crit\-Queued\-Map}
+\begin{DoxyCompactList}\small\item\em \-To protect c\-Queued\-Connections. \end{DoxyCompactList}\item 
+\hyperlink{_c_p_handler_8h_ae505ccb84a814fad400e0daede272812}{\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-M\-A\-P} \hyperlink{class_c_p_handler_acf71b63ae0b5079e1f8e37cba56f27ea}{c\-Queued\-Connections}
+\begin{DoxyCompactList}\small\item\em \-Will add to c\-Live\-Connections at beginning of each \-I/\-O cycle. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_handler_a23f12318d15c18c8d921efdc80626da4}{i\-Live\-Size}
+\begin{DoxyCompactList}\small\item\em \# in c\-Live\-Connections \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_handler_acc98aa0cf09e8d132f239b131a5773da}{i\-Size}
+\begin{DoxyCompactList}\small\item\em \# in c\-Live\-Connections + c\-Queued\-Connections \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_handler_a64ec292c01647331e6303ebf6e466d75}{b\-Thread\-Running}
+\begin{DoxyCompactList}\small\item\em \-Faster than querying the thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_c_p_handler}{\-C\-P\-Handler} handles all the connections in a pool, adding, removing, etc. 
+
+\-Definition at line 35 of file \-C\-P\-Handler.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_handler_abc3513acf9f6991bfebf101de8a38895}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-C\-P\-Handler@{\-C\-P\-Handler}}
+\index{\-C\-P\-Handler@{\-C\-P\-Handler}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-C\-P\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Handler\-::\-C\-P\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_handler_abc3513acf9f6991bfebf101de8a38895}
+
+
+\-Definition at line 28 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_a83a7da1e9bed8683a9e0e2fa9392f6c0}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!$\sim$\-C\-P\-Handler@{$\sim$\-C\-P\-Handler}}
+\index{$\sim$\-C\-P\-Handler@{$\sim$\-C\-P\-Handler}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{$\sim$\-C\-P\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Handler\-::$\sim$\-C\-P\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_a83a7da1e9bed8683a9e0e2fa9392f6c0}
+
+
+\-Definition at line 38 of file \-C\-P\-Handler.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_handler_a0abd34f077a742459ae703aeee7947bc}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Add\-Connection@{\-Add\-Connection}}
+\index{\-Add\-Connection@{\-Add\-Connection}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Add\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Handler\-::\-Add\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connections, }
+\item[{{\bf \-S\-O\-C\-K\-E\-T}}]{\-New\-Socket = {\ttfamily \-I\-N\-V\-A\-L\-I\-D\-\_\-\-S\-O\-C\-K\-E\-T}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_a0abd34f077a742459ae703aeee7947bc}
+
+
+\-Add a connection to handle. 
+
+
+
+\-Definition at line 48 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_a439e2cfd01babb8ba9464a4300e90efe}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Call\-Disconnected@{\-Call\-Disconnected}}
+\index{\-Call\-Disconnected@{\-Call\-Disconnected}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Call\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Handler\-::\-Call\-Disconnected} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_handler_a439e2cfd01babb8ba9464a4300e90efe}
+
+
+\-If we want to call the sockets \-Disconnected member. 
+
+
+
+\-Reimplemented in \hyperlink{class_c_p_client_handler_ad6df6ba23365c140780ddd27cb44bd08}{\-C\-P\-Client\-Handler}.
+
+
+
+\-Definition at line 208 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_abe1898023c829d3af4b5d1c4efa89479}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Call\-Handle\-Connection@{\-Call\-Handle\-Connection}}
+\index{\-Call\-Handle\-Connection@{\-Call\-Handle\-Connection}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Call\-Handle\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Handler\-::\-Call\-Handle\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_abe1898023c829d3af4b5d1c4efa89479}
+\-Call the \-C\-P\-Connection-\/$>$\-Handle\-Connection \-This is here so derived classes can choose \-N\-O\-T to call it in case the handler is chained (like the \hyperlink{class_c_p_client_handler}{\-C\-P\-Client\-Handler}) 
+
+\-Reimplemented in \hyperlink{class_c_p_client_handler_a7f6d153c5104840663b7225a36ea7609}{\-C\-P\-Client\-Handler}.
+
+
+
+\-Definition at line 198 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_aaa931abc001648da48c2ff82e7071c50}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Disconnect\-All@{\-Disconnect\-All}}
+\index{\-Disconnect\-All@{\-Disconnect\-All}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Disconnect\-All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Handler\-::\-Disconnect\-All} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_handler_aaa931abc001648da48c2ff82e7071c50}
+
+
+\-Called in the case of an unrecoverable error. 
+
+
+
+\-Definition at line 162 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_a1610a41117b27ab2805e245eee1a28b1}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Get\-Current\-Size@{\-Get\-Current\-Size}}
+\index{\-Get\-Current\-Size@{\-Get\-Current\-Size}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Get\-Current\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Handler\-::\-Get\-Current\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_a1610a41117b27ab2805e245eee1a28b1}
+
+
+\-Get the current size (will wait for critical seection) 
+
+
+
+\-Definition at line 189 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_a8f68180d698a456edb91c3e10d8dacc8}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Get\-Last\-Size@{\-Get\-Last\-Size}}
+\index{\-Get\-Last\-Size@{\-Get\-Last\-Size}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Get\-Last\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Handler\-::\-Get\-Last\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_a8f68180d698a456edb91c3e10d8dacc8}
+
+
+\-Get the last size (not necesssarily current) 
+
+
+
+\-Definition at line 182 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_acd86dd5d6a05124b5c100607aed40bf6}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Remove\-Connection@{\-Remove\-Connection}}
+\index{\-Remove\-Connection@{\-Remove\-Connection}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Remove\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Handler\-::\-Remove\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_handler_acd86dd5d6a05124b5c100607aed40bf6}
+
+
+\-Remove a connection from our purview. 
+
+
+
+\-Definition at line 105 of file \-C\-P\-Handler.\-cpp.
+
+\hypertarget{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned {\bf \-C\-P\-Handler\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}
+
+
+\-Function that does the work. 
+
+
+
+\-Implements \hyperlink{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\-C\-X\-Plat\-Thread}.
+
+
+
+\-Implemented in \hyperlink{class_c_p_client_handler_a88117dfe5e1e6d2f5d953277bc1a3044}{\-C\-P\-Client\-Handler}, and \hyperlink{class_c_p_connection_handler_ad7e761b11abc80ceb4573821f38a4244}{\-C\-P\-Connection\-Handler}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_p_handler_a64ec292c01647331e6303ebf6e466d75}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!b\-Thread\-Running@{b\-Thread\-Running}}
+\index{b\-Thread\-Running@{b\-Thread\-Running}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{b\-Thread\-Running}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Handler\-::b\-Thread\-Running}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_a64ec292c01647331e6303ebf6e466d75}
+
+
+\-Faster than querying the thread. 
+
+
+
+\-Definition at line 75 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_a58ba2190209441a5fd44cd4bd1605d79}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!c\-Crit\-Map@{c\-Crit\-Map}}
+\index{c\-Crit\-Map@{c\-Crit\-Map}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{c\-Crit\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-P\-Handler\-::c\-Crit\-Map}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_a58ba2190209441a5fd44cd4bd1605d79}
+
+
+\-To protect c\-Live\-Connections. 
+
+
+
+\-Definition at line 63 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_a7ffaac647fdd73d143c342bbb88cd379}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!c\-Crit\-Queued\-Map@{c\-Crit\-Queued\-Map}}
+\index{c\-Crit\-Queued\-Map@{c\-Crit\-Queued\-Map}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{c\-Crit\-Queued\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-P\-Handler\-::c\-Crit\-Queued\-Map}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_a7ffaac647fdd73d143c342bbb88cd379}
+
+
+\-To protect c\-Queued\-Connections. 
+
+
+
+\-Definition at line 67 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_a7ca8fa5c60e6aad56b2b1a2cac68a2e2}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!c\-Live\-Connections@{c\-Live\-Connections}}
+\index{c\-Live\-Connections@{c\-Live\-Connections}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{c\-Live\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-M\-A\-P} {\bf \-C\-P\-Handler\-::c\-Live\-Connections}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_a7ca8fa5c60e6aad56b2b1a2cac68a2e2}
+
+
+\-Active connections. 
+
+
+
+\-Definition at line 65 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_acf71b63ae0b5079e1f8e37cba56f27ea}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!c\-Queued\-Connections@{c\-Queued\-Connections}}
+\index{c\-Queued\-Connections@{c\-Queued\-Connections}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{c\-Queued\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-M\-A\-P} {\bf \-C\-P\-Handler\-::c\-Queued\-Connections}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_acf71b63ae0b5079e1f8e37cba56f27ea}
+
+
+\-Will add to c\-Live\-Connections at beginning of each \-I/\-O cycle. 
+
+
+
+\-Definition at line 69 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_a23f12318d15c18c8d921efdc80626da4}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!i\-Live\-Size@{i\-Live\-Size}}
+\index{i\-Live\-Size@{i\-Live\-Size}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{i\-Live\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Handler\-::i\-Live\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_a23f12318d15c18c8d921efdc80626da4}
+
+
+\# in c\-Live\-Connections 
+
+
+
+\-Definition at line 71 of file \-C\-P\-Handler.\-h.
+
+\hypertarget{class_c_p_handler_acc98aa0cf09e8d132f239b131a5773da}{\index{\-C\-P\-Handler@{\-C\-P\-Handler}!i\-Size@{i\-Size}}
+\index{i\-Size@{i\-Size}!CPHandler@{\-C\-P\-Handler}}
+\subsubsection[{i\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Handler\-::i\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_handler_acc98aa0cf09e8d132f239b131a5773da}
+
+
+\# in c\-Live\-Connections + c\-Queued\-Connections 
+
+
+
+\-Definition at line 73 of file \-C\-P\-Handler.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_p_handler_8h}{\-C\-P\-Handler.\-h}\item 
+common/\hyperlink{_c_p_handler_8cpp}{\-C\-P\-Handler.\-cpp}\end{DoxyCompactItemize}

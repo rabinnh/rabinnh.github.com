@@ -1,0 +1,120 @@
+\hypertarget{class_c_flush_log_thread}{\section{\-C\-Flush\-Log\-Thread \-Class \-Reference}
+\label{class_c_flush_log_thread}\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}}
+}
+
+
+\hyperlink{_c_flush_log_thread_8h}{\-C\-Flush\-Log\-Thread.\-h}\-: interface for the \hyperlink{class_c_flush_log_thread}{\-C\-Flush\-Log\-Thread} class.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Flush\-Log\-Thread.\-h$>$}
+
+\-Inheritance diagram for \-C\-Flush\-Log\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_flush_log_thread}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_flush_log_thread_a583363a6e1af4601901d406254791ce5}{\-C\-Flush\-Log\-Thread} ()
+\item 
+virtual \hyperlink{class_c_flush_log_thread_ab91f0358dc76376160e69c835d41a7f7}{$\sim$\-C\-Flush\-Log\-Thread} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_flush_log_thread_af9c29274e8b380a87d9e5d90e57e72ce}{\-Stop\-Thread} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_flush_log_thread_a05b87f7942b745eb6a0f128b564cc9f6}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)
+\begin{DoxyCompactList}\small\item\em \-Called by \-Win32\-Thread to start work in object context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_flush_log_thread_a11b22bac683093063d370dce191cfe21}{c\-Stop\-Event}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{_c_flush_log_thread_8h}{\-C\-Flush\-Log\-Thread.\-h}\-: interface for the \hyperlink{class_c_flush_log_thread}{\-C\-Flush\-Log\-Thread} class. 
+
+\-\_\-\-M\-S\-C\-\_\-\-V\-E\-R $>$ 1000 \-Used by \hyperlink{class_c_logging}{\-C\-Logging} to flush the buffer at regular intervals 
+
+\-Definition at line 29 of file \-C\-Flush\-Log\-Thread.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_flush_log_thread_a583363a6e1af4601901d406254791ce5}{\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}}
+\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!CFlushLogThread@{\-C\-Flush\-Log\-Thread}}
+\subsubsection[{\-C\-Flush\-Log\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Flush\-Log\-Thread\-::\-C\-Flush\-Log\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_flush_log_thread_a583363a6e1af4601901d406254791ce5}
+
+
+\-Definition at line 27 of file \-C\-Flush\-Log\-Thread.\-cpp.
+
+\hypertarget{class_c_flush_log_thread_ab91f0358dc76376160e69c835d41a7f7}{\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!$\sim$\-C\-Flush\-Log\-Thread@{$\sim$\-C\-Flush\-Log\-Thread}}
+\index{$\sim$\-C\-Flush\-Log\-Thread@{$\sim$\-C\-Flush\-Log\-Thread}!CFlushLogThread@{\-C\-Flush\-Log\-Thread}}
+\subsubsection[{$\sim$\-C\-Flush\-Log\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Flush\-Log\-Thread\-::$\sim$\-C\-Flush\-Log\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_flush_log_thread_ab91f0358dc76376160e69c835d41a7f7}
+
+
+\-Definition at line 31 of file \-C\-Flush\-Log\-Thread.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_flush_log_thread_af9c29274e8b380a87d9e5d90e57e72ce}{\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!\-Stop\-Thread@{\-Stop\-Thread}}
+\index{\-Stop\-Thread@{\-Stop\-Thread}!CFlushLogThread@{\-C\-Flush\-Log\-Thread}}
+\subsubsection[{\-Stop\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Flush\-Log\-Thread\-::\-Stop\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_flush_log_thread_af9c29274e8b380a87d9e5d90e57e72ce}
+
+
+\-Definition at line 69 of file \-C\-Flush\-Log\-Thread.\-cpp.
+
+\hypertarget{class_c_flush_log_thread_a05b87f7942b745eb6a0f128b564cc9f6}{\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CFlushLogThread@{\-C\-Flush\-Log\-Thread}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-Flush\-Log\-Thread\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_flush_log_thread_a05b87f7942b745eb6a0f128b564cc9f6}
+
+
+\-Called by \-Win32\-Thread to start work in object context. 
+
+
+
+\-Implements \hyperlink{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\-C\-X\-Plat\-Thread}.
+
+
+
+\-Definition at line 39 of file \-C\-Flush\-Log\-Thread.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_flush_log_thread_a11b22bac683093063d370dce191cfe21}{\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!c\-Stop\-Event@{c\-Stop\-Event}}
+\index{c\-Stop\-Event@{c\-Stop\-Event}!CFlushLogThread@{\-C\-Flush\-Log\-Thread}}
+\subsubsection[{c\-Stop\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-Flush\-Log\-Thread\-::c\-Stop\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_flush_log_thread_a11b22bac683093063d370dce191cfe21}
+
+
+\-Definition at line 42 of file \-C\-Flush\-Log\-Thread.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_flush_log_thread_8h}{\-C\-Flush\-Log\-Thread.\-h}\item 
+common/\hyperlink{_c_flush_log_thread_8cpp}{\-C\-Flush\-Log\-Thread.\-cpp}\end{DoxyCompactItemize}

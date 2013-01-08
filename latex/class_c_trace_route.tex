@@ -1,0 +1,213 @@
+\hypertarget{class_c_trace_route}{\section{\-C\-Trace\-Route \-Class \-Reference}
+\label{class_c_trace_route}\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}}
+}
+
+
+\-Class to implement traceroute.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Trace\-Route.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_trace_route_a38e76b2a92dc94e2ae5513a72f204a07}{\-C\-Trace\-Route} (\hyperlink{_c_trace_route_8h_af0130bce4928d8759ed87b2a5fd6e038}{\-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} p\-Callback=\-N\-U\-L\-L, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} \hyperlink{class_c_trace_route_a8cfc291a0ac1b247afe8acc03e490ffe}{dw\-User\-Parm}=0)
+\begin{DoxyCompactList}\small\item\em 3/1/97 \-Richard \-Bross \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_trace_route_adb1ba8e4b9d0db40f21cb935c386d3f0}{$\sim$\-C\-Trace\-Route} ()
+\item 
+int \hyperlink{class_c_trace_route_a9cbed8b955ce2d953d0f1f4583d3405a}{\-Trace\-Route} (const char $\ast$sz\-I\-P\-Address, int i\-Timeout\-M\-S, int i\-Max\-Retries, const char $\ast$sz\-Loose\-Route=\-N\-U\-L\-L, bool b\-Ping\-Only=false)
+\begin{DoxyCompactList}\small\item\em \-Do the traceroute. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_trace_route_a726b14f9e1952d8540e1cd1926cc1443}{\-Register\-Callback} (\hyperlink{_c_trace_route_8h_af0130bce4928d8759ed87b2a5fd6e038}{\-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} p\-Callback, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} \hyperlink{class_c_trace_route_a8cfc291a0ac1b247afe8acc03e490ffe}{dw\-User\-Parm})
+\begin{DoxyCompactList}\small\item\em \-Register a callback function. \-If the callback returns anything other than 0, stop. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_trace_route_a32da5bff1922a12bff99c27fb1397afd}{\-Get\-Last\-Socket\-Error} ()
+\begin{DoxyCompactList}\small\item\em \-Get last socket error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_trace_route_af0bdc4182b601a99a952b359ee13c798}{\-Decode\-Traceroute\-Response} (char $\ast$sz\-Buf, int i\-Bytes, struct sockaddr\-\_\-in $\ast$s\-From, unsigned short \&us\-Seq)
+\begin{DoxyCompactList}\small\item\em \-Decode the \-I\-C\-M\-P i\-Response. \end{DoxyCompactList}\item 
+unsigned short \hyperlink{class_c_trace_route_a4a5b31a4aedbfc403ee8b3ed6582f151}{\-Check\-Sum} (unsigned short $\ast$sz\-Buffer, int i\-Size)
+\begin{DoxyCompactList}\small\item\em \-Calculate the checksum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_trace_route_8h_af0130bce4928d8759ed87b2a5fd6e038}{\-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} \hyperlink{class_c_trace_route_a7876c156fff35d015ad8c7e3d2160d7f}{p\-User\-Func}
+\item 
+\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} \hyperlink{class_c_trace_route_a8cfc291a0ac1b247afe8acc03e490ffe}{dw\-User\-Parm}
+\item 
+int \hyperlink{class_c_trace_route_a8b59990ce5bc538b143da5284644fe75}{i\-Last\-Error}
+\item 
+struct in\-\_\-addr \hyperlink{class_c_trace_route_a364ba2e572488ba888b175b9e0025ae7}{s\-Last\-Addr}
+\item 
+unsigned short \hyperlink{class_c_trace_route_a23490973cbeb2c4cbf47376395efe93b}{u\-I\-D}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Class to implement traceroute. 
+
+\-Definition at line 36 of file \-C\-Trace\-Route.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_trace_route_a38e76b2a92dc94e2ae5513a72f204a07}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-C\-Trace\-Route@{\-C\-Trace\-Route}}
+\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-C\-Trace\-Route}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Trace\-Route\-::\-C\-Trace\-Route} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}}]{p\-Callback = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-User\-Parm = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_trace_route_a38e76b2a92dc94e2ae5513a72f204a07}
+
+
+3/1/97 \-Richard \-Bross 
+
+\-Call back function and user parm. \-User parm is passed to the callback. \-Typically it is a pointer to the calling object, since the callback must be static. 
+
+\-Definition at line 38 of file \-C\-Trace\-Route.\-cpp.
+
+\hypertarget{class_c_trace_route_adb1ba8e4b9d0db40f21cb935c386d3f0}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!$\sim$\-C\-Trace\-Route@{$\sim$\-C\-Trace\-Route}}
+\index{$\sim$\-C\-Trace\-Route@{$\sim$\-C\-Trace\-Route}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{$\sim$\-C\-Trace\-Route}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Trace\-Route\-::$\sim$\-C\-Trace\-Route} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_trace_route_adb1ba8e4b9d0db40f21cb935c386d3f0}
+
+
+\-Definition at line 43 of file \-C\-Trace\-Route.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_trace_route_a4a5b31a4aedbfc403ee8b3ed6582f151}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-Check\-Sum@{\-Check\-Sum}}
+\index{\-Check\-Sum@{\-Check\-Sum}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-Check\-Sum}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf \-C\-Trace\-Route\-::\-Check\-Sum} (
+\begin{DoxyParamCaption}
+\item[{unsigned short $\ast$}]{sz\-Buffer, }
+\item[{int}]{i\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a4a5b31a4aedbfc403ee8b3ed6582f151}
+
+
+\-Calculate the checksum. 
+
+
+
+\-Definition at line 386 of file \-C\-Trace\-Route.\-cpp.
+
+\hypertarget{class_c_trace_route_af0bdc4182b601a99a952b359ee13c798}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-Decode\-Traceroute\-Response@{\-Decode\-Traceroute\-Response}}
+\index{\-Decode\-Traceroute\-Response@{\-Decode\-Traceroute\-Response}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-Decode\-Traceroute\-Response}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Trace\-Route\-::\-Decode\-Traceroute\-Response} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sz\-Buf, }
+\item[{int}]{i\-Bytes, }
+\item[{struct sockaddr\-\_\-in $\ast$}]{s\-From, }
+\item[{unsigned short \&}]{us\-Seq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_af0bdc4182b601a99a952b359ee13c798}
+
+
+\-Decode the \-I\-C\-M\-P i\-Response. 
+
+
+
+\-Definition at line 295 of file \-C\-Trace\-Route.\-cpp.
+
+\hypertarget{class_c_trace_route_a32da5bff1922a12bff99c27fb1397afd}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-Get\-Last\-Socket\-Error@{\-Get\-Last\-Socket\-Error}}
+\index{\-Get\-Last\-Socket\-Error@{\-Get\-Last\-Socket\-Error}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-Get\-Last\-Socket\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Trace\-Route\-::\-Get\-Last\-Socket\-Error} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_trace_route_a32da5bff1922a12bff99c27fb1397afd}
+
+
+\-Get last socket error. 
+
+
+
+\-Definition at line 287 of file \-C\-Trace\-Route.\-cpp.
+
+\hypertarget{class_c_trace_route_a726b14f9e1952d8540e1cd1926cc1443}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-Register\-Callback@{\-Register\-Callback}}
+\index{\-Register\-Callback@{\-Register\-Callback}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-Register\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Trace\-Route\-::\-Register\-Callback} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}}]{p\-Callback, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-User\-Parm}
+\end{DoxyParamCaption}
+)}}\label{class_c_trace_route_a726b14f9e1952d8540e1cd1926cc1443}
+
+
+\-Register a callback function. \-If the callback returns anything other than 0, stop. 
+
+
+
+\-Definition at line 49 of file \-C\-Trace\-Route.\-cpp.
+
+\hypertarget{class_c_trace_route_a9cbed8b955ce2d953d0f1f4583d3405a}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!\-Trace\-Route@{\-Trace\-Route}}
+\index{\-Trace\-Route@{\-Trace\-Route}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{\-Trace\-Route}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Trace\-Route\-::\-Trace\-Route} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-I\-P\-Address, }
+\item[{int}]{i\-Timeout\-M\-S, }
+\item[{int}]{i\-Max\-Retries, }
+\item[{const char $\ast$}]{sz\-Loose\-Route = {\ttfamily \-N\-U\-L\-L}, }
+\item[{bool}]{b\-Ping\-Only = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_c_trace_route_a9cbed8b955ce2d953d0f1f4583d3405a}
+
+
+\-Do the traceroute. 
+
+
+
+\-Definition at line 57 of file \-C\-Trace\-Route.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_trace_route_a8cfc291a0ac1b247afe8acc03e490ffe}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!dw\-User\-Parm@{dw\-User\-Parm}}
+\index{dw\-User\-Parm@{dw\-User\-Parm}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{dw\-User\-Parm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-W\-O\-R\-D} {\bf \-C\-Trace\-Route\-::dw\-User\-Parm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a8cfc291a0ac1b247afe8acc03e490ffe}
+
+
+\-Definition at line 66 of file \-C\-Trace\-Route.\-h.
+
+\hypertarget{class_c_trace_route_a8b59990ce5bc538b143da5284644fe75}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!i\-Last\-Error@{i\-Last\-Error}}
+\index{i\-Last\-Error@{i\-Last\-Error}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{i\-Last\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Trace\-Route\-::i\-Last\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a8b59990ce5bc538b143da5284644fe75}
+
+
+\-Definition at line 67 of file \-C\-Trace\-Route.\-h.
+
+\hypertarget{class_c_trace_route_a7876c156fff35d015ad8c7e3d2160d7f}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!p\-User\-Func@{p\-User\-Func}}
+\index{p\-User\-Func@{p\-User\-Func}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{p\-User\-Func}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-R\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K} {\bf \-C\-Trace\-Route\-::p\-User\-Func}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a7876c156fff35d015ad8c7e3d2160d7f}
+
+
+\-Definition at line 65 of file \-C\-Trace\-Route.\-h.
+
+\hypertarget{class_c_trace_route_a364ba2e572488ba888b175b9e0025ae7}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!s\-Last\-Addr@{s\-Last\-Addr}}
+\index{s\-Last\-Addr@{s\-Last\-Addr}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{s\-Last\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}struct in\-\_\-addr {\bf \-C\-Trace\-Route\-::s\-Last\-Addr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a364ba2e572488ba888b175b9e0025ae7}
+
+
+\-Definition at line 68 of file \-C\-Trace\-Route.\-h.
+
+\hypertarget{class_c_trace_route_a23490973cbeb2c4cbf47376395efe93b}{\index{\-C\-Trace\-Route@{\-C\-Trace\-Route}!u\-I\-D@{u\-I\-D}}
+\index{u\-I\-D@{u\-I\-D}!CTraceRoute@{\-C\-Trace\-Route}}
+\subsubsection[{u\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf \-C\-Trace\-Route\-::u\-I\-D}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_trace_route_a23490973cbeb2c4cbf47376395efe93b}
+
+
+\-Definition at line 69 of file \-C\-Trace\-Route.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_trace_route_8h}{\-C\-Trace\-Route.\-h}\item 
+common/\hyperlink{_c_trace_route_8cpp}{\-C\-Trace\-Route.\-cpp}\end{DoxyCompactItemize}

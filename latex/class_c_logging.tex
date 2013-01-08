@@ -1,0 +1,678 @@
+\hypertarget{class_c_logging}{\section{\-C\-Logging \-Class \-Reference}
+\label{class_c_logging}\index{\-C\-Logging@{\-C\-Logging}}
+}
+
+
+\hyperlink{_c_logging_8h}{\-C\-Logging.\-h}\-: interface for the \hyperlink{class_c_logging}{\-C\-Logging} class.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Logging.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910}{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E} \{ \hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910ab1d199061ee54e16ee5714cda8f88c07}{\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E} =  0, 
+\hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a368e59082c2e07a66ffb7abc710ac3fe}{\-D\-\_\-\-F\-I\-L\-E} =  1, 
+\hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a17f9161030ee75067680a5b679598f59}{\-D\-\_\-\-B\-O\-T\-H} =  2
+ \}
+\item 
+enum \{ \hyperlink{class_c_logging_ae762ada3dd0f62a8d5b371a97c87f33aa6d749f333928bfa35bc5343aa4b19650}{\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L} =  120
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_logging_ac0d73e8afdfe8bf72747affb44cab82e}{\-C\-Logging} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Use\-Flush\-Thread=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\item 
+\hyperlink{class_c_logging_aab79c1dfaa337956e76ab0159c2f538f}{\-C\-Logging} (const char $\ast$sz\-Base\-Name, const char $\ast$sz\-Dir=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Day\-Extension=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Use\-Flush\-Thread=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\item 
+virtual \hyperlink{class_c_logging_a9ef5d3a97150a1429f5c5c86a63aff18}{$\sim$\-C\-Logging} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a0a5d558fc74469ba80b8e48d001ce91c}{\-Init\-Logging\-File} (const char $\ast$sz\-Base\-Name, const char $\ast$sz\-Dir=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Day\-Extension=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E})
+\begin{DoxyCompactList}\small\item\em \-If day extension is \-T\-R\-U\-E, the date will be appended to the file name. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a1989ff79d5742c6f689669c1be529e4b}{\-Init\-Logging\-File} (const char $\ast$sz\-Base\-Name, const char $\ast$sz\-Extenssion, const char $\ast$sz\-Dir=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Day\-Extension=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E})
+\begin{DoxyCompactList}\small\item\em \-If day extension is \-T\-R\-U\-E, the date will be appended to the file name. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_logging_aba3316d82e49f6a3d60af0bac38602c2}{\-Write\-To\-Log} (const char $\ast$sz\-Line, int i\-Level=0, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Suppress\-Timestamp=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em \-Write to the log. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a7d087ba3ca6900db8239ee5709e0d851}{\-Set\-Close\-Mode} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Close)
+\begin{DoxyCompactList}\small\item\em \-If \-T\-R\-U\-E, will open before each write and close afterwards. \-Defaults to \-F\-A\-L\-S\-E. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_logging_a8e563174a6110a658e577365a7499044}{\-Get\-File\-Name} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the file name. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_logging_ada42b4f02cf0a7f228bbcc46c436a570}{\-Get\-File\-Path} ()
+\begin{DoxyCompactList}\small\item\em \-Returns the full file path. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a5a71a34a3d6e60164458e61c2cb1274d}{\-Set\-Output\-Mode} (\hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910}{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E} e\-Mode)
+\begin{DoxyCompactList}\small\item\em \-Set display mode. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_aa75123089e23934cb00e91d5ea59799a}{\-Set\-File\-Flush\-Interval} (int i\-Flush)
+\begin{DoxyCompactList}\small\item\em \-Set file flush interval (seconds) \end{DoxyCompactList}\item 
+int \hyperlink{class_c_logging_aa4bade3411ab028811a1450c6f6f84e6}{\-Close\-File} ()
+\begin{DoxyCompactList}\small\item\em \-Force a close file. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_adca70c44549c19e61905b93a18fcc78f}{\-O\-Kto\-Close} ()
+\begin{DoxyCompactList}\small\item\em \-See if \-O\-K to close at this point. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a0b09b3ff686385532129d62407aa13f0}{\-Changing\-Day} ()
+\begin{DoxyCompactList}\small\item\em \-Changing day routine. \end{DoxyCompactList}\item 
+long \hyperlink{class_c_logging_a72d43e361e9eaa8f2b04b585560e64b4}{\-Get\-File\-Size} ()
+\begin{DoxyCompactList}\small\item\em \-Get the file size. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a33138ea2dc91531b86939a6b35502bd9}{\-Set\-Log\-Level} (int i\-Level)
+\begin{DoxyCompactList}\small\item\em \-Set the logging level. i\-Level passed to \-Write\-To\-Log must $<$= to be output. (0 -\/ 99) \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_af9de9b87995d383c8cb3f6194cab4a6d}{\-Prefix\-Timestamp} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Time=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E})
+\begin{DoxyCompactList}\small\item\em \-Prefix time stamp to all lines. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a9fe42df859d38b72a76b594a0d54b5f0}{\-Set\-Name\-Change} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Change)
+\begin{DoxyCompactList}\small\item\em \-Set so file name doesn't change on a new day. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a9fce71e7994c1d5c28c6157422f31d93}{\-Was\-Created\-On\-Open} ()
+\begin{DoxyCompactList}\small\item\em \-Was the file created on the open? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \-F\-I\-L\-E $\ast$ \hyperlink{class_c_logging_a0d8e6a8b67dbbbe3e404cdda9f3322c9}{\-Open\-Log\-File} ()
+\begin{DoxyCompactList}\small\item\em \-Open the file. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_logging_a795d8dbe3547b536cfb26ef9260d39cf}{\-Get\-Timestamp} ()
+\begin{DoxyCompactList}\small\item\em \-Get a timestamp string. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a0614e12273115a14378429f0196166bc}{\-Close\-Log\-File} ()
+\begin{DoxyCompactList}\small\item\em \-Close the file. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_logging_a67e61e01aee29074030278a798c17bf4}{\-Initialize} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Use\-Flush\-Thread)
+\begin{DoxyCompactList}\small\item\em \-Initialize the file. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_logging_a4e92f2bbc3b615dcae1325533962f652}{\-Create\-File\-Name} (const char $\ast$sz\-Base\-Name, const char $\ast$sz\-Dir, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Day\-Extension, const char $\ast$sz\-Extension)
+\begin{DoxyCompactList}\small\item\em \-Create the file name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_flush_log_thread}{\-C\-Flush\-Log\-Thread} \hyperlink{class_c_logging_a29717e304d66d2cedad282e089ec9af6}{c\-Flush\-Thread}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a63e6147a19d0da756991f793fe08554a}{b\-Activity}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a8d0da938d9a52c21b274afcc01770723}{b\-Timestamp}
+\item 
+int \hyperlink{class_c_logging_a672993d47c795a8ab994447f926f4159}{i\-Log\-Level}
+\item 
+\hyperlink{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910}{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E} \hyperlink{class_c_logging_af7ae839aaa5767ec1a198917ace897f2}{e\-Display\-Mode}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_ac997558d1932184c730d1c7b5ad37a25}{b\-Close\-Mode}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_ad4ba27430d63110cca48140c87b7862a}{b\-Day\-Ext}
+\item 
+\-F\-I\-L\-E $\ast$ \hyperlink{class_c_logging_a610bd219492305abbaab8d9e250ff5f8}{p\-File}
+\item 
+string \hyperlink{class_c_logging_ab910ec9b836bfa113942632969539b41}{s\-Base\-Name}
+\item 
+string \hyperlink{class_c_logging_a98be76d6204726bd5aae8cdf4cb744a0}{s\-Log\-File\-Dir}
+\item 
+string \hyperlink{class_c_logging_afac93962c6d3566015c5175ec002ed11}{s\-File\-Name}
+\item 
+string \hyperlink{class_c_logging_a128a9f601af04f28b1934212215427f8}{s\-Path}
+\item 
+int \hyperlink{class_c_logging_a6ebd771a621ebcf2a621f99de27134bf}{i\-Year}
+\item 
+int \hyperlink{class_c_logging_a3d64ed55288a13595ba440fb6356e7c2}{i\-Dayof\-Year}
+\item 
+int \hyperlink{class_c_logging_adf8e82a334654b6875f81decf6c0306b}{i\-File\-Flush\-Interval}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_logging_aa134867b95328a1b127d1d65ebf6e3cc}{c\-Critical\-Section}
+\item 
+char \hyperlink{class_c_logging_a7fa407b1c3154d7e6da724e20f54eba7}{sz\-Time\-Stamp} \mbox{[}64\mbox{]}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a25817aa5c45e20b1a719848c59af7847}{b\-Name\-Change}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_logging_a1974158ff1af590d9bb2d682590ec980}{b\-Was\-Created}
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_logging_a8195bd28b7fea3076fb1fcbc41f0de8c}{\-C\-Flush\-Log\-Thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{_c_logging_8h}{\-C\-Logging.\-h}\-: interface for the \hyperlink{class_c_logging}{\-C\-Logging} class. 
+
+\-\_\-\-M\-S\-C\-\_\-\-V\-E\-R $>$= 1000 \hyperlink{class_c_logging}{\-C\-Logging} implements an atomic logging capability with the additional ability to to have a separate thread to flush the log buffer to disk at programmed intervals. 
+
+\-Definition at line 31 of file \-C\-Logging.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_c_logging_ae762ada3dd0f62a8d5b371a97c87f33a}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_c_logging_ae762ada3dd0f62a8d5b371a97c87f33a}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}!\-C\-Logging@{\-C\-Logging}}\index{\-C\-Logging@{\-C\-Logging}!\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}}\item[{\em 
+\hypertarget{class_c_logging_ae762ada3dd0f62a8d5b371a97c87f33aa6d749f333928bfa35bc5343aa4b19650}{\-F\-I\-L\-E\-\_\-\-F\-L\-U\-S\-H\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}\label{class_c_logging_ae762ada3dd0f62a8d5b371a97c87f33aa6d749f333928bfa35bc5343aa4b19650}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 41 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910}{\index{\-C\-Logging@{\-C\-Logging}!\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E@{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E}}
+\index{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E@{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-C\-Logging\-::\-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E}}}\label{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E@{\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E}!\-C\-Logging@{\-C\-Logging}}\index{\-C\-Logging@{\-C\-Logging}!\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E@{\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E}}\item[{\em 
+\hypertarget{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910ab1d199061ee54e16ee5714cda8f88c07}{\-D\-\_\-\-C\-O\-N\-S\-O\-L\-E}\label{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910ab1d199061ee54e16ee5714cda8f88c07}
+}]\index{\-D\-\_\-\-F\-I\-L\-E@{\-D\-\_\-\-F\-I\-L\-E}!\-C\-Logging@{\-C\-Logging}}\index{\-C\-Logging@{\-C\-Logging}!\-D\-\_\-\-F\-I\-L\-E@{\-D\-\_\-\-F\-I\-L\-E}}\item[{\em 
+\hypertarget{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a368e59082c2e07a66ffb7abc710ac3fe}{\-D\-\_\-\-F\-I\-L\-E}\label{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a368e59082c2e07a66ffb7abc710ac3fe}
+}]\index{\-D\-\_\-\-B\-O\-T\-H@{\-D\-\_\-\-B\-O\-T\-H}!\-C\-Logging@{\-C\-Logging}}\index{\-C\-Logging@{\-C\-Logging}!\-D\-\_\-\-B\-O\-T\-H@{\-D\-\_\-\-B\-O\-T\-H}}\item[{\em 
+\hypertarget{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a17f9161030ee75067680a5b679598f59}{\-D\-\_\-\-B\-O\-T\-H}\label{class_c_logging_ac88f172cb4d0a2643a15fe21d4d20910a17f9161030ee75067680a5b679598f59}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 35 of file \-C\-Logging.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_logging_ac0d73e8afdfe8bf72747affb44cab82e}{\index{\-C\-Logging@{\-C\-Logging}!\-C\-Logging@{\-C\-Logging}}
+\index{\-C\-Logging@{\-C\-Logging}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-C\-Logging}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Logging\-::\-C\-Logging} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Use\-Flush\-Thread = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_ac0d73e8afdfe8bf72747affb44cab82e}
+
+
+\-Definition at line 33 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_aab79c1dfaa337956e76ab0159c2f538f}{\index{\-C\-Logging@{\-C\-Logging}!\-C\-Logging@{\-C\-Logging}}
+\index{\-C\-Logging@{\-C\-Logging}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-C\-Logging}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Logging\-::\-C\-Logging} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Base\-Name, }
+\item[{const char $\ast$}]{sz\-Dir = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Day\-Extension = {\ttfamily {\bf \-T\-R\-U\-E}}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Use\-Flush\-Thread = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_aab79c1dfaa337956e76ab0159c2f538f}
+
+
+\-Definition at line 38 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a9ef5d3a97150a1429f5c5c86a63aff18}{\index{\-C\-Logging@{\-C\-Logging}!$\sim$\-C\-Logging@{$\sim$\-C\-Logging}}
+\index{$\sim$\-C\-Logging@{$\sim$\-C\-Logging}!CLogging@{\-C\-Logging}}
+\subsubsection[{$\sim$\-C\-Logging}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Logging\-::$\sim$\-C\-Logging} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_logging_a9ef5d3a97150a1429f5c5c86a63aff18}
+
+
+\-Definition at line 58 of file \-C\-Logging.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_logging_a0b09b3ff686385532129d62407aa13f0}{\index{\-C\-Logging@{\-C\-Logging}!\-Changing\-Day@{\-Changing\-Day}}
+\index{\-Changing\-Day@{\-Changing\-Day}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Changing\-Day}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Changing\-Day} (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_logging_a0b09b3ff686385532129d62407aa13f0}
+
+
+\-Changing day routine. 
+
+
+
+\-Definition at line 440 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_aa4bade3411ab028811a1450c6f6f84e6}{\index{\-C\-Logging@{\-C\-Logging}!\-Close\-File@{\-Close\-File}}
+\index{\-Close\-File@{\-Close\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Close\-File}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::\-Close\-File} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_aa4bade3411ab028811a1450c6f6f84e6}
+
+
+\-Force a close file. 
+
+\hypertarget{class_c_logging_a0614e12273115a14378429f0196166bc}{\index{\-C\-Logging@{\-C\-Logging}!\-Close\-Log\-File@{\-Close\-Log\-File}}
+\index{\-Close\-Log\-File@{\-Close\-Log\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Close\-Log\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Close\-Log\-File} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_logging_a0614e12273115a14378429f0196166bc}
+
+
+\-Close the file. 
+
+
+
+\-Definition at line 339 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a4e92f2bbc3b615dcae1325533962f652}{\index{\-C\-Logging@{\-C\-Logging}!\-Create\-File\-Name@{\-Create\-File\-Name}}
+\index{\-Create\-File\-Name@{\-Create\-File\-Name}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Create\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-Logging\-::\-Create\-File\-Name} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Base\-Name, }
+\item[{const char $\ast$}]{sz\-Dir, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Day\-Extension, }
+\item[{const char $\ast$}]{sz\-Extension}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a4e92f2bbc3b615dcae1325533962f652}
+
+
+\-Create the file name. 
+
+
+
+\-Definition at line 477 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a8e563174a6110a658e577365a7499044}{\index{\-C\-Logging@{\-C\-Logging}!\-Get\-File\-Name@{\-Get\-File\-Name}}
+\index{\-Get\-File\-Name@{\-Get\-File\-Name}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Get\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-Logging\-::\-Get\-File\-Name} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a8e563174a6110a658e577365a7499044}
+
+
+\-Returns the file name. 
+
+
+
+\-Definition at line 364 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_ada42b4f02cf0a7f228bbcc46c436a570}{\index{\-C\-Logging@{\-C\-Logging}!\-Get\-File\-Path@{\-Get\-File\-Path}}
+\index{\-Get\-File\-Path@{\-Get\-File\-Path}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Get\-File\-Path}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-Logging\-::\-Get\-File\-Path} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_ada42b4f02cf0a7f228bbcc46c436a570}
+
+
+\-Returns the full file path. 
+
+
+
+\-Definition at line 371 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a72d43e361e9eaa8f2b04b585560e64b4}{\index{\-C\-Logging@{\-C\-Logging}!\-Get\-File\-Size@{\-Get\-File\-Size}}
+\index{\-Get\-File\-Size@{\-Get\-File\-Size}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Get\-File\-Size}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-Logging\-::\-Get\-File\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a72d43e361e9eaa8f2b04b585560e64b4}
+
+
+\-Get the file size. 
+
+
+
+\-Definition at line 387 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a795d8dbe3547b536cfb26ef9260d39cf}{\index{\-C\-Logging@{\-C\-Logging}!\-Get\-Timestamp@{\-Get\-Timestamp}}
+\index{\-Get\-Timestamp@{\-Get\-Timestamp}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Get\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-Logging\-::\-Get\-Timestamp} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a795d8dbe3547b536cfb26ef9260d39cf}
+
+
+\-Get a timestamp string. 
+
+
+
+\-Definition at line 456 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a67e61e01aee29074030278a798c17bf4}{\index{\-C\-Logging@{\-C\-Logging}!\-Initialize@{\-Initialize}}
+\index{\-Initialize@{\-Initialize}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Initialize} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Use\-Flush\-Thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a67e61e01aee29074030278a798c17bf4}
+
+
+\-Initialize the file. 
+
+
+
+\-Definition at line 46 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a0a5d558fc74469ba80b8e48d001ce91c}{\index{\-C\-Logging@{\-C\-Logging}!\-Init\-Logging\-File@{\-Init\-Logging\-File}}
+\index{\-Init\-Logging\-File@{\-Init\-Logging\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Init\-Logging\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::\-Init\-Logging\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Base\-Name, }
+\item[{const char $\ast$}]{sz\-Dir = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Day\-Extension = {\ttfamily {\bf \-T\-R\-U\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_logging_a0a5d558fc74469ba80b8e48d001ce91c}
+
+
+\-If day extension is \-T\-R\-U\-E, the date will be appended to the file name. 
+
+
+
+\-Definition at line 68 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a1989ff79d5742c6f689669c1be529e4b}{\index{\-C\-Logging@{\-C\-Logging}!\-Init\-Logging\-File@{\-Init\-Logging\-File}}
+\index{\-Init\-Logging\-File@{\-Init\-Logging\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Init\-Logging\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::\-Init\-Logging\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Base\-Name, }
+\item[{const char $\ast$}]{sz\-Extenssion, }
+\item[{const char $\ast$}]{sz\-Dir = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Day\-Extension = {\ttfamily {\bf \-T\-R\-U\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_logging_a1989ff79d5742c6f689669c1be529e4b}
+
+
+\-If day extension is \-T\-R\-U\-E, the date will be appended to the file name. 
+
+
+
+\-Definition at line 76 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_adca70c44549c19e61905b93a18fcc78f}{\index{\-C\-Logging@{\-C\-Logging}!\-O\-Kto\-Close@{\-O\-Kto\-Close}}
+\index{\-O\-Kto\-Close@{\-O\-Kto\-Close}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-O\-Kto\-Close}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::\-O\-Kto\-Close} (
+\begin{DoxyParamCaption}
+\item[{{\bf void}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_logging_adca70c44549c19e61905b93a18fcc78f}
+
+
+\-See if \-O\-K to close at this point. 
+
+
+
+\-Definition at line 435 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a0d8e6a8b67dbbbe3e404cdda9f3322c9}{\index{\-C\-Logging@{\-C\-Logging}!\-Open\-Log\-File@{\-Open\-Log\-File}}
+\index{\-Open\-Log\-File@{\-Open\-Log\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Open\-Log\-File}]{\setlength{\rightskip}{0pt plus 5cm}\-F\-I\-L\-E $\ast$ {\bf \-C\-Logging\-::\-Open\-Log\-File} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_logging_a0d8e6a8b67dbbbe3e404cdda9f3322c9}
+
+
+\-Open the file. 
+
+
+
+\-Definition at line 128 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_af9de9b87995d383c8cb3f6194cab4a6d}{\index{\-C\-Logging@{\-C\-Logging}!\-Prefix\-Timestamp@{\-Prefix\-Timestamp}}
+\index{\-Prefix\-Timestamp@{\-Prefix\-Timestamp}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Prefix\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Prefix\-Timestamp} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Time = {\ttfamily {\bf \-T\-R\-U\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_af9de9b87995d383c8cb3f6194cab4a6d}
+
+
+\-Prefix time stamp to all lines. 
+
+
+
+\-Definition at line 448 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a7d087ba3ca6900db8239ee5709e0d851}{\index{\-C\-Logging@{\-C\-Logging}!\-Set\-Close\-Mode@{\-Set\-Close\-Mode}}
+\index{\-Set\-Close\-Mode@{\-Set\-Close\-Mode}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Set\-Close\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Set\-Close\-Mode} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Close}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a7d087ba3ca6900db8239ee5709e0d851}
+
+
+\-If \-T\-R\-U\-E, will open before each write and close afterwards. \-Defaults to \-F\-A\-L\-S\-E. 
+
+
+
+\-Definition at line 355 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_aa75123089e23934cb00e91d5ea59799a}{\index{\-C\-Logging@{\-C\-Logging}!\-Set\-File\-Flush\-Interval@{\-Set\-File\-Flush\-Interval}}
+\index{\-Set\-File\-Flush\-Interval@{\-Set\-File\-Flush\-Interval}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Set\-File\-Flush\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Set\-File\-Flush\-Interval} (
+\begin{DoxyParamCaption}
+\item[{int}]{i\-Flush}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_aa75123089e23934cb00e91d5ea59799a}
+
+
+\-Set file flush interval (seconds) 
+
+
+
+\-Definition at line 423 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a33138ea2dc91531b86939a6b35502bd9}{\index{\-C\-Logging@{\-C\-Logging}!\-Set\-Log\-Level@{\-Set\-Log\-Level}}
+\index{\-Set\-Log\-Level@{\-Set\-Log\-Level}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Set\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Set\-Log\-Level} (
+\begin{DoxyParamCaption}
+\item[{int}]{i\-Level}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a33138ea2dc91531b86939a6b35502bd9}
+
+
+\-Set the logging level. i\-Level passed to \-Write\-To\-Log must $<$= to be output. (0 -\/ 99) 
+
+
+
+\-Definition at line 411 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a9fe42df859d38b72a76b594a0d54b5f0}{\index{\-C\-Logging@{\-C\-Logging}!\-Set\-Name\-Change@{\-Set\-Name\-Change}}
+\index{\-Set\-Name\-Change@{\-Set\-Name\-Change}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Set\-Name\-Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Set\-Name\-Change} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Change}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a9fe42df859d38b72a76b594a0d54b5f0}
+
+
+\-Set so file name doesn't change on a new day. 
+
+\hypertarget{class_c_logging_a5a71a34a3d6e60164458e61c2cb1274d}{\index{\-C\-Logging@{\-C\-Logging}!\-Set\-Output\-Mode@{\-Set\-Output\-Mode}}
+\index{\-Set\-Output\-Mode@{\-Set\-Output\-Mode}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Set\-Output\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Logging\-::\-Set\-Output\-Mode} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E}}]{e\-Mode}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a5a71a34a3d6e60164458e61c2cb1274d}
+
+
+\-Set display mode. 
+
+
+
+\-Definition at line 379 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_a9fce71e7994c1d5c28c6157422f31d93}{\index{\-C\-Logging@{\-C\-Logging}!\-Was\-Created\-On\-Open@{\-Was\-Created\-On\-Open}}
+\index{\-Was\-Created\-On\-Open@{\-Was\-Created\-On\-Open}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Was\-Created\-On\-Open}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::\-Was\-Created\-On\-Open} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_a9fce71e7994c1d5c28c6157422f31d93}
+
+
+\-Was the file created on the open? 
+
+
+
+\-Definition at line 547 of file \-C\-Logging.\-cpp.
+
+\hypertarget{class_c_logging_aba3316d82e49f6a3d60af0bac38602c2}{\index{\-C\-Logging@{\-C\-Logging}!\-Write\-To\-Log@{\-Write\-To\-Log}}
+\index{\-Write\-To\-Log@{\-Write\-To\-Log}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-Write\-To\-Log}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::\-Write\-To\-Log} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Line, }
+\item[{int}]{i\-Level = {\ttfamily 0}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Suppress\-Timestamp = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_logging_aba3316d82e49f6a3d60af0bac38602c2}
+
+
+\-Write to the log. 
+
+
+
+\-Definition at line 185 of file \-C\-Logging.\-cpp.
+
+
+
+\subsection{\-Friends \-And \-Related \-Function \-Documentation}
+\hypertarget{class_c_logging_a8195bd28b7fea3076fb1fcbc41f0de8c}{\index{\-C\-Logging@{\-C\-Logging}!\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}}
+\index{\-C\-Flush\-Log\-Thread@{\-C\-Flush\-Log\-Thread}!CLogging@{\-C\-Logging}}
+\subsubsection[{\-C\-Flush\-Log\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf \-C\-Flush\-Log\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{class_c_logging_a8195bd28b7fea3076fb1fcbc41f0de8c}
+
+
+\-Definition at line 33 of file \-C\-Logging.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_logging_a63e6147a19d0da756991f793fe08554a}{\index{\-C\-Logging@{\-C\-Logging}!b\-Activity@{b\-Activity}}
+\index{b\-Activity@{b\-Activity}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Activity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Activity}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a63e6147a19d0da756991f793fe08554a}
+
+
+\-Definition at line 95 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_ac997558d1932184c730d1c7b5ad37a25}{\index{\-C\-Logging@{\-C\-Logging}!b\-Close\-Mode@{b\-Close\-Mode}}
+\index{b\-Close\-Mode@{b\-Close\-Mode}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Close\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Close\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_ac997558d1932184c730d1c7b5ad37a25}
+
+
+\-Definition at line 99 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_ad4ba27430d63110cca48140c87b7862a}{\index{\-C\-Logging@{\-C\-Logging}!b\-Day\-Ext@{b\-Day\-Ext}}
+\index{b\-Day\-Ext@{b\-Day\-Ext}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Day\-Ext}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Day\-Ext}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_ad4ba27430d63110cca48140c87b7862a}
+
+
+\-Definition at line 100 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a25817aa5c45e20b1a719848c59af7847}{\index{\-C\-Logging@{\-C\-Logging}!b\-Name\-Change@{b\-Name\-Change}}
+\index{b\-Name\-Change@{b\-Name\-Change}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Name\-Change}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Name\-Change}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a25817aa5c45e20b1a719848c59af7847}
+
+
+\-Definition at line 111 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a8d0da938d9a52c21b274afcc01770723}{\index{\-C\-Logging@{\-C\-Logging}!b\-Timestamp@{b\-Timestamp}}
+\index{b\-Timestamp@{b\-Timestamp}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Timestamp}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a8d0da938d9a52c21b274afcc01770723}
+
+
+\-Definition at line 96 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a1974158ff1af590d9bb2d682590ec980}{\index{\-C\-Logging@{\-C\-Logging}!b\-Was\-Created@{b\-Was\-Created}}
+\index{b\-Was\-Created@{b\-Was\-Created}!CLogging@{\-C\-Logging}}
+\subsubsection[{b\-Was\-Created}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Logging\-::b\-Was\-Created}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a1974158ff1af590d9bb2d682590ec980}
+
+
+\-Definition at line 112 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_aa134867b95328a1b127d1d65ebf6e3cc}{\index{\-C\-Logging@{\-C\-Logging}!c\-Critical\-Section@{c\-Critical\-Section}}
+\index{c\-Critical\-Section@{c\-Critical\-Section}!CLogging@{\-C\-Logging}}
+\subsubsection[{c\-Critical\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-Logging\-::c\-Critical\-Section}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_aa134867b95328a1b127d1d65ebf6e3cc}
+
+
+\-Definition at line 109 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a29717e304d66d2cedad282e089ec9af6}{\index{\-C\-Logging@{\-C\-Logging}!c\-Flush\-Thread@{c\-Flush\-Thread}}
+\index{c\-Flush\-Thread@{c\-Flush\-Thread}!CLogging@{\-C\-Logging}}
+\subsubsection[{c\-Flush\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Flush\-Log\-Thread} {\bf \-C\-Logging\-::c\-Flush\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a29717e304d66d2cedad282e089ec9af6}
+
+
+\-Definition at line 94 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_af7ae839aaa5767ec1a198917ace897f2}{\index{\-C\-Logging@{\-C\-Logging}!e\-Display\-Mode@{e\-Display\-Mode}}
+\index{e\-Display\-Mode@{e\-Display\-Mode}!CLogging@{\-C\-Logging}}
+\subsubsection[{e\-Display\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-I\-S\-P\-L\-A\-Y\-\_\-\-M\-O\-D\-E} {\bf \-C\-Logging\-::e\-Display\-Mode}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_af7ae839aaa5767ec1a198917ace897f2}
+
+
+\-Definition at line 98 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a3d64ed55288a13595ba440fb6356e7c2}{\index{\-C\-Logging@{\-C\-Logging}!i\-Dayof\-Year@{i\-Dayof\-Year}}
+\index{i\-Dayof\-Year@{i\-Dayof\-Year}!CLogging@{\-C\-Logging}}
+\subsubsection[{i\-Dayof\-Year}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::i\-Dayof\-Year}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a3d64ed55288a13595ba440fb6356e7c2}
+
+
+\-Definition at line 107 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_adf8e82a334654b6875f81decf6c0306b}{\index{\-C\-Logging@{\-C\-Logging}!i\-File\-Flush\-Interval@{i\-File\-Flush\-Interval}}
+\index{i\-File\-Flush\-Interval@{i\-File\-Flush\-Interval}!CLogging@{\-C\-Logging}}
+\subsubsection[{i\-File\-Flush\-Interval}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::i\-File\-Flush\-Interval}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_adf8e82a334654b6875f81decf6c0306b}
+
+
+\-Definition at line 108 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a672993d47c795a8ab994447f926f4159}{\index{\-C\-Logging@{\-C\-Logging}!i\-Log\-Level@{i\-Log\-Level}}
+\index{i\-Log\-Level@{i\-Log\-Level}!CLogging@{\-C\-Logging}}
+\subsubsection[{i\-Log\-Level}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::i\-Log\-Level}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a672993d47c795a8ab994447f926f4159}
+
+
+\-Definition at line 97 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a6ebd771a621ebcf2a621f99de27134bf}{\index{\-C\-Logging@{\-C\-Logging}!i\-Year@{i\-Year}}
+\index{i\-Year@{i\-Year}!CLogging@{\-C\-Logging}}
+\subsubsection[{i\-Year}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Logging\-::i\-Year}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a6ebd771a621ebcf2a621f99de27134bf}
+
+
+\-Definition at line 106 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a610bd219492305abbaab8d9e250ff5f8}{\index{\-C\-Logging@{\-C\-Logging}!p\-File@{p\-File}}
+\index{p\-File@{p\-File}!CLogging@{\-C\-Logging}}
+\subsubsection[{p\-File}]{\setlength{\rightskip}{0pt plus 5cm}\-F\-I\-L\-E$\ast$ {\bf \-C\-Logging\-::p\-File}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a610bd219492305abbaab8d9e250ff5f8}
+
+
+\-Definition at line 101 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_ab910ec9b836bfa113942632969539b41}{\index{\-C\-Logging@{\-C\-Logging}!s\-Base\-Name@{s\-Base\-Name}}
+\index{s\-Base\-Name@{s\-Base\-Name}!CLogging@{\-C\-Logging}}
+\subsubsection[{s\-Base\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-Logging\-::s\-Base\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_ab910ec9b836bfa113942632969539b41}
+
+
+\-Definition at line 102 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_afac93962c6d3566015c5175ec002ed11}{\index{\-C\-Logging@{\-C\-Logging}!s\-File\-Name@{s\-File\-Name}}
+\index{s\-File\-Name@{s\-File\-Name}!CLogging@{\-C\-Logging}}
+\subsubsection[{s\-File\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-Logging\-::s\-File\-Name}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_afac93962c6d3566015c5175ec002ed11}
+
+
+\-Definition at line 104 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a98be76d6204726bd5aae8cdf4cb744a0}{\index{\-C\-Logging@{\-C\-Logging}!s\-Log\-File\-Dir@{s\-Log\-File\-Dir}}
+\index{s\-Log\-File\-Dir@{s\-Log\-File\-Dir}!CLogging@{\-C\-Logging}}
+\subsubsection[{s\-Log\-File\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-Logging\-::s\-Log\-File\-Dir}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a98be76d6204726bd5aae8cdf4cb744a0}
+
+
+\-Definition at line 103 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a128a9f601af04f28b1934212215427f8}{\index{\-C\-Logging@{\-C\-Logging}!s\-Path@{s\-Path}}
+\index{s\-Path@{s\-Path}!CLogging@{\-C\-Logging}}
+\subsubsection[{s\-Path}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-Logging\-::s\-Path}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a128a9f601af04f28b1934212215427f8}
+
+
+\-Definition at line 105 of file \-C\-Logging.\-h.
+
+\hypertarget{class_c_logging_a7fa407b1c3154d7e6da724e20f54eba7}{\index{\-C\-Logging@{\-C\-Logging}!sz\-Time\-Stamp@{sz\-Time\-Stamp}}
+\index{sz\-Time\-Stamp@{sz\-Time\-Stamp}!CLogging@{\-C\-Logging}}
+\subsubsection[{sz\-Time\-Stamp}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-Logging\-::sz\-Time\-Stamp}\mbox{[}64\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_logging_a7fa407b1c3154d7e6da724e20f54eba7}
+
+
+\-Definition at line 110 of file \-C\-Logging.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_logging_8h}{\-C\-Logging.\-h}\item 
+common/\hyperlink{_c_logging_8cpp}{\-C\-Logging.\-cpp}\end{DoxyCompactItemize}

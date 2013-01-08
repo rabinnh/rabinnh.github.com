@@ -1,0 +1,111 @@
+\hypertarget{_check_mem_signature_8h}{\section{common/\-Check\-Mem\-Signature.h \-File \-Reference}
+\label{_check_mem_signature_8h}\index{common/\-Check\-Mem\-Signature.\-h@{common/\-Check\-Mem\-Signature.\-h}}
+}
+{\ttfamily \#include $<$memory.\-h$>$}\*
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\*
+{\ttfamily \#include $<$string$>$}\*
+{\ttfamily \#include $<$syslog.\-h$>$}\*
+{\ttfamily \#include $<$errno.\-h$>$}\*
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include $<$unistd.\-h$>$}\*
+{\ttfamily \#include $<$openssl/evp.\-h$>$}\*
+{\ttfamily \#include $<$openssl/blowfish.\-h$>$}\*
+{\ttfamily \#include $<$sys/ioctl.\-h$>$}\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\*
+{\ttfamily \#include $<$sys/socket.\-h$>$}\*
+{\ttfamily \#include $<$net/if.\-h$>$}\*
+{\ttfamily \#include $<$ifaddrs.\-h$>$}\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\*
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_check_mem_signature}{\-Check\-Mem\-Signature}
+\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a750de2c071efc57b0d6b2658ab90e010}{\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T}~5
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a57556078d4fa0ed8db805508ccfd01b5}{\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T}~0x\-F\-F\-F\-D0
+\item 
+\#define \hyperlink{_check_mem_signature_8h_ab44a5fcf414b4a4006b5b53a3fec0f76}{\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H}~17
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a3abd26bdfb90a5f128e4421db40b89aa}{\-S\-I\-G\-\_\-\-H\-A\-S\-H3}~\char`\"{}c7e2846040d97eaf727e2266e257ac0d\char`\"{}
+\item 
+\#define \hyperlink{_check_mem_signature_8h_af9393024673328e193eced3a1bfa3366}{\-S\-I\-G\-\_\-\-H\-A\-S\-H6}~\char`\"{}ddd8376f0dd9fa44c01897b62d0bf376\char`\"{}
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a42eb19b10bf0faee9c8decb218bdeae9}{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}~16
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a2834190bb8006b50ed72a09a14ad2900}{\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G}~\char`\"{}\-P\-C \-Engines \-A\-L\-I\-X.\-3\char`\"{}
+\item 
+\#define \hyperlink{_check_mem_signature_8h_ab005f04b778756870e3ec120a9798d20}{\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G}~\char`\"{}\-P\-C \-Engines \-A\-L\-I\-X.\-2\char`\"{}
+\item 
+\#define \hyperlink{_check_mem_signature_8h_a2d996237e082b78b41771b5aa1a6eae1}{\-K\-E\-Y\-\_\-\-S\-I\-Z\-E}~108
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{_check_mem_signature_8h_a2834190bb8006b50ed72a09a14ad2900}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G@{\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G}}
+\index{\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G@{\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-L\-I\-X3\-D2\-\_\-\-S\-I\-G}~\char`\"{}\-P\-C \-Engines \-A\-L\-I\-X.\-3\char`\"{}}}\label{_check_mem_signature_8h_a2834190bb8006b50ed72a09a14ad2900}
+
+
+\-Definition at line 38 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_ab005f04b778756870e3ec120a9798d20}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G@{\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G}}
+\index{\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G@{\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-A\-L\-I\-X6\-E1\-\_\-\-S\-I\-G}~\char`\"{}\-P\-C \-Engines \-A\-L\-I\-X.\-2\char`\"{}}}\label{_check_mem_signature_8h_ab005f04b778756870e3ec120a9798d20}
+
+
+\-Definition at line 39 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_a750de2c071efc57b0d6b2658ab90e010}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T@{\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T}}
+\index{\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T@{\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-E\-M\-O\-\_\-\-L\-I\-M\-I\-T}~5}}\label{_check_mem_signature_8h_a750de2c071efc57b0d6b2658ab90e010}
+
+
+\-Definition at line 31 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_a42eb19b10bf0faee9c8decb218bdeae9}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H@{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H@{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}~16}}\label{_check_mem_signature_8h_a42eb19b10bf0faee9c8decb218bdeae9}
+
+
+\-Definition at line 37 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_a2d996237e082b78b41771b5aa1a6eae1}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-K\-E\-Y\-\_\-\-S\-I\-Z\-E@{\-K\-E\-Y\-\_\-\-S\-I\-Z\-E}}
+\index{\-K\-E\-Y\-\_\-\-S\-I\-Z\-E@{\-K\-E\-Y\-\_\-\-S\-I\-Z\-E}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-K\-E\-Y\-\_\-\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-K\-E\-Y\-\_\-\-S\-I\-Z\-E}~108}}\label{_check_mem_signature_8h_a2d996237e082b78b41771b5aa1a6eae1}
+
+
+\-Definition at line 40 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_a3abd26bdfb90a5f128e4421db40b89aa}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-S\-I\-G\-\_\-\-H\-A\-S\-H3@{\-S\-I\-G\-\_\-\-H\-A\-S\-H3}}
+\index{\-S\-I\-G\-\_\-\-H\-A\-S\-H3@{\-S\-I\-G\-\_\-\-H\-A\-S\-H3}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-S\-I\-G\-\_\-\-H\-A\-S\-H3}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-I\-G\-\_\-\-H\-A\-S\-H3}~\char`\"{}c7e2846040d97eaf727e2266e257ac0d\char`\"{}}}\label{_check_mem_signature_8h_a3abd26bdfb90a5f128e4421db40b89aa}
+
+
+\-Definition at line 35 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_af9393024673328e193eced3a1bfa3366}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-S\-I\-G\-\_\-\-H\-A\-S\-H6@{\-S\-I\-G\-\_\-\-H\-A\-S\-H6}}
+\index{\-S\-I\-G\-\_\-\-H\-A\-S\-H6@{\-S\-I\-G\-\_\-\-H\-A\-S\-H6}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-S\-I\-G\-\_\-\-H\-A\-S\-H6}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-I\-G\-\_\-\-H\-A\-S\-H6}~\char`\"{}ddd8376f0dd9fa44c01897b62d0bf376\char`\"{}}}\label{_check_mem_signature_8h_af9393024673328e193eced3a1bfa3366}
+
+
+\-Definition at line 36 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_ab44a5fcf414b4a4006b5b53a3fec0f76}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H@{\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H}}
+\index{\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H@{\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-I\-G\-\_\-\-L\-E\-N\-G\-T\-H}~17}}\label{_check_mem_signature_8h_ab44a5fcf414b4a4006b5b53a3fec0f76}
+
+
+\-Definition at line 34 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{_check_mem_signature_8h_a57556078d4fa0ed8db805508ccfd01b5}{\index{\-Check\-Mem\-Signature.\-h@{\-Check\-Mem\-Signature.\-h}!\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T@{\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T}}
+\index{\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T@{\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T}!CheckMemSignature.h@{\-Check\-Mem\-Signature.\-h}}
+\subsubsection[{\-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-I\-G\-\_\-\-O\-F\-F\-S\-E\-T}~0x\-F\-F\-F\-D0}}\label{_check_mem_signature_8h_a57556078d4fa0ed8db805508ccfd01b5}
+
+
+\-Definition at line 33 of file \-Check\-Mem\-Signature.\-h.
+

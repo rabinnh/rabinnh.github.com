@@ -1,0 +1,410 @@
+\hypertarget{class_c_x_plat_thread_pool}{\section{\-C\-X\-Plat\-Thread\-Pool \-Class \-Reference}
+\label{class_c_x_plat_thread_pool}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}
+}
+
+
+\-Implementation of thread pool class.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Thread\-Pool.\-h$>$}
+
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \*
+\hyperlink{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca8a5c9f7e63b6ac74a4a66b14bfe923ac}{\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E} =  -\/1, 
+\hyperlink{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582cac36cf7425db3e192dcdc16f9b544abd4}{\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E} =  -\/2, 
+\hyperlink{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca80caa8215999d35921f9c8c826e2a359}{\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D} =  -\/3, 
+\hyperlink{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca82c08ff08aeed4dfea81c8f0081127d9}{\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L} =  -\/4, 
+\*
+\hyperlink{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca66f26b091aff25a6ce08d64301bd4ea8}{\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T} =  -\/5
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_thread_pool_ad61cd31f1738bf2f33b2750fbe159c3f}{\-C\-X\-Plat\-Thread\-Pool} (int i\-Pool\-Size=5, int i\-Max\-Size=0, int \hyperlink{class_c_x_plat_thread_pool_af241301a871a1468678540d48fcc9985}{i\-Grow\-By}=1)
+\begin{DoxyCompactList}\small\item\em \-Initial poolsize, maximum size to grow to, size to grow by when pool is grown. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_x_plat_thread_pool_a9b6e9f0aa858efb30e8afa85b9c39927}{$\sim$\-C\-X\-Plat\-Thread\-Pool} ()
+\item 
+int \hyperlink{class_c_x_plat_thread_pool_a9860a0943a82da693bd4f6465286faf6}{\-Get\-Available\-Threads} (\hyperlink{_c_x_plat_thread_pool_8h_a615ef31b69376a699fb98bdaa7a643af}{\-T\-H\-R\-E\-A\-D\-\_\-\-P\-O\-O\-L\-\_\-\-A\-R\-R\-A\-Y} \&c\-Avail\-Thread\-Pool, int i\-Needed, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Wait\-For\-At\-Least\-One=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Wait\-Time=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\item 
+int \hyperlink{class_c_x_plat_thread_pool_a1f3073246e156c9a05ff392b968d533a}{\-Query\-Threads\-Available} ()
+\item 
+int \hyperlink{class_c_x_plat_thread_pool_a876bc703a2bd754d8171e8260d7e9468}{\-Get\-Current\-Size\-Of\-Pool} ()
+\begin{DoxyCompactList}\small\item\em \-Get how many threads are in the pool. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_thread_pool_a2d85a86f85582d5e87e35c11e6e34e49}{\-Get\-Max\-Size} ()
+\begin{DoxyCompactList}\small\item\em \-Get the maximum size the thread pool can grow to. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_thread_pool_a62539ea3f7f7f37a994657a197c89447}{\-Set\-Max\-Size} (int i\-Max\-Size)
+\begin{DoxyCompactList}\small\item\em \-Set the maximum size the thread pool can grow to. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_thread_pool_a23928cd84c3136206f8b986263b55be3}{\-Wait\-For\-All\-Threads\-To\-Finish} ()
+\begin{DoxyCompactList}\small\item\em \-Wait for all threads to finish. \-Do \-N\-O\-T call \-Get\-Available\-Threads at the same time. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_thread_pool_a909ee6b050a921c8963c8f39ab98e1bd}{\-Shrink\-Pool} ()
+\begin{DoxyCompactList}\small\item\em \-Shrink the thread pool by one thread. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_thread_pool_a213b7c0d9ac2e31b8e61b7aef9193e03}{\-Set\-Finish\-Wait\-Time} (unsigned long l\-Wait\-Time)
+\begin{DoxyCompactList}\small\item\em \-Set the wait time when we are waiting for all threads to finish. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_c_x_plat_pooled_thread}{\-C\-X\-Plat\-Pooled\-Thread} $\ast$ \hyperlink{class_c_x_plat_thread_pool_a139b514b9f7111e2dadceca5a066b870}{\-Allocate\-Pooled\-Thread} ()=0
+\begin{DoxyCompactList}\small\item\em \-Implement to allocate the proper type of derived pooled thread. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_pool_aea64ec56b3a96b208967d981ec396a2a}{\-Grow\-Thread\-Pool} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Init=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em \-Add threads to the pool. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_pool_ac5a354175af9cd8b981cec195f399681}{\-Init} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_x_plat_thread_pool_8h_a615ef31b69376a699fb98bdaa7a643af}{\-T\-H\-R\-E\-A\-D\-\_\-\-P\-O\-O\-L\-\_\-\-A\-R\-R\-A\-Y} \hyperlink{class_c_x_plat_thread_pool_a64c478883d5d6d7f3a21ef87e9203b8d}{c\-Thread\-Pool}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_x_plat_thread_pool_aa7ae22263bf54d6d7916bb332a63cb36}{c\-Pool\-Crit\-Sect}
+\begin{DoxyCompactList}\small\item\em \-Our pool of threads. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_x_plat_thread_pool_a1c511e13b5f134b91494411a20fa1caa}{c\-Thread\-Available\-Event}
+\begin{DoxyCompactList}\small\item\em \-To protect \-Thread\-Pool. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_thread_pool_ad48b1855b53944a36387466ec4edf075}{i\-Original\-Threads\-In\-Pool}
+\begin{DoxyCompactList}\small\item\em \-Threads will set when they become available. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_thread_pool_a2ee5c38caa32b73ea9ccb2688edbebd3}{i\-Threads\-In\-Pool}
+\item 
+int \hyperlink{class_c_x_plat_thread_pool_aa68b8ad1860d7e86bb6030046876ac9e}{i\-Max\-Threads\-Allowed}
+\item 
+int \hyperlink{class_c_x_plat_thread_pool_af241301a871a1468678540d48fcc9985}{i\-Grow\-By}
+\item 
+bool \hyperlink{class_c_x_plat_thread_pool_a28a2f5949bf10ec0eb0db3a65a4ade1f}{b\-Shrinking}
+\item 
+unsigned long \hyperlink{class_c_x_plat_thread_pool_a29b4385ed2ab6e48190f2f8ebcd656a2}{l\-Wait\-To\-Finish}
+\item 
+bool \hyperlink{class_c_x_plat_thread_pool_a119623bf09e081406a80ce845c7a8f4f}{b\-Wait\-To\-Finish\-Set}
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_x_plat_thread_pool_ae5be1bd21210186249195fa418a3bbb8}{\-C\-X\-Plat\-Pooled\-Thread}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Implementation of thread pool class. 
+
+\-Definition at line 37 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582c}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582c}
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E@{\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E@{\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca8a5c9f7e63b6ac74a4a66b14bfe923ac}{\-T\-P\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-E\-X\-C\-E\-E\-D\-S\-\_\-\-P\-O\-O\-L\-\_\-\-S\-I\-Z\-E}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca8a5c9f7e63b6ac74a4a66b14bfe923ac}
+}]\index{\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E@{\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E@{\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582cac36cf7425db3e192dcdc16f9b544abd4}{\-T\-P\-\_\-\-N\-O\-T\-\_\-\-E\-N\-O\-U\-G\-H\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582cac36cf7425db3e192dcdc16f9b544abd4}
+}]\index{\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D@{\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D@{\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca80caa8215999d35921f9c8c826e2a359}{\-T\-P\-\_\-\-Z\-E\-R\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca80caa8215999d35921f9c8c826e2a359}
+}]\index{\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L@{\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L@{\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca82c08ff08aeed4dfea81c8f0081127d9}{\-T\-P\-\_\-\-N\-O\-\_\-\-T\-H\-R\-E\-A\-D\-S\-\_\-\-I\-N\-\_\-\-P\-O\-O\-L}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca82c08ff08aeed4dfea81c8f0081127d9}
+}]\index{\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T@{\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T@{\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca66f26b091aff25a6ce08d64301bd4ea8}{\-T\-P\-\_\-\-W\-A\-I\-T\-\_\-\-T\-I\-M\-E\-D\-\_\-\-O\-U\-T}\label{class_c_x_plat_thread_pool_af9e53e586b75e48e1448f55a6111582ca66f26b091aff25a6ce08d64301bd4ea8}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 46 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_thread_pool_ad61cd31f1738bf2f33b2750fbe159c3f}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}
+\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-C\-X\-Plat\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-Pool\-::\-C\-X\-Plat\-Thread\-Pool} (
+\begin{DoxyParamCaption}
+\item[{int}]{i\-Pool\-Size = {\ttfamily 5}, }
+\item[{int}]{i\-Max\-Size = {\ttfamily 0}, }
+\item[{int}]{i\-Grow\-By = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_ad61cd31f1738bf2f33b2750fbe159c3f}
+
+
+\-Initial poolsize, maximum size to grow to, size to grow by when pool is grown. 
+
+\hyperlink{_c_x_plat_thread_pool_8cpp}{\-C\-X\-Plat\-Thread\-Pool.\-cpp}\-: implementation of the \hyperlink{class_c_x_plat_thread_pool}{\-C\-X\-Plat\-Thread\-Pool} class.
+
+\-This class manages a pool of \hyperlink{class_c_x_plat_pooled_thread}{\-C\-X\-Plat\-Pooled\-Thread} objects 
+
+\-Definition at line 31 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a9b6e9f0aa858efb30e8afa85b9c39927}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!$\sim$\-C\-X\-Plat\-Thread\-Pool@{$\sim$\-C\-X\-Plat\-Thread\-Pool}}
+\index{$\sim$\-C\-X\-Plat\-Thread\-Pool@{$\sim$\-C\-X\-Plat\-Thread\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-Pool\-::$\sim$\-C\-X\-Plat\-Thread\-Pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_pool_a9b6e9f0aa858efb30e8afa85b9c39927}
+
+
+\-Definition at line 51 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_thread_pool_a139b514b9f7111e2dadceca5a066b870}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Allocate\-Pooled\-Thread@{\-Allocate\-Pooled\-Thread}}
+\index{\-Allocate\-Pooled\-Thread@{\-Allocate\-Pooled\-Thread}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Allocate\-Pooled\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-C\-X\-Plat\-Pooled\-Thread}$\ast$ {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Allocate\-Pooled\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_x_plat_thread_pool_a139b514b9f7111e2dadceca5a066b870}
+
+
+\-Implement to allocate the proper type of derived pooled thread. 
+
+\hypertarget{class_c_x_plat_thread_pool_a9860a0943a82da693bd4f6465286faf6}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Get\-Available\-Threads@{\-Get\-Available\-Threads}}
+\index{\-Get\-Available\-Threads@{\-Get\-Available\-Threads}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Get\-Available\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Get\-Available\-Threads} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-T\-H\-R\-E\-A\-D\-\_\-\-P\-O\-O\-L\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-Avail\-Thread\-Pool, }
+\item[{int}]{i\-Needed, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Wait\-For\-At\-Least\-One = {\ttfamily {\bf \-T\-R\-U\-E}}, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Wait\-Time = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a9860a0943a82da693bd4f6465286faf6}
+\-Array will be set with available thread objects.
+
+\-If the return is $>$ 0, it's the number of threads returned. \-A return of $<$ 0 will be one of the above error enums.
+
+\-If b\-Wait\-For\-At\-Least\-One == \-T\-R\-U\-E, at least one thread must become available or the call will wait dw\-Wait\-Time ms before returning.
+
+\-Threads returned will be marked as allocated until the \hyperlink{class_c_x_plat_pooled_thread_a398deb73c58c851f5f93a6b3d5ba5106}{\-C\-X\-Plat\-Pooled\-Thread\-::\-Pooled\-Worker\-Function} returns. \-If \hyperlink{class_c_x_plat_pooled_thread_abe885544566fee0b5a07512c3202d120}{\-C\-X\-Plat\-Pooled\-Thread\-::\-Start\-Working} is never called, this thread will never become available again. 
+
+\-Definition at line 138 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a876bc703a2bd754d8171e8260d7e9468}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Get\-Current\-Size\-Of\-Pool@{\-Get\-Current\-Size\-Of\-Pool}}
+\index{\-Get\-Current\-Size\-Of\-Pool@{\-Get\-Current\-Size\-Of\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Get\-Current\-Size\-Of\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Get\-Current\-Size\-Of\-Pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a876bc703a2bd754d8171e8260d7e9468}
+
+
+\-Get how many threads are in the pool. 
+
+
+
+\-Definition at line 296 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a2d85a86f85582d5e87e35c11e6e34e49}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Get\-Max\-Size@{\-Get\-Max\-Size}}
+\index{\-Get\-Max\-Size@{\-Get\-Max\-Size}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Get\-Max\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Get\-Max\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a2d85a86f85582d5e87e35c11e6e34e49}
+
+
+\-Get the maximum size the thread pool can grow to. 
+
+
+
+\-Definition at line 311 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_aea64ec56b3a96b208967d981ec396a2a}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Grow\-Thread\-Pool@{\-Grow\-Thread\-Pool}}
+\index{\-Grow\-Thread\-Pool@{\-Grow\-Thread\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Grow\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Grow\-Thread\-Pool} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Init = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_aea64ec56b3a96b208967d981ec396a2a}
+
+
+\-Add threads to the pool. 
+
+
+
+\-Definition at line 82 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_ac5a354175af9cd8b981cec195f399681}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Init@{\-Init}}
+\index{\-Init@{\-Init}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Init} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_ac5a354175af9cd8b981cec195f399681}
+\-Derived classes should call this to initial the thread pool \-Can be called in the constructor 
+
+\-Definition at line 71 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a1f3073246e156c9a05ff392b968d533a}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Query\-Threads\-Available@{\-Query\-Threads\-Available}}
+\index{\-Query\-Threads\-Available@{\-Query\-Threads\-Available}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Query\-Threads\-Available}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Query\-Threads\-Available} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a1f3073246e156c9a05ff392b968d533a}
+\-How many threads are currently unallocated by requests? \-Note that you cannot depend on these threads remaining available if there is more than one than one thread of execution in your program that dispatches the threads. 
+
+\-Definition at line 266 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a213b7c0d9ac2e31b8e61b7aef9193e03}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Set\-Finish\-Wait\-Time@{\-Set\-Finish\-Wait\-Time}}
+\index{\-Set\-Finish\-Wait\-Time@{\-Set\-Finish\-Wait\-Time}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Set\-Finish\-Wait\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Set\-Finish\-Wait\-Time} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{l\-Wait\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a213b7c0d9ac2e31b8e61b7aef9193e03}
+
+
+\-Set the wait time when we are waiting for all threads to finish. 
+
+
+
+\-Definition at line 333 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a62539ea3f7f7f37a994657a197c89447}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Set\-Max\-Size@{\-Set\-Max\-Size}}
+\index{\-Set\-Max\-Size@{\-Set\-Max\-Size}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Set\-Max\-Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Set\-Max\-Size} (
+\begin{DoxyParamCaption}
+\item[{int}]{i\-Max\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a62539ea3f7f7f37a994657a197c89447}
+
+
+\-Set the maximum size the thread pool can grow to. 
+
+
+
+\-Definition at line 318 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a909ee6b050a921c8963c8f39ab98e1bd}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Shrink\-Pool@{\-Shrink\-Pool}}
+\index{\-Shrink\-Pool@{\-Shrink\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Shrink\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Shrink\-Pool} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a909ee6b050a921c8963c8f39ab98e1bd}
+
+
+\-Shrink the thread pool by one thread. 
+
+
+
+\-Definition at line 114 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_pool_a23928cd84c3136206f8b986263b55be3}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-Wait\-For\-All\-Threads\-To\-Finish@{\-Wait\-For\-All\-Threads\-To\-Finish}}
+\index{\-Wait\-For\-All\-Threads\-To\-Finish@{\-Wait\-For\-All\-Threads\-To\-Finish}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-Wait\-For\-All\-Threads\-To\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Thread\-Pool\-::\-Wait\-For\-All\-Threads\-To\-Finish} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_pool_a23928cd84c3136206f8b986263b55be3}
+
+
+\-Wait for all threads to finish. \-Do \-N\-O\-T call \-Get\-Available\-Threads at the same time. 
+
+
+
+\-Definition at line 324 of file \-C\-X\-Plat\-Thread\-Pool.\-cpp.
+
+
+
+\subsection{\-Friends \-And \-Related \-Function \-Documentation}
+\hypertarget{class_c_x_plat_thread_pool_ae5be1bd21210186249195fa418a3bbb8}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{\-C\-X\-Plat\-Pooled\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf \-C\-X\-Plat\-Pooled\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{class_c_x_plat_thread_pool_ae5be1bd21210186249195fa418a3bbb8}
+
+
+\-Definition at line 39 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_thread_pool_a28a2f5949bf10ec0eb0db3a65a4ade1f}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!b\-Shrinking@{b\-Shrinking}}
+\index{b\-Shrinking@{b\-Shrinking}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{b\-Shrinking}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-X\-Plat\-Thread\-Pool\-::b\-Shrinking}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a28a2f5949bf10ec0eb0db3a65a4ade1f}
+
+
+\-Definition at line 104 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_a119623bf09e081406a80ce845c7a8f4f}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!b\-Wait\-To\-Finish\-Set@{b\-Wait\-To\-Finish\-Set}}
+\index{b\-Wait\-To\-Finish\-Set@{b\-Wait\-To\-Finish\-Set}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{b\-Wait\-To\-Finish\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-X\-Plat\-Thread\-Pool\-::b\-Wait\-To\-Finish\-Set}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a119623bf09e081406a80ce845c7a8f4f}
+
+
+\-Definition at line 107 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_aa7ae22263bf54d6d7916bb332a63cb36}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!c\-Pool\-Crit\-Sect@{c\-Pool\-Crit\-Sect}}
+\index{c\-Pool\-Crit\-Sect@{c\-Pool\-Crit\-Sect}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{c\-Pool\-Crit\-Sect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-X\-Plat\-Thread\-Pool\-::c\-Pool\-Crit\-Sect}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_aa7ae22263bf54d6d7916bb332a63cb36}
+
+
+\-Our pool of threads. 
+
+
+
+\-Definition at line 97 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_a1c511e13b5f134b91494411a20fa1caa}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!c\-Thread\-Available\-Event@{c\-Thread\-Available\-Event}}
+\index{c\-Thread\-Available\-Event@{c\-Thread\-Available\-Event}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{c\-Thread\-Available\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-X\-Plat\-Thread\-Pool\-::c\-Thread\-Available\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a1c511e13b5f134b91494411a20fa1caa}
+
+
+\-To protect \-Thread\-Pool. 
+
+
+
+\-Definition at line 98 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_a64c478883d5d6d7f3a21ef87e9203b8d}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!c\-Thread\-Pool@{c\-Thread\-Pool}}
+\index{c\-Thread\-Pool@{c\-Thread\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{c\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-T\-H\-R\-E\-A\-D\-\_\-\-P\-O\-O\-L\-\_\-\-A\-R\-R\-A\-Y} {\bf \-C\-X\-Plat\-Thread\-Pool\-::c\-Thread\-Pool}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a64c478883d5d6d7f3a21ef87e9203b8d}
+
+
+\-Definition at line 96 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_af241301a871a1468678540d48fcc9985}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!i\-Grow\-By@{i\-Grow\-By}}
+\index{i\-Grow\-By@{i\-Grow\-By}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{i\-Grow\-By}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::i\-Grow\-By}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_af241301a871a1468678540d48fcc9985}
+
+
+\-Definition at line 103 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_aa68b8ad1860d7e86bb6030046876ac9e}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!i\-Max\-Threads\-Allowed@{i\-Max\-Threads\-Allowed}}
+\index{i\-Max\-Threads\-Allowed@{i\-Max\-Threads\-Allowed}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{i\-Max\-Threads\-Allowed}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::i\-Max\-Threads\-Allowed}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_aa68b8ad1860d7e86bb6030046876ac9e}
+
+
+\-Definition at line 102 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_ad48b1855b53944a36387466ec4edf075}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!i\-Original\-Threads\-In\-Pool@{i\-Original\-Threads\-In\-Pool}}
+\index{i\-Original\-Threads\-In\-Pool@{i\-Original\-Threads\-In\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{i\-Original\-Threads\-In\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::i\-Original\-Threads\-In\-Pool}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_ad48b1855b53944a36387466ec4edf075}
+
+
+\-Threads will set when they become available. 
+
+\-Shared event, a thread will reset when it becomes available 
+
+\-Definition at line 100 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_a2ee5c38caa32b73ea9ccb2688edbebd3}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!i\-Threads\-In\-Pool@{i\-Threads\-In\-Pool}}
+\index{i\-Threads\-In\-Pool@{i\-Threads\-In\-Pool}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{i\-Threads\-In\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-Pool\-::i\-Threads\-In\-Pool}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a2ee5c38caa32b73ea9ccb2688edbebd3}
+
+
+\-Definition at line 101 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+\hypertarget{class_c_x_plat_thread_pool_a29b4385ed2ab6e48190f2f8ebcd656a2}{\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!l\-Wait\-To\-Finish@{l\-Wait\-To\-Finish}}
+\index{l\-Wait\-To\-Finish@{l\-Wait\-To\-Finish}!CXPlatThreadPool@{\-C\-X\-Plat\-Thread\-Pool}}
+\subsubsection[{l\-Wait\-To\-Finish}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-C\-X\-Plat\-Thread\-Pool\-::l\-Wait\-To\-Finish}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_pool_a29b4385ed2ab6e48190f2f8ebcd656a2}
+
+
+\-Definition at line 105 of file \-C\-X\-Plat\-Thread\-Pool.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_thread_pool_8h}{\-C\-X\-Plat\-Thread\-Pool.\-h}\item 
+common/\hyperlink{_c_x_plat_thread_pool_8cpp}{\-C\-X\-Plat\-Thread\-Pool.\-cpp}\end{DoxyCompactItemize}

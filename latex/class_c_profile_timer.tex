@@ -1,0 +1,227 @@
+\hypertarget{class_c_profile_timer}{\section{\-C\-Profile\-Timer \-Class \-Reference}
+\label{class_c_profile_timer}\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}}
+}
+
+
+{\ttfamily \#include $<$\-C\-Profile\-Timer.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_profile_timer_a92dc183d7ad6024bbef9ddf7c11575e3}{\-C\-Profile\-Timer} ()
+\item 
+virtual \hyperlink{class_c_profile_timer_a509d0492413e3f19975744b9146cbf4f}{$\sim$\-C\-Profile\-Timer} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_a8ca922af73784e9a805b3fc91d99328e}{\-Start} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_ab2e930ba032083e6276940236bc78551}{\-Get\-Elapsed\-Time} (\hyperlink{class_elapsed_time}{\-Elapsed\-Time} \&c\-Elapsed, bool b\-Reset=true)
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_a46d890dae6ed61d728fecde8a68ead61}{\-Set\-Timestamp} (const char $\ast$p\-Label)
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_a45d63f2f6b9a92a5e7069cef9a402d38}{\-Get\-Elapsed} (\hyperlink{class_elapsed_time}{\-Elapsed\-Time} \&c\-Elapsed, const char $\ast$p\-Label1, const char $\ast$p\-Label2, bool b\-Mark\-Label2=false)
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_a2a4035c04b45fbb802d09fd4643fd6b5}{\-Get\-Elapsed\-Now} (\hyperlink{class_elapsed_time}{\-Elapsed\-Time} \&c\-Elapsed, const char $\ast$p\-Label1)
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_a79631bee05a1a67ed38bcaf32c24da7a}{\-Print\-Elapsed} (const char $\ast$p\-Label1, const char $\ast$p\-Label2, bool b\-Mark\-Label2=false, const char $\ast$p\-Tag=\-N\-U\-L\-L)
+\item 
+static long \hyperlink{class_c_profile_timer_a8375a594f2842375b5c53755c1c0ce1d}{\-Get\-Elapsed\-M\-S} (const char $\ast$p\-Label1, const char $\ast$p\-Label2, bool b\-Mark\-Label2=false)
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_profile_timer_ae4f2f0a7f4b60a7fbf1316da4021c59b}{\-Clear} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static struct timeval \hyperlink{class_c_profile_timer_a4d38b3a9eaa88823dadb431760140569}{\-Get\-Label\-Timestamp} (const char $\ast$p\-Label)
+\item 
+static \hyperlink{class_elapsed_time}{\-Elapsed\-Time} \hyperlink{class_c_profile_timer_a89f47c18a0f65740fcb6939646b99978}{\-Get\-Difference} (\hyperlink{class_elapsed_time}{\-Elapsed\-Time} \&c\-Elapsed, struct timeval $\ast$s\-T1, struct timeval $\ast$s\-T2)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct timeval \hyperlink{class_c_profile_timer_a4c80bee9e1f0f119a091f46888507b99}{s\-Start}
+\item 
+struct timeval \hyperlink{class_c_profile_timer_ac51e8e2333d5c218d86414a25d55f224}{s\-End}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 61 of file \-C\-Profile\-Timer.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_profile_timer_a92dc183d7ad6024bbef9ddf7c11575e3}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-C\-Profile\-Timer@{\-C\-Profile\-Timer}}
+\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-C\-Profile\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Profile\-Timer\-::\-C\-Profile\-Timer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_profile_timer_a92dc183d7ad6024bbef9ddf7c11575e3}
+
+
+\-Definition at line 28 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a509d0492413e3f19975744b9146cbf4f}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!$\sim$\-C\-Profile\-Timer@{$\sim$\-C\-Profile\-Timer}}
+\index{$\sim$\-C\-Profile\-Timer@{$\sim$\-C\-Profile\-Timer}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{$\sim$\-C\-Profile\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Profile\-Timer\-::$\sim$\-C\-Profile\-Timer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_profile_timer_a509d0492413e3f19975744b9146cbf4f}
+
+
+\-Definition at line 33 of file \-C\-Profile\-Timer.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_profile_timer_ae4f2f0a7f4b60a7fbf1316da4021c59b}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Clear@{\-Clear}}
+\index{\-Clear@{\-Clear}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Clear}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Clear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_ae4f2f0a7f4b60a7fbf1316da4021c59b}
+
+
+\-Definition at line 186 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a89f47c18a0f65740fcb6939646b99978}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Difference@{\-Get\-Difference}}
+\index{\-Get\-Difference@{\-Get\-Difference}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Difference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elapsed\-Time} {\bf \-C\-Profile\-Timer\-::\-Get\-Difference} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Elapsed\-Time} \&}]{c\-Elapsed, }
+\item[{struct timeval $\ast$}]{s\-T1, }
+\item[{struct timeval $\ast$}]{s\-T2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_profile_timer_a89f47c18a0f65740fcb6939646b99978}
+
+
+\-Definition at line 91 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a45d63f2f6b9a92a5e7069cef9a402d38}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Elapsed@{\-Get\-Elapsed}}
+\index{\-Get\-Elapsed@{\-Get\-Elapsed}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Elapsed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Get\-Elapsed} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Elapsed\-Time} \&}]{c\-Elapsed, }
+\item[{const char $\ast$}]{p\-Label1, }
+\item[{const char $\ast$}]{p\-Label2, }
+\item[{bool}]{b\-Mark\-Label2 = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_a45d63f2f6b9a92a5e7069cef9a402d38}
+
+
+\-Definition at line 116 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a8375a594f2842375b5c53755c1c0ce1d}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Elapsed\-M\-S@{\-Get\-Elapsed\-M\-S}}
+\index{\-Get\-Elapsed\-M\-S@{\-Get\-Elapsed\-M\-S}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Elapsed\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-Profile\-Timer\-::\-Get\-Elapsed\-M\-S} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Label1, }
+\item[{const char $\ast$}]{p\-Label2, }
+\item[{bool}]{b\-Mark\-Label2 = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_a8375a594f2842375b5c53755c1c0ce1d}
+
+
+\-Definition at line 175 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a2a4035c04b45fbb802d09fd4643fd6b5}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Elapsed\-Now@{\-Get\-Elapsed\-Now}}
+\index{\-Get\-Elapsed\-Now@{\-Get\-Elapsed\-Now}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Elapsed\-Now}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Get\-Elapsed\-Now} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Elapsed\-Time} \&}]{c\-Elapsed, }
+\item[{const char $\ast$}]{p\-Label1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_a2a4035c04b45fbb802d09fd4643fd6b5}
+
+
+\-Definition at line 136 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_ab2e930ba032083e6276940236bc78551}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Elapsed\-Time@{\-Get\-Elapsed\-Time}}
+\index{\-Get\-Elapsed\-Time@{\-Get\-Elapsed\-Time}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Elapsed\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Get\-Elapsed\-Time} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Elapsed\-Time} \&}]{c\-Elapsed, }
+\item[{bool}]{b\-Reset = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_c_profile_timer_ab2e930ba032083e6276940236bc78551}
+
+
+\-Definition at line 79 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a4d38b3a9eaa88823dadb431760140569}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Get\-Label\-Timestamp@{\-Get\-Label\-Timestamp}}
+\index{\-Get\-Label\-Timestamp@{\-Get\-Label\-Timestamp}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Get\-Label\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}struct timeval {\bf \-C\-Profile\-Timer\-::\-Get\-Label\-Timestamp} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, read, protected\mbox{]}}}}\label{class_c_profile_timer_a4d38b3a9eaa88823dadb431760140569}
+
+
+\-Definition at line 40 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a79631bee05a1a67ed38bcaf32c24da7a}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Print\-Elapsed@{\-Print\-Elapsed}}
+\index{\-Print\-Elapsed@{\-Print\-Elapsed}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Print\-Elapsed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Print\-Elapsed} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Label1, }
+\item[{const char $\ast$}]{p\-Label2, }
+\item[{bool}]{b\-Mark\-Label2 = {\ttfamily false}, }
+\item[{const char $\ast$}]{p\-Tag = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_a79631bee05a1a67ed38bcaf32c24da7a}
+
+
+\-Definition at line 155 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a46d890dae6ed61d728fecde8a68ead61}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Set\-Timestamp@{\-Set\-Timestamp}}
+\index{\-Set\-Timestamp@{\-Set\-Timestamp}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Set\-Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Set\-Timestamp} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_profile_timer_a46d890dae6ed61d728fecde8a68ead61}
+
+
+\-Definition at line 58 of file \-C\-Profile\-Timer.\-cpp.
+
+\hypertarget{class_c_profile_timer_a8ca922af73784e9a805b3fc91d99328e}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!\-Start@{\-Start}}
+\index{\-Start@{\-Start}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{\-Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Profile\-Timer\-::\-Start} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_profile_timer_a8ca922af73784e9a805b3fc91d99328e}
+
+
+\-Definition at line 73 of file \-C\-Profile\-Timer.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_profile_timer_ac51e8e2333d5c218d86414a25d55f224}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!s\-End@{s\-End}}
+\index{s\-End@{s\-End}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{s\-End}]{\setlength{\rightskip}{0pt plus 5cm}struct timeval {\bf \-C\-Profile\-Timer\-::s\-End}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_profile_timer_ac51e8e2333d5c218d86414a25d55f224}
+
+
+\-Definition at line 90 of file \-C\-Profile\-Timer.\-h.
+
+\hypertarget{class_c_profile_timer_a4c80bee9e1f0f119a091f46888507b99}{\index{\-C\-Profile\-Timer@{\-C\-Profile\-Timer}!s\-Start@{s\-Start}}
+\index{s\-Start@{s\-Start}!CProfileTimer@{\-C\-Profile\-Timer}}
+\subsubsection[{s\-Start}]{\setlength{\rightskip}{0pt plus 5cm}struct timeval {\bf \-C\-Profile\-Timer\-::s\-Start}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_profile_timer_a4c80bee9e1f0f119a091f46888507b99}
+
+
+\-Definition at line 89 of file \-C\-Profile\-Timer.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_profile_timer_8h}{\-C\-Profile\-Timer.\-h}\item 
+common/\hyperlink{_c_profile_timer_8cpp}{\-C\-Profile\-Timer.\-cpp}\end{DoxyCompactItemize}

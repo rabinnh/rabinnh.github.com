@@ -1,0 +1,145 @@
+\hypertarget{class_c_spore_encrypt}{\section{\-C\-Spore\-Encrypt \-Class \-Reference}
+\label{class_c_spore_encrypt}\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}}
+}
+
+
+\-Class to encrypt data.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Spore\-Encrypt.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_spore_encrypt_a6e14ddd8318a19377f0495c1dde02d12}{\-C\-Spore\-Encrypt} ()
+\item 
+virtual \hyperlink{class_c_spore_encrypt_a329bba299e2830874dff58a6a8fd06e0}{$\sim$\-C\-Spore\-Encrypt} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_spore_encrypt_a86040e68be4b03236eb4effbbd267239}{\-B\-F\-\_\-encrypt} (const unsigned char $\ast$keydata, int keydatalen, unsigned char $\ast$in, unsigned char $\ast$out, unsigned int inlen)
+\begin{DoxyCompactList}\small\item\em \-Encrypt buffer. \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_spore_encrypt_a7dbc2b457ebf62ed52d4f004254914e9}{\-B\-F\-\_\-decrypt} (const unsigned char $\ast$keydata, int keydatalen, unsigned char $\ast$in, unsigned char $\ast$out, unsigned int inlen)
+\begin{DoxyCompactList}\small\item\em \-Decrypt buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_c_spore_encrypt_a6a83763486e61a888a59470f4d49a92f}{i\-Key\-Size} = 0
+\item 
+static unsigned char $\ast$ \hyperlink{class_c_spore_encrypt_ace12b5cef18687d97bab31ea9ebfb787}{uc\-Key} = \-N\-U\-L\-L
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_spore_encrypt_a89e49dc2b208c23d0072730ca5b5436a}{\-Get\-Key} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Class to encrypt data. 
+
+\-Definition at line 17 of file \-C\-Spore\-Encrypt.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_spore_encrypt_a6e14ddd8318a19377f0495c1dde02d12}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}}
+\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{\-C\-Spore\-Encrypt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Spore\-Encrypt\-::\-C\-Spore\-Encrypt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_spore_encrypt_a6e14ddd8318a19377f0495c1dde02d12}
+
+
+\-Definition at line 14 of file \-C\-Spore\-Encrypt.\-cpp.
+
+\hypertarget{class_c_spore_encrypt_a329bba299e2830874dff58a6a8fd06e0}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!$\sim$\-C\-Spore\-Encrypt@{$\sim$\-C\-Spore\-Encrypt}}
+\index{$\sim$\-C\-Spore\-Encrypt@{$\sim$\-C\-Spore\-Encrypt}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{$\sim$\-C\-Spore\-Encrypt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Spore\-Encrypt\-::$\sim$\-C\-Spore\-Encrypt} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_spore_encrypt_a329bba299e2830874dff58a6a8fd06e0}
+
+
+\-Definition at line 19 of file \-C\-Spore\-Encrypt.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_spore_encrypt_a7dbc2b457ebf62ed52d4f004254914e9}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!\-B\-F\-\_\-decrypt@{\-B\-F\-\_\-decrypt}}
+\index{\-B\-F\-\_\-decrypt@{\-B\-F\-\_\-decrypt}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{\-B\-F\-\_\-decrypt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Spore\-Encrypt\-::\-B\-F\-\_\-decrypt} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{keydata, }
+\item[{int}]{keydatalen, }
+\item[{unsigned char $\ast$}]{in, }
+\item[{unsigned char $\ast$}]{out, }
+\item[{unsigned int}]{inlen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_spore_encrypt_a7dbc2b457ebf62ed52d4f004254914e9}
+
+
+\-Decrypt buffer. 
+
+
+
+\-Definition at line 69 of file \-C\-Spore\-Encrypt.\-cpp.
+
+\hypertarget{class_c_spore_encrypt_a86040e68be4b03236eb4effbbd267239}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!\-B\-F\-\_\-encrypt@{\-B\-F\-\_\-encrypt}}
+\index{\-B\-F\-\_\-encrypt@{\-B\-F\-\_\-encrypt}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{\-B\-F\-\_\-encrypt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Spore\-Encrypt\-::\-B\-F\-\_\-encrypt} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{keydata, }
+\item[{int}]{keydatalen, }
+\item[{unsigned char $\ast$}]{in, }
+\item[{unsigned char $\ast$}]{out, }
+\item[{unsigned int}]{inlen}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_spore_encrypt_a86040e68be4b03236eb4effbbd267239}
+
+
+\-Encrypt buffer. 
+
+
+
+\-Definition at line 57 of file \-C\-Spore\-Encrypt.\-cpp.
+
+\hypertarget{class_c_spore_encrypt_a89e49dc2b208c23d0072730ca5b5436a}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!\-Get\-Key@{\-Get\-Key}}
+\index{\-Get\-Key@{\-Get\-Key}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{\-Get\-Key}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Spore\-Encrypt\-::\-Get\-Key} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_spore_encrypt_a89e49dc2b208c23d0072730ca5b5436a}
+
+
+\-Definition at line 25 of file \-C\-Spore\-Encrypt.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_spore_encrypt_a6a83763486e61a888a59470f4d49a92f}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!i\-Key\-Size@{i\-Key\-Size}}
+\index{i\-Key\-Size@{i\-Key\-Size}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{i\-Key\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Spore\-Encrypt\-::i\-Key\-Size} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_spore_encrypt_a6a83763486e61a888a59470f4d49a92f}
+
+
+\-Definition at line 32 of file \-C\-Spore\-Encrypt.\-h.
+
+\hypertarget{class_c_spore_encrypt_ace12b5cef18687d97bab31ea9ebfb787}{\index{\-C\-Spore\-Encrypt@{\-C\-Spore\-Encrypt}!uc\-Key@{uc\-Key}}
+\index{uc\-Key@{uc\-Key}!CSporeEncrypt@{\-C\-Spore\-Encrypt}}
+\subsubsection[{uc\-Key}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ {\bf \-C\-Spore\-Encrypt\-::uc\-Key} = \-N\-U\-L\-L\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_spore_encrypt_ace12b5cef18687d97bab31ea9ebfb787}
+
+
+\-Definition at line 33 of file \-C\-Spore\-Encrypt.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_spore_encrypt_8h}{\-C\-Spore\-Encrypt.\-h}\item 
+common/\hyperlink{_c_spore_encrypt_8cpp}{\-C\-Spore\-Encrypt.\-cpp}\end{DoxyCompactItemize}

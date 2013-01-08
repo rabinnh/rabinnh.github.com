@@ -1,0 +1,372 @@
+\hypertarget{class_c_x_plat_thread}{\section{\-C\-X\-Plat\-Thread \-Class \-Reference}
+\label{class_c_x_plat_thread}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}
+}
+
+
+\hyperlink{_c_x_plat_thread_8h}{\-C\-X\-Plat\-Thread.\-h}\-: interface for the \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} class.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Thread.\-h$>$}
+
+\-Inheritance diagram for \-C\-X\-Plat\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.301370cm]{class_c_x_plat_thread}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} \{ \*
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad690f503ed52e84a4f3f6fa6e7e45b8b}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S} =  0, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a85f85b8c4e331da05995a226a512150b}{\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D} =  1, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad7fcefbaab4a06bc3814466a1faf7987}{\-S\-U\-S\-P\-E\-N\-D\-E\-D} =  2, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a2cb33518684a999f5dc00146f87b2682}{\-R\-E\-S\-U\-M\-E\-D} =  3, 
+\*
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae23d2a18cc876c05165d4848b163fa99}{\-R\-U\-N\-N\-I\-N\-G} =  4, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01aaf29b416710281928ad716461bb322da}{\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T} =  5, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae0213d5c510838b55938a9ed76217b36}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D} =  6, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ac3cf31918d7ef196c6f0eca2bc3d6555}{\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D} =  7, 
+\*
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a851b62a0b0daf4518f0e1341c7002049}{\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M} =  8, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a49d7b2b48d143f09ac78515689fb9d94}{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T} =  9, 
+\hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01af58795605d44445786b30d841a9998e8}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G} =  10
+ \}
+\begin{DoxyCompactList}\small\item\em \-Current status of threads. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_thread_a1eb15fa5d9fd621822bce0ef40cc25ed}{\-C\-X\-Plat\-Thread} ()
+\item 
+virtual \hyperlink{class_c_x_plat_thread_a3ce5dcd1f7b89fe1aff7650914d8e2c9}{$\sim$\-C\-X\-Plat\-Thread} ()
+\item 
+virtual \hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} \hyperlink{class_c_x_plat_thread_a9ebb03bd1483413fbcbdb6510a67167f}{\-Start\-Thread} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Start\-Suspended=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\item 
+virtual \hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} \hyperlink{class_c_x_plat_thread_a1f6aeadb170ca467a5a07cde7104e362}{\-Suspend\-Thread} ()
+\begin{DoxyCompactList}\small\item\em \-Suspend thread. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} \hyperlink{class_c_x_plat_thread_ab8332931990edf82093e5905d4fd2c36}{\-Resume\-Thread} ()
+\begin{DoxyCompactList}\small\item\em \-Resume thread. \end{DoxyCompactList}\item 
+virtual \hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} \hyperlink{class_c_x_plat_thread_a18d5ad4291e0adb5c54694043aebd4f2}{\-Get\-Thread\-Handle} ()
+\begin{DoxyCompactList}\small\item\em \-Return the thread handle. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} \hyperlink{class_c_x_plat_thread_a5f60c36cb20e3b5d85d8ef506d9d8bf1}{\-Get\-Thread\-Status} ()
+\begin{DoxyCompactList}\small\item\em \-Check to see if thread is active. \end{DoxyCompactList}\item 
+virtual \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} \hyperlink{class_c_x_plat_thread_ab68b6494893d24b365e317bff78b3a9e}{\-Wait\-For\-Thread\-Completion} (\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\begin{DoxyCompactList}\small\item\em \-Wait for a thread to termintate. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_x_plat_thread_a1ed5f6517c305e9cfa981a60a0d191e7}{\-Get\-Thread\-Type} ()
+\begin{DoxyCompactList}\small\item\em \-Return a user defined thread type \-I\-D. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_x_plat_thread_ae85703ff3ca0b8516f1a0e75bd937667}{\-Detach\-Thread} ()
+\begin{DoxyCompactList}\small\item\em \-You must either detach the thread or join it for proper cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_aeb38ce2a0b264d0da5c3c5d26460f851}{\-Is\-Thread\-Active} (\hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} h\-Thread)
+\begin{DoxyCompactList}\small\item\em \-Check to see if a thread is active. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)=0
+\begin{DoxyCompactList}\small\item\em \-Called by \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} to start work in object context. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_thread_aa7337490cd6399730aaeee9497835455}{\-Close\-Thread\-Handle} ()
+\begin{DoxyCompactList}\small\item\em \-Close handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_a91939e9102e3d7a3be728e861e2e4344}{b\-Suspended}
+\item 
+\hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} \hyperlink{class_c_x_plat_thread_af20b7c1d6babaa0ecb429d3e6d846cc4}{h\-Thread\-Handle}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ \hyperlink{class_c_x_plat_thread_a836a233113a162ba4628478b1e230dcf}{p\-User\-Parm}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_aebdedede286d9cf03841c44615478e4a}{b\-Detached}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_thread_a15720f77b93771acd0d2b59f042eb8d6}{b\-Joined}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{_c_x_plat_thread_8h}{\-C\-X\-Plat\-Thread.\-h}\-: interface for the \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} class. 
+
+\-Created\-: \-Richard \-A. \-Bross \-N\-O\-T\-E\-S\-: \-On \-Unix platforms, every thread must be either detached or \-Wait\-For\-Thread\-Completion(\-I\-N\-F\-I\-N\-I\-T\-E) must be called for proper cleanup. \-If \-Wait\-For\-Thread\-Completion is called with any timeout other than \-I\-N\-F\-I\-N\-I\-T\-E, and it times out, you must then call either \-Detach\-Thread or \-Wait\-For\-Thread\-Completion(\-I\-N\-F\-I\-N\-I\-T\-E) if you wish to ensure proper cleanup prior to detruction of the object..
+
+\-However, if neither has been called, and the object is deleted the destructor will automatically call \-Wait\-For\-Thread\-Completion(\-I\-N\-F\-I\-N\-I\-T\-E). \-\_\-\-M\-S\-C\-\_\-\-V\-E\-R $>$= 1000 
+
+\-Definition at line 43 of file \-C\-X\-Plat\-Thread.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S@{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S}}
+\index{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S@{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-C\-X\-Plat\-Thread\-::\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S}}}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01}
+
+
+\-Current status of threads. 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S@{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S@{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad690f503ed52e84a4f3f6fa6e7e45b8b}{\-T\-H\-R\-E\-A\-D\-\_\-\-S\-U\-C\-C\-E\-S\-S}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad690f503ed52e84a4f3f6fa6e7e45b8b}
+}]\index{\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D@{\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D@{\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a85f85b8c4e331da05995a226a512150b}{\-N\-O\-T\-\_\-\-S\-T\-A\-R\-T\-E\-D}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a85f85b8c4e331da05995a226a512150b}
+}]\index{\-S\-U\-S\-P\-E\-N\-D\-E\-D@{\-S\-U\-S\-P\-E\-N\-D\-E\-D}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-S\-U\-S\-P\-E\-N\-D\-E\-D@{\-S\-U\-S\-P\-E\-N\-D\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad7fcefbaab4a06bc3814466a1faf7987}{\-S\-U\-S\-P\-E\-N\-D\-E\-D}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ad7fcefbaab4a06bc3814466a1faf7987}
+}]\index{\-R\-E\-S\-U\-M\-E\-D@{\-R\-E\-S\-U\-M\-E\-D}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-R\-E\-S\-U\-M\-E\-D@{\-R\-E\-S\-U\-M\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a2cb33518684a999f5dc00146f87b2682}{\-R\-E\-S\-U\-M\-E\-D}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a2cb33518684a999f5dc00146f87b2682}
+}]\index{\-R\-U\-N\-N\-I\-N\-G@{\-R\-U\-N\-N\-I\-N\-G}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-R\-U\-N\-N\-I\-N\-G@{\-R\-U\-N\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae23d2a18cc876c05165d4848b163fa99}{\-R\-U\-N\-N\-I\-N\-G}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae23d2a18cc876c05165d4848b163fa99}
+}]\index{\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T@{\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T@{\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01aaf29b416710281928ad716461bb322da}{\-C\-A\-N\-T\-\_\-\-S\-T\-A\-R\-T}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01aaf29b416710281928ad716461bb322da}
+}]\index{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae0213d5c510838b55938a9ed76217b36}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-S\-U\-S\-P\-E\-N\-D\-E\-D}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ae0213d5c510838b55938a9ed76217b36}
+}]\index{\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D@{\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D@{\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ac3cf31918d7ef196c6f0eca2bc3d6555}{\-T\-H\-R\-E\-A\-D\-\_\-\-T\-E\-R\-M\-I\-N\-A\-T\-E\-D}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01ac3cf31918d7ef196c6f0eca2bc3d6555}
+}]\index{\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M@{\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M@{\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a851b62a0b0daf4518f0e1341c7002049}{\-N\-O\-T\-\_\-\-S\-U\-P\-P\-O\-R\-T\-E\-D\-\_\-\-O\-N\-\_\-\-P\-L\-A\-T\-F\-O\-R\-M}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a851b62a0b0daf4518f0e1341c7002049}
+}]\index{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T@{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T@{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a49d7b2b48d143f09ac78515689fb9d94}{\-I\-N\-V\-A\-L\-I\-D\-\_\-\-R\-E\-Q\-U\-E\-S\-T}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01a49d7b2b48d143f09ac78515689fb9d94}
+}]\index{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G@{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G}}\item[{\em 
+\hypertarget{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01af58795605d44445786b30d841a9998e8}{\-A\-L\-R\-E\-A\-D\-Y\-\_\-\-R\-U\-N\-N\-I\-N\-G}\label{class_c_x_plat_thread_a15b8bc4370560890e1a1ae0dce671c01af58795605d44445786b30d841a9998e8}
+}]\-Trying to wait on a detached thread or detach a joined (\-Wait\-For\-Thread\-Completion) thread. \end{description}
+\end{Desc}
+
+
+
+\-Definition at line 50 of file \-C\-X\-Plat\-Thread.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_thread_a1eb15fa5d9fd621822bce0ef40cc25ed}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}}
+\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-C\-X\-Plat\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::\-C\-X\-Plat\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_thread_a1eb15fa5d9fd621822bce0ef40cc25ed}
+
+
+\-Definition at line 47 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a3ce5dcd1f7b89fe1aff7650914d8e2c9}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!$\sim$\-C\-X\-Plat\-Thread@{$\sim$\-C\-X\-Plat\-Thread}}
+\index{$\sim$\-C\-X\-Plat\-Thread@{$\sim$\-C\-X\-Plat\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::$\sim$\-C\-X\-Plat\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a3ce5dcd1f7b89fe1aff7650914d8e2c9}
+
+
+\-Definition at line 57 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_thread_aa7337490cd6399730aaeee9497835455}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Close\-Thread\-Handle@{\-Close\-Thread\-Handle}}
+\index{\-Close\-Thread\-Handle@{\-Close\-Thread\-Handle}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Close\-Thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Thread\-::\-Close\-Thread\-Handle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_aa7337490cd6399730aaeee9497835455}
+
+
+\-Close handle. 
+
+
+
+\-Definition at line 268 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_ae85703ff3ca0b8516f1a0e75bd937667}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Detach\-Thread@{\-Detach\-Thread}}
+\index{\-Detach\-Thread@{\-Detach\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Detach\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-::\-Detach\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_ae85703ff3ca0b8516f1a0e75bd937667}
+
+
+\-You must either detach the thread or join it for proper cleanup. 
+
+
+
+\-Definition at line 309 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a18d5ad4291e0adb5c54694043aebd4f2}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Get\-Thread\-Handle@{\-Get\-Thread\-Handle}}
+\index{\-Get\-Thread\-Handle@{\-Get\-Thread\-Handle}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Get\-Thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} {\bf \-C\-X\-Plat\-Thread\-::\-Get\-Thread\-Handle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a18d5ad4291e0adb5c54694043aebd4f2}
+
+
+\-Return the thread handle. 
+
+
+
+\-Definition at line 163 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a5f60c36cb20e3b5d85d8ef506d9d8bf1}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Get\-Thread\-Status@{\-Get\-Thread\-Status}}
+\index{\-Get\-Thread\-Status@{\-Get\-Thread\-Status}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Get\-Thread\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} {\bf \-C\-X\-Plat\-Thread\-::\-Get\-Thread\-Status} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a5f60c36cb20e3b5d85d8ef506d9d8bf1}
+
+
+\-Check to see if thread is active. 
+
+
+
+\-Definition at line 187 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a1ed5f6517c305e9cfa981a60a0d191e7}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Get\-Thread\-Type@{\-Get\-Thread\-Type}}
+\index{\-Get\-Thread\-Type@{\-Get\-Thread\-Type}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Get\-Thread\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Thread\-::\-Get\-Thread\-Type} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a1ed5f6517c305e9cfa981a60a0d191e7}
+
+
+\-Return a user defined thread type \-I\-D. 
+
+
+
+\-Definition at line 260 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_aeb38ce2a0b264d0da5c3c5d26460f851}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Is\-Thread\-Active@{\-Is\-Thread\-Active}}
+\index{\-Is\-Thread\-Active@{\-Is\-Thread\-Active}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Is\-Thread\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-::\-Is\-Thread\-Active} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}}]{h\-Thread}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_x_plat_thread_aeb38ce2a0b264d0da5c3c5d26460f851}
+
+
+\-Check to see if a thread is active. 
+
+
+
+\-Definition at line 284 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_ab8332931990edf82093e5905d4fd2c36}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Resume\-Thread@{\-Resume\-Thread}}
+\index{\-Resume\-Thread@{\-Resume\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Resume\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} {\bf \-C\-X\-Plat\-Thread\-::\-Resume\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_ab8332931990edf82093e5905d4fd2c36}
+
+
+\-Resume thread. 
+
+
+
+\-Definition at line 140 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a9ebb03bd1483413fbcbdb6510a67167f}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Start\-Thread@{\-Start\-Thread}}
+\index{\-Start\-Thread@{\-Start\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Start\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} {\bf \-C\-X\-Plat\-Thread\-::\-Start\-Thread} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Start\-Suspended = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a9ebb03bd1483413fbcbdb6510a67167f}
+\-Start thread execution \-Passing the \char`\"{}this\char`\"{} pointer here is redundant\-: your \-Worker\-Function will be called in object context. 
+
+\-Definition at line 65 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_a1f6aeadb170ca467a5a07cde7104e362}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Suspend\-Thread@{\-Suspend\-Thread}}
+\index{\-Suspend\-Thread@{\-Suspend\-Thread}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Suspend\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-::\-T\-H\-R\-E\-A\-D\-\_\-\-S\-T\-A\-T\-U\-S} {\bf \-C\-X\-Plat\-Thread\-::\-Suspend\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_a1f6aeadb170ca467a5a07cde7104e362}
+
+
+\-Suspend thread. 
+
+
+
+\-Definition at line 115 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_ab68b6494893d24b365e317bff78b3a9e}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Wait\-For\-Thread\-Completion@{\-Wait\-For\-Thread\-Completion}}
+\index{\-Wait\-For\-Thread\-Completion@{\-Wait\-For\-Thread\-Completion}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Wait\-For\-Thread\-Completion}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-W\-O\-R\-D} {\bf \-C\-X\-Plat\-Thread\-::\-Wait\-For\-Thread\-Completion} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_thread_ab68b6494893d24b365e317bff78b3a9e}
+
+
+\-Wait for a thread to termintate. 
+
+
+
+\-Definition at line 211 of file \-C\-X\-Plat\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned {\bf \-C\-X\-Plat\-Thread\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}
+
+
+\-Called by \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} to start work in object context. 
+
+
+
+\-Implemented in \hyperlink{class_c_d_b_publisher_afc97488b3517b0d78331b6c54475ab81}{\-C\-D\-B\-Publisher}, \hyperlink{class_c_x_plat_pooled_thread_a8b181531a0345e3e3b7381122766218f}{\-C\-X\-Plat\-Pooled\-Thread}, \hyperlink{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}{\-C\-P\-Handler}, \hyperlink{class_c_u_d_p_socket_ab33c06fd2594ab658f8addbb1a4944aa}{\-C\-U\-D\-P\-Socket}, \hyperlink{class_c_p_client_handler_a88117dfe5e1e6d2f5d953277bc1a3044}{\-C\-P\-Client\-Handler}, \hyperlink{class_c_p_connection_handler_ad7e761b11abc80ceb4573821f38a4244}{\-C\-P\-Connection\-Handler}, and \hyperlink{class_c_flush_log_thread_a05b87f7942b745eb6a0f128b564cc9f6}{\-C\-Flush\-Log\-Thread}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_thread_aebdedede286d9cf03841c44615478e4a}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!b\-Detached@{b\-Detached}}
+\index{b\-Detached@{b\-Detached}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{b\-Detached}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-::b\-Detached}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_aebdedede286d9cf03841c44615478e4a}
+
+
+\-Definition at line 98 of file \-C\-X\-Plat\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_thread_a15720f77b93771acd0d2b59f042eb8d6}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!b\-Joined@{b\-Joined}}
+\index{b\-Joined@{b\-Joined}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{b\-Joined}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-::b\-Joined}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_a15720f77b93771acd0d2b59f042eb8d6}
+
+
+\-Definition at line 99 of file \-C\-X\-Plat\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_thread_a91939e9102e3d7a3be728e861e2e4344}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!b\-Suspended@{b\-Suspended}}
+\index{b\-Suspended@{b\-Suspended}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{b\-Suspended}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Thread\-::b\-Suspended}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_a91939e9102e3d7a3be728e861e2e4344}
+
+
+\-Definition at line 94 of file \-C\-X\-Plat\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_thread_af20b7c1d6babaa0ecb429d3e6d846cc4}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!h\-Thread\-Handle@{h\-Thread\-Handle}}
+\index{h\-Thread\-Handle@{h\-Thread\-Handle}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{h\-Thread\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} {\bf \-C\-X\-Plat\-Thread\-::h\-Thread\-Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_af20b7c1d6babaa0ecb429d3e6d846cc4}
+
+
+\-Definition at line 95 of file \-C\-X\-Plat\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_thread_a836a233113a162ba4628478b1e230dcf}{\index{\-C\-X\-Plat\-Thread@{\-C\-X\-Plat\-Thread}!p\-User\-Parm@{p\-User\-Parm}}
+\index{p\-User\-Parm@{p\-User\-Parm}!CXPlatThread@{\-C\-X\-Plat\-Thread}}
+\subsubsection[{p\-User\-Parm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ {\bf \-C\-X\-Plat\-Thread\-::p\-User\-Parm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_thread_a836a233113a162ba4628478b1e230dcf}
+
+
+\-Definition at line 96 of file \-C\-X\-Plat\-Thread.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_thread_8h}{\-C\-X\-Plat\-Thread.\-h}\item 
+common/\hyperlink{_c_x_plat_thread_8cpp}{\-C\-X\-Plat\-Thread.\-cpp}\end{DoxyCompactItemize}

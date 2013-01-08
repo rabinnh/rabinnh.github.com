@@ -1,0 +1,242 @@
+\hypertarget{class_check_mem_signature}{\section{\-Check\-Mem\-Signature \-Class \-Reference}
+\label{class_check_mem_signature}\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}}
+}
+
+
+{\ttfamily \#include $<$\-Check\-Mem\-Signature.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_check_mem_signature_a3cc20e6a1eb1424cc62d488562aec572}{\-Check\-Mem\-Signature} (bool b\-Mem\-Log=true)
+\item 
+virtual \hyperlink{class_check_mem_signature_a7c24bca0f4aadb879ce156e732a19aa3}{$\sim$\-Check\-Mem\-Signature} ()
+\item 
+bool \hyperlink{class_check_mem_signature_a4973b2795d5e8c1e396f9aed771ffeaa}{\-Get\-Result} ()
+\begin{DoxyCompactList}\small\item\em \-Return the result of the hardware check. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{class_check_mem_signature_ac1493574a1581fdd477a252fdf9266fd}{\-Get\-M\-D5\-Hash} (unsigned char $\ast$p\-Buffer, int i\-Buf\-Len)
+\begin{DoxyCompactList}\small\item\em \-Get an \-M\-D5 hash. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_check_mem_signature_a3686ee9da391a0927c079a4c451c843e}{\-Display\-Key} ()
+\begin{DoxyCompactList}\small\item\em \-Get the hardware key. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_check_mem_signature_af4453571e33116b38b15df61ca190dc3}{\-Get\-Serial\-Number} ()
+\begin{DoxyCompactList}\small\item\em \-Get serial number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{class_check_mem_signature_afc2a181bcd1a9253d9b830371a05d5b6}{uc\-Hardware\-Key} \mbox{[}\hyperlink{_check_mem_signature_8h_a42eb19b10bf0faee9c8decb218bdeae9}{\-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_check_mem_signature_afe91f6cdc48a291269f3aceeb58d5adf}{\-Read\-Physical\-Mem} (int i\-Offset, int i\-Size, unsigned char $\ast$p\-Buffer)
+\begin{DoxyCompactList}\small\item\em \-Read physical memory. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{class_check_mem_signature_a6cb439070a1f5f8810dfc70e73287a9d}{\-Get\-Hardware\-Key} ()
+\begin{DoxyCompactList}\small\item\em \-Get a hardware specific key. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_check_mem_signature_a9eff44e59aa539037f2bda3962a1779a}{\-Convert\-Hex\-Byte} (const char $\ast$p\-Hex)
+\begin{DoxyCompactList}\small\item\em \-Convert hex byte string to unsigned char. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_check_mem_signature_aa8bcf6c0a50ca2d2852842650a4a657d}{\-Get\-I\-Pv6\-Mac\-Addr} (const char $\ast$str\-If\-Name)
+\begin{DoxyCompactList}\small\item\em \-Given the interface name (ex; \char`\"{}eth0\char`\"{}) get the \-I\-Pv6 \-M\-A\-C address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{class_check_mem_signature_a1a0d503c7970aa5a4e2ba485216192f1}{md\-\_\-value} \mbox{[}\-E\-V\-P\-\_\-\-M\-A\-X\-\_\-\-M\-D\-\_\-\-S\-I\-Z\-E\mbox{]}
+\item 
+string \hyperlink{class_check_mem_signature_af12542838da42abf26d31b4b1c68f822}{ipv6mac}
+\item 
+string \hyperlink{class_check_mem_signature_adcd4f7e90f5a03d961560db27fd713b3}{s\-Serial\-No}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class must be changed for each type of hardware a program is going to be run on. \-Given a physical memory location (usually in the \-B\-I\-O\-S) it will check that we are on the proper \-H\-W. 
+
+\-Definition at line 44 of file \-Check\-Mem\-Signature.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_check_mem_signature_a3cc20e6a1eb1424cc62d488562aec572}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}}
+\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Check\-Mem\-Signature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Check\-Mem\-Signature\-::\-Check\-Mem\-Signature} (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-Mem\-Log = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_check_mem_signature_a3cc20e6a1eb1424cc62d488562aec572}
+
+
+\-Definition at line 13 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_a7c24bca0f4aadb879ce156e732a19aa3}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!$\sim$\-Check\-Mem\-Signature@{$\sim$\-Check\-Mem\-Signature}}
+\index{$\sim$\-Check\-Mem\-Signature@{$\sim$\-Check\-Mem\-Signature}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{$\sim$\-Check\-Mem\-Signature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Check\-Mem\-Signature\-::$\sim$\-Check\-Mem\-Signature} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_check_mem_signature_a7c24bca0f4aadb879ce156e732a19aa3}
+
+
+\-Definition at line 24 of file \-Check\-Mem\-Signature.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_check_mem_signature_a9eff44e59aa539037f2bda3962a1779a}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Convert\-Hex\-Byte@{\-Convert\-Hex\-Byte}}
+\index{\-Convert\-Hex\-Byte@{\-Convert\-Hex\-Byte}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Convert\-Hex\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf \-Check\-Mem\-Signature\-::\-Convert\-Hex\-Byte} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Hex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_a9eff44e59aa539037f2bda3962a1779a}
+
+
+\-Convert hex byte string to unsigned char. 
+
+
+
+\-Definition at line 253 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_a3686ee9da391a0927c079a4c451c843e}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Display\-Key@{\-Display\-Key}}
+\index{\-Display\-Key@{\-Display\-Key}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Display\-Key}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-Check\-Mem\-Signature\-::\-Display\-Key} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_check_mem_signature_a3686ee9da391a0927c079a4c451c843e}
+
+
+\-Get the hardware key. 
+
+
+
+\-Definition at line 180 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_a6cb439070a1f5f8810dfc70e73287a9d}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Get\-Hardware\-Key@{\-Get\-Hardware\-Key}}
+\index{\-Get\-Hardware\-Key@{\-Get\-Hardware\-Key}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Get\-Hardware\-Key}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ {\bf \-Check\-Mem\-Signature\-::\-Get\-Hardware\-Key} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_a6cb439070a1f5f8810dfc70e73287a9d}
+
+
+\-Get a hardware specific key. 
+
+
+
+\-Definition at line 147 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_aa8bcf6c0a50ca2d2852842650a4a657d}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Get\-I\-Pv6\-Mac\-Addr@{\-Get\-I\-Pv6\-Mac\-Addr}}
+\index{\-Get\-I\-Pv6\-Mac\-Addr@{\-Get\-I\-Pv6\-Mac\-Addr}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Get\-I\-Pv6\-Mac\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-Check\-Mem\-Signature\-::\-Get\-I\-Pv6\-Mac\-Addr} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str\-If\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_aa8bcf6c0a50ca2d2852842650a4a657d}
+
+
+\-Given the interface name (ex; \char`\"{}eth0\char`\"{}) get the \-I\-Pv6 \-M\-A\-C address. 
+
+
+
+\-Definition at line 265 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_ac1493574a1581fdd477a252fdf9266fd}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Get\-M\-D5\-Hash@{\-Get\-M\-D5\-Hash}}
+\index{\-Get\-M\-D5\-Hash@{\-Get\-M\-D5\-Hash}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Get\-M\-D5\-Hash}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ {\bf \-Check\-Mem\-Signature\-::\-Get\-M\-D5\-Hash} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{p\-Buffer, }
+\item[{int}]{i\-Buf\-Len}
+\end{DoxyParamCaption}
+)}}\label{class_check_mem_signature_ac1493574a1581fdd477a252fdf9266fd}
+
+
+\-Get an \-M\-D5 hash. 
+
+
+
+\-Definition at line 86 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_a4973b2795d5e8c1e396f9aed771ffeaa}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Get\-Result@{\-Get\-Result}}
+\index{\-Get\-Result@{\-Get\-Result}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Get\-Result}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Check\-Mem\-Signature\-::\-Get\-Result} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_check_mem_signature_a4973b2795d5e8c1e396f9aed771ffeaa}
+
+
+\-Return the result of the hardware check. 
+
+
+
+\-Definition at line 28 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_af4453571e33116b38b15df61ca190dc3}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Get\-Serial\-Number@{\-Get\-Serial\-Number}}
+\index{\-Get\-Serial\-Number@{\-Get\-Serial\-Number}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Get\-Serial\-Number}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-Check\-Mem\-Signature\-::\-Get\-Serial\-Number} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_check_mem_signature_af4453571e33116b38b15df61ca190dc3}
+
+
+\-Get serial number. 
+
+
+
+\-Definition at line 197 of file \-Check\-Mem\-Signature.\-cpp.
+
+\hypertarget{class_check_mem_signature_afe91f6cdc48a291269f3aceeb58d5adf}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!\-Read\-Physical\-Mem@{\-Read\-Physical\-Mem}}
+\index{\-Read\-Physical\-Mem@{\-Read\-Physical\-Mem}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{\-Read\-Physical\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Check\-Mem\-Signature\-::\-Read\-Physical\-Mem} (
+\begin{DoxyParamCaption}
+\item[{int}]{i\-Offset, }
+\item[{int}]{i\-Size, }
+\item[{unsigned char $\ast$}]{p\-Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_afe91f6cdc48a291269f3aceeb58d5adf}
+
+
+\-Read physical memory. 
+
+
+
+\-Definition at line 116 of file \-Check\-Mem\-Signature.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_check_mem_signature_af12542838da42abf26d31b4b1c68f822}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!ipv6mac@{ipv6mac}}
+\index{ipv6mac@{ipv6mac}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{ipv6mac}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Check\-Mem\-Signature\-::ipv6mac}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_af12542838da42abf26d31b4b1c68f822}
+
+
+\-Definition at line 75 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{class_check_mem_signature_a1a0d503c7970aa5a4e2ba485216192f1}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!md\-\_\-value@{md\-\_\-value}}
+\index{md\-\_\-value@{md\-\_\-value}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{md\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-Check\-Mem\-Signature\-::md\-\_\-value}\mbox{[}\-E\-V\-P\-\_\-\-M\-A\-X\-\_\-\-M\-D\-\_\-\-S\-I\-Z\-E\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_a1a0d503c7970aa5a4e2ba485216192f1}
+
+
+\-Definition at line 74 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{class_check_mem_signature_adcd4f7e90f5a03d961560db27fd713b3}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!s\-Serial\-No@{s\-Serial\-No}}
+\index{s\-Serial\-No@{s\-Serial\-No}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{s\-Serial\-No}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-Check\-Mem\-Signature\-::s\-Serial\-No}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_check_mem_signature_adcd4f7e90f5a03d961560db27fd713b3}
+
+
+\-Definition at line 76 of file \-Check\-Mem\-Signature.\-h.
+
+\hypertarget{class_check_mem_signature_afc2a181bcd1a9253d9b830371a05d5b6}{\index{\-Check\-Mem\-Signature@{\-Check\-Mem\-Signature}!uc\-Hardware\-Key@{uc\-Hardware\-Key}}
+\index{uc\-Hardware\-Key@{uc\-Hardware\-Key}!CheckMemSignature@{\-Check\-Mem\-Signature}}
+\subsubsection[{uc\-Hardware\-Key}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-Check\-Mem\-Signature\-::uc\-Hardware\-Key}\mbox{[}{\bf \-H\-A\-S\-H\-\_\-\-L\-E\-N\-G\-T\-H}\mbox{]}}}\label{class_check_mem_signature_afc2a181bcd1a9253d9b830371a05d5b6}
+
+
+\-Definition at line 71 of file \-Check\-Mem\-Signature.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_check_mem_signature_8h}{\-Check\-Mem\-Signature.\-h}\item 
+common/\hyperlink{_check_mem_signature_8cpp}{\-Check\-Mem\-Signature.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,249 @@
+\hypertarget{class_c_p_server}{\section{\-C\-P\-Server \-Class \-Reference}
+\label{class_c_p_server}\index{\-C\-P\-Server@{\-C\-P\-Server}}
+}
+
+
+\-C\-P\-Server.\-h\-: interface for the \hyperlink{class_c_p_server}{\-C\-P\-Server} class.  
+
+
+
+
+{\ttfamily \#include $<$\-Cpserver.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Server\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_p_server}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_server_a5adf5787e2cfb4ecfe86a0c18f2e1cb3}{\-C\-P\-Server} (\hyperlink{_c_p_connection_handler_8h_a05bf2fef946dbf14350a5f45bb28f953}{\-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&c\-P\-Connection\-Handlers)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_p_server_a5698810878ce141158b4a9bf9dfeb4bf}{$\sim$\-C\-P\-Server} ()
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_server_a507f35f780de641c071bfd8a3f793a75}{\-Listen} (int n\-Connection\-Backlog=\-S\-O\-M\-A\-X\-C\-O\-N\-N)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_server_ac7ed83bcdae44d824e4391861290b565}{\-Shutdown\-All} ()
+\item 
+time\-\_\-t \hyperlink{class_c_p_server_aa4a8f5591c3f63de66deff1d6b4a1c5e}{\-Get\-Time\-Started} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_server_a09ac2e46ccc306c92b43bd556f682e81}{\-Cleanup\-Array} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Terminate\-All=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em \-Clean up array. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_server_a1abdbfc0ef46eb052da96829d90a2420}{\-Accept} ()
+\begin{DoxyCompactList}\small\item\em \-Accept connections. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$ \hyperlink{class_c_p_server_ab028d102106a438f32c622596eaa1bc0}{\-Allocate\-Socket\-Class} (struct sockaddr $\ast$p\-Addr)=0
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \hyperlink{class_c_p_server_a536d91cd5cc25f5bb120345c5ed0cd5b}{\-Accept\-Connection} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Void)
+\begin{DoxyCompactList}\small\item\em \-Listening thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_p_connection_handler_8h_a05bf2fef946dbf14350a5f45bb28f953}{\-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \hyperlink{class_c_p_server_a1080e054402b166e08c38bdb0f92969a}{c\-Handlers}
+\begin{DoxyCompactList}\small\item\em data member \end{DoxyCompactList}\item 
+vector$<$ \hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$ $>$ \hyperlink{class_c_p_server_a5529eba58fcaf14f96b39895520b5468}{c\-Socket\-Array}
+\begin{DoxyCompactList}\small\item\em \-Array of \hyperlink{class_c_p_connection}{\-C\-P\-Connection} objects created. \end{DoxyCompactList}\item 
+\hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} \hyperlink{class_c_p_server_aaff398bbe130c88c778231fb9dc163c6}{h\-Thread}
+\item 
+time\-\_\-t \hyperlink{class_c_p_server_a18665bfa95ace98f79d6e1b6b7a38398}{t\-Started}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_p_server_a80980bd78734de4dc8fa48f5efdc502d}{c\-Crit\-Socket\-Array}
+\item 
+int \hyperlink{class_c_p_server_a1d016fb3e151466593bc3c16941bd222}{i\-Num\-Handlers}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-C\-P\-Server.\-h\-: interface for the \hyperlink{class_c_p_server}{\-C\-P\-Server} class. 
+
+\-\_\-\-M\-S\-C\-\_\-\-V\-E\-R $>$ 1000 \-Pooled connection server class. \-Handles multiple \-T\-C\-P connections with just a connection accept thread and an \-I/\-O thread, making it highly scalable 
+
+\-Definition at line 34 of file \-Cpserver.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_server_a5adf5787e2cfb4ecfe86a0c18f2e1cb3}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-C\-P\-Server@{\-C\-P\-Server}}
+\index{\-C\-P\-Server@{\-C\-P\-Server}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-C\-P\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Server\-::\-C\-P\-Server} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-P\-Connection\-Handlers}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_server_a5adf5787e2cfb4ecfe86a0c18f2e1cb3}
+
+
+constructor 
+
+
+
+\-Definition at line 33 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_a5698810878ce141158b4a9bf9dfeb4bf}{\index{\-C\-P\-Server@{\-C\-P\-Server}!$\sim$\-C\-P\-Server@{$\sim$\-C\-P\-Server}}
+\index{$\sim$\-C\-P\-Server@{$\sim$\-C\-P\-Server}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{$\sim$\-C\-P\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Server\-::$\sim$\-C\-P\-Server} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_server_a5698810878ce141158b4a9bf9dfeb4bf}
+
+
+\-Definition at line 41 of file \-Cpserver.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_server_a1abdbfc0ef46eb052da96829d90a2420}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Accept@{\-Accept}}
+\index{\-Accept@{\-Accept}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Accept}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Server\-::\-Accept} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_server_a1abdbfc0ef46eb052da96829d90a2420}
+
+
+\-Accept connections. 
+
+
+
+\-Definition at line 106 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_a536d91cd5cc25f5bb120345c5ed0cd5b}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Accept\-Connection@{\-Accept\-Connection}}
+\index{\-Accept\-Connection@{\-Accept\-Connection}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Accept\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-P\-Server\-::\-Accept\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Void}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_p_server_a536d91cd5cc25f5bb120345c5ed0cd5b}
+
+
+\-Listening thread. 
+
+
+
+\-Definition at line 310 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_ab028d102106a438f32c622596eaa1bc0}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Allocate\-Socket\-Class@{\-Allocate\-Socket\-Class}}
+\index{\-Allocate\-Socket\-Class@{\-Allocate\-Socket\-Class}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Allocate\-Socket\-Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-C\-P\-Connection}$\ast$ {\bf \-C\-P\-Server\-::\-Allocate\-Socket\-Class} (
+\begin{DoxyParamCaption}
+\item[{struct sockaddr $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_p_server_ab028d102106a438f32c622596eaa1bc0}
+\-Pure virtual functions allocate and dallocate a derivative of \hyperlink{class_c_connection_socket}{\-C\-Connection\-Socket} \-Redefine in derived class 
+
+\-Implemented in \hyperlink{class_c_echo_server_a538eb049166aca7a0d27c7914c853876}{\-C\-Echo\-Server}, and \hyperlink{class_c_echo_server_a8db4489876af267711eefbfd891bbb4d}{\-C\-Echo\-Server}.
+
+\hypertarget{class_c_p_server_a09ac2e46ccc306c92b43bd556f682e81}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Cleanup\-Array@{\-Cleanup\-Array}}
+\index{\-Cleanup\-Array@{\-Cleanup\-Array}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Cleanup\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Server\-::\-Cleanup\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Terminate\-All = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_server_a09ac2e46ccc306c92b43bd556f682e81}
+
+
+\-Clean up array. 
+
+
+
+\-Definition at line 250 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_aa4a8f5591c3f63de66deff1d6b4a1c5e}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Get\-Time\-Started@{\-Get\-Time\-Started}}
+\index{\-Get\-Time\-Started@{\-Get\-Time\-Started}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Get\-Time\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-P\-Server\-::\-Get\-Time\-Started} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_server_aa4a8f5591c3f63de66deff1d6b4a1c5e}
+
+
+\-Definition at line 321 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_a507f35f780de641c071bfd8a3f793a75}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Listen@{\-Listen}}
+\index{\-Listen@{\-Listen}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Listen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Server\-::\-Listen} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Connection\-Backlog = {\ttfamily \-S\-O\-M\-A\-X\-C\-O\-N\-N}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_server_a507f35f780de641c071bfd8a3f793a75}
+
+
+\-Definition at line 48 of file \-Cpserver.\-cpp.
+
+\hypertarget{class_c_p_server_ac7ed83bcdae44d824e4391861290b565}{\index{\-C\-P\-Server@{\-C\-P\-Server}!\-Shutdown\-All@{\-Shutdown\-All}}
+\index{\-Shutdown\-All@{\-Shutdown\-All}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{\-Shutdown\-All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Server\-::\-Shutdown\-All} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_server_ac7ed83bcdae44d824e4391861290b565}
+
+
+\-Definition at line 292 of file \-Cpserver.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_p_server_a80980bd78734de4dc8fa48f5efdc502d}{\index{\-C\-P\-Server@{\-C\-P\-Server}!c\-Crit\-Socket\-Array@{c\-Crit\-Socket\-Array}}
+\index{c\-Crit\-Socket\-Array@{c\-Crit\-Socket\-Array}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{c\-Crit\-Socket\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-P\-Server\-::c\-Crit\-Socket\-Array}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_a80980bd78734de4dc8fa48f5efdc502d}
+
+
+\-Definition at line 68 of file \-Cpserver.\-h.
+
+\hypertarget{class_c_p_server_a1080e054402b166e08c38bdb0f92969a}{\index{\-C\-P\-Server@{\-C\-P\-Server}!c\-Handlers@{c\-Handlers}}
+\index{c\-Handlers@{c\-Handlers}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{c\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} {\bf \-C\-P\-Server\-::c\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_a1080e054402b166e08c38bdb0f92969a}
+
+
+data member 
+
+\-Array of \-C\-P\-Connection\-Handlers. \-Use the one with the least connections. 
+
+\-Definition at line 63 of file \-Cpserver.\-h.
+
+\hypertarget{class_c_p_server_a5529eba58fcaf14f96b39895520b5468}{\index{\-C\-P\-Server@{\-C\-P\-Server}!c\-Socket\-Array@{c\-Socket\-Array}}
+\index{c\-Socket\-Array@{c\-Socket\-Array}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{c\-Socket\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf \-C\-P\-Connection} $\ast$$>$ {\bf \-C\-P\-Server\-::c\-Socket\-Array}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_a5529eba58fcaf14f96b39895520b5468}
+
+
+\-Array of \hyperlink{class_c_p_connection}{\-C\-P\-Connection} objects created. 
+
+
+
+\-Definition at line 65 of file \-Cpserver.\-h.
+
+\hypertarget{class_c_p_server_aaff398bbe130c88c778231fb9dc163c6}{\index{\-C\-P\-Server@{\-C\-P\-Server}!h\-Thread@{h\-Thread}}
+\index{h\-Thread@{h\-Thread}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{h\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} {\bf \-C\-P\-Server\-::h\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_aaff398bbe130c88c778231fb9dc163c6}
+
+
+\-Definition at line 66 of file \-Cpserver.\-h.
+
+\hypertarget{class_c_p_server_a1d016fb3e151466593bc3c16941bd222}{\index{\-C\-P\-Server@{\-C\-P\-Server}!i\-Num\-Handlers@{i\-Num\-Handlers}}
+\index{i\-Num\-Handlers@{i\-Num\-Handlers}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{i\-Num\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Server\-::i\-Num\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_a1d016fb3e151466593bc3c16941bd222}
+
+
+\-Definition at line 69 of file \-Cpserver.\-h.
+
+\hypertarget{class_c_p_server_a18665bfa95ace98f79d6e1b6b7a38398}{\index{\-C\-P\-Server@{\-C\-P\-Server}!t\-Started@{t\-Started}}
+\index{t\-Started@{t\-Started}!CPServer@{\-C\-P\-Server}}
+\subsubsection[{t\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-P\-Server\-::t\-Started}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_server_a18665bfa95ace98f79d6e1b6b7a38398}
+
+
+\-Definition at line 67 of file \-Cpserver.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_cpserver_8h}{\-Cpserver.\-h}\item 
+common/\hyperlink{_cpserver_8cpp}{\-Cpserver.\-cpp}\end{DoxyCompactItemize}

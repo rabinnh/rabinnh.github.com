@@ -1,0 +1,1344 @@
+\hypertarget{class_c_expat_impl}{\section{\-C\-Expat\-Impl$<$ \-\_\-\-T $>$ \-Class \-Template \-Reference}
+\label{class_c_expat_impl}\index{\-C\-Expat\-Impl$<$ \-\_\-\-T $>$@{\-C\-Expat\-Impl$<$ \-\_\-\-T $>$}}
+}
+
+
+{\ttfamily \#include $<$\-Expat\-Impl.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_expat_impl_a59f688f607c739742ef3ac272ea02fee}{\-C\-Expat\-Impl} ()
+\begin{DoxyCompactList}\small\item\em \-Constructors and destructors \end{DoxyCompactList}\item 
+\hyperlink{class_c_expat_impl_a6905e278a30c7f7331001ab89f249c63}{$\sim$\-C\-Expat\-Impl} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_expat_impl_ada29fce37e448ceb6ea09a98de028149}{\-Create} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Encoding=\-N\-U\-L\-L, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Sep=\-N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em \-Parser creation and deletion methods \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a2e4dcba61823bcc922b1348fcbe787db}{\-Destroy} ()
+\begin{DoxyCompactList}\small\item\em \-Destroy the parser \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_expat_impl_a76062f116c2a9c99d42631da6e806339}{\-Parse} (const char $\ast$psz\-Buffer, int n\-Length=-\/1, bool f\-Is\-Final=true)
+\begin{DoxyCompactList}\small\item\em \-Parser parse methods \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_expat_impl_a35df06396bfa8330598572a3f530a5c1}{\-Parse\-Buffer} (int n\-Length, bool f\-Is\-Final=true)
+\begin{DoxyCompactList}\small\item\em \-Parse a block of data \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ \hyperlink{class_c_expat_impl_ae9b6bb575b4a81c24384a13433113925}{\-Get\-Buffer} (int n\-Length)
+\begin{DoxyCompactList}\small\item\em \-Get the internal buffer \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a17a24b6c1c157f3c843e730f3f796667}{\-Enable\-Start\-Element\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Parser callback enable/disable methods \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ac91830d2f654065a22d7331af20a3568}{\-Enable\-End\-Element\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the end element handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_acf2e51e7fb9183a180cd8ffdc8bebb3e}{\-Enable\-Element\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the element handlers \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a9710ebe6b824dd35fc3cffe748df9749}{\-Enable\-Character\-Data\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the character data handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ad645eca4eb59c0faa6425a20f6a05595}{\-Enable\-Processing\-Instruction\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the processing instruction handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a552c6281c12de7a74e17df3faf38723b}{\-Enable\-Comment\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the comment handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a27ad6538ae5e773fc2d6af0ff8441582}{\-Enable\-Start\-Cdata\-Section\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the start \-C\-D\-A\-T\-A section handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a3390e7ef5fc411b0d76da2cc3528231d}{\-Enable\-End\-Cdata\-Section\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the end \-C\-D\-A\-T\-A section handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ad0b0fa3d2c7604d0af6f8b4662d17c38}{\-Enable\-Cdata\-Section\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the \-C\-D\-A\-T\-A section handlers \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a79ccb0e194a01a82e67f0d75a05ff4dc}{\-Enable\-Default\-Handler} (bool f\-Enable=true, bool f\-Expand=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable default handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a792a4fedfcde46489c261e692eea54f4}{\-Enable\-External\-Entity\-Ref\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable external entity ref handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a784e4d39f69b56f02d3e2a85eaeb641b}{\-Enable\-Unknown\-Encoding\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable unknown encoding handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ac675f52624f52b3cdaa57b86d97d7f51}{\-Enable\-Start\-Namespace\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable start namespace handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ae3938fc6542d2f56c88934dd4d7c70ee}{\-Enable\-End\-Namespace\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable end namespace handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a7b3c35dc2f667aa146f346a2b437bd54}{\-Enable\-Namespace\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable namespace handlers \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_afffef6ef64c80c88786cf06b4ba9e776}{\-Enable\-Xml\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the \-X\-M\-L declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a1294cb39e231da87e282eb84196c8785}{\-Enable\-Start\-Doctype\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the start \-D\-O\-C\-T\-Y\-P\-E declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a6fcf5de29a3e7a3da9ca655eb91b115c}{\-Enable\-End\-Doctype\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the end \-D\-O\-C\-T\-Y\-P\-E declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a267c2e407879948b0b3910ccc84e7815}{\-Enable\-Doctype\-Decl\-Handler} (bool f\-Enable=true)
+\begin{DoxyCompactList}\small\item\em \-Enable/\-Disable the \-D\-O\-C\-T\-Y\-P\-E declaration handler \end{DoxyCompactList}\item 
+enum \-X\-M\-L\-\_\-\-Error \hyperlink{class_c_expat_impl_aeb0f6e67c9ab6fdfeb299f48d8445837}{\-Get\-Error\-Code} ()
+\begin{DoxyCompactList}\small\item\em \-Parser error reporting methods \end{DoxyCompactList}\item 
+long \hyperlink{class_c_expat_impl_ab19268d1441402b98ec8ccab31cb2015}{\-Get\-Current\-Byte\-Index} ()
+\begin{DoxyCompactList}\small\item\em \-Get the current byte index \end{DoxyCompactList}\item 
+int \hyperlink{class_c_expat_impl_ab6ef6ce8ef73ed2a454f6375ab7b665f}{\-Get\-Current\-Line\-Number} ()
+\begin{DoxyCompactList}\small\item\em \-Get the current line number \end{DoxyCompactList}\item 
+int \hyperlink{class_c_expat_impl_aad097c9be6cd886a799eee992670d9de}{\-Get\-Current\-Column\-Number} ()
+\begin{DoxyCompactList}\small\item\em \-Get the current column number \end{DoxyCompactList}\item 
+int \hyperlink{class_c_expat_impl_a984d18a346ce61788df2f697e1f3ab61}{\-Get\-Current\-Byte\-Count} ()
+\begin{DoxyCompactList}\small\item\em \-Get the current byte count \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{class_c_expat_impl_a9d270067e041578c57eb71a1238ed717}{\-Get\-Input\-Context} (int $\ast$pn\-Offset, int $\ast$pn\-Size)
+\begin{DoxyCompactList}\small\item\em \-Get the input context \end{DoxyCompactList}\item 
+const \-X\-M\-L\-\_\-\-L\-Char $\ast$ \hyperlink{class_c_expat_impl_af463b2fa4776e97d9c0f62fc8333f9f6}{\-Get\-Error\-String} ()
+\begin{DoxyCompactList}\small\item\em \-Get last error string \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a94c5469966d0124253e2b67eda7d59ff}{\-On\-Start\-Element} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name, const \-X\-M\-L\-\_\-\-Char $\ast$$\ast$papsz\-Attrs)
+\begin{DoxyCompactList}\small\item\em \-Public handler methods \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_aaf21a9a335c6daf7814e83006f968fa1}{\-On\-End\-Element} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name)
+\begin{DoxyCompactList}\small\item\em \-End element handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ab97a7933f82395535706fa7a7584c2d4}{\-On\-Character\-Data} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data, int n\-Length)
+\begin{DoxyCompactList}\small\item\em \-Character data handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a403235345e254d13e69124b47c0160d8}{\-On\-Processing\-Instruction} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Target, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data)
+\begin{DoxyCompactList}\small\item\em \-Processing instruction handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a3e107b5f2b8f3e0784e4bc3b21d9a954}{\-On\-Comment} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data)
+\begin{DoxyCompactList}\small\item\em \-Comment handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a5a7082a8c80f14cfed55edc084e1a448}{\-On\-Start\-Cdata\-Section} ()
+\begin{DoxyCompactList}\small\item\em \-Start \-C\-D\-A\-T\-A section handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_af5fffe076811b52ef4de3e2399504c4c}{\-On\-End\-Cdata\-Section} ()
+\begin{DoxyCompactList}\small\item\em \-End \-C\-D\-A\-T\-A section handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a18a56a0963c1964ef785592a6c9cc7dc}{\-On\-Default} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data, int n\-Length)
+\begin{DoxyCompactList}\small\item\em \-Default handler \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_expat_impl_a413ff03445b1213314747265a1085d0a}{\-On\-External\-Entity\-Ref} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Context, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Base, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-System\-I\-D, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Public\-I\-D)
+\begin{DoxyCompactList}\small\item\em \-External entity ref handler \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_expat_impl_a17863cd62866c6895319a99c46ec56e1}{\-On\-Unknown\-Encoding} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name, \-X\-M\-L\-\_\-\-Encoding $\ast$p\-Info)
+\begin{DoxyCompactList}\small\item\em \-Unknown encoding handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a6e40ab1481ae7a0b498d390050467886}{\-On\-Start\-Namespace\-Decl} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Prefix, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-U\-R\-I)
+\begin{DoxyCompactList}\small\item\em \-Start namespace declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a4aa22e82d10534373a7cf90354e4d9f2}{\-On\-End\-Namespace\-Decl} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Prefix)
+\begin{DoxyCompactList}\small\item\em \-End namespace declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a852c68ceb2b2527ff04a245eeac51dfa}{\-On\-Xml\-Decl} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Version, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Encoding, bool f\-Standalone)
+\begin{DoxyCompactList}\small\item\em \-X\-M\-L declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a98aee5e2d5b4e00b4808e3b6b6761872}{\-On\-Start\-Doctype\-Decl} (const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Doctype\-Name, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Sys\-I\-D, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Pub\-I\-D, bool f\-Has\-Internal\-Subset)
+\begin{DoxyCompactList}\small\item\em \-Start \-D\-O\-C\-T\-Y\-P\-E declaration handler \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a395e6e654c41012cd3722d2445c174e3}{\-On\-End\-Doctype\-Decl} ()
+\begin{DoxyCompactList}\small\item\em \-End \-D\-O\-C\-T\-Y\-P\-E declaration handler \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \-X\-M\-L\-\_\-\-L\-Char $\ast$ \hyperlink{class_c_expat_impl_aad3b5874db5b019fcd5fb370bb585463}{\-Get\-Expat\-Version} ()
+\begin{DoxyCompactList}\small\item\em \-Parser other methods \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ac6bd3e8292fecc53dfd04038f851eb97}{\-Get\-Expat\-Version} (int $\ast$pn\-Major, int $\ast$pn\-Minor, int $\ast$pn\-Micro)
+\begin{DoxyCompactList}\small\item\em \-Get the version information \end{DoxyCompactList}\item 
+static const \-X\-M\-L\-\_\-\-L\-Char $\ast$ \hyperlink{class_c_expat_impl_a1e549012634630c0dc954cd6f15f25e5}{\-Get\-Error\-String} (enum \-X\-M\-L\-\_\-\-Error n\-Error)
+\begin{DoxyCompactList}\small\item\em \-Get last error string \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a348eb163ca08ff99195a91e50c27ee2c}{\-On\-Post\-Create} ()
+\begin{DoxyCompactList}\small\item\em \-Protected methods \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a8c96098c7f6b94fb2738a96b9cbfc344}{\-Start\-Element\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name, const \-X\-M\-L\-\_\-\-Char $\ast$$\ast$papsz\-Attrs)
+\begin{DoxyCompactList}\small\item\em \-Protected static methods \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a89960971577a2468c5b843d6b5f55481}{\-End\-Element\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name)
+\begin{DoxyCompactList}\small\item\em \-End element handler wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a75e43c0f3bc1a40e9e607995002cecad}{\-Character\-Data\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data, int n\-Length)
+\begin{DoxyCompactList}\small\item\em \-Character data handler wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ab619ebaabbc0acc4cb07a52b24018cd3}{\-Processing\-Instruction\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Target, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data)
+\begin{DoxyCompactList}\small\item\em \-Processing instruction handler wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a35b6b5bffb80bd6ae0e12a6058877d40}{\-Comment\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data)
+\begin{DoxyCompactList}\small\item\em \-Comment handler wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a0bbc492453c4fb53e1f0b04a7ec41d0d}{\-Start\-Cdata\-Section\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data)
+\begin{DoxyCompactList}\small\item\em \-Start \-C\-D\-A\-T\-A section wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_afa9c17914bfdf30981677e12aa5daa7e}{\-End\-Cdata\-Section\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data)
+\begin{DoxyCompactList}\small\item\em \-End \-C\-D\-A\-T\-A section wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a0bdfda4fdcebfdccbf66c9613b90f2e5}{\-Default\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Data, int n\-Length)
+\begin{DoxyCompactList}\small\item\em \-Default wrapper \end{DoxyCompactList}\item 
+static int \hyperlink{class_c_expat_impl_aeaac317d65dca4b78298c5427ce3ef0a}{\-External\-Entity\-Ref\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Context, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Base, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-System\-I\-D, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Public\-I\-D)
+\begin{DoxyCompactList}\small\item\em \-External entity ref wrapper \end{DoxyCompactList}\item 
+static int \hyperlink{class_c_expat_impl_af453256147076e307aaa33d55d026f3e}{\-Unknown\-Encoding\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Name, \-X\-M\-L\-\_\-\-Encoding $\ast$p\-Info)
+\begin{DoxyCompactList}\small\item\em \-Unknown encoding wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a064953fdef08db60d0337ca5ce454e00}{\-Start\-Namespace\-Decl\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Prefix, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-U\-R\-I)
+\begin{DoxyCompactList}\small\item\em \-Start namespace decl wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a887c7812501400176b9a4a6a16645c50}{\-End\-Namespace\-Decl\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Prefix)
+\begin{DoxyCompactList}\small\item\em \-End namespace decl wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a4d81ebccf213e13900d430ea802e69e5}{\-Xml\-Decl\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Version, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Encoding, int n\-Standalone)
+\begin{DoxyCompactList}\small\item\em \-X\-M\-L declaration wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_ac32cdd2739317d6b400ed8c64e9301c9}{\-Start\-Doctype\-Decl\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Doctype\-Name, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Sys\-I\-D, const \-X\-M\-L\-\_\-\-Char $\ast$psz\-Pub\-I\-D, int n\-Has\-Internal\-Subset)
+\begin{DoxyCompactList}\small\item\em \-Start \-Doctype declaration wrapper \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_expat_impl_a3d1a32bfb235836fc0b32ebc57afcb3d}{\-End\-Doctype\-Decl\-Handler} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-User\-Data)
+\begin{DoxyCompactList}\small\item\em \-End \-Doctype declaration wrapper \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-X\-M\-L\-\_\-\-Parser \hyperlink{class_c_expat_impl_a75803f8a4d4dc098f243dabbfba5de77}{m\-\_\-p}
+\begin{DoxyCompactList}\small\item\em \-Protected members \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\subsubsection*{template$<$class \-\_\-\-T$>$class C\-Expat\-Impl$<$ \-\_\-\-T $>$}
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+\hyperlink{_expat_impl_8h}{\-Expat\-Impl.\-h} -\/ \-Expat class container $|$
+
+\-This module contains the definition of the expat class container.
+
+\-Copyright (c) 1994-\/2002 -\/ \-Descartes \-Systems \-Sciences, \-Inc.
+
+\begin{DoxyParagraph}{\-History\-:}
+\hyperlink{_expat_impl_8h}{\-Expat\-Impl.\-h} 
+\end{DoxyParagraph}
+
+
+\-Version 1 $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ \-User\-: \-Tim \-Smith \-Date\-: 1/29/02 \-Time\-: 1\-:57p \-Created in \$/\-Omni\-\_\-\-V2/\-\_\-\-Tool\-Lib 1. \-String.\-h now replaced with \-String\-Code.\-h. 2. \-String\-Rsrc.\-h modified to use new string class. 3. \-Added tons of new classes from the wedge work.
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+\-Required include files
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+\-Forward definitions
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+\-Template class definition
+
+-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ 
+
+\-Definition at line 50 of file \-Expat\-Impl.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_expat_impl_a59f688f607c739742ef3ac272ea02fee}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-C\-Expat\-Impl@{\-C\-Expat\-Impl}}
+\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-C\-Expat\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-C\-Expat\-Impl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a59f688f607c739742ef3ac272ea02fee}
+
+
+\-Constructors and destructors 
+
+\-General constructor 
+
+\-Definition at line 57 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a6905e278a30c7f7331001ab89f249c63}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!$\sim$\-C\-Expat\-Impl@{$\sim$\-C\-Expat\-Impl}}
+\index{$\sim$\-C\-Expat\-Impl@{$\sim$\-C\-Expat\-Impl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{$\sim$\-C\-Expat\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::$\sim${\bf \-C\-Expat\-Impl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a6905e278a30c7f7331001ab89f249c63}
+
+
+\-Destructor 
+
+
+
+\-Definition at line 64 of file \-Expat\-Impl.\-h.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_expat_impl_a75e43c0f3bc1a40e9e607995002cecad}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Character\-Data\-Handler@{\-Character\-Data\-Handler}}
+\index{\-Character\-Data\-Handler@{\-Character\-Data\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Character\-Data\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Character\-Data\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data, }
+\item[{int}]{n\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a75e43c0f3bc1a40e9e607995002cecad}
+
+
+\-Character data handler wrapper 
+
+
+
+\-Definition at line 606 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a35b6b5bffb80bd6ae0e12a6058877d40}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Comment\-Handler@{\-Comment\-Handler}}
+\index{\-Comment\-Handler@{\-Comment\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Comment\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Comment\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a35b6b5bffb80bd6ae0e12a6058877d40}
+
+
+\-Comment handler wrapper 
+
+
+
+\-Definition at line 624 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ada29fce37e448ceb6ea09a98de028149}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Create@{\-Create}}
+\index{\-Create@{\-Create}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ bool {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Create} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Encoding = {\ttfamily \-N\-U\-L\-L}, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Sep = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ada29fce37e448ceb6ea09a98de028149}
+
+
+\-Parser creation and deletion methods 
+
+\-Create a parser \-Destroy the old parser
+
+\-If the encoding or seperator are empty, then \-N\-U\-L\-L
+
+\-Create the new one
+
+\-Invoke the post create routine
+
+\-Set the user data used in callbacks
+
+\-Definition at line 74 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a0bdfda4fdcebfdccbf66c9613b90f2e5}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Default\-Handler@{\-Default\-Handler}}
+\index{\-Default\-Handler@{\-Default\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Default\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Default\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data, }
+\item[{int}]{n\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a0bdfda4fdcebfdccbf66c9613b90f2e5}
+
+
+\-Default wrapper 
+
+
+
+\-Definition at line 649 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a2e4dcba61823bcc922b1348fcbe787db}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Destroy@{\-Destroy}}
+\index{\-Destroy@{\-Destroy}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Destroy}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Destroy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a2e4dcba61823bcc922b1348fcbe787db}
+
+
+\-Destroy the parser 
+
+
+
+\-Definition at line 118 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ad0b0fa3d2c7604d0af6f8b4662d17c38}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Cdata\-Section\-Handler@{\-Enable\-Cdata\-Section\-Handler}}
+\index{\-Enable\-Cdata\-Section\-Handler@{\-Enable\-Cdata\-Section\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Cdata\-Section\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Cdata\-Section\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ad0b0fa3d2c7604d0af6f8b4662d17c38}
+
+
+\-Enable/\-Disable the \-C\-D\-A\-T\-A section handlers 
+
+
+
+\-Definition at line 271 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a9710ebe6b824dd35fc3cffe748df9749}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Character\-Data\-Handler@{\-Enable\-Character\-Data\-Handler}}
+\index{\-Enable\-Character\-Data\-Handler@{\-Enable\-Character\-Data\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Character\-Data\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Character\-Data\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a9710ebe6b824dd35fc3cffe748df9749}
+
+
+\-Enable/\-Disable the character data handler 
+
+
+
+\-Definition at line 227 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a552c6281c12de7a74e17df3faf38723b}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Comment\-Handler@{\-Enable\-Comment\-Handler}}
+\index{\-Enable\-Comment\-Handler@{\-Enable\-Comment\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Comment\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Comment\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a552c6281c12de7a74e17df3faf38723b}
+
+
+\-Enable/\-Disable the comment handler 
+
+
+
+\-Definition at line 245 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a79ccb0e194a01a82e67f0d75a05ff4dc}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Default\-Handler@{\-Enable\-Default\-Handler}}
+\index{\-Enable\-Default\-Handler@{\-Enable\-Default\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Default\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Default\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}, }
+\item[{bool}]{f\-Expand = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a79ccb0e194a01a82e67f0d75a05ff4dc}
+
+
+\-Enable/\-Disable default handler 
+
+
+
+\-Definition at line 280 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a267c2e407879948b0b3910ccc84e7815}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Doctype\-Decl\-Handler@{\-Enable\-Doctype\-Decl\-Handler}}
+\index{\-Enable\-Doctype\-Decl\-Handler@{\-Enable\-Doctype\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Doctype\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Doctype\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a267c2e407879948b0b3910ccc84e7815}
+
+
+\-Enable/\-Disable the \-D\-O\-C\-T\-Y\-P\-E declaration handler 
+
+
+
+\-Definition at line 364 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_acf2e51e7fb9183a180cd8ffdc8bebb3e}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Element\-Handler@{\-Enable\-Element\-Handler}}
+\index{\-Enable\-Element\-Handler@{\-Enable\-Element\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Element\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Element\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_acf2e51e7fb9183a180cd8ffdc8bebb3e}
+
+
+\-Enable/\-Disable the element handlers 
+
+
+
+\-Definition at line 218 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a3390e7ef5fc411b0d76da2cc3528231d}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-End\-Cdata\-Section\-Handler@{\-Enable\-End\-Cdata\-Section\-Handler}}
+\index{\-Enable\-End\-Cdata\-Section\-Handler@{\-Enable\-End\-Cdata\-Section\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-End\-Cdata\-Section\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-End\-Cdata\-Section\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a3390e7ef5fc411b0d76da2cc3528231d}
+
+
+\-Enable/\-Disable the end \-C\-D\-A\-T\-A section handler 
+
+
+
+\-Definition at line 262 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a6fcf5de29a3e7a3da9ca655eb91b115c}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-End\-Doctype\-Decl\-Handler@{\-Enable\-End\-Doctype\-Decl\-Handler}}
+\index{\-Enable\-End\-Doctype\-Decl\-Handler@{\-Enable\-End\-Doctype\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-End\-Doctype\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-End\-Doctype\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a6fcf5de29a3e7a3da9ca655eb91b115c}
+
+
+\-Enable/\-Disable the end \-D\-O\-C\-T\-Y\-P\-E declaration handler 
+
+
+
+\-Definition at line 355 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ac91830d2f654065a22d7331af20a3568}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-End\-Element\-Handler@{\-Enable\-End\-Element\-Handler}}
+\index{\-Enable\-End\-Element\-Handler@{\-Enable\-End\-Element\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-End\-Element\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-End\-Element\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ac91830d2f654065a22d7331af20a3568}
+
+
+\-Enable/\-Disable the end element handler 
+
+
+
+\-Definition at line 210 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ae3938fc6542d2f56c88934dd4d7c70ee}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-End\-Namespace\-Decl\-Handler@{\-Enable\-End\-Namespace\-Decl\-Handler}}
+\index{\-Enable\-End\-Namespace\-Decl\-Handler@{\-Enable\-End\-Namespace\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-End\-Namespace\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-End\-Namespace\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ae3938fc6542d2f56c88934dd4d7c70ee}
+
+
+\-Enable/\-Disable end namespace handler 
+
+
+
+\-Definition at line 321 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a792a4fedfcde46489c261e692eea54f4}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-External\-Entity\-Ref\-Handler@{\-Enable\-External\-Entity\-Ref\-Handler}}
+\index{\-Enable\-External\-Entity\-Ref\-Handler@{\-Enable\-External\-Entity\-Ref\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-External\-Entity\-Ref\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-External\-Entity\-Ref\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a792a4fedfcde46489c261e692eea54f4}
+
+
+\-Enable/\-Disable external entity ref handler 
+
+
+
+\-Definition at line 294 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a7b3c35dc2f667aa146f346a2b437bd54}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Namespace\-Decl\-Handler@{\-Enable\-Namespace\-Decl\-Handler}}
+\index{\-Enable\-Namespace\-Decl\-Handler@{\-Enable\-Namespace\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Namespace\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Namespace\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a7b3c35dc2f667aa146f346a2b437bd54}
+
+
+\-Enable/\-Disable namespace handlers 
+
+
+
+\-Definition at line 330 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ad645eca4eb59c0faa6425a20f6a05595}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Processing\-Instruction\-Handler@{\-Enable\-Processing\-Instruction\-Handler}}
+\index{\-Enable\-Processing\-Instruction\-Handler@{\-Enable\-Processing\-Instruction\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Processing\-Instruction\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Processing\-Instruction\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ad645eca4eb59c0faa6425a20f6a05595}
+
+
+\-Enable/\-Disable the processing instruction handler 
+
+
+
+\-Definition at line 236 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a27ad6538ae5e773fc2d6af0ff8441582}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Start\-Cdata\-Section\-Handler@{\-Enable\-Start\-Cdata\-Section\-Handler}}
+\index{\-Enable\-Start\-Cdata\-Section\-Handler@{\-Enable\-Start\-Cdata\-Section\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Start\-Cdata\-Section\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Start\-Cdata\-Section\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a27ad6538ae5e773fc2d6af0ff8441582}
+
+
+\-Enable/\-Disable the start \-C\-D\-A\-T\-A section handler 
+
+
+
+\-Definition at line 253 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a1294cb39e231da87e282eb84196c8785}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Start\-Doctype\-Decl\-Handler@{\-Enable\-Start\-Doctype\-Decl\-Handler}}
+\index{\-Enable\-Start\-Doctype\-Decl\-Handler@{\-Enable\-Start\-Doctype\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Start\-Doctype\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Start\-Doctype\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a1294cb39e231da87e282eb84196c8785}
+
+
+\-Enable/\-Disable the start \-D\-O\-C\-T\-Y\-P\-E declaration handler 
+
+
+
+\-Definition at line 346 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a17a24b6c1c157f3c843e730f3f796667}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Start\-Element\-Handler@{\-Enable\-Start\-Element\-Handler}}
+\index{\-Enable\-Start\-Element\-Handler@{\-Enable\-Start\-Element\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Start\-Element\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Start\-Element\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a17a24b6c1c157f3c843e730f3f796667}
+
+
+\-Parser callback enable/disable methods 
+
+\-Enable/\-Disable the start element handler 
+
+\-Definition at line 202 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ac675f52624f52b3cdaa57b86d97d7f51}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Start\-Namespace\-Decl\-Handler@{\-Enable\-Start\-Namespace\-Decl\-Handler}}
+\index{\-Enable\-Start\-Namespace\-Decl\-Handler@{\-Enable\-Start\-Namespace\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Start\-Namespace\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Start\-Namespace\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ac675f52624f52b3cdaa57b86d97d7f51}
+
+
+\-Enable/\-Disable start namespace handler 
+
+
+
+\-Definition at line 312 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a784e4d39f69b56f02d3e2a85eaeb641b}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Unknown\-Encoding\-Handler@{\-Enable\-Unknown\-Encoding\-Handler}}
+\index{\-Enable\-Unknown\-Encoding\-Handler@{\-Enable\-Unknown\-Encoding\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Unknown\-Encoding\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Unknown\-Encoding\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a784e4d39f69b56f02d3e2a85eaeb641b}
+
+
+\-Enable/\-Disable unknown encoding handler 
+
+
+
+\-Definition at line 303 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_afffef6ef64c80c88786cf06b4ba9e776}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Enable\-Xml\-Decl\-Handler@{\-Enable\-Xml\-Decl\-Handler}}
+\index{\-Enable\-Xml\-Decl\-Handler@{\-Enable\-Xml\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Enable\-Xml\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Enable\-Xml\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{bool}]{f\-Enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_afffef6ef64c80c88786cf06b4ba9e776}
+
+
+\-Enable/\-Disable the \-X\-M\-L declaration handler 
+
+
+
+\-Definition at line 338 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_afa9c17914bfdf30981677e12aa5daa7e}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-End\-Cdata\-Section\-Handler@{\-End\-Cdata\-Section\-Handler}}
+\index{\-End\-Cdata\-Section\-Handler@{\-End\-Cdata\-Section\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-End\-Cdata\-Section\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-End\-Cdata\-Section\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_afa9c17914bfdf30981677e12aa5daa7e}
+
+
+\-End \-C\-D\-A\-T\-A section wrapper 
+
+
+
+\-Definition at line 641 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a3d1a32bfb235836fc0b32ebc57afcb3d}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-End\-Doctype\-Decl\-Handler@{\-End\-Doctype\-Decl\-Handler}}
+\index{\-End\-Doctype\-Decl\-Handler@{\-End\-Doctype\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-End\-Doctype\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-End\-Doctype\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a3d1a32bfb235836fc0b32ebc57afcb3d}
+
+
+\-End \-Doctype declaration wrapper 
+
+
+
+\-Definition at line 717 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a89960971577a2468c5b843d6b5f55481}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-End\-Element\-Handler@{\-End\-Element\-Handler}}
+\index{\-End\-Element\-Handler@{\-End\-Element\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-End\-Element\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-End\-Element\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a89960971577a2468c5b843d6b5f55481}
+
+
+\-End element handler wrapper 
+
+
+
+\-Definition at line 597 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a887c7812501400176b9a4a6a16645c50}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-End\-Namespace\-Decl\-Handler@{\-End\-Namespace\-Decl\-Handler}}
+\index{\-End\-Namespace\-Decl\-Handler@{\-End\-Namespace\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-End\-Namespace\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-End\-Namespace\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a887c7812501400176b9a4a6a16645c50}
+
+
+\-End namespace decl wrapper 
+
+
+
+\-Definition at line 687 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_aeaac317d65dca4b78298c5427ce3ef0a}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-External\-Entity\-Ref\-Handler@{\-External\-Entity\-Ref\-Handler}}
+\index{\-External\-Entity\-Ref\-Handler@{\-External\-Entity\-Ref\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-External\-Entity\-Ref\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static int {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-External\-Entity\-Ref\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Context, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Base, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-System\-I\-D, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Public\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_aeaac317d65dca4b78298c5427ce3ef0a}
+
+
+\-External entity ref wrapper 
+
+
+
+\-Definition at line 658 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ae9b6bb575b4a81c24384a13433113925}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Buffer@{\-Get\-Buffer}}
+\index{\-Get\-Buffer@{\-Get\-Buffer}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void}$\ast$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ae9b6bb575b4a81c24384a13433113925}
+
+
+\-Get the internal buffer 
+
+
+
+\-Definition at line 191 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a984d18a346ce61788df2f697e1f3ab61}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Current\-Byte\-Count@{\-Get\-Current\-Byte\-Count}}
+\index{\-Get\-Current\-Byte\-Count@{\-Get\-Current\-Byte\-Count}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Current\-Byte\-Count}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ int {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Current\-Byte\-Count} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a984d18a346ce61788df2f697e1f3ab61}
+
+
+\-Get the current byte count 
+
+
+
+\-Definition at line 408 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ab19268d1441402b98ec8ccab31cb2015}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Current\-Byte\-Index@{\-Get\-Current\-Byte\-Index}}
+\index{\-Get\-Current\-Byte\-Index@{\-Get\-Current\-Byte\-Index}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Current\-Byte\-Index}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ long {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Current\-Byte\-Index} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ab19268d1441402b98ec8ccab31cb2015}
+
+
+\-Get the current byte index 
+
+
+
+\-Definition at line 384 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_aad097c9be6cd886a799eee992670d9de}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Current\-Column\-Number@{\-Get\-Current\-Column\-Number}}
+\index{\-Get\-Current\-Column\-Number@{\-Get\-Current\-Column\-Number}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Current\-Column\-Number}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ int {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Current\-Column\-Number} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_aad097c9be6cd886a799eee992670d9de}
+
+
+\-Get the current column number 
+
+
+
+\-Definition at line 400 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ab6ef6ce8ef73ed2a454f6375ab7b665f}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Current\-Line\-Number@{\-Get\-Current\-Line\-Number}}
+\index{\-Get\-Current\-Line\-Number@{\-Get\-Current\-Line\-Number}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Current\-Line\-Number}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ int {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Current\-Line\-Number} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ab6ef6ce8ef73ed2a454f6375ab7b665f}
+
+
+\-Get the current line number 
+
+
+
+\-Definition at line 392 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_aeb0f6e67c9ab6fdfeb299f48d8445837}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Error\-Code@{\-Get\-Error\-Code}}
+\index{\-Get\-Error\-Code@{\-Get\-Error\-Code}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Error\-Code}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ enum \-X\-M\-L\-\_\-\-Error {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Error\-Code} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_aeb0f6e67c9ab6fdfeb299f48d8445837}
+
+
+\-Parser error reporting methods 
+
+\-Get last error 
+
+\-Definition at line 376 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_af463b2fa4776e97d9c0f62fc8333f9f6}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Error\-String@{\-Get\-Error\-String}}
+\index{\-Get\-Error\-String@{\-Get\-Error\-String}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Error\-String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ const \-X\-M\-L\-\_\-\-L\-Char$\ast$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Error\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_af463b2fa4776e97d9c0f62fc8333f9f6}
+
+
+\-Get last error string 
+
+
+
+\-Definition at line 424 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a1e549012634630c0dc954cd6f15f25e5}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Error\-String@{\-Get\-Error\-String}}
+\index{\-Get\-Error\-String@{\-Get\-Error\-String}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Error\-String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static const \-X\-M\-L\-\_\-\-L\-Char$\ast$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Error\-String} (
+\begin{DoxyParamCaption}
+\item[{enum \-X\-M\-L\-\_\-\-Error}]{n\-Error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}\label{class_c_expat_impl_a1e549012634630c0dc954cd6f15f25e5}
+
+
+\-Get last error string 
+
+
+
+\-Definition at line 454 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_aad3b5874db5b019fcd5fb370bb585463}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Expat\-Version@{\-Get\-Expat\-Version}}
+\index{\-Get\-Expat\-Version@{\-Get\-Expat\-Version}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Expat\-Version}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static const \-X\-M\-L\-\_\-\-L\-Char$\ast$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Expat\-Version} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}\label{class_c_expat_impl_aad3b5874db5b019fcd5fb370bb585463}
+
+
+\-Parser other methods 
+
+\-Return the version string 
+
+\-Definition at line 434 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ac6bd3e8292fecc53dfd04038f851eb97}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Expat\-Version@{\-Get\-Expat\-Version}}
+\index{\-Get\-Expat\-Version@{\-Get\-Expat\-Version}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Expat\-Version}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Expat\-Version} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{pn\-Major, }
+\item[{int $\ast$}]{pn\-Minor, }
+\item[{int $\ast$}]{pn\-Micro}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static\mbox{]}}}}\label{class_c_expat_impl_ac6bd3e8292fecc53dfd04038f851eb97}
+
+
+\-Get the version information 
+
+
+
+\-Definition at line 441 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a9d270067e041578c57eb71a1238ed717}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Get\-Input\-Context@{\-Get\-Input\-Context}}
+\index{\-Get\-Input\-Context@{\-Get\-Input\-Context}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Get\-Input\-Context}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ const char$\ast$ {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Get\-Input\-Context} (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{pn\-Offset, }
+\item[{int $\ast$}]{pn\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a9d270067e041578c57eb71a1238ed717}
+
+
+\-Get the input context 
+
+
+
+\-Definition at line 416 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ab97a7933f82395535706fa7a7584c2d4}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Character\-Data@{\-On\-Character\-Data}}
+\index{\-On\-Character\-Data@{\-On\-Character\-Data}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Character\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Character\-Data} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data, }
+\item[{int}]{n\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_ab97a7933f82395535706fa7a7584c2d4}
+
+
+\-Character data handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a4ee7b948e42f1c1a035fe386075d3691}{\-C\-Expat}.
+
+
+
+\-Definition at line 478 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a3e107b5f2b8f3e0784e4bc3b21d9a954}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Comment@{\-On\-Comment}}
+\index{\-On\-Comment@{\-On\-Comment}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Comment} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a3e107b5f2b8f3e0784e4bc3b21d9a954}
+
+
+\-Comment handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a5c44bbfc76f1444880b40ddecae92007}{\-C\-Expat}.
+
+
+
+\-Definition at line 493 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a18a56a0963c1964ef785592a6c9cc7dc}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Default@{\-On\-Default}}
+\index{\-On\-Default@{\-On\-Default}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Default}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Default} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data, }
+\item[{int}]{n\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a18a56a0963c1964ef785592a6c9cc7dc}
+
+
+\-Default handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_af2671ae016b05e929ba3937c4b68b575}{\-C\-Expat}.
+
+
+
+\-Definition at line 514 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_af5fffe076811b52ef4de3e2399504c4c}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-End\-Cdata\-Section@{\-On\-End\-Cdata\-Section}}
+\index{\-On\-End\-Cdata\-Section@{\-On\-End\-Cdata\-Section}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-End\-Cdata\-Section}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-End\-Cdata\-Section} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_af5fffe076811b52ef4de3e2399504c4c}
+
+
+\-End \-C\-D\-A\-T\-A section handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_ab35310a236f2035f8e1a0fda76ec7e31}{\-C\-Expat}.
+
+
+
+\-Definition at line 507 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a395e6e654c41012cd3722d2445c174e3}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-End\-Doctype\-Decl@{\-On\-End\-Doctype\-Decl}}
+\index{\-On\-End\-Doctype\-Decl@{\-On\-End\-Doctype\-Decl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-End\-Doctype\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-End\-Doctype\-Decl} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a395e6e654c41012cd3722d2445c174e3}
+
+
+\-End \-D\-O\-C\-T\-Y\-P\-E declaration handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_abcb042b5d2b4ad02e3e1b28075315734}{\-C\-Expat}.
+
+
+
+\-Definition at line 569 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_aaf21a9a335c6daf7814e83006f968fa1}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-End\-Element@{\-On\-End\-Element}}
+\index{\-On\-End\-Element@{\-On\-End\-Element}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-End\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-End\-Element} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_aaf21a9a335c6daf7814e83006f968fa1}
+
+
+\-End element handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_abff31a8eb9ea8ea0b0594ba8f497e8c4}{\-C\-Expat}.
+
+
+
+\-Definition at line 471 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a4aa22e82d10534373a7cf90354e4d9f2}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-End\-Namespace\-Decl@{\-On\-End\-Namespace\-Decl}}
+\index{\-On\-End\-Namespace\-Decl@{\-On\-End\-Namespace\-Decl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-End\-Namespace\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-End\-Namespace\-Decl} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Prefix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a4aa22e82d10534373a7cf90354e4d9f2}
+
+
+\-End namespace declaration handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a8b2f35fc4bdc2c858cce7c2860b808f0}{\-C\-Expat}.
+
+
+
+\-Definition at line 545 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a413ff03445b1213314747265a1085d0a}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-External\-Entity\-Ref@{\-On\-External\-Entity\-Ref}}
+\index{\-On\-External\-Entity\-Ref@{\-On\-External\-Entity\-Ref}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-External\-Entity\-Ref}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ bool {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-External\-Entity\-Ref} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Context, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Base, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-System\-I\-D, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Public\-I\-D}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a413ff03445b1213314747265a1085d0a}
+
+
+\-External entity ref handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a7ec0c8a7109b9dbe393c6cb09b9be420}{\-C\-Expat}.
+
+
+
+\-Definition at line 521 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a348eb163ca08ff99195a91e50c27ee2c}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Post\-Create@{\-On\-Post\-Create}}
+\index{\-On\-Post\-Create@{\-On\-Post\-Create}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Post\-Create}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Post\-Create} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}\label{class_c_expat_impl_a348eb163ca08ff99195a91e50c27ee2c}
+
+
+\-Protected methods 
+
+\-Handle any post creation 
+
+\-Definition at line 579 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a403235345e254d13e69124b47c0160d8}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Processing\-Instruction@{\-On\-Processing\-Instruction}}
+\index{\-On\-Processing\-Instruction@{\-On\-Processing\-Instruction}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Processing\-Instruction}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Processing\-Instruction} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Target, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a403235345e254d13e69124b47c0160d8}
+
+
+\-Processing instruction handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a49a0c1058dd26ef680baea8af965778f}{\-C\-Expat}.
+
+
+
+\-Definition at line 485 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a5a7082a8c80f14cfed55edc084e1a448}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Start\-Cdata\-Section@{\-On\-Start\-Cdata\-Section}}
+\index{\-On\-Start\-Cdata\-Section@{\-On\-Start\-Cdata\-Section}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Start\-Cdata\-Section}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Start\-Cdata\-Section} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a5a7082a8c80f14cfed55edc084e1a448}
+
+
+\-Start \-C\-D\-A\-T\-A section handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a1ca4bcb887c156a9802d486de954d9c3}{\-C\-Expat}.
+
+
+
+\-Definition at line 500 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a98aee5e2d5b4e00b4808e3b6b6761872}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Start\-Doctype\-Decl@{\-On\-Start\-Doctype\-Decl}}
+\index{\-On\-Start\-Doctype\-Decl@{\-On\-Start\-Doctype\-Decl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Start\-Doctype\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Start\-Doctype\-Decl} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Doctype\-Name, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Sys\-I\-D, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Pub\-I\-D, }
+\item[{bool}]{f\-Has\-Internal\-Subset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a98aee5e2d5b4e00b4808e3b6b6761872}
+
+
+\-Start \-D\-O\-C\-T\-Y\-P\-E declaration handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_ad001e86058a374412bf6b61dedbca66b}{\-C\-Expat}.
+
+
+
+\-Definition at line 560 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a94c5469966d0124253e2b67eda7d59ff}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Start\-Element@{\-On\-Start\-Element}}
+\index{\-On\-Start\-Element@{\-On\-Start\-Element}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Start\-Element}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Start\-Element} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$$\ast$}]{papsz\-Attrs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a94c5469966d0124253e2b67eda7d59ff}
+
+
+\-Public handler methods 
+
+\-Start element handler 
+
+\-Reimplemented in \hyperlink{class_c_expat_a60bd97eaa686c3a64d23dd07f3831db3}{\-C\-Expat}.
+
+
+
+\-Definition at line 464 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a6e40ab1481ae7a0b498d390050467886}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Start\-Namespace\-Decl@{\-On\-Start\-Namespace\-Decl}}
+\index{\-On\-Start\-Namespace\-Decl@{\-On\-Start\-Namespace\-Decl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Start\-Namespace\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Start\-Namespace\-Decl} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Prefix, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-U\-R\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a6e40ab1481ae7a0b498d390050467886}
+
+
+\-Start namespace declaration handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_ad0f1fb5aa04b76b6d6c52769d52cbf56}{\-C\-Expat}.
+
+
+
+\-Definition at line 537 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a17863cd62866c6895319a99c46ec56e1}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Unknown\-Encoding@{\-On\-Unknown\-Encoding}}
+\index{\-On\-Unknown\-Encoding@{\-On\-Unknown\-Encoding}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Unknown\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ bool {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Unknown\-Encoding} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name, }
+\item[{\-X\-M\-L\-\_\-\-Encoding $\ast$}]{p\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a17863cd62866c6895319a99c46ec56e1}
+
+
+\-Unknown encoding handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a30d51f53c71a48084c46154676bed801}{\-C\-Expat}.
+
+
+
+\-Definition at line 530 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a852c68ceb2b2527ff04a245eeac51dfa}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-On\-Xml\-Decl@{\-On\-Xml\-Decl}}
+\index{\-On\-Xml\-Decl@{\-On\-Xml\-Decl}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-On\-Xml\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-On\-Xml\-Decl} (
+\begin{DoxyParamCaption}
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Version, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Encoding, }
+\item[{bool}]{f\-Standalone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a852c68ceb2b2527ff04a245eeac51dfa}
+
+
+\-X\-M\-L declaration handler 
+
+
+
+\-Reimplemented in \hyperlink{class_c_expat_a95a253c6c411ca157005faaa62ac2d8f}{\-C\-Expat}.
+
+
+
+\-Definition at line 552 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a76062f116c2a9c99d42631da6e806339}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Parse@{\-Parse}}
+\index{\-Parse@{\-Parse}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Parse}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ bool {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Parse} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{psz\-Buffer, }
+\item[{int}]{n\-Length = {\ttfamily -\/1}, }
+\item[{bool}]{f\-Is\-Final = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a76062f116c2a9c99d42631da6e806339}
+
+
+\-Parser parse methods 
+
+\-Parse a block of data \-Validate
+
+\-Get the length if not specified
+
+\-Invoke the parser
+
+\-Definition at line 130 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a35df06396bfa8330598572a3f530a5c1}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Parse\-Buffer@{\-Parse\-Buffer}}
+\index{\-Parse\-Buffer@{\-Parse\-Buffer}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Parse\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ bool {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Parse\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Length, }
+\item[{bool}]{f\-Is\-Final = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_c_expat_impl_a35df06396bfa8330598572a3f530a5c1}
+
+
+\-Parse a block of data 
+
+\-Parse internal buffer 
+
+\-Definition at line 183 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ab619ebaabbc0acc4cb07a52b24018cd3}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Processing\-Instruction\-Handler@{\-Processing\-Instruction\-Handler}}
+\index{\-Processing\-Instruction\-Handler@{\-Processing\-Instruction\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Processing\-Instruction\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Processing\-Instruction\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Target, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_ab619ebaabbc0acc4cb07a52b24018cd3}
+
+
+\-Processing instruction handler wrapper 
+
+
+
+\-Definition at line 615 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a0bbc492453c4fb53e1f0b04a7ec41d0d}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Start\-Cdata\-Section\-Handler@{\-Start\-Cdata\-Section\-Handler}}
+\index{\-Start\-Cdata\-Section\-Handler@{\-Start\-Cdata\-Section\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Start\-Cdata\-Section\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Start\-Cdata\-Section\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a0bbc492453c4fb53e1f0b04a7ec41d0d}
+
+
+\-Start \-C\-D\-A\-T\-A section wrapper 
+
+
+
+\-Definition at line 633 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_ac32cdd2739317d6b400ed8c64e9301c9}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Start\-Doctype\-Decl\-Handler@{\-Start\-Doctype\-Decl\-Handler}}
+\index{\-Start\-Doctype\-Decl\-Handler@{\-Start\-Doctype\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Start\-Doctype\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Start\-Doctype\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Doctype\-Name, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Sys\-I\-D, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Pub\-I\-D, }
+\item[{int}]{n\-Has\-Internal\-Subset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_ac32cdd2739317d6b400ed8c64e9301c9}
+
+
+\-Start \-Doctype declaration wrapper 
+
+
+
+\-Definition at line 706 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a8c96098c7f6b94fb2738a96b9cbfc344}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Start\-Element\-Handler@{\-Start\-Element\-Handler}}
+\index{\-Start\-Element\-Handler@{\-Start\-Element\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Start\-Element\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Start\-Element\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$$\ast$}]{papsz\-Attrs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a8c96098c7f6b94fb2738a96b9cbfc344}
+
+
+\-Protected static methods 
+
+\-Start element handler wrapper 
+
+\-Definition at line 588 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a064953fdef08db60d0337ca5ce454e00}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Start\-Namespace\-Decl\-Handler@{\-Start\-Namespace\-Decl\-Handler}}
+\index{\-Start\-Namespace\-Decl\-Handler@{\-Start\-Namespace\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Start\-Namespace\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Start\-Namespace\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Prefix, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-U\-R\-I}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a064953fdef08db60d0337ca5ce454e00}
+
+
+\-Start namespace decl wrapper 
+
+
+
+\-Definition at line 678 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_af453256147076e307aaa33d55d026f3e}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Unknown\-Encoding\-Handler@{\-Unknown\-Encoding\-Handler}}
+\index{\-Unknown\-Encoding\-Handler@{\-Unknown\-Encoding\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Unknown\-Encoding\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static int {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Unknown\-Encoding\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Name, }
+\item[{\-X\-M\-L\-\_\-\-Encoding $\ast$}]{p\-Info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_af453256147076e307aaa33d55d026f3e}
+
+
+\-Unknown encoding wrapper 
+
+
+
+\-Definition at line 669 of file \-Expat\-Impl.\-h.
+
+\hypertarget{class_c_expat_impl_a4d81ebccf213e13900d430ea802e69e5}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!\-Xml\-Decl\-Handler@{\-Xml\-Decl\-Handler}}
+\index{\-Xml\-Decl\-Handler@{\-Xml\-Decl\-Handler}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{\-Xml\-Decl\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ static {\bf void} {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf \-Xml\-Decl\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-User\-Data, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Version, }
+\item[{const \-X\-M\-L\-\_\-\-Char $\ast$}]{psz\-Encoding, }
+\item[{int}]{n\-Standalone}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, static, protected\mbox{]}}}}\label{class_c_expat_impl_a4d81ebccf213e13900d430ea802e69e5}
+
+
+\-X\-M\-L declaration wrapper 
+
+
+
+\-Definition at line 696 of file \-Expat\-Impl.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_expat_impl_a75803f8a4d4dc098f243dabbfba5de77}{\index{\-C\-Expat\-Impl@{\-C\-Expat\-Impl}!m\-\_\-p@{m\-\_\-p}}
+\index{m\-\_\-p@{m\-\_\-p}!CExpatImpl@{\-C\-Expat\-Impl}}
+\subsubsection[{m\-\_\-p}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class \-\_\-\-T$>$ \-X\-M\-L\-\_\-\-Parser {\bf \-C\-Expat\-Impl}$<$ \-\_\-\-T $>$\-::{\bf m\-\_\-p}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_expat_impl_a75803f8a4d4dc098f243dabbfba5de77}
+
+
+\-Protected members 
+
+
+
+\-Definition at line 726 of file \-Expat\-Impl.\-h.
+
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+common/expat/\hyperlink{_expat_impl_8h}{\-Expat\-Impl.\-h}\end{DoxyCompactItemize}

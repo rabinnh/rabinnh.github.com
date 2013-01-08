@@ -1,0 +1,194 @@
+\hypertarget{struct__ihdr}{\section{\-\_\-ihdr \-Struct \-Reference}
+\label{struct__ihdr}\index{\-\_\-ihdr@{\-\_\-ihdr}}
+}
+
+
+{\ttfamily \#include $<$icmp.\-h$>$}
+
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{struct__ihdr_a397fe195616b23c60093545fc8595112}{i\-\_\-type}
+\item 
+unsigned char \hyperlink{struct__ihdr_abfe0b610d94a9d3abf86618edc169edf}{i\-\_\-code}
+\item 
+unsigned short \hyperlink{struct__ihdr_a57fae7fcc12a40ad4e9b745433523448}{i\-\_\-cksum}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>unsigned char \hyperlink{struct__ihdr_a23a9d84c4095df74a9a9c0788db519c1}{ih\_pptr}\\
+\>struct in\_addr \hyperlink{struct__ihdr_af439f98bdf25360055160d2b6e6157c5}{ih\_gwaddr}\\
+\>struct {\bfseries ih\_idseq} \{\\
+\>\>unsigned short \hyperlink{struct__ihdr_a55f8e45d5702dce3c541858b0c5050ab}{icd\_id}\\
+\>\>unsigned short \hyperlink{struct__ihdr_ae9eb480801731dd6c2d0e512cb3ff6bf}{icd\_seq}\\
+\>\} \hyperlink{struct__ihdr_ac70ebc2c5e455cd6574dc9a7d593e360}{ih\_idseq}\\
+\>int \hyperlink{struct__ihdr_a152872ebf0c8d333999a52c670d6d6c8}{ih\_void}\\
+\>struct {\bfseries ih\_pmtu} \{\\
+\>\>short \hyperlink{struct__ihdr_a59e303100965e4ba3abcfbb90f545777}{ipm\_void}\\
+\>\>short \hyperlink{struct__ihdr_add4f758969a104d48e295cfb9c07c243}{ipm\_nextmtu}\\
+\>\} \hyperlink{struct__ihdr_ad3df54682f98c24d5cf737d5bdc05633}{ih\_pmtu}\\
+\} \hyperlink{struct__ihdr_abe0a2d0debc1ff2897f3202ef04b9766}{icmp\_hun}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries id\_ts} \{\\
+\>\>unsigned long \hyperlink{struct__ihdr_ab1bce9ee647c42e7cfde5e468a7efc68}{its\_otime}\\
+\>\>unsigned long \hyperlink{struct__ihdr_aee743926bb7e5899d42114210be1f525}{its\_rtime}\\
+\>\>unsigned long \hyperlink{struct__ihdr_a686540f5bc58f7930d80493be9e6d117}{its\_ttime}\\
+\>\} \hyperlink{struct__ihdr_a6a07aaaa06386774c317c24db22830c9}{id\_ts}\\
+\>struct {\bfseries id\_ip} \{\\
+\>\>struct \hyperlink{structiphdr}{iphdr} \hyperlink{struct__ihdr_a01bc79c95db185a97826a8552fca8ada}{idi\_ip}\\
+\>\} \hyperlink{struct__ihdr_a21dffa6f32fb5b82490caf254fa764c1}{id\_ip}\\
+\>unsigned long \hyperlink{struct__ihdr_a098978c3369610c6662e4c8bcdff9040}{id\_mask}\\
+\>char \hyperlink{struct__ihdr_a8d5a44990de5bfd7c92417f2b3b6c838}{id\_data} \mbox{[}1\mbox{]}\\
+\} \hyperlink{struct__ihdr_a80f2308d90fe1041b6305207f7b2352d}{icmp\_dun}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 110 of file icmp.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{struct__ihdr_a57fae7fcc12a40ad4e9b745433523448}{\index{\-\_\-ihdr@{\-\_\-ihdr}!i\-\_\-cksum@{i\-\_\-cksum}}
+\index{i\-\_\-cksum@{i\-\_\-cksum}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{i\-\_\-cksum}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf \-\_\-ihdr\-::i\-\_\-cksum}}}\label{struct__ihdr_a57fae7fcc12a40ad4e9b745433523448}
+
+
+\-Definition at line 114 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_abfe0b610d94a9d3abf86618edc169edf}{\index{\-\_\-ihdr@{\-\_\-ihdr}!i\-\_\-code@{i\-\_\-code}}
+\index{i\-\_\-code@{i\-\_\-code}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{i\-\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-\_\-ihdr\-::i\-\_\-code}}}\label{struct__ihdr_abfe0b610d94a9d3abf86618edc169edf}
+
+
+\-Definition at line 113 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a397fe195616b23c60093545fc8595112}{\index{\-\_\-ihdr@{\-\_\-ihdr}!i\-\_\-type@{i\-\_\-type}}
+\index{i\-\_\-type@{i\-\_\-type}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{i\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-\_\-ihdr\-::i\-\_\-type}}}\label{struct__ihdr_a397fe195616b23c60093545fc8595112}
+
+
+\-Definition at line 112 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a55f8e45d5702dce3c541858b0c5050ab}{\index{\-\_\-ihdr@{\-\_\-ihdr}!icd\-\_\-id@{icd\-\_\-id}}
+\index{icd\-\_\-id@{icd\-\_\-id}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{icd\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf \-\_\-ihdr\-::icd\-\_\-id}}}\label{struct__ihdr_a55f8e45d5702dce3c541858b0c5050ab}
+
+
+\-Definition at line 119 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_ae9eb480801731dd6c2d0e512cb3ff6bf}{\index{\-\_\-ihdr@{\-\_\-ihdr}!icd\-\_\-seq@{icd\-\_\-seq}}
+\index{icd\-\_\-seq@{icd\-\_\-seq}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{icd\-\_\-seq}]{\setlength{\rightskip}{0pt plus 5cm}unsigned short {\bf \-\_\-ihdr\-::icd\-\_\-seq}}}\label{struct__ihdr_ae9eb480801731dd6c2d0e512cb3ff6bf}
+
+
+\-Definition at line 120 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a80f2308d90fe1041b6305207f7b2352d}{\index{\-\_\-ihdr@{\-\_\-ihdr}!icmp\-\_\-dun@{icmp\-\_\-dun}}
+\index{icmp\-\_\-dun@{icmp\-\_\-dun}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{icmp\-\_\-dun}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   {\bf \-\_\-ihdr\-::icmp\-\_\-dun}}}\label{struct__ihdr_a80f2308d90fe1041b6305207f7b2352d}
+\hypertarget{struct__ihdr_abe0a2d0debc1ff2897f3202ef04b9766}{\index{\-\_\-ihdr@{\-\_\-ihdr}!icmp\-\_\-hun@{icmp\-\_\-hun}}
+\index{icmp\-\_\-hun@{icmp\-\_\-hun}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{icmp\-\_\-hun}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \}   {\bf \-\_\-ihdr\-::icmp\-\_\-hun}}}\label{struct__ihdr_abe0a2d0debc1ff2897f3202ef04b9766}
+\hypertarget{struct__ihdr_a8d5a44990de5bfd7c92417f2b3b6c838}{\index{\-\_\-ihdr@{\-\_\-ihdr}!id\-\_\-data@{id\-\_\-data}}
+\index{id\-\_\-data@{id\-\_\-data}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{id\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-\_\-ihdr\-::id\-\_\-data}\mbox{[}1\mbox{]}}}\label{struct__ihdr_a8d5a44990de5bfd7c92417f2b3b6c838}
+
+
+\-Definition at line 143 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a21dffa6f32fb5b82490caf254fa764c1}{\index{\-\_\-ihdr@{\-\_\-ihdr}!id\-\_\-ip@{id\-\_\-ip}}
+\index{id\-\_\-ip@{id\-\_\-ip}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{id\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::{\bf id\-\_\-ip}  {\bf \-\_\-ihdr\-::id\-\_\-ip}}}\label{struct__ihdr_a21dffa6f32fb5b82490caf254fa764c1}
+\hypertarget{struct__ihdr_a098978c3369610c6662e4c8bcdff9040}{\index{\-\_\-ihdr@{\-\_\-ihdr}!id\-\_\-mask@{id\-\_\-mask}}
+\index{id\-\_\-mask@{id\-\_\-mask}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{id\-\_\-mask}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-\_\-ihdr\-::id\-\_\-mask}}}\label{struct__ihdr_a098978c3369610c6662e4c8bcdff9040}
+
+
+\-Definition at line 142 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a6a07aaaa06386774c317c24db22830c9}{\index{\-\_\-ihdr@{\-\_\-ihdr}!id\-\_\-ts@{id\-\_\-ts}}
+\index{id\-\_\-ts@{id\-\_\-ts}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{id\-\_\-ts}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::{\bf id\-\_\-ts}  {\bf \-\_\-ihdr\-::id\-\_\-ts}}}\label{struct__ihdr_a6a07aaaa06386774c317c24db22830c9}
+\hypertarget{struct__ihdr_a01bc79c95db185a97826a8552fca8ada}{\index{\-\_\-ihdr@{\-\_\-ihdr}!idi\-\_\-ip@{idi\-\_\-ip}}
+\index{idi\-\_\-ip@{idi\-\_\-ip}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{idi\-\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf iphdr} {\bf \-\_\-ihdr\-::idi\-\_\-ip}}}\label{struct__ihdr_a01bc79c95db185a97826a8552fca8ada}
+
+
+\-Definition at line 139 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_af439f98bdf25360055160d2b6e6157c5}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ih\-\_\-gwaddr@{ih\-\_\-gwaddr}}
+\index{ih\-\_\-gwaddr@{ih\-\_\-gwaddr}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ih\-\_\-gwaddr}]{\setlength{\rightskip}{0pt plus 5cm}struct in\-\_\-addr {\bf \-\_\-ihdr\-::ih\-\_\-gwaddr}}}\label{struct__ihdr_af439f98bdf25360055160d2b6e6157c5}
+
+
+\-Definition at line 117 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_ac70ebc2c5e455cd6574dc9a7d593e360}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ih\-\_\-idseq@{ih\-\_\-idseq}}
+\index{ih\-\_\-idseq@{ih\-\_\-idseq}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ih\-\_\-idseq}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::{\bf ih\-\_\-idseq}  {\bf \-\_\-ihdr\-::ih\-\_\-idseq}}}\label{struct__ihdr_ac70ebc2c5e455cd6574dc9a7d593e360}
+\hypertarget{struct__ihdr_ad3df54682f98c24d5cf737d5bdc05633}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ih\-\_\-pmtu@{ih\-\_\-pmtu}}
+\index{ih\-\_\-pmtu@{ih\-\_\-pmtu}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ih\-\_\-pmtu}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \} \-::{\bf ih\-\_\-pmtu}  {\bf \-\_\-ihdr\-::ih\-\_\-pmtu}}}\label{struct__ihdr_ad3df54682f98c24d5cf737d5bdc05633}
+\hypertarget{struct__ihdr_a23a9d84c4095df74a9a9c0788db519c1}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ih\-\_\-pptr@{ih\-\_\-pptr}}
+\index{ih\-\_\-pptr@{ih\-\_\-pptr}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ih\-\_\-pptr}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-\_\-ihdr\-::ih\-\_\-pptr}}}\label{struct__ihdr_a23a9d84c4095df74a9a9c0788db519c1}
+
+
+\-Definition at line 116 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a152872ebf0c8d333999a52c670d6d6c8}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ih\-\_\-void@{ih\-\_\-void}}
+\index{ih\-\_\-void@{ih\-\_\-void}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ih\-\_\-void}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-\_\-ihdr\-::ih\-\_\-void}}}\label{struct__ihdr_a152872ebf0c8d333999a52c670d6d6c8}
+
+
+\-Definition at line 123 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_add4f758969a104d48e295cfb9c07c243}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ipm\-\_\-nextmtu@{ipm\-\_\-nextmtu}}
+\index{ipm\-\_\-nextmtu@{ipm\-\_\-nextmtu}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ipm\-\_\-nextmtu}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf \-\_\-ihdr\-::ipm\-\_\-nextmtu}}}\label{struct__ihdr_add4f758969a104d48e295cfb9c07c243}
+
+
+\-Definition at line 128 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a59e303100965e4ba3abcfbb90f545777}{\index{\-\_\-ihdr@{\-\_\-ihdr}!ipm\-\_\-void@{ipm\-\_\-void}}
+\index{ipm\-\_\-void@{ipm\-\_\-void}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{ipm\-\_\-void}]{\setlength{\rightskip}{0pt plus 5cm}short {\bf \-\_\-ihdr\-::ipm\-\_\-void}}}\label{struct__ihdr_a59e303100965e4ba3abcfbb90f545777}
+
+
+\-Definition at line 127 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_ab1bce9ee647c42e7cfde5e468a7efc68}{\index{\-\_\-ihdr@{\-\_\-ihdr}!its\-\_\-otime@{its\-\_\-otime}}
+\index{its\-\_\-otime@{its\-\_\-otime}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{its\-\_\-otime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-\_\-ihdr\-::its\-\_\-otime}}}\label{struct__ihdr_ab1bce9ee647c42e7cfde5e468a7efc68}
+
+
+\-Definition at line 134 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_aee743926bb7e5899d42114210be1f525}{\index{\-\_\-ihdr@{\-\_\-ihdr}!its\-\_\-rtime@{its\-\_\-rtime}}
+\index{its\-\_\-rtime@{its\-\_\-rtime}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{its\-\_\-rtime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-\_\-ihdr\-::its\-\_\-rtime}}}\label{struct__ihdr_aee743926bb7e5899d42114210be1f525}
+
+
+\-Definition at line 135 of file icmp.\-h.
+
+\hypertarget{struct__ihdr_a686540f5bc58f7930d80493be9e6d117}{\index{\-\_\-ihdr@{\-\_\-ihdr}!its\-\_\-ttime@{its\-\_\-ttime}}
+\index{its\-\_\-ttime@{its\-\_\-ttime}!_ihdr@{\-\_\-ihdr}}
+\subsubsection[{its\-\_\-ttime}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-\_\-ihdr\-::its\-\_\-ttime}}}\label{struct__ihdr_a686540f5bc58f7930d80493be9e6d117}
+
+
+\-Definition at line 136 of file icmp.\-h.
+
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{icmp_8h}{icmp.\-h}\end{DoxyCompactItemize}

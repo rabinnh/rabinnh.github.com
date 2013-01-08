@@ -1,0 +1,127 @@
+\hypertarget{class_c_p_connection_handler}{\section{\-C\-P\-Connection\-Handler \-Class \-Reference}
+\label{class_c_p_connection_handler}\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}}
+}
+
+
+\hyperlink{class_c_p_connection_handler}{\-C\-P\-Connection\-Handler} does the actual \-I/\-O for each connection.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-P\-Connection\-Handler.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Connection\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_p_connection_handler}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_connection_handler_ad3f9e12330f2741b4e61a457e0980798}{\-C\-P\-Connection\-Handler} (long l\-Close\-Wait\-Milliseconds=0)
+\begin{DoxyCompactList}\small\item\em \-Close\-Wait\-Milliseconds is the number of milliseconds after the last send to close the socket. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_p_connection_handler_a32a850b632fe1f9bd28dec72e1346ad1}{$\sim$\-C\-P\-Connection\-Handler} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_p_connection_handler_ad7e761b11abc80ceb4573821f38a4244}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)
+\begin{DoxyCompactList}\small\item\em \-Function that does the work. \end{DoxyCompactList}\item 
+long \hyperlink{class_c_p_connection_handler_abd4504be00d42202170b8ee762f4f5f3}{\-Get\-Time\-Diff} (long l\-Start, long l\-Finish)
+\begin{DoxyCompactList}\small\item\em \-Get \-M\-S difference between 2 times. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{class_c_p_connection_handler_a8d29ca9b1dde7b894038e70a19a9c30f}{l\-Close\-Wait\-M\-S}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_c_p_connection_handler}{\-C\-P\-Connection\-Handler} does the actual \-I/\-O for each connection. 
+
+\-Definition at line 37 of file \-C\-P\-Connection\-Handler.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_connection_handler_ad3f9e12330f2741b4e61a457e0980798}{\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}}
+\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!CPConnectionHandler@{\-C\-P\-Connection\-Handler}}
+\subsubsection[{\-C\-P\-Connection\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Connection\-Handler\-::\-C\-P\-Connection\-Handler} (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Close\-Wait\-Milliseconds = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_connection_handler_ad3f9e12330f2741b4e61a457e0980798}
+
+
+\-Close\-Wait\-Milliseconds is the number of milliseconds after the last send to close the socket. 
+
+
+
+\-Definition at line 29 of file \-C\-P\-Connection\-Handler.\-cpp.
+
+\hypertarget{class_c_p_connection_handler_a32a850b632fe1f9bd28dec72e1346ad1}{\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!$\sim$\-C\-P\-Connection\-Handler@{$\sim$\-C\-P\-Connection\-Handler}}
+\index{$\sim$\-C\-P\-Connection\-Handler@{$\sim$\-C\-P\-Connection\-Handler}!CPConnectionHandler@{\-C\-P\-Connection\-Handler}}
+\subsubsection[{$\sim$\-C\-P\-Connection\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Connection\-Handler\-::$\sim$\-C\-P\-Connection\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_handler_a32a850b632fe1f9bd28dec72e1346ad1}
+
+
+\-Definition at line 39 of file \-C\-P\-Connection\-Handler.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_connection_handler_abd4504be00d42202170b8ee762f4f5f3}{\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!\-Get\-Time\-Diff@{\-Get\-Time\-Diff}}
+\index{\-Get\-Time\-Diff@{\-Get\-Time\-Diff}!CPConnectionHandler@{\-C\-P\-Connection\-Handler}}
+\subsubsection[{\-Get\-Time\-Diff}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-P\-Connection\-Handler\-::\-Get\-Time\-Diff} (
+\begin{DoxyParamCaption}
+\item[{long}]{l\-Start, }
+\item[{long}]{l\-Finish}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_handler_abd4504be00d42202170b8ee762f4f5f3}
+
+
+\-Get \-M\-S difference between 2 times. 
+
+
+
+\-Definition at line 217 of file \-C\-P\-Connection\-Handler.\-cpp.
+
+\hypertarget{class_c_p_connection_handler_ad7e761b11abc80ceb4573821f38a4244}{\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CPConnectionHandler@{\-C\-P\-Connection\-Handler}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-P\-Connection\-Handler\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_handler_ad7e761b11abc80ceb4573821f38a4244}
+
+
+\-Function that does the work. 
+
+
+
+\-Implements \hyperlink{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}{\-C\-P\-Handler}.
+
+
+
+\-Definition at line 46 of file \-C\-P\-Connection\-Handler.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_p_connection_handler_a8d29ca9b1dde7b894038e70a19a9c30f}{\index{\-C\-P\-Connection\-Handler@{\-C\-P\-Connection\-Handler}!l\-Close\-Wait\-M\-S@{l\-Close\-Wait\-M\-S}}
+\index{l\-Close\-Wait\-M\-S@{l\-Close\-Wait\-M\-S}!CPConnectionHandler@{\-C\-P\-Connection\-Handler}}
+\subsubsection[{l\-Close\-Wait\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-P\-Connection\-Handler\-::l\-Close\-Wait\-M\-S}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_handler_a8d29ca9b1dde7b894038e70a19a9c30f}
+
+
+\-Definition at line 50 of file \-C\-P\-Connection\-Handler.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_p_connection_handler_8h}{\-C\-P\-Connection\-Handler.\-h}\item 
+common/\hyperlink{_c_p_connection_handler_8cpp}{\-C\-P\-Connection\-Handler.\-cpp}\end{DoxyCompactItemize}

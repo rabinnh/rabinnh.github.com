@@ -1,0 +1,233 @@
+\hypertarget{class_c_x_plat_pooled_thread}{\section{\-C\-X\-Plat\-Pooled\-Thread \-Class \-Reference}
+\label{class_c_x_plat_pooled_thread}\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}}
+}
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Pooled\-Thread.\-h$>$}
+
+\-Inheritance diagram for \-C\-X\-Plat\-Pooled\-Thread\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_x_plat_pooled_thread}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_pooled_thread_ae83c999db18cc5efc0b1d7adfc3dc421}{\-C\-X\-Plat\-Pooled\-Thread} ()
+\item 
+virtual \hyperlink{class_c_x_plat_pooled_thread_ad5c141f6171340a1b5c3ea4c2b71dfde}{$\sim$\-C\-X\-Plat\-Pooled\-Thread} ()
+\item 
+virtual int \hyperlink{class_c_x_plat_pooled_thread_abe885544566fee0b5a07512c3202d120}{\-Start\-Working} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_pooled_thread_a2024d59a6361c65af533f4b12501e6f3}{\-Is\-Thread\-Busy} ()
+\begin{DoxyCompactList}\small\item\em \-Is thread in the user's code? \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_pooled_thread_a88375206dfba56aaef406774df8f23d1}{\-Set\-Completion\-Wait\-Time} (unsigned long l\-Wait\-Time)
+\begin{DoxyCompactList}\small\item\em \-Set the max time we will wait for thread to finish work when we are ready to terminate it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \hyperlink{class_c_x_plat_pooled_thread_a8b181531a0345e3e3b7381122766218f}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)
+\item 
+virtual unsigned \hyperlink{class_c_x_plat_pooled_thread_a398deb73c58c851f5f93a6b3d5ba5106}{\-Pooled\-Worker\-Function} ()=0
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_thread_pool}{\-C\-X\-Plat\-Thread\-Pool} $\ast$ \hyperlink{class_c_x_plat_pooled_thread_ad6ceff927d5ff0e06eec0d99aebb1b10}{p\-Pool\-Parent}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_x_plat_pooled_thread_aa72050f5a65f4117e41aec984a976fac}{c\-Start\-Working}
+\begin{DoxyCompactList}\small\item\em \-Pool that we belong to. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_pooled_thread_ae9df7cdc87ca6ebf387fb4cf42836417}{b\-Thread\-Busy}
+\begin{DoxyCompactList}\small\item\em \-When set, work starts. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_pooled_thread_ab708ae971b8acdc4830987ea93ee4e52}{b\-Terminate\-Thread}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_pooled_thread_af269720f4a5cd4e294d9b5fa7aebd50a}{b\-Thread\-Allocated}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ \hyperlink{class_c_x_plat_pooled_thread_a76d10e5c387e927b7c3c553673e98a0c}{p\-Func\-Param}
+\item 
+unsigned long \hyperlink{class_c_x_plat_pooled_thread_a55185bc10d6367eaaf05fbd1e6ed3701}{l\-Wait\-For\-Completion}
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_x_plat_pooled_thread_ae6436844a6ddb7bc05268210cc9cdf3b}{\-C\-X\-Plat\-Thread\-Pool}
+\begin{DoxyCompactList}\small\item\em \-So it can set the b\-Thread\-Allocated flag. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 55 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_pooled_thread_ae83c999db18cc5efc0b1d7adfc3dc421}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-C\-X\-Plat\-Pooled\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-C\-X\-Plat\-Pooled\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_pooled_thread_ae83c999db18cc5efc0b1d7adfc3dc421}
+
+
+\-Definition at line 55 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_pooled_thread_ad5c141f6171340a1b5c3ea4c2b71dfde}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!$\sim$\-C\-X\-Plat\-Pooled\-Thread@{$\sim$\-C\-X\-Plat\-Pooled\-Thread}}
+\index{$\sim$\-C\-X\-Plat\-Pooled\-Thread@{$\sim$\-C\-X\-Plat\-Pooled\-Thread}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Pooled\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Pooled\-Thread\-::$\sim$\-C\-X\-Plat\-Pooled\-Thread} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_pooled_thread_ad5c141f6171340a1b5c3ea4c2b71dfde}
+
+
+\-Definition at line 62 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_pooled_thread_a2024d59a6361c65af533f4b12501e6f3}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-Is\-Thread\-Busy@{\-Is\-Thread\-Busy}}
+\index{\-Is\-Thread\-Busy@{\-Is\-Thread\-Busy}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-Is\-Thread\-Busy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-Is\-Thread\-Busy} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_pooled_thread_a2024d59a6361c65af533f4b12501e6f3}
+
+
+\-Is thread in the user's code? 
+
+
+
+\-Definition at line 81 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_pooled_thread_a398deb73c58c851f5f93a6b3d5ba5106}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-Pooled\-Worker\-Function@{\-Pooled\-Worker\-Function}}
+\index{\-Pooled\-Worker\-Function@{\-Pooled\-Worker\-Function}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-Pooled\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned {\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-Pooled\-Worker\-Function} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_x_plat_pooled_thread_a398deb73c58c851f5f93a6b3d5ba5106}
+\-This is what you should derive from to do your work. \-Note that once \-Pooled\-Worker\-Function returns, this thread is returned to the thread pool and you must request a new thread for any further work. \hypertarget{class_c_x_plat_pooled_thread_a88375206dfba56aaef406774df8f23d1}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-Set\-Completion\-Wait\-Time@{\-Set\-Completion\-Wait\-Time}}
+\index{\-Set\-Completion\-Wait\-Time@{\-Set\-Completion\-Wait\-Time}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-Set\-Completion\-Wait\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-Set\-Completion\-Wait\-Time} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{l\-Wait\-Time}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_pooled_thread_a88375206dfba56aaef406774df8f23d1}
+
+
+\-Set the max time we will wait for thread to finish work when we are ready to terminate it. 
+
+
+
+\-Definition at line 117 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_pooled_thread_abe885544566fee0b5a07512c3202d120}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-Start\-Working@{\-Start\-Working}}
+\index{\-Start\-Working@{\-Start\-Working}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-Start\-Working}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-Start\-Working} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_x_plat_pooled_thread_abe885544566fee0b5a07512c3202d120}
+\-Start doing the user's duty. \-N\-E\-V\-E\-R \-C\-A\-L\-L \-T\-H\-I\-S \-T\-W\-I\-C\-E! $\ast$$\ast$$\ast$$\ast$ \-After your \-Pooled\-Worker\-Function returns, this thread is added back to the thread pool! 
+
+\-Definition at line 72 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+\hypertarget{class_c_x_plat_pooled_thread_a8b181531a0345e3e3b7381122766218f}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-X\-Plat\-Pooled\-Thread\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_x_plat_pooled_thread_a8b181531a0345e3e3b7381122766218f}
+\-Implemented by this class. \-S\-H\-O\-U\-L\-D \-N\-O\-T \-B\-E \-D\-E\-R\-I\-V\-E\-D \-F\-R\-O\-M! \-Use \-Pooled\-Worker\-Function instead. 
+
+\-Implements \hyperlink{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\-C\-X\-Plat\-Thread}.
+
+
+
+\-Definition at line 89 of file \-C\-X\-Plat\-Pooled\-Thread.\-cpp.
+
+
+
+\subsection{\-Friends \-And \-Related \-Function \-Documentation}
+\hypertarget{class_c_x_plat_pooled_thread_ae6436844a6ddb7bc05268210cc9cdf3b}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}}
+\index{\-C\-X\-Plat\-Thread\-Pool@{\-C\-X\-Plat\-Thread\-Pool}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{\-C\-X\-Plat\-Thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf \-C\-X\-Plat\-Thread\-Pool}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{class_c_x_plat_pooled_thread_ae6436844a6ddb7bc05268210cc9cdf3b}
+
+
+\-So it can set the b\-Thread\-Allocated flag. 
+
+
+
+\-Definition at line 57 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_pooled_thread_ab708ae971b8acdc4830987ea93ee4e52}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!b\-Terminate\-Thread@{b\-Terminate\-Thread}}
+\index{b\-Terminate\-Thread@{b\-Terminate\-Thread}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{b\-Terminate\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::b\-Terminate\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_ab708ae971b8acdc4830987ea93ee4e52}
+
+
+\-Definition at line 85 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_af269720f4a5cd4e294d9b5fa7aebd50a}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!b\-Thread\-Allocated@{b\-Thread\-Allocated}}
+\index{b\-Thread\-Allocated@{b\-Thread\-Allocated}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{b\-Thread\-Allocated}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::b\-Thread\-Allocated}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_af269720f4a5cd4e294d9b5fa7aebd50a}
+
+
+\-Definition at line 86 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_ae9df7cdc87ca6ebf387fb4cf42836417}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!b\-Thread\-Busy@{b\-Thread\-Busy}}
+\index{b\-Thread\-Busy@{b\-Thread\-Busy}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{b\-Thread\-Busy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::b\-Thread\-Busy}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_ae9df7cdc87ca6ebf387fb4cf42836417}
+
+
+\-When set, work starts. 
+
+
+
+\-Definition at line 84 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_aa72050f5a65f4117e41aec984a976fac}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!c\-Start\-Working@{c\-Start\-Working}}
+\index{c\-Start\-Working@{c\-Start\-Working}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{c\-Start\-Working}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-X\-Plat\-Pooled\-Thread\-::c\-Start\-Working}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_aa72050f5a65f4117e41aec984a976fac}
+
+
+\-Pool that we belong to. 
+
+
+
+\-Definition at line 83 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_a55185bc10d6367eaaf05fbd1e6ed3701}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!l\-Wait\-For\-Completion@{l\-Wait\-For\-Completion}}
+\index{l\-Wait\-For\-Completion@{l\-Wait\-For\-Completion}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{l\-Wait\-For\-Completion}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-C\-X\-Plat\-Pooled\-Thread\-::l\-Wait\-For\-Completion}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_a55185bc10d6367eaaf05fbd1e6ed3701}
+
+
+\-Definition at line 88 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_a76d10e5c387e927b7c3c553673e98a0c}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!p\-Func\-Param@{p\-Func\-Param}}
+\index{p\-Func\-Param@{p\-Func\-Param}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{p\-Func\-Param}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ {\bf \-C\-X\-Plat\-Pooled\-Thread\-::p\-Func\-Param}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_a76d10e5c387e927b7c3c553673e98a0c}
+
+
+\-Definition at line 87 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+\hypertarget{class_c_x_plat_pooled_thread_ad6ceff927d5ff0e06eec0d99aebb1b10}{\index{\-C\-X\-Plat\-Pooled\-Thread@{\-C\-X\-Plat\-Pooled\-Thread}!p\-Pool\-Parent@{p\-Pool\-Parent}}
+\index{p\-Pool\-Parent@{p\-Pool\-Parent}!CXPlatPooledThread@{\-C\-X\-Plat\-Pooled\-Thread}}
+\subsubsection[{p\-Pool\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Thread\-Pool}$\ast$ {\bf \-C\-X\-Plat\-Pooled\-Thread\-::p\-Pool\-Parent}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_pooled_thread_ad6ceff927d5ff0e06eec0d99aebb1b10}
+
+
+\-Definition at line 82 of file \-C\-X\-Plat\-Pooled\-Thread.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_pooled_thread_8h}{\-C\-X\-Plat\-Pooled\-Thread.\-h}\item 
+common/\hyperlink{_c_x_plat_pooled_thread_8cpp}{\-C\-X\-Plat\-Pooled\-Thread.\-cpp}\end{DoxyCompactItemize}

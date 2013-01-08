@@ -1,0 +1,629 @@
+\hypertarget{class_c_p_connection}{\section{\-C\-P\-Connection \-Class \-Reference}
+\label{class_c_p_connection}\index{\-C\-P\-Connection@{\-C\-P\-Connection}}
+}
+
+
+{\ttfamily \#include $<$\-C\-P\-Connection.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Connection\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_p_connection}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5a212b310ed9516ad4edce81eb3f615a90}{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E} =  0x2000, 
+\hyperlink{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5ae1bfa53acfedd84586f9577402592e70}{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E} =  0x8000
+ \}
+\begin{DoxyCompactList}\small\item\em \-Operations. \end{DoxyCompactList}\item 
+enum \hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bde}{\-E\-C\-O\-N\-N\-E\-C\-T} \{ \*
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeab33cb29fa6b86f5a9764b5a6ff6b9f98}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D}, 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaa739beea3c36f54a1e48e309477fdecd}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G}, 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead9adca01889d40665ea46c97029bf07b}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D}, 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea414416c17cf4d03572ea886af634c463}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S}, 
+\*
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea9a83b86ee125293f6d73d8afec74a145}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}, 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead12aa45cdb80e03a24de39dff800f4ae}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D}, 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaf31728d4a1b415f3076875e6ac69053b}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E}
+ \}
+\begin{DoxyCompactList}\small\item\em \-No public destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_connection_a512354ba23583d1bddc9cb4999d248f3}{\-C\-P\-Connection} (\hyperlink{class_c_base_socket}{\-C\-Base\-Socket} $\ast$p\-Owner, struct sockaddr $\ast$p\-Addr=\-N\-U\-L\-L, int i\-Max\-Send\-Buffer\-Size=\hyperlink{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5ae1bfa53acfedd84586f9577402592e70}{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E})
+\item 
+virtual \hyperlink{class_c_p_connection_a7a06ca261e3c9418bf9cfe63bba8ad44}{$\sim$\-C\-P\-Connection} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_a666a669dc7dfde6478fb599104cace44}{\-Create} (int af, int type, int protocol, \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T} n\-Port=0, \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lp\-Addr=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Reuse=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Bind=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}, int i\-Linger=-\/1)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_connection_a62d7805ad5ad95853f68628d5df4f0f1}{\-Terminate\-Connection} ()
+\begin{DoxyCompactList}\small\item\em \-Terminate a connection and close the socket. \end{DoxyCompactList}\item 
+virtual time\-\_\-t \hyperlink{class_c_p_connection_acbc1f976fdecf17d5d3b0b75b524d69c}{\-Get\-Time\-Connected} ()
+\begin{DoxyCompactList}\small\item\em \-Return the time the connection was initiated. \end{DoxyCompactList}\item 
+virtual struct sockaddr\-\_\-in \hyperlink{class_c_p_connection_a8a68ba35336e1255ae4c1e3bb77fb0e5}{\-Get\-Socket\-Address} ()
+\begin{DoxyCompactList}\small\item\em \-Get socket address. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_connection_a703a63596b3e3c93a8b76238bf5ec6f4}{\-Async\-Terminate\-Connection} ()
+\item 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bde}{\-E\-C\-O\-N\-N\-E\-C\-T} \hyperlink{class_c_p_connection_a72266989e31085bfb2f45f603115a6fb}{\-Get\-Connection\-Status} ()
+\begin{DoxyCompactList}\small\item\em \-Get connection status. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_ae1ccbe730072cfaa3d5ad7d94c9d6571}{\-Is\-Send\-Complete} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_aafe1dacf5a3a4927f44435e887b5e177}{b\-Recv\-Pause}
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{class_c_p_connection_a51cab90d3e5f74d43a838e4ed5fe9c89}{\-Receive\-Data} ()
+\begin{DoxyCompactList}\small\item\em \-Receive the data to a socket. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_p_connection_a7678a5c828e5bc52dd0619821904bcac}{\-Send\-Data} ()
+\begin{DoxyCompactList}\small\item\em \-Send data from a socket. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_a502e914917ea8c82f2225253d1bd0a71}{\-Send\-Data\-Out} (\hyperlink{_x_plat_8h_ad162cb9da5f09788c88e33cd9486a158}{\-L\-P\-S\-T\-R} lp\-Data, int n\-Packet\-Size, int n\-Total\-Length)
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_a1b223eab8f518f390b2c01f7c1e33e72}{\-Process\-Data} (unsigned char $\ast$lp\-Data, int i\-Len)=0
+\begin{DoxyCompactList}\small\item\em \-Pure virtual function to process data. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_a9793183adddb29f39186eee5eac6701f}{\-Get\-Handshake} (unsigned char $\ast$$\ast$uc\-H\-S, int \&i\-Len)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_connection_a331c50e83d37b88ac099aa95b6b1523c}{\-Disconnected} ()
+\begin{DoxyCompactList}\small\item\em \-When removed from the handler, this gets called. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_connection_a5c83da25150fd43d9fe4522d34d6cffb}{\-Unprotected\-Close\-Socket} ()
+\begin{DoxyCompactList}\small\item\em \-Unprotected close socket. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_connection_aea524e3f40bddc5ae1523fa16ae41622}{\-Set\-Handler} (\hyperlink{class_c_p_handler}{\-C\-P\-Handler} $\ast$p\-Handler)
+\begin{DoxyCompactList}\small\item\em \-Called by the handler itself when it accepts the connection. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_p_connection_aa25471c69703f9e8d8795dda25ba75ea}{\-Handle\-Connection} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Parm=\-N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_handler}{\-C\-P\-Handler} $\ast$ \hyperlink{class_c_p_connection_a9e5914bdbd8aeabe9609d7aa8f03babe}{c\-P\-Handler}
+\item 
+int \hyperlink{class_c_p_connection_a5851cde8b69706593ef33933702e170a}{i\-Max\-Send\-Buffer}
+\item 
+unsigned char \hyperlink{class_c_p_connection_aa85421d2cbee8274c6794babc609dce6}{uc\-Buffer} \mbox{[}\hyperlink{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5a212b310ed9516ad4edce81eb3f615a90}{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}\mbox{]}
+\begin{DoxyCompactList}\small\item\em \-Input buffer. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \hyperlink{class_c_p_connection_a75a016a1c397b5646591eead6aabdfc5}{p\-Out\-Buffer}
+\begin{DoxyCompactList}\small\item\em \-Output buffer. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_connection_a097c729d2ace3e54ad5c87264aac40e2}{i\-O\-B\-Size}
+\begin{DoxyCompactList}\small\item\em \-Current size of the output buffer. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_connection_ac86d2db09fd1dc387c397b75ef491f6e}{i\-Left\-To\-Send}
+\begin{DoxyCompactList}\small\item\em \-What's left to send in the out buffer. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_connection_aaac2a186e16efdb9f7786cc46dd81125}{i\-Send\-Index}
+\begin{DoxyCompactList}\small\item\em \-Index of bytes to send. \end{DoxyCompactList}\item 
+\hyperlink{class_c_base_socket}{\-C\-Base\-Socket} $\ast$ \hyperlink{class_c_p_connection_a504332c07c9fb47362b5c490182833e9}{c\-Owner}
+\item 
+time\-\_\-t \hyperlink{class_c_p_connection_a758401474fda32b364811b3ccbe2013f}{t\-Connected}
+\item 
+struct sockaddr\-\_\-in \hyperlink{class_c_p_connection_af5990e2eecbce8a899752e3f195c5cc1}{s\-Addr}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_ab1099445977c4cabbb67c86f6a0b9213}{b\-Send\-Data}
+\begin{DoxyCompactList}\small\item\em \-There is data to be written. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_connection_a3f860ee09bae3ca5a8967f5d787d1f93}{b\-Send\-Buffer\-High\-Water\-Mark}
+\begin{DoxyCompactList}\small\item\em \-No room left in send buffer. \-Block until some sending occurs. \end{DoxyCompactList}\item 
+\hyperlink{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bde}{\-E\-C\-O\-N\-N\-E\-C\-T} \hyperlink{class_c_p_connection_a46c09912bcb9c4d96314030c5111ee66}{e\-Connected}
+\item 
+\hyperlink{class_c_connection_sig}{\-C\-Connection\-Sig} \hyperlink{class_c_p_connection_aa9f6fb20fce6e497615335f8eed8591c}{c\-Signature}
+\item 
+long \hyperlink{class_c_p_connection_aa267a7859ca43e74af4a62bbaaac3d63}{l\-Close\-Request\-T\-S}
+\begin{DoxyCompactList}\small\item\em \-Timestamp of when a close was requested. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_connection_ad7ed8001aa54d09e57ce0fb19229d9c8}{i\-Total\-Recvd}
+\item 
+int \hyperlink{class_c_p_connection_a4c90b5b3376f330b9347b2f48dc80d0e}{i\-Total\-Sent}
+\item 
+int \hyperlink{class_c_p_connection_a1fb64ea875ecc8bc912bafd308294bf1}{i\-Total\-Send\-Data}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 82 of file \-C\-P\-Connection.\-h.
+
+
+
+\subsection{\-Member \-Enumeration \-Documentation}
+\hypertarget{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5}
+
+
+\-Operations. 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}}\item[{\em 
+\hypertarget{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5a212b310ed9516ad4edce81eb3f615a90}{\-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}\label{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5a212b310ed9516ad4edce81eb3f615a90}
+}]\index{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E@{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}}\item[{\em 
+\hypertarget{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5ae1bfa53acfedd84586f9577402592e70}{\-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}\label{class_c_p_connection_a806d0ccf9284ab6cfa8f9f638df5b8e5ae1bfa53acfedd84586f9577402592e70}
+}]8\-K \end{description}
+\end{Desc}
+
+
+
+\-Definition at line 90 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bde}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-E\-C\-O\-N\-N\-E\-C\-T@{\-E\-C\-O\-N\-N\-E\-C\-T}}
+\index{\-E\-C\-O\-N\-N\-E\-C\-T@{\-E\-C\-O\-N\-N\-E\-C\-T}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-E\-C\-O\-N\-N\-E\-C\-T}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-C\-P\-Connection\-::\-E\-C\-O\-N\-N\-E\-C\-T}}}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bde}
+
+
+\-No public destructor. 
+
+\begin{Desc}
+\item[\-Enumerator\-: ]\par
+\begin{description}
+\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeab33cb29fa6b86f5a9764b5a6ff6b9f98}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-U\-N\-U\-S\-E\-D}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeab33cb29fa6b86f5a9764b5a6ff6b9f98}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaa739beea3c36f54a1e48e309477fdecd}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-P\-E\-N\-D\-I\-N\-G}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaa739beea3c36f54a1e48e309477fdecd}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead9adca01889d40665ea46c97029bf07b}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-A\-T\-T\-E\-M\-P\-T\-\_\-\-F\-A\-I\-L\-E\-D}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead9adca01889d40665ea46c97029bf07b}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea414416c17cf4d03572ea886af634c463}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-S\-U\-C\-C\-E\-S\-S}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea414416c17cf4d03572ea886af634c463}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea9a83b86ee125293f6d73d8afec74a145}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-C\-L\-O\-S\-E\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-E\-D}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdea9a83b86ee125293f6d73d8afec74a145}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead12aa45cdb80e03a24de39dff800f4ae}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-D\-I\-S\-C\-O\-N\-N\-E\-C\-T\-E\-D}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdead12aa45cdb80e03a24de39dff800f4ae}
+}]\index{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E}!\-C\-P\-Connection@{\-C\-P\-Connection}}\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E@{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E}}\item[{\em 
+\hypertarget{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaf31728d4a1b415f3076875e6ac69053b}{\-C\-O\-N\-N\-E\-C\-T\-\_\-\-F\-A\-I\-L\-U\-R\-E}\label{class_c_p_connection_a0b9dfdba3bf3fb022507756c5eff7bdeaf31728d4a1b415f3076875e6ac69053b}
+}]\end{description}
+\end{Desc}
+
+
+
+\-Definition at line 99 of file \-C\-P\-Connection.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_connection_a512354ba23583d1bddc9cb4999d248f3}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-C\-P\-Connection@{\-C\-P\-Connection}}
+\index{\-C\-P\-Connection@{\-C\-P\-Connection}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-C\-P\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Connection\-::\-C\-P\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-Base\-Socket} $\ast$}]{p\-Owner, }
+\item[{struct sockaddr $\ast$}]{p\-Addr = {\ttfamily \-N\-U\-L\-L}, }
+\item[{int}]{i\-Max\-Send\-Buffer\-Size = {\ttfamily {\bf \-C\-S\-\_\-\-O\-U\-T\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_connection_a512354ba23583d1bddc9cb4999d248f3}
+
+
+\-Definition at line 27 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a7a06ca261e3c9418bf9cfe63bba8ad44}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!$\sim$\-C\-P\-Connection@{$\sim$\-C\-P\-Connection}}
+\index{$\sim$\-C\-P\-Connection@{$\sim$\-C\-P\-Connection}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{$\sim$\-C\-P\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Connection\-::$\sim$\-C\-P\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_a7a06ca261e3c9418bf9cfe63bba8ad44}
+
+
+\-Definition at line 48 of file \-C\-P\-Connection.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_connection_a703a63596b3e3c93a8b76238bf5ec6f4}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Async\-Terminate\-Connection@{\-Async\-Terminate\-Connection}}
+\index{\-Async\-Terminate\-Connection@{\-Async\-Terminate\-Connection}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Async\-Terminate\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Connection\-::\-Async\-Terminate\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_a703a63596b3e3c93a8b76238bf5ec6f4}
+\-Asynchronously close the socket. \-If a handler hasn't been assigned, this calls \-Terminate\-Connection. \-Otherwise, the handler waits until the send buffer is clear and then closes the socket. 
+
+\-Definition at line 314 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a666a669dc7dfde6478fb599104cace44}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Create@{\-Create}}
+\index{\-Create@{\-Create}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::\-Create} (
+\begin{DoxyParamCaption}
+\item[{int}]{af, }
+\item[{int}]{type, }
+\item[{int}]{protocol, }
+\item[{{\bf \-U\-I\-N\-T}}]{n\-Port = {\ttfamily 0}, }
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lp\-Addr = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Reuse = {\ttfamily {\bf \-F\-A\-L\-S\-E}}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Bind = {\ttfamily {\bf \-T\-R\-U\-E}}, }
+\item[{int}]{i\-Linger = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_a666a669dc7dfde6478fb599104cace44}
+
+\begin{DoxyParams}{\-Parameters}
+{\em type} & \-Address family. \-Only tested with \-A\-F\-\_\-\-I\-N\-E\-T. \\
+\hline
+{\em protocol} & \-Stream or datagram (\-S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M or \-S\-O\-C\-K\-\_\-\-D\-R\-A\-M) \\
+\hline
+{\em n\-Port} & \-Usually 0 for inet sockets \\
+\hline
+{\em lp\-Addr} & \-Port \\
+\hline
+{\em b\-Reuse} & \-Inet address in the standard xxx.\-xxx.\-xxx.\-xxx format \\
+\hline
+{\em b\-Bind} & \-Allow reuse of this socket \\
+\hline
+{\em i\-Linger} & \-Default to bind the socket. \-Not needed if this is the result of an \-::accept \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 68 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a331c50e83d37b88ac099aa95b6b1523c}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Disconnected@{\-Disconnected}}
+\index{\-Disconnected@{\-Disconnected}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-P\-Connection\-::\-Disconnected} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}\label{class_c_p_connection_a331c50e83d37b88ac099aa95b6b1523c}
+
+
+\-When removed from the handler, this gets called. 
+
+
+
+\-Reimplemented in \hyperlink{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}{\-C\-P\-Client}.
+
+
+
+\-Definition at line 155 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a72266989e31085bfb2f45f603115a6fb}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Get\-Connection\-Status@{\-Get\-Connection\-Status}}
+\index{\-Get\-Connection\-Status@{\-Get\-Connection\-Status}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Get\-Connection\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Connection\-::\-E\-C\-O\-N\-N\-E\-C\-T} {\bf \-C\-P\-Connection\-::\-Get\-Connection\-Status} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_connection_a72266989e31085bfb2f45f603115a6fb}
+
+
+\-Get connection status. 
+
+
+
+\-Definition at line 193 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a9793183adddb29f39186eee5eac6701f}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Get\-Handshake@{\-Get\-Handshake}}
+\index{\-Get\-Handshake@{\-Get\-Handshake}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Get\-Handshake}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::\-Get\-Handshake} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$$\ast$}]{uc\-H\-S, }
+\item[{int \&}]{i\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}\label{class_c_p_connection_a9793183adddb29f39186eee5eac6701f}
+\-Get handshake. \-Return \-T\-R\-U\-E if ptr and int filled \-This is sent when a connection is established. \-Redefine to have server send a connection message. 
+
+\-Definition at line 149 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a8a68ba35336e1255ae4c1e3bb77fb0e5}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Get\-Socket\-Address@{\-Get\-Socket\-Address}}
+\index{\-Get\-Socket\-Address@{\-Get\-Socket\-Address}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Get\-Socket\-Address}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in {\bf \-C\-P\-Connection\-::\-Get\-Socket\-Address} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read, virtual\mbox{]}}}}\label{class_c_p_connection_a8a68ba35336e1255ae4c1e3bb77fb0e5}
+
+
+\-Get socket address. 
+
+
+
+\-Definition at line 207 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_acbc1f976fdecf17d5d3b0b75b524d69c}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Get\-Time\-Connected@{\-Get\-Time\-Connected}}
+\index{\-Get\-Time\-Connected@{\-Get\-Time\-Connected}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Get\-Time\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-P\-Connection\-::\-Get\-Time\-Connected} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_acbc1f976fdecf17d5d3b0b75b524d69c}
+
+
+\-Return the time the connection was initiated. 
+
+
+
+\-Definition at line 200 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_aa25471c69703f9e8d8795dda25ba75ea}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Handle\-Connection@{\-Handle\-Connection}}
+\index{\-Handle\-Connection@{\-Handle\-Connection}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Handle\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-C\-P\-Connection\-::\-Handle\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Parm = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}\label{class_c_p_connection_aa25471c69703f9e8d8795dda25ba75ea}
+\-Called by \-Set\-Handler to indicate that a connection is about about to be handled \-Set\-Handler is called within \hyperlink{class_c_p_handler_a0abd34f077a742459ae703aeee7947bc}{\-C\-P\-Handler\-::\-Add\-Connection} 
+
+\-Definition at line 168 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_ae1ccbe730072cfaa3d5ad7d94c9d6571}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Is\-Send\-Complete@{\-Is\-Send\-Complete}}
+\index{\-Is\-Send\-Complete@{\-Is\-Send\-Complete}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Is\-Send\-Complete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::\-Is\-Send\-Complete} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_connection_ae1ccbe730072cfaa3d5ad7d94c9d6571}
+\-Has all data submitted by send been transferred? \-Only valid after \-Async\-Terminate\-Connection has been called. \hypertarget{class_c_p_connection_a1b223eab8f518f390b2c01f7c1e33e72}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Process\-Data@{\-Process\-Data}}
+\index{\-Process\-Data@{\-Process\-Data}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Process\-Data}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::\-Process\-Data} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{lp\-Data, }
+\item[{int}]{i\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_p_connection_a1b223eab8f518f390b2c01f7c1e33e72}
+
+
+\-Pure virtual function to process data. 
+
+
+
+\-Implemented in \hyperlink{class_c_echo_client_aa4b137b9fab962746d02b70a94a400a8}{\-C\-Echo\-Client}, \hyperlink{class_c_echo_connection_ac10d197eb5e2d1667dc044037f2151c5}{\-C\-Echo\-Connection}, and \hyperlink{class_c_echo_connection_ac10d197eb5e2d1667dc044037f2151c5}{\-C\-Echo\-Connection}.
+
+\hypertarget{class_c_p_connection_a51cab90d3e5f74d43a838e4ed5fe9c89}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Receive\-Data@{\-Receive\-Data}}
+\index{\-Receive\-Data@{\-Receive\-Data}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Receive\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::\-Receive\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_a51cab90d3e5f74d43a838e4ed5fe9c89}
+
+
+\-Receive the data to a socket. 
+
+
+
+\-Definition at line 267 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a7678a5c828e5bc52dd0619821904bcac}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Send\-Data@{\-Send\-Data}}
+\index{\-Send\-Data@{\-Send\-Data}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::\-Send\-Data} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_a7678a5c828e5bc52dd0619821904bcac}
+
+
+\-Send data from a socket. 
+
+
+
+\-Definition at line 214 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a502e914917ea8c82f2225253d1bd0a71}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Send\-Data\-Out@{\-Send\-Data\-Out}}
+\index{\-Send\-Data\-Out@{\-Send\-Data\-Out}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Send\-Data\-Out}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::\-Send\-Data\-Out} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-L\-P\-S\-T\-R}}]{lp\-Data, }
+\item[{int}]{n\-Packet\-Size, }
+\item[{int}]{n\-Total\-Length}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_a502e914917ea8c82f2225253d1bd0a71}
+\-Send data. \-If i\-Max\-Send\-Buffer\-Size is exceeded, the return will be \-F\-A\-L\-S\-E, and the sender must wait until some data is sent before proceeding. 
+
+\-Definition at line 117 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_aea524e3f40bddc5ae1523fa16ae41622}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Set\-Handler@{\-Set\-Handler}}
+\index{\-Set\-Handler@{\-Set\-Handler}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Set\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Connection\-::\-Set\-Handler} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Handler} $\ast$}]{p\-Handler}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_aea524e3f40bddc5ae1523fa16ae41622}
+
+
+\-Called by the handler itself when it accepts the connection. 
+
+
+
+\-Definition at line 91 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a62d7805ad5ad95853f68628d5df4f0f1}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Terminate\-Connection@{\-Terminate\-Connection}}
+\index{\-Terminate\-Connection@{\-Terminate\-Connection}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Terminate\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Connection\-::\-Terminate\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_connection_a62d7805ad5ad95853f68628d5df4f0f1}
+
+
+\-Terminate a connection and close the socket. 
+
+\-Removes from handler queue by closing socket 
+
+\-Definition at line 100 of file \-C\-P\-Connection.\-cpp.
+
+\hypertarget{class_c_p_connection_a5c83da25150fd43d9fe4522d34d6cffb}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!\-Unprotected\-Close\-Socket@{\-Unprotected\-Close\-Socket}}
+\index{\-Unprotected\-Close\-Socket@{\-Unprotected\-Close\-Socket}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{\-Unprotected\-Close\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Connection\-::\-Unprotected\-Close\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_connection_a5c83da25150fd43d9fe4522d34d6cffb}
+
+
+\-Unprotected close socket. 
+
+
+
+\-Reimplemented from \hyperlink{class_c_base_socket_ab3e4b93f8450b5fa901017d5fddba0e2}{\-C\-Base\-Socket}.
+
+
+
+\-Definition at line 329 of file \-C\-P\-Connection.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_p_connection_aafe1dacf5a3a4927f44435e887b5e177}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!b\-Recv\-Pause@{b\-Recv\-Pause}}
+\index{b\-Recv\-Pause@{b\-Recv\-Pause}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{b\-Recv\-Pause}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::b\-Recv\-Pause}}}\label{class_c_p_connection_aafe1dacf5a3a4927f44435e887b5e177}
+
+
+\-Definition at line 171 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a3f860ee09bae3ca5a8967f5d787d1f93}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!b\-Send\-Buffer\-High\-Water\-Mark@{b\-Send\-Buffer\-High\-Water\-Mark}}
+\index{b\-Send\-Buffer\-High\-Water\-Mark@{b\-Send\-Buffer\-High\-Water\-Mark}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{b\-Send\-Buffer\-High\-Water\-Mark}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::b\-Send\-Buffer\-High\-Water\-Mark}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a3f860ee09bae3ca5a8967f5d787d1f93}
+
+
+\-No room left in send buffer. \-Block until some sending occurs. 
+
+
+
+\-Definition at line 195 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_ab1099445977c4cabbb67c86f6a0b9213}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!b\-Send\-Data@{b\-Send\-Data}}
+\index{b\-Send\-Data@{b\-Send\-Data}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{b\-Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Connection\-::b\-Send\-Data}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_ab1099445977c4cabbb67c86f6a0b9213}
+
+
+\-There is data to be written. 
+
+
+
+\-Definition at line 193 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a504332c07c9fb47362b5c490182833e9}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!c\-Owner@{c\-Owner}}
+\index{c\-Owner@{c\-Owner}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{c\-Owner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Base\-Socket}$\ast$ {\bf \-C\-P\-Connection\-::c\-Owner}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a504332c07c9fb47362b5c490182833e9}
+
+
+\-Definition at line 189 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a9e5914bdbd8aeabe9609d7aa8f03babe}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!c\-P\-Handler@{c\-P\-Handler}}
+\index{c\-P\-Handler@{c\-P\-Handler}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{c\-P\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Handler}$\ast$ {\bf \-C\-P\-Connection\-::c\-P\-Handler}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a9e5914bdbd8aeabe9609d7aa8f03babe}
+
+
+\-Definition at line 177 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_aa9f6fb20fce6e497615335f8eed8591c}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!c\-Signature@{c\-Signature}}
+\index{c\-Signature@{c\-Signature}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{c\-Signature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Connection\-Sig} {\bf \-C\-P\-Connection\-::c\-Signature}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_aa9f6fb20fce6e497615335f8eed8591c}
+
+
+\-Definition at line 197 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a46c09912bcb9c4d96314030c5111ee66}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!e\-Connected@{e\-Connected}}
+\index{e\-Connected@{e\-Connected}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{e\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-E\-C\-O\-N\-N\-E\-C\-T} {\bf \-C\-P\-Connection\-::e\-Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a46c09912bcb9c4d96314030c5111ee66}
+
+
+\-Definition at line 196 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_ac86d2db09fd1dc387c397b75ef491f6e}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Left\-To\-Send@{i\-Left\-To\-Send}}
+\index{i\-Left\-To\-Send@{i\-Left\-To\-Send}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Left\-To\-Send}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Left\-To\-Send}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_ac86d2db09fd1dc387c397b75ef491f6e}
+
+
+\-What's left to send in the out buffer. 
+
+
+
+\-Definition at line 186 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a5851cde8b69706593ef33933702e170a}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Max\-Send\-Buffer@{i\-Max\-Send\-Buffer}}
+\index{i\-Max\-Send\-Buffer@{i\-Max\-Send\-Buffer}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Max\-Send\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Max\-Send\-Buffer}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a5851cde8b69706593ef33933702e170a}
+
+
+\-Definition at line 178 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a097c729d2ace3e54ad5c87264aac40e2}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-O\-B\-Size@{i\-O\-B\-Size}}
+\index{i\-O\-B\-Size@{i\-O\-B\-Size}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-O\-B\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-O\-B\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a097c729d2ace3e54ad5c87264aac40e2}
+
+
+\-Current size of the output buffer. 
+
+
+
+\-Definition at line 184 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_aaac2a186e16efdb9f7786cc46dd81125}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Send\-Index@{i\-Send\-Index}}
+\index{i\-Send\-Index@{i\-Send\-Index}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Send\-Index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Send\-Index}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_aaac2a186e16efdb9f7786cc46dd81125}
+
+
+\-Index of bytes to send. 
+
+
+
+\-Definition at line 188 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_ad7ed8001aa54d09e57ce0fb19229d9c8}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Total\-Recvd@{i\-Total\-Recvd}}
+\index{i\-Total\-Recvd@{i\-Total\-Recvd}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Total\-Recvd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Total\-Recvd}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_ad7ed8001aa54d09e57ce0fb19229d9c8}
+
+
+\-Definition at line 200 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a1fb64ea875ecc8bc912bafd308294bf1}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Total\-Send\-Data@{i\-Total\-Send\-Data}}
+\index{i\-Total\-Send\-Data@{i\-Total\-Send\-Data}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Total\-Send\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Total\-Send\-Data}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a1fb64ea875ecc8bc912bafd308294bf1}
+
+
+\-Definition at line 202 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a4c90b5b3376f330b9347b2f48dc80d0e}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!i\-Total\-Sent@{i\-Total\-Sent}}
+\index{i\-Total\-Sent@{i\-Total\-Sent}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{i\-Total\-Sent}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Connection\-::i\-Total\-Sent}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a4c90b5b3376f330b9347b2f48dc80d0e}
+
+
+\-Definition at line 201 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_aa267a7859ca43e74af4a62bbaaac3d63}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!l\-Close\-Request\-T\-S@{l\-Close\-Request\-T\-S}}
+\index{l\-Close\-Request\-T\-S@{l\-Close\-Request\-T\-S}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{l\-Close\-Request\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-P\-Connection\-::l\-Close\-Request\-T\-S}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_aa267a7859ca43e74af4a62bbaaac3d63}
+
+
+\-Timestamp of when a close was requested. 
+
+
+
+\-Definition at line 199 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a75a016a1c397b5646591eead6aabdfc5}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!p\-Out\-Buffer@{p\-Out\-Buffer}}
+\index{p\-Out\-Buffer@{p\-Out\-Buffer}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{p\-Out\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char$\ast$ {\bf \-C\-P\-Connection\-::p\-Out\-Buffer}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a75a016a1c397b5646591eead6aabdfc5}
+
+
+\-Output buffer. 
+
+
+
+\-Definition at line 182 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_af5990e2eecbce8a899752e3f195c5cc1}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!s\-Addr@{s\-Addr}}
+\index{s\-Addr@{s\-Addr}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{s\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in {\bf \-C\-P\-Connection\-::s\-Addr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_af5990e2eecbce8a899752e3f195c5cc1}
+
+
+\-Definition at line 191 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_a758401474fda32b364811b3ccbe2013f}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!t\-Connected@{t\-Connected}}
+\index{t\-Connected@{t\-Connected}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{t\-Connected}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-P\-Connection\-::t\-Connected}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_a758401474fda32b364811b3ccbe2013f}
+
+
+\-Definition at line 190 of file \-C\-P\-Connection.\-h.
+
+\hypertarget{class_c_p_connection_aa85421d2cbee8274c6794babc609dce6}{\index{\-C\-P\-Connection@{\-C\-P\-Connection}!uc\-Buffer@{uc\-Buffer}}
+\index{uc\-Buffer@{uc\-Buffer}!CPConnection@{\-C\-P\-Connection}}
+\subsubsection[{uc\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char {\bf \-C\-P\-Connection\-::uc\-Buffer}\mbox{[}{\bf \-C\-S\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_connection_aa85421d2cbee8274c6794babc609dce6}
+
+
+\-Input buffer. 
+
+
+
+\-Definition at line 180 of file \-C\-P\-Connection.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_p_connection_8h}{\-C\-P\-Connection.\-h}\item 
+common/\hyperlink{_c_p_connection_8cpp}{\-C\-P\-Connection.\-cpp}\end{DoxyCompactItemize}

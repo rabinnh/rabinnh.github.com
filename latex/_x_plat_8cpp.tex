@@ -1,0 +1,108 @@
+\hypertarget{_x_plat_8cpp}{\section{common/\-X\-Plat.cpp \-File \-Reference}
+\label{_x_plat_8cpp}\index{common/\-X\-Plat.\-cpp@{common/\-X\-Plat.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}\-X\-Plat.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-C\-X\-Plat\-Critical\-Section.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-C\-X\-Plat\-Event.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_x_plat_8cpp_a295fae49a4e6d4cbca818da1050d74b7}{\-\_\-strupr} (char $\ast$string1)
+\item 
+char $\ast$ \hyperlink{_x_plat_8cpp_a178e27ee86a35167c78c2a9c20ec03c6}{\-\_\-strlwr} (char $\ast$string1)
+\item 
+char $\ast$ \hyperlink{_x_plat_8cpp_a617826385ba90d20bec82f7b23bc6a20}{itoa} (int value, char $\ast$sz\-String, int radix)
+\item 
+unsigned long \hyperlink{_x_plat_8cpp_ae206a3912d5af8d510261521245a9a87}{\-X\-Plat\-Get\-Milliseconds} ()
+\item 
+int \hyperlink{_x_plat_8cpp_a3a55a9c8cf9c107981386382f842f300}{\-X\-Plat\-Fork\-Hidden\-Process} (const char $\ast$sz\-Process)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{_x_plat_8cpp_a565966d0b589ee227b2059a6cc750976}{\-Get\-Abstime} (struct timespec \&s\-Timespec, unsigned long l\-Time\-To\-Wait\-M\-S)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{_x_plat_8cpp_afb33ea28b4163af9f0a419c089291a67}{c\-Protect\-Call}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{_x_plat_8cpp_a178e27ee86a35167c78c2a9c20ec03c6}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!\-\_\-strlwr@{\-\_\-strlwr}}
+\index{\-\_\-strlwr@{\-\_\-strlwr}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{\-\_\-strlwr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-\_\-strlwr} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string1}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_a178e27ee86a35167c78c2a9c20ec03c6}
+
+
+\-Definition at line 51 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8cpp_a295fae49a4e6d4cbca818da1050d74b7}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!\-\_\-strupr@{\-\_\-strupr}}
+\index{\-\_\-strupr@{\-\_\-strupr}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{\-\_\-strupr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-\_\-strupr} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string1}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_a295fae49a4e6d4cbca818da1050d74b7}
+
+
+\-Definition at line 29 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8cpp_a565966d0b589ee227b2059a6cc750976}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!\-Get\-Abstime@{\-Get\-Abstime}}
+\index{\-Get\-Abstime@{\-Get\-Abstime}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{\-Get\-Abstime}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Get\-Abstime} (
+\begin{DoxyParamCaption}
+\item[{struct timespec \&}]{s\-Timespec, }
+\item[{unsigned long}]{l\-Time\-To\-Wait\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_a565966d0b589ee227b2059a6cc750976}
+
+
+\-Definition at line 170 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8cpp_a617826385ba90d20bec82f7b23bc6a20}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!itoa@{itoa}}
+\index{itoa@{itoa}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{itoa}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf itoa} (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{char $\ast$}]{sz\-String, }
+\item[{int}]{radix}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_a617826385ba90d20bec82f7b23bc6a20}
+
+
+\-Definition at line 72 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8cpp_a3a55a9c8cf9c107981386382f842f300}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!\-X\-Plat\-Fork\-Hidden\-Process@{\-X\-Plat\-Fork\-Hidden\-Process}}
+\index{\-X\-Plat\-Fork\-Hidden\-Process@{\-X\-Plat\-Fork\-Hidden\-Process}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{\-X\-Plat\-Fork\-Hidden\-Process}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-X\-Plat\-Fork\-Hidden\-Process} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Process}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_a3a55a9c8cf9c107981386382f842f300}
+
+
+\-Definition at line 114 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8cpp_ae206a3912d5af8d510261521245a9a87}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!\-X\-Plat\-Get\-Milliseconds@{\-X\-Plat\-Get\-Milliseconds}}
+\index{\-X\-Plat\-Get\-Milliseconds@{\-X\-Plat\-Get\-Milliseconds}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{\-X\-Plat\-Get\-Milliseconds}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-X\-Plat\-Get\-Milliseconds} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8cpp_ae206a3912d5af8d510261521245a9a87}
+
+
+\-Definition at line 95 of file \-X\-Plat.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{_x_plat_8cpp_afb33ea28b4163af9f0a419c089291a67}{\index{\-X\-Plat.\-cpp@{\-X\-Plat.\-cpp}!c\-Protect\-Call@{c\-Protect\-Call}}
+\index{c\-Protect\-Call@{c\-Protect\-Call}!XPlat.cpp@{\-X\-Plat.\-cpp}}
+\subsubsection[{c\-Protect\-Call}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf c\-Protect\-Call}}}\label{_x_plat_8cpp_afb33ea28b4163af9f0a419c089291a67}
+
+
+\-Definition at line 25 of file \-X\-Plat.\-cpp.
+

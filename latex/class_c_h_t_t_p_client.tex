@@ -1,0 +1,592 @@
+\hypertarget{class_c_h_t_t_p_client}{\section{\-C\-H\-T\-T\-P\-Client \-Class \-Reference}
+\label{class_c_h_t_t_p_client}\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}}
+}
+
+
+\hyperlink{class_c_h_t_t_p_client}{\-C\-H\-T\-T\-P\-Client} -\/ make a connection and fetch a \-U\-R\-L.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-H\-T\-T\-P\-Client.\-h$>$}
+
+\-Inheritance diagram for \-C\-H\-T\-T\-P\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_h_t_t_p_client}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_h_t_t_p_client_a57b036ec3060bc82ae39b6be5322c532}{\-C\-H\-T\-T\-P\-Client} ()
+\item 
+virtual \hyperlink{class_c_h_t_t_p_client_a3bdb68b5ce1e9c532b2acba2b096eae8}{$\sim$\-C\-H\-T\-T\-P\-Client} ()
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a3a63aeec6ef9c56a2d8c60641d1cfe7b}{\-Check\-Connect} (const char $\ast$sz\-Host, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Secure, long l\-Port, const char $\ast$sz\-Proxy, long l\-Proxy\-Port, const char $\ast$sz\-Proxy\-User, const char $\ast$sz\-Proxy\-Pswd, long dw\-Timeout)
+\begin{DoxyCompactList}\small\item\em \-Connect, even through a proxy. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a30c615b243b825ada901e671aa1ac420}{\-Get\-H\-T\-T\-P\-Bytes\-Received} (long \&dw\-Length)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a088f8e9749c7f4912c2e3de05573069b}{\-Get\-H\-T\-T\-P\-Content} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a831e33c4c95d4e2b02acb299e4c9933f}{\-Get\-H\-T\-T\-P\-Content\-Type} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_ab4b0c28fe04c67c29ee3facbad06c764}{\-Get\-H\-T\-T\-P\-Last\-Modified} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_ad832d1fd8d84430248279deb2bff4659}{\-Get\-H\-T\-T\-P\-New\-Location} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a3af2141e7152ee9db4a8833b96676af4}{\-Get\-H\-T\-T\-P\-Server} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a7562d00f8b4ab28fb1a457c3898c96b0}{\-Get\-H\-T\-T\-P\-Status} (long \&dw\-Status)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_ac7c48dc326c9f3760d6edf34de812257}{\-Send\-Request} (const char $\ast$sz\-Host, const char $\ast$sz\-Host\-Name, const char $\ast$sz\-Path, const char $\ast$sz\-User\-I\-D, const char $\ast$sz\-Password, long l\-Port, const char $\ast$sz\-Proxy, long l\-Proxy\-Port, const char $\ast$sz\-Proxy\-User, const char $\ast$sz\-Proxy\-Pswd, const char $\ast$sz\-User\-Agent, const char $\ast$sz\-Post, long dw\-Time\-Out, const char $\ast$sz\-Transaction=\-N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em \-Send a request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a9bb4f347e03b75be4adc9efe04ec1284}{b\-Read\-Complete}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a59e05bc90f7b71663e3b87c06c55721e}{b\-Connect\-Failed}
+\item 
+long \hyperlink{class_c_h_t_t_p_client_abaa4f1ce357ce53d5087281ad27c9c1b}{dw\-Start\-Time}
+\item 
+long \hyperlink{class_c_h_t_t_p_client_a88849e78a493edc3c349f3ada5ee86c2}{dw\-First\-Byte}
+\item 
+long \hyperlink{class_c_h_t_t_p_client_a7461aa9373197650c49ab680e6536d22}{dw\-Last\-Byte}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_ae0232e77c7c396d7a6708139f6379ef7}{s\-Debug\-Send\-Header}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_ad89f9c067334f868606ba6d00f3afdab}{s\-Debug\-Recv\-Header}
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_h_t_t_p_client_a46b8b55050d3ca135be8f11c55c5caf4}{\-Delete\-Cookie\-File} (const char $\ast$lp\-Name)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_h_t_t_p_client_ac55d4579d952c8e9956dc437829cab00}{\-Disconnected} ()
+\begin{DoxyCompactList}\small\item\em \-When the \-Service\-Connection\-Thread stops, this gets called. \end{DoxyCompactList}\item 
+long \hyperlink{class_c_h_t_t_p_client_aec2f07936dd875e474abf6328414277a}{\-Get\-Time\-Left} (long dw\-Timeout, long dw\-Start)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_affd3e6e5d6e03d95811dc869b49a00d1}{\-Read\-Cookie\-File} (const char $\ast$lp\-Name)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_h_t_t_p_client_aa29af77553bea44f03920289e2123276}{\-Parse\-Header} ()
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_aaed7b63de2d4e3418366356809fba360}{\-Process\-Data} (unsigned char $\ast$lp\-Data, int i\-Len)
+\begin{DoxyCompactList}\small\item\em \-Pure virtual function to process data. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_h_t_t_p_client_a348753a2e7fb2c93ae63d64c8da7111c}{\-Request\-Complete} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_h_t_t_p_client_aa69904a0714165742a791446e776cfcb}{\-Send\-Cookie} (char $\ast$lp\-Buffer)
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_ac18c2a841c3645a01acfdc3e512c7a7e}{\-Write\-Cookie\-File} (const char $\ast$lp\-Name)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_aa2db4dc9f1177eef59e79ff1970a4a06}{b\-Header}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_h_t_t_p_client_a98a9f41337106c89ca4331d3ee067735}{b\-Head\-Request}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_h_t_t_p_client_a1ac75d26c210602da43085a9ba1de5bb}{c\-Recv\-Event}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_ab8d840e3a99e3092df067a218c25e621}{c\-Header}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a71cb458d2508e65189f0c65dba6d465d}{c\-Header\-Lwr}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a7c814dc76e1feb17be827cfa58246f5e}{c\-Content}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a2c8833f6431a9449a2ca776d3b75fdb9}{c\-Content\-Type}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a9913b3d73cb9a8172a8ca5e13d39088f}{c\-Last\-Modified}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a2d2289bf6605dbe853143fb523f81058}{c\-Location}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_acbcb5dd8619fbba37910ca522a0bc1a4}{c\-Server}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_ab9788ca9dcc416a443622abb3ce44b70}{c\-Domain}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_a7f2cc6944a2535539772f62b51f0c568}{c\-Path}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_aead239b82d8415a05884cafebf5a384a}{c\-Cookie\-Buf}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_adbc5e3e3b321c3179b986f2ed2ff0eb1}{c\-Transaction}
+\item 
+string \hyperlink{class_c_h_t_t_p_client_aa4092d7fea50e76e30f3269479253db6}{c\-Request\-Num}
+\item 
+long \hyperlink{class_c_h_t_t_p_client_a3840ab9a7468b62900613238c47c36cb}{l\-Content\-Length}
+\item 
+long \hyperlink{class_c_h_t_t_p_client_a3912e2379d3a00b9a0e671abab1dd0b7}{l\-Received\-Length}
+\item 
+char \hyperlink{class_c_h_t_t_p_client_aff047143e60597632e37899b10fab8e2}{sz\-Send\-Buffer} \mbox{[}\hyperlink{rtminet_8h_aff8960325dbc7b5bf858b614b502da19}{\-I\-N\-T\-E\-R\-N\-E\-T\-\_\-\-M\-A\-X\-\_\-\-U\-R\-L\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-R\-T\-M}+1\mbox{]}
+\item 
+char \hyperlink{class_c_h_t_t_p_client_a05468a0fa4fd07830d9dc0fd0fba55ee}{sz\-Status} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_c_h_t_t_p_client}{\-C\-H\-T\-T\-P\-Client} -\/ make a connection and fetch a \-U\-R\-L. 
+
+\-Definition at line 41 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_h_t_t_p_client_a57b036ec3060bc82ae39b6be5322c532}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}}
+\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-C\-H\-T\-T\-P\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-H\-T\-T\-P\-Client\-::\-C\-H\-T\-T\-P\-Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a57b036ec3060bc82ae39b6be5322c532}
+
+
+\-Definition at line 55 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a3bdb68b5ce1e9c532b2acba2b096eae8}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!$\sim$\-C\-H\-T\-T\-P\-Client@{$\sim$\-C\-H\-T\-T\-P\-Client}}
+\index{$\sim$\-C\-H\-T\-T\-P\-Client@{$\sim$\-C\-H\-T\-T\-P\-Client}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{$\sim$\-C\-H\-T\-T\-P\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-H\-T\-T\-P\-Client\-::$\sim$\-C\-H\-T\-T\-P\-Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_h_t_t_p_client_a3bdb68b5ce1e9c532b2acba2b096eae8}
+
+
+\-Definition at line 63 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_h_t_t_p_client_a3a63aeec6ef9c56a2d8c60641d1cfe7b}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Check\-Connect@{\-Check\-Connect}}
+\index{\-Check\-Connect@{\-Check\-Connect}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Check\-Connect}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Check\-Connect} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Host, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Secure, }
+\item[{long}]{l\-Port, }
+\item[{const char $\ast$}]{sz\-Proxy, }
+\item[{long}]{l\-Proxy\-Port, }
+\item[{const char $\ast$}]{sz\-Proxy\-User, }
+\item[{const char $\ast$}]{sz\-Proxy\-Pswd, }
+\item[{long}]{dw\-Timeout}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a3a63aeec6ef9c56a2d8c60641d1cfe7b}
+
+
+\-Connect, even through a proxy. 
+
+
+
+\-Definition at line 1175 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a46b8b55050d3ca135be8f11c55c5caf4}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Delete\-Cookie\-File@{\-Delete\-Cookie\-File}}
+\index{\-Delete\-Cookie\-File@{\-Delete\-Cookie\-File}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Delete\-Cookie\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Delete\-Cookie\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{lp\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a46b8b55050d3ca135be8f11c55c5caf4}
+
+
+\-Definition at line 1069 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_ac55d4579d952c8e9956dc437829cab00}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Disconnected@{\-Disconnected}}
+\index{\-Disconnected@{\-Disconnected}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Disconnected} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_h_t_t_p_client_ac55d4579d952c8e9956dc437829cab00}
+
+
+\-When the \-Service\-Connection\-Thread stops, this gets called. 
+
+\-Called when the socket is disconnecting \-W\-A\-R\-N\-I\-N\-G\-: this may occasionally get called more than once -\/ code appropriately 
+
+\-Reimplemented from \hyperlink{class_c_connection_socket_a2d991ece47fd9c86366af981c70d51fc}{\-C\-Connection\-Socket}.
+
+
+
+\-Definition at line 196 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a30c615b243b825ada901e671aa1ac420}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Bytes\-Received@{\-Get\-H\-T\-T\-P\-Bytes\-Received}}
+\index{\-Get\-H\-T\-T\-P\-Bytes\-Received@{\-Get\-H\-T\-T\-P\-Bytes\-Received}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Bytes\-Received}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Bytes\-Received} (
+\begin{DoxyParamCaption}
+\item[{long \&}]{dw\-Length}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a30c615b243b825ada901e671aa1ac420}
+
+
+\-Definition at line 1103 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a088f8e9749c7f4912c2e3de05573069b}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Content@{\-Get\-H\-T\-T\-P\-Content}}
+\index{\-Get\-H\-T\-T\-P\-Content@{\-Get\-H\-T\-T\-P\-Content}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Content}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Content} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a088f8e9749c7f4912c2e3de05573069b}
+
+
+\-Definition at line 1112 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a831e33c4c95d4e2b02acb299e4c9933f}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Content\-Type@{\-Get\-H\-T\-T\-P\-Content\-Type}}
+\index{\-Get\-H\-T\-T\-P\-Content\-Type@{\-Get\-H\-T\-T\-P\-Content\-Type}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Content\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Content\-Type} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a831e33c4c95d4e2b02acb299e4c9933f}
+
+
+\-Definition at line 1121 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_ab4b0c28fe04c67c29ee3facbad06c764}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Last\-Modified@{\-Get\-H\-T\-T\-P\-Last\-Modified}}
+\index{\-Get\-H\-T\-T\-P\-Last\-Modified@{\-Get\-H\-T\-T\-P\-Last\-Modified}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Last\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Last\-Modified} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_ab4b0c28fe04c67c29ee3facbad06c764}
+
+
+\-Definition at line 1130 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_ad832d1fd8d84430248279deb2bff4659}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-New\-Location@{\-Get\-H\-T\-T\-P\-New\-Location}}
+\index{\-Get\-H\-T\-T\-P\-New\-Location@{\-Get\-H\-T\-T\-P\-New\-Location}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-New\-Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-New\-Location} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_ad832d1fd8d84430248279deb2bff4659}
+
+
+\-Definition at line 1139 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a3af2141e7152ee9db4a8833b96676af4}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Server@{\-Get\-H\-T\-T\-P\-Server}}
+\index{\-Get\-H\-T\-T\-P\-Server@{\-Get\-H\-T\-T\-P\-Server}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Server} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a3af2141e7152ee9db4a8833b96676af4}
+
+
+\-Definition at line 1148 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a7562d00f8b4ab28fb1a457c3898c96b0}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-H\-T\-T\-P\-Status@{\-Get\-H\-T\-T\-P\-Status}}
+\index{\-Get\-H\-T\-T\-P\-Status@{\-Get\-H\-T\-T\-P\-Status}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-H\-T\-T\-P\-Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-H\-T\-T\-P\-Status} (
+\begin{DoxyParamCaption}
+\item[{long \&}]{dw\-Status}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_a7562d00f8b4ab28fb1a457c3898c96b0}
+
+
+\-Definition at line 1085 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_aec2f07936dd875e474abf6328414277a}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Get\-Time\-Left@{\-Get\-Time\-Left}}
+\index{\-Get\-Time\-Left@{\-Get\-Time\-Left}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Get\-Time\-Left}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::\-Get\-Time\-Left} (
+\begin{DoxyParamCaption}
+\item[{long}]{dw\-Timeout, }
+\item[{long}]{dw\-Start}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aec2f07936dd875e474abf6328414277a}
+
+
+\-Definition at line 1160 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_aa29af77553bea44f03920289e2123276}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Parse\-Header@{\-Parse\-Header}}
+\index{\-Parse\-Header@{\-Parse\-Header}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Parse\-Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Parse\-Header} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aa29af77553bea44f03920289e2123276}
+
+
+\-Definition at line 741 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_aaed7b63de2d4e3418366356809fba360}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Process\-Data@{\-Process\-Data}}
+\index{\-Process\-Data@{\-Process\-Data}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Process\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Process\-Data} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{lp\-Data, }
+\item[{int}]{i\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_h_t_t_p_client_aaed7b63de2d4e3418366356809fba360}
+
+
+\-Pure virtual function to process data. 
+
+
+
+\-Implements \hyperlink{class_c_connection_socket_a11c2aef1e11bbac03c72ec9444b8e85f}{\-C\-Connection\-Socket}.
+
+
+
+\-Definition at line 93 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_affd3e6e5d6e03d95811dc869b49a00d1}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Read\-Cookie\-File@{\-Read\-Cookie\-File}}
+\index{\-Read\-Cookie\-File@{\-Read\-Cookie\-File}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Read\-Cookie\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Read\-Cookie\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{lp\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_affd3e6e5d6e03d95811dc869b49a00d1}
+
+
+\-Definition at line 987 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_a348753a2e7fb2c93ae63d64c8da7111c}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Request\-Complete@{\-Request\-Complete}}
+\index{\-Request\-Complete@{\-Request\-Complete}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Request\-Complete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Request\-Complete} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a348753a2e7fb2c93ae63d64c8da7111c}
+
+
+\-Definition at line 181 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_aa69904a0714165742a791446e776cfcb}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Send\-Cookie@{\-Send\-Cookie}}
+\index{\-Send\-Cookie@{\-Send\-Cookie}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Send\-Cookie}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Send\-Cookie} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lp\-Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aa69904a0714165742a791446e776cfcb}
+
+
+\-Definition at line 916 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_ac7c48dc326c9f3760d6edf34de812257}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Send\-Request@{\-Send\-Request}}
+\index{\-Send\-Request@{\-Send\-Request}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Send\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Send\-Request} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Host, }
+\item[{const char $\ast$}]{sz\-Host\-Name, }
+\item[{const char $\ast$}]{sz\-Path, }
+\item[{const char $\ast$}]{sz\-User\-I\-D, }
+\item[{const char $\ast$}]{sz\-Password, }
+\item[{long}]{l\-Port, }
+\item[{const char $\ast$}]{sz\-Proxy, }
+\item[{long}]{l\-Proxy\-Port, }
+\item[{const char $\ast$}]{sz\-Proxy\-User, }
+\item[{const char $\ast$}]{sz\-Proxy\-Pswd, }
+\item[{const char $\ast$}]{sz\-User\-Agent, }
+\item[{const char $\ast$}]{sz\-Post, }
+\item[{long}]{dw\-Time\-Out, }
+\item[{const char $\ast$}]{sz\-Transaction = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)}}\label{class_c_h_t_t_p_client_ac7c48dc326c9f3760d6edf34de812257}
+
+
+\-Send a request. 
+
+
+
+\-Definition at line 204 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+\hypertarget{class_c_h_t_t_p_client_ac18c2a841c3645a01acfdc3e512c7a7e}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!\-Write\-Cookie\-File@{\-Write\-Cookie\-File}}
+\index{\-Write\-Cookie\-File@{\-Write\-Cookie\-File}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{\-Write\-Cookie\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::\-Write\-Cookie\-File} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{lp\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_ac18c2a841c3645a01acfdc3e512c7a7e}
+
+
+\-Definition at line 1037 of file \-C\-H\-T\-T\-P\-Client.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_h_t_t_p_client_a59e05bc90f7b71663e3b87c06c55721e}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!b\-Connect\-Failed@{b\-Connect\-Failed}}
+\index{b\-Connect\-Failed@{b\-Connect\-Failed}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{b\-Connect\-Failed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::b\-Connect\-Failed}}}\label{class_c_h_t_t_p_client_a59e05bc90f7b71663e3b87c06c55721e}
+
+
+\-Definition at line 104 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_aa2db4dc9f1177eef59e79ff1970a4a06}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!b\-Header@{b\-Header}}
+\index{b\-Header@{b\-Header}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{b\-Header}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::b\-Header}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aa2db4dc9f1177eef59e79ff1970a4a06}
+
+
+\-Definition at line 130 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a98a9f41337106c89ca4331d3ee067735}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!b\-Head\-Request@{b\-Head\-Request}}
+\index{b\-Head\-Request@{b\-Head\-Request}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{b\-Head\-Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::b\-Head\-Request}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a98a9f41337106c89ca4331d3ee067735}
+
+
+\-Definition at line 131 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a9bb4f347e03b75be4adc9efe04ec1284}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!b\-Read\-Complete@{b\-Read\-Complete}}
+\index{b\-Read\-Complete@{b\-Read\-Complete}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{b\-Read\-Complete}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-H\-T\-T\-P\-Client\-::b\-Read\-Complete}}}\label{class_c_h_t_t_p_client_a9bb4f347e03b75be4adc9efe04ec1284}
+
+
+\-Definition at line 103 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a7c814dc76e1feb17be827cfa58246f5e}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Content@{c\-Content}}
+\index{c\-Content@{c\-Content}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Content}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Content}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a7c814dc76e1feb17be827cfa58246f5e}
+
+
+\-Definition at line 135 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a2c8833f6431a9449a2ca776d3b75fdb9}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Content\-Type@{c\-Content\-Type}}
+\index{c\-Content\-Type@{c\-Content\-Type}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Content\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Content\-Type}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a2c8833f6431a9449a2ca776d3b75fdb9}
+
+
+\-Definition at line 136 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_aead239b82d8415a05884cafebf5a384a}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Cookie\-Buf@{c\-Cookie\-Buf}}
+\index{c\-Cookie\-Buf@{c\-Cookie\-Buf}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Cookie\-Buf}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Cookie\-Buf}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aead239b82d8415a05884cafebf5a384a}
+
+
+\-Definition at line 142 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_ab9788ca9dcc416a443622abb3ce44b70}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Domain@{c\-Domain}}
+\index{c\-Domain@{c\-Domain}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Domain}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Domain}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_ab9788ca9dcc416a443622abb3ce44b70}
+
+
+\-Definition at line 140 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_ab8d840e3a99e3092df067a218c25e621}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Header@{c\-Header}}
+\index{c\-Header@{c\-Header}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Header}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Header}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_ab8d840e3a99e3092df067a218c25e621}
+
+
+\-Definition at line 133 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a71cb458d2508e65189f0c65dba6d465d}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Header\-Lwr@{c\-Header\-Lwr}}
+\index{c\-Header\-Lwr@{c\-Header\-Lwr}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Header\-Lwr}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Header\-Lwr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a71cb458d2508e65189f0c65dba6d465d}
+
+
+\-Definition at line 134 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a9913b3d73cb9a8172a8ca5e13d39088f}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Last\-Modified@{c\-Last\-Modified}}
+\index{c\-Last\-Modified@{c\-Last\-Modified}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Last\-Modified}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Last\-Modified}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a9913b3d73cb9a8172a8ca5e13d39088f}
+
+
+\-Definition at line 137 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a2d2289bf6605dbe853143fb523f81058}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Location@{c\-Location}}
+\index{c\-Location@{c\-Location}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Location}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Location}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a2d2289bf6605dbe853143fb523f81058}
+
+
+\-Definition at line 138 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a7f2cc6944a2535539772f62b51f0c568}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Path@{c\-Path}}
+\index{c\-Path@{c\-Path}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Path}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Path}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a7f2cc6944a2535539772f62b51f0c568}
+
+
+\-Definition at line 141 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a1ac75d26c210602da43085a9ba1de5bb}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Recv\-Event@{c\-Recv\-Event}}
+\index{c\-Recv\-Event@{c\-Recv\-Event}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Recv\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Recv\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a1ac75d26c210602da43085a9ba1de5bb}
+
+
+\-Definition at line 132 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_aa4092d7fea50e76e30f3269479253db6}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Request\-Num@{c\-Request\-Num}}
+\index{c\-Request\-Num@{c\-Request\-Num}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Request\-Num}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Request\-Num}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aa4092d7fea50e76e30f3269479253db6}
+
+
+\-Definition at line 144 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_acbcb5dd8619fbba37910ca522a0bc1a4}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Server@{c\-Server}}
+\index{c\-Server@{c\-Server}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Server}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Server}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_acbcb5dd8619fbba37910ca522a0bc1a4}
+
+
+\-Definition at line 139 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_adbc5e3e3b321c3179b986f2ed2ff0eb1}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!c\-Transaction@{c\-Transaction}}
+\index{c\-Transaction@{c\-Transaction}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{c\-Transaction}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::c\-Transaction}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_adbc5e3e3b321c3179b986f2ed2ff0eb1}
+
+
+\-Definition at line 143 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a88849e78a493edc3c349f3ada5ee86c2}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!dw\-First\-Byte@{dw\-First\-Byte}}
+\index{dw\-First\-Byte@{dw\-First\-Byte}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{dw\-First\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::dw\-First\-Byte}}}\label{class_c_h_t_t_p_client_a88849e78a493edc3c349f3ada5ee86c2}
+
+
+\-Definition at line 107 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a7461aa9373197650c49ab680e6536d22}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!dw\-Last\-Byte@{dw\-Last\-Byte}}
+\index{dw\-Last\-Byte@{dw\-Last\-Byte}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{dw\-Last\-Byte}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::dw\-Last\-Byte}}}\label{class_c_h_t_t_p_client_a7461aa9373197650c49ab680e6536d22}
+
+
+\-Definition at line 108 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_abaa4f1ce357ce53d5087281ad27c9c1b}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!dw\-Start\-Time@{dw\-Start\-Time}}
+\index{dw\-Start\-Time@{dw\-Start\-Time}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{dw\-Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::dw\-Start\-Time}}}\label{class_c_h_t_t_p_client_abaa4f1ce357ce53d5087281ad27c9c1b}
+
+
+\-Definition at line 106 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a3840ab9a7468b62900613238c47c36cb}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!l\-Content\-Length@{l\-Content\-Length}}
+\index{l\-Content\-Length@{l\-Content\-Length}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{l\-Content\-Length}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::l\-Content\-Length}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a3840ab9a7468b62900613238c47c36cb}
+
+
+\-Definition at line 145 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a3912e2379d3a00b9a0e671abab1dd0b7}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!l\-Received\-Length@{l\-Received\-Length}}
+\index{l\-Received\-Length@{l\-Received\-Length}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{l\-Received\-Length}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-H\-T\-T\-P\-Client\-::l\-Received\-Length}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a3912e2379d3a00b9a0e671abab1dd0b7}
+
+
+\-Definition at line 146 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_ad89f9c067334f868606ba6d00f3afdab}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!s\-Debug\-Recv\-Header@{s\-Debug\-Recv\-Header}}
+\index{s\-Debug\-Recv\-Header@{s\-Debug\-Recv\-Header}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{s\-Debug\-Recv\-Header}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::s\-Debug\-Recv\-Header}}}\label{class_c_h_t_t_p_client_ad89f9c067334f868606ba6d00f3afdab}
+
+
+\-Definition at line 114 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_ae0232e77c7c396d7a6708139f6379ef7}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!s\-Debug\-Send\-Header@{s\-Debug\-Send\-Header}}
+\index{s\-Debug\-Send\-Header@{s\-Debug\-Send\-Header}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{s\-Debug\-Send\-Header}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-H\-T\-T\-P\-Client\-::s\-Debug\-Send\-Header}}}\label{class_c_h_t_t_p_client_ae0232e77c7c396d7a6708139f6379ef7}
+
+
+\-Definition at line 113 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_aff047143e60597632e37899b10fab8e2}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!sz\-Send\-Buffer@{sz\-Send\-Buffer}}
+\index{sz\-Send\-Buffer@{sz\-Send\-Buffer}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{sz\-Send\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-H\-T\-T\-P\-Client\-::sz\-Send\-Buffer}\mbox{[}{\bf \-I\-N\-T\-E\-R\-N\-E\-T\-\_\-\-M\-A\-X\-\_\-\-U\-R\-L\-\_\-\-L\-E\-N\-G\-T\-H\-\_\-\-R\-T\-M}+1\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_aff047143e60597632e37899b10fab8e2}
+
+
+\-Definition at line 147 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+\hypertarget{class_c_h_t_t_p_client_a05468a0fa4fd07830d9dc0fd0fba55ee}{\index{\-C\-H\-T\-T\-P\-Client@{\-C\-H\-T\-T\-P\-Client}!sz\-Status@{sz\-Status}}
+\index{sz\-Status@{sz\-Status}!CHTTPClient@{\-C\-H\-T\-T\-P\-Client}}
+\subsubsection[{sz\-Status}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-H\-T\-T\-P\-Client\-::sz\-Status}\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_h_t_t_p_client_a05468a0fa4fd07830d9dc0fd0fba55ee}
+
+
+\-Definition at line 148 of file \-C\-H\-T\-T\-P\-Client.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_h_t_t_p_client_8h}{\-C\-H\-T\-T\-P\-Client.\-h}\item 
+common/\hyperlink{_c_h_t_t_p_client_8cpp}{\-C\-H\-T\-T\-P\-Client.\-cpp}\end{DoxyCompactItemize}

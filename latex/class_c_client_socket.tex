@@ -1,0 +1,337 @@
+\hypertarget{class_c_client_socket}{\section{\-C\-Client\-Socket \-Class \-Reference}
+\label{class_c_client_socket}\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}}
+}
+
+
+\-Client socket.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Client\-Socket.\-h$>$}
+
+\-Inheritance diagram for \-C\-Client\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_client_socket}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_client_socket_a45648796359fcb9e67ac9ba9d8ab6879}{\-C\-Client\-Socket} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_client_socket_ad9df1bce627d694f3786d801c57eea3c}{$\sim$\-C\-Client\-Socket} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_ae9e27a8e37cb259cbb37357d763fe9db}{\-Connect\-To\-Server} (\hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lpsz\-Host\-Address, \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T} n\-Host\-Port, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a0967869371faa1328e38f9f83d4e9254}{\-Connect\-To\-Unix\-Server} (const char $\ast$sz\-Unix\-Socket, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\item 
+time\-\_\-t \hyperlink{class_c_client_socket_acc44530fac9dd8dc3c648c7a32365750}{\-Get\-Time\-Started} ()
+\item 
+virtual int \hyperlink{class_c_client_socket_a9ac6b495a4429b4f876f939e0e662104}{\-Get\-Connection\-Error} ()
+\begin{DoxyCompactList}\small\item\em \-Last error reported. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_client_socket_a45520b4cfcf758dc003877853acf47f7}{\-Set\-Options} (bool \hyperlink{class_c_client_socket_a637cd103e13587df34c0d1937e95aefa}{b\-Reuse}, int \hyperlink{class_c_client_socket_af33729182418c1e9868ad0fed1a68a1e}{i\-Linger}, bool \hyperlink{class_c_client_socket_a0b7201c5883116b700d19bcfc61e49c5}{b\-Tcp\-No\-Delay}=false)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a15b0347d2f84e4cd159c981b3ccced47}{\-Attempt\-Connection} ()
+\begin{DoxyCompactList}\small\item\em \-Process connections. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a5756e507a9decec591fd607dd34e3a85}{\-Initiate\-Connection} ()
+\begin{DoxyCompactList}\small\item\em \-Spawn the connection thread. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a49f5369ae8f86af2b6adcd44517964fc}{\-Last\-Connect\-Attempt\-Successful} ()
+\begin{DoxyCompactList}\small\item\em \-Connect attempt successful? \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a335a875fe14301b767049bb5d7f72b6f}{\-Connect\-Dispatcher} (\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout)
+\begin{DoxyCompactList}\small\item\em \-Distribute to either the \-T\-C\-P or \-U\-N\-I\-X connection code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \hyperlink{class_c_client_socket_a115aa8b14c8685a9f71ecc0b30bed3f6}{\-Connect\-Thread} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Void)
+\begin{DoxyCompactList}\small\item\em \-Client connect thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_added75c4c526045e911bbc732f7d3d25}{b\-Destroying}
+\begin{DoxyCompactList}\small\item\em \-Actually does the work. \end{DoxyCompactList}\item 
+time\-\_\-t \hyperlink{class_c_client_socket_a64622c72994fb5bcacb0f9e1adf3f080}{t\-Started}
+\item 
+\hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} \hyperlink{class_c_client_socket_a6ce77be76b474ae73e419ea9c89c0b77}{h\-Client\-Thread}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_client_socket_a4d9d11fa1ce3dd3eff8bf0f03afe01ef}{b\-Connect\-Attempt}
+\item 
+int \hyperlink{class_c_client_socket_a09188be04cc0f1d2c2efa06cd69d8aa1}{i\-Connect\-Error}
+\item 
+bool \hyperlink{class_c_client_socket_a637cd103e13587df34c0d1937e95aefa}{b\-Reuse}
+\item 
+int \hyperlink{class_c_client_socket_af33729182418c1e9868ad0fed1a68a1e}{i\-Linger}
+\item 
+bool \hyperlink{class_c_client_socket_a0b7201c5883116b700d19bcfc61e49c5}{b\-Tcp\-No\-Delay}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_client_socket_a9bb4b1a7b04a8acc551d156c76a6c5ed}{c\-Crit\-Section}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_client_socket_a9e119c8e8534aac4d7686469429e14b9}{c\-Connect\-Thread\-Done\-Event}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Client socket. 
+
+\-Implements a client connection. \-You should derive a class from this class which implements a \-Process\-Data method for incoming data and also some external method for sending data (internally, you can use the \-Send\-Data\-Out method). 
+
+\-Definition at line 34 of file \-C\-Client\-Socket.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_client_socket_a45648796359fcb9e67ac9ba9d8ab6879}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-C\-Client\-Socket@{\-C\-Client\-Socket}}
+\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-C\-Client\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Client\-Socket\-::\-C\-Client\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_client_socket_a45648796359fcb9e67ac9ba9d8ab6879}
+
+
+constructor 
+
+
+
+\-Definition at line 33 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_ad9df1bce627d694f3786d801c57eea3c}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!$\sim$\-C\-Client\-Socket@{$\sim$\-C\-Client\-Socket}}
+\index{$\sim$\-C\-Client\-Socket@{$\sim$\-C\-Client\-Socket}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{$\sim$\-C\-Client\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Client\-Socket\-::$\sim$\-C\-Client\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_client_socket_ad9df1bce627d694f3786d801c57eea3c}
+
+
+\-Definition at line 43 of file \-C\-Client\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_client_socket_a15b0347d2f84e4cd159c981b3ccced47}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Attempt\-Connection@{\-Attempt\-Connection}}
+\index{\-Attempt\-Connection@{\-Attempt\-Connection}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Attempt\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Attempt\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_client_socket_a15b0347d2f84e4cd159c981b3ccced47}
+
+
+\-Process connections. 
+
+
+
+\-Definition at line 333 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a335a875fe14301b767049bb5d7f72b6f}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Connect\-Dispatcher@{\-Connect\-Dispatcher}}
+\index{\-Connect\-Dispatcher@{\-Connect\-Dispatcher}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Connect\-Dispatcher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Connect\-Dispatcher} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_client_socket_a335a875fe14301b767049bb5d7f72b6f}
+
+
+\-Distribute to either the \-T\-C\-P or \-U\-N\-I\-X connection code. 
+
+
+
+\-Definition at line 77 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a115aa8b14c8685a9f71ecc0b30bed3f6}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Connect\-Thread@{\-Connect\-Thread}}
+\index{\-Connect\-Thread@{\-Connect\-Thread}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Connect\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-Client\-Socket\-::\-Connect\-Thread} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Void}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_client_socket_a115aa8b14c8685a9f71ecc0b30bed3f6}
+
+
+\-Client connect thread. 
+
+
+
+\-Definition at line 316 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_ae9e27a8e37cb259cbb37357d763fe9db}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Connect\-To\-Server@{\-Connect\-To\-Server}}
+\index{\-Connect\-To\-Server@{\-Connect\-To\-Server}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Connect\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Connect\-To\-Server} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lpsz\-Host\-Address, }
+\item[{{\bf \-U\-I\-N\-T}}]{n\-Host\-Port, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_client_socket_ae9e27a8e37cb259cbb37357d763fe9db}
+\-Connect to a server \-W\-A\-R\-N\-I\-N\-G -\/ if you are going to reuse this object for multiple connections, then you \-M\-U\-S\-T call \-Terminate\-Connection after each connection transaction is complete to clean up resources. 
+
+\-Definition at line 197 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a0967869371faa1328e38f9f83d4e9254}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Connect\-To\-Unix\-Server@{\-Connect\-To\-Unix\-Server}}
+\index{\-Connect\-To\-Unix\-Server@{\-Connect\-To\-Unix\-Server}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Connect\-To\-Unix\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Connect\-To\-Unix\-Server} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Unix\-Socket, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_client_socket_a0967869371faa1328e38f9f83d4e9254}
+
+
+\-Definition at line 159 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a9ac6b495a4429b4f876f939e0e662104}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Get\-Connection\-Error@{\-Get\-Connection\-Error}}
+\index{\-Get\-Connection\-Error@{\-Get\-Connection\-Error}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Get\-Connection\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Client\-Socket\-::\-Get\-Connection\-Error} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_client_socket_a9ac6b495a4429b4f876f939e0e662104}
+
+
+\-Last error reported. 
+
+
+
+\-Definition at line 368 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_acc44530fac9dd8dc3c648c7a32365750}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Get\-Time\-Started@{\-Get\-Time\-Started}}
+\index{\-Get\-Time\-Started@{\-Get\-Time\-Started}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Get\-Time\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-Client\-Socket\-::\-Get\-Time\-Started} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_client_socket_acc44530fac9dd8dc3c648c7a32365750}
+
+
+\-Definition at line 266 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a5756e507a9decec591fd607dd34e3a85}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Initiate\-Connection@{\-Initiate\-Connection}}
+\index{\-Initiate\-Connection@{\-Initiate\-Connection}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Initiate\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Initiate\-Connection} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_client_socket_a5756e507a9decec591fd607dd34e3a85}
+
+
+\-Spawn the connection thread. 
+
+
+
+\-Definition at line 274 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a49f5369ae8f86af2b6adcd44517964fc}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Last\-Connect\-Attempt\-Successful@{\-Last\-Connect\-Attempt\-Successful}}
+\index{\-Last\-Connect\-Attempt\-Successful@{\-Last\-Connect\-Attempt\-Successful}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Last\-Connect\-Attempt\-Successful}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::\-Last\-Connect\-Attempt\-Successful} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_client_socket_a49f5369ae8f86af2b6adcd44517964fc}
+
+
+\-Connect attempt successful? 
+
+
+
+\-Definition at line 360 of file \-C\-Client\-Socket.\-cpp.
+
+\hypertarget{class_c_client_socket_a45520b4cfcf758dc003877853acf47f7}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!\-Set\-Options@{\-Set\-Options}}
+\index{\-Set\-Options@{\-Set\-Options}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Client\-Socket\-::\-Set\-Options} (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-Reuse, }
+\item[{int}]{i\-Linger, }
+\item[{bool}]{b\-Tcp\-No\-Delay = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_c_client_socket_a45520b4cfcf758dc003877853acf47f7}
+\-Set socket options -\/ must be called \-B\-E\-F\-O\-R\-E \-Connect\-To\-Server \-Normally, the defaults are fine unless you are going to create and tear down lots of connections 
+
+\-Definition at line 66 of file \-C\-Client\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_client_socket_a4d9d11fa1ce3dd3eff8bf0f03afe01ef}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!b\-Connect\-Attempt@{b\-Connect\-Attempt}}
+\index{b\-Connect\-Attempt@{b\-Connect\-Attempt}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{b\-Connect\-Attempt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::b\-Connect\-Attempt}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a4d9d11fa1ce3dd3eff8bf0f03afe01ef}
+
+
+\-Definition at line 72 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_added75c4c526045e911bbc732f7d3d25}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!b\-Destroying@{b\-Destroying}}
+\index{b\-Destroying@{b\-Destroying}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{b\-Destroying}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Client\-Socket\-::b\-Destroying}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_added75c4c526045e911bbc732f7d3d25}
+
+
+\-Actually does the work. 
+
+data member 
+
+\-Definition at line 69 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a637cd103e13587df34c0d1937e95aefa}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!b\-Reuse@{b\-Reuse}}
+\index{b\-Reuse@{b\-Reuse}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{b\-Reuse}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-Client\-Socket\-::b\-Reuse}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a637cd103e13587df34c0d1937e95aefa}
+
+
+\-Definition at line 74 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a0b7201c5883116b700d19bcfc61e49c5}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!b\-Tcp\-No\-Delay@{b\-Tcp\-No\-Delay}}
+\index{b\-Tcp\-No\-Delay@{b\-Tcp\-No\-Delay}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{b\-Tcp\-No\-Delay}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-Client\-Socket\-::b\-Tcp\-No\-Delay}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a0b7201c5883116b700d19bcfc61e49c5}
+
+
+\-Definition at line 76 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a9e119c8e8534aac4d7686469429e14b9}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!c\-Connect\-Thread\-Done\-Event@{c\-Connect\-Thread\-Done\-Event}}
+\index{c\-Connect\-Thread\-Done\-Event@{c\-Connect\-Thread\-Done\-Event}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{c\-Connect\-Thread\-Done\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-Client\-Socket\-::c\-Connect\-Thread\-Done\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a9e119c8e8534aac4d7686469429e14b9}
+
+
+\-Definition at line 79 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a9bb4b1a7b04a8acc551d156c76a6c5ed}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!c\-Crit\-Section@{c\-Crit\-Section}}
+\index{c\-Crit\-Section@{c\-Crit\-Section}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{c\-Crit\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-Client\-Socket\-::c\-Crit\-Section}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a9bb4b1a7b04a8acc551d156c76a6c5ed}
+
+
+\-Definition at line 77 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a6ce77be76b474ae73e419ea9c89c0b77}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!h\-Client\-Thread@{h\-Client\-Thread}}
+\index{h\-Client\-Thread@{h\-Client\-Thread}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{h\-Client\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} {\bf \-C\-Client\-Socket\-::h\-Client\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a6ce77be76b474ae73e419ea9c89c0b77}
+
+
+\-Definition at line 71 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a09188be04cc0f1d2c2efa06cd69d8aa1}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!i\-Connect\-Error@{i\-Connect\-Error}}
+\index{i\-Connect\-Error@{i\-Connect\-Error}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{i\-Connect\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Client\-Socket\-::i\-Connect\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a09188be04cc0f1d2c2efa06cd69d8aa1}
+
+
+\-Definition at line 73 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_af33729182418c1e9868ad0fed1a68a1e}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!i\-Linger@{i\-Linger}}
+\index{i\-Linger@{i\-Linger}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{i\-Linger}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Client\-Socket\-::i\-Linger}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_af33729182418c1e9868ad0fed1a68a1e}
+
+
+\-Definition at line 75 of file \-C\-Client\-Socket.\-h.
+
+\hypertarget{class_c_client_socket_a64622c72994fb5bcacb0f9e1adf3f080}{\index{\-C\-Client\-Socket@{\-C\-Client\-Socket}!t\-Started@{t\-Started}}
+\index{t\-Started@{t\-Started}!CClientSocket@{\-C\-Client\-Socket}}
+\subsubsection[{t\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-Client\-Socket\-::t\-Started}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_client_socket_a64622c72994fb5bcacb0f9e1adf3f080}
+
+
+\-Definition at line 70 of file \-C\-Client\-Socket.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_client_socket_8h}{\-C\-Client\-Socket.\-h}\item 
+common/\hyperlink{_c_client_socket_8cpp}{\-C\-Client\-Socket.\-cpp}\end{DoxyCompactItemize}

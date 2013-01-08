@@ -1,0 +1,123 @@
+\hypertarget{class_c_p_client_handler}{\section{\-C\-P\-Client\-Handler \-Class \-Reference}
+\label{class_c_p_client_handler}\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}}
+}
+
+
+{\ttfamily \#include $<$\-C\-P\-Client\-Handler.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Client\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_p_client_handler}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_client_handler_a26b86af12546043f0079e1527fd420a6}{\-C\-P\-Client\-Handler} ()
+\item 
+virtual \hyperlink{class_c_p_client_handler_a3469cc970781324be0648feaca88b56c}{$\sim$\-C\-P\-Client\-Handler} ()
+\item 
+virtual int \hyperlink{class_c_p_client_handler_a7f6d153c5104840663b7225a36ea7609}{\-Call\-Handle\-Connection} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connection)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_p_client_handler_a88117dfe5e1e6d2f5d953277bc1a3044}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)
+\begin{DoxyCompactList}\small\item\em \-Function that does the work. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_handler_ad6df6ba23365c140780ddd27cb44bd08}{\-Call\-Disconnected} (\hyperlink{class_c_p_connection}{\-C\-P\-Connection} $\ast$p\-Connection)
+\begin{DoxyCompactList}\small\item\em \-If we want to call the sockets \-Disconnected member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-C\-P\-Clienthandler is a specialized \hyperlink{class_c_p_handler}{\-C\-P\-Handler} that acts as a \-T\-C\-P client, intiating a connection. 
+
+\-Definition at line 38 of file \-C\-P\-Client\-Handler.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_client_handler_a26b86af12546043f0079e1527fd420a6}{\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}}
+\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!CPClientHandler@{\-C\-P\-Client\-Handler}}
+\subsubsection[{\-C\-P\-Client\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Client\-Handler\-::\-C\-P\-Client\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_client_handler_a26b86af12546043f0079e1527fd420a6}
+
+
+\-Definition at line 30 of file \-C\-P\-Client\-Handler.\-cpp.
+
+\hypertarget{class_c_p_client_handler_a3469cc970781324be0648feaca88b56c}{\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!$\sim$\-C\-P\-Client\-Handler@{$\sim$\-C\-P\-Client\-Handler}}
+\index{$\sim$\-C\-P\-Client\-Handler@{$\sim$\-C\-P\-Client\-Handler}!CPClientHandler@{\-C\-P\-Client\-Handler}}
+\subsubsection[{$\sim$\-C\-P\-Client\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Client\-Handler\-::$\sim$\-C\-P\-Client\-Handler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_client_handler_a3469cc970781324be0648feaca88b56c}
+
+
+\-Definition at line 39 of file \-C\-P\-Client\-Handler.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_client_handler_ad6df6ba23365c140780ddd27cb44bd08}{\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!\-Call\-Disconnected@{\-Call\-Disconnected}}
+\index{\-Call\-Disconnected@{\-Call\-Disconnected}!CPClientHandler@{\-C\-P\-Client\-Handler}}
+\subsubsection[{\-Call\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf void} {\bf \-C\-P\-Client\-Handler\-::\-Call\-Disconnected} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected, virtual\mbox{]}}}}\label{class_c_p_client_handler_ad6df6ba23365c140780ddd27cb44bd08}
+
+
+\-If we want to call the sockets \-Disconnected member. 
+
+
+
+\-Reimplemented from \hyperlink{class_c_p_handler_a439e2cfd01babb8ba9464a4300e90efe}{\-C\-P\-Handler}.
+
+
+
+\-Definition at line 53 of file \-C\-P\-Client\-Handler.\-h.
+
+\hypertarget{class_c_p_client_handler_a7f6d153c5104840663b7225a36ea7609}{\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!\-Call\-Handle\-Connection@{\-Call\-Handle\-Connection}}
+\index{\-Call\-Handle\-Connection@{\-Call\-Handle\-Connection}!CPClientHandler@{\-C\-P\-Client\-Handler}}
+\subsubsection[{\-Call\-Handle\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-C\-P\-Client\-Handler\-::\-Call\-Handle\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Connection} $\ast$}]{p\-Connection}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_c_p_client_handler_a7f6d153c5104840663b7225a36ea7609}
+\-Call the \-C\-P\-Connection-\/$>$\-Handle\-Connection \-This is here so derived classes can choose \-N\-O\-T to call it in case the handler is chained (like this one) 
+
+\-Reimplemented from \hyperlink{class_c_p_handler_abe1898023c829d3af4b5d1c4efa89479}{\-C\-P\-Handler}.
+
+
+
+\-Definition at line 47 of file \-C\-P\-Client\-Handler.\-h.
+
+\hypertarget{class_c_p_client_handler_a88117dfe5e1e6d2f5d953277bc1a3044}{\index{\-C\-P\-Client\-Handler@{\-C\-P\-Client\-Handler}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CPClientHandler@{\-C\-P\-Client\-Handler}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-P\-Client\-Handler\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_p_client_handler_a88117dfe5e1e6d2f5d953277bc1a3044}
+
+
+\-Function that does the work. 
+
+
+
+\-Implements \hyperlink{class_c_p_handler_a86df3a9d167e20ae405eec33e384bd9b}{\-C\-P\-Handler}.
+
+
+
+\-Definition at line 45 of file \-C\-P\-Client\-Handler.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_p_client_handler_8h}{\-C\-P\-Client\-Handler.\-h}\item 
+common/\hyperlink{_c_p_client_handler_8cpp}{\-C\-P\-Client\-Handler.\-cpp}\end{DoxyCompactItemize}

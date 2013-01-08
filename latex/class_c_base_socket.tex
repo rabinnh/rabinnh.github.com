@@ -1,0 +1,313 @@
+\hypertarget{class_c_base_socket}{\section{\-C\-Base\-Socket \-Class \-Reference}
+\label{class_c_base_socket}\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}}
+}
+
+
+\-Base socket class implements low level \-Berkley socket functionality.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Base\-Socket.\-h$>$}
+
+\-Inheritance diagram for \-C\-Base\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.137404cm]{class_c_base_socket}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{\-C\-Base\-Socket} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}{$\sim$\-C\-Base\-Socket} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_base_socket_a5878eecb66f93fe57956656abf048f7d}{\-Create} (int af, int type, int protocol, \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T} n\-Port=0, \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lp\-Addr=\-N\-U\-L\-L, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Reuse=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Bind=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}, int i\-Linger=-\/1, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-No\-Tcp\-Delay=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em methods \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_base_socket_a65ed29350c1d78a6691404738c07b2c2}{\-Set\-Blocking\-Mode} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Block=\hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E})
+\begin{DoxyCompactList}\small\item\em \-Make this a blocking socket. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_base_socket_ad1e45ab8be1fda6f91704a7159a0a8e4}{\-Close\-Socket} ()
+\begin{DoxyCompactList}\small\item\em \-Close socket. \end{DoxyCompactList}\item 
+virtual struct sockaddr\-\_\-in $\ast$ \hyperlink{class_c_base_socket_a6f955956a1cd1c94c3ba2a80c1fde41a}{\-Get\-Socket\-Name} ()
+\begin{DoxyCompactList}\small\item\em \-Return a socket address structure with info currently bound to the socket. \end{DoxyCompactList}\item 
+virtual const char $\ast$ \hyperlink{class_c_base_socket_a78dee8076bd41f62307d70273112b54a}{\-Get\-Socket\-Address\-As\-String} ()
+\begin{DoxyCompactList}\small\item\em \-Return the socket address as a string. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_base_socket_abae300062e0510d901e2873eface1bc0}{\-Get\-Create\-Error} ()
+\begin{DoxyCompactList}\small\item\em \-Return the last create error. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_c_base_socket_a4a6c7866671c019612259f30172cc8c5}{\-Get\-Socket\-Type} ()
+\begin{DoxyCompactList}\small\item\em \-Get socket type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_base_socket_ab3e4b93f8450b5fa901017d5fddba0e2}{\-Unprotected\-Close\-Socket} ()
+\begin{DoxyCompactList}\small\item\em \-Unprotected close socket -\/ called by \-Close\-Socket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_x_plat_8h_a8dc8083897335125630f1af5dafd5831}{\-S\-O\-C\-K\-E\-T} \hyperlink{class_c_base_socket_a4a40d0e510e311d365681f3af20738b8}{s\-Socket}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_base_socket_ace5626a9274cb3ca77b985e6c5b5af43}{c\-Critical\-Socket}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_base_socket_a57027e1576c0ae6e410c5ccf23724a2d}{b\-Blocking}
+\item 
+struct sockaddr\-\_\-in \hyperlink{class_c_base_socket_af5f07d3684a2c7876b617885f91a518d}{s\-T\-Addr}
+\item 
+int \hyperlink{class_c_base_socket_a534d73ca9c9a1a0cd4767efb3b1d0566}{i\-Create\-Error}
+\item 
+string \hyperlink{class_c_base_socket_af5ea32275a20e337e43689370a9e25ed}{s\-Unix\-Path}
+\item 
+int \hyperlink{class_c_base_socket_a3f75df97cb5664473c77ec1b323d3407}{i\-A\-F}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Base socket class implements low level \-Berkley socket functionality. 
+
+\-Definition at line 39 of file \-C\-Base\-Socket.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-C\-Base\-Socket@{\-C\-Base\-Socket}}
+\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-C\-Base\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Base\-Socket\-::\-C\-Base\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_base_socket_addf3bf444356a73e1b22b267ffcc3cae}
+
+
+constructor 
+
+
+
+\-Definition at line 32 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!$\sim$\-C\-Base\-Socket@{$\sim$\-C\-Base\-Socket}}
+\index{$\sim$\-C\-Base\-Socket@{$\sim$\-C\-Base\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{$\sim$\-C\-Base\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Base\-Socket\-::$\sim$\-C\-Base\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_affd9b0d8c2917fdc30ff421217ef3c0f}
+
+
+\-Definition at line 39 of file \-C\-Base\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_base_socket_ad1e45ab8be1fda6f91704a7159a0a8e4}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Close\-Socket@{\-Close\-Socket}}
+\index{\-Close\-Socket@{\-Close\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Close\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Base\-Socket\-::\-Close\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_ad1e45ab8be1fda6f91704a7159a0a8e4}
+
+
+\-Close socket. 
+
+
+
+\-Reimplemented in \hyperlink{class_c_u_d_p_socket_a4c3f6638dc3c4cbe3ea33ab8b1dd811c}{\-C\-U\-D\-P\-Socket}.
+
+
+
+\-Definition at line 207 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_a5878eecb66f93fe57956656abf048f7d}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Create@{\-Create}}
+\index{\-Create@{\-Create}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Base\-Socket\-::\-Create} (
+\begin{DoxyParamCaption}
+\item[{int}]{af, }
+\item[{int}]{type, }
+\item[{int}]{protocol, }
+\item[{{\bf \-U\-I\-N\-T}}]{n\-Port = {\ttfamily 0}, }
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lp\-Addr = {\ttfamily \-N\-U\-L\-L}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Reuse = {\ttfamily {\bf \-F\-A\-L\-S\-E}}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Bind = {\ttfamily {\bf \-T\-R\-U\-E}}, }
+\item[{int}]{i\-Linger = {\ttfamily -\/1}, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-No\-Tcp\-Delay = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_a5878eecb66f93fe57956656abf048f7d}
+
+
+methods 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em type} & \-Address family. \-Only tested with \-A\-F\-\_\-\-I\-N\-E\-T. \\
+\hline
+{\em protocol} & \-Stream or datagram (\-S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M or \-S\-O\-C\-K\-\_\-\-D\-R\-A\-M) \\
+\hline
+{\em n\-Port} & \-Usually 0 for inet sockets \\
+\hline
+{\em lp\-Addr} & \-Port \\
+\hline
+{\em b\-Reuse} & \-Address. \-For inet in the standard xxx.\-xxx.\-xxx.\-xxx format, for \-A\-F\-\_\-\-U\-N\-I\-X the path \\
+\hline
+{\em b\-Bind} & \-Allow reuse of this socket \\
+\hline
+{\em i\-Linger} & \-Default to bind the socket. \-Not needed if this is the result of an \-::accept \\
+\hline
+{\em b\-No\-Tcp\-Delay} & -\/1 = system default, 0 = \-D\-O\-N\-T\-\_\-\-L\-I\-N\-G\-E\-R, else the timeout \\
+\hline
+\end{DoxyParams}
+
+
+\-Definition at line 52 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_abae300062e0510d901e2873eface1bc0}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Get\-Create\-Error@{\-Get\-Create\-Error}}
+\index{\-Get\-Create\-Error@{\-Get\-Create\-Error}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Get\-Create\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Base\-Socket\-::\-Get\-Create\-Error} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_abae300062e0510d901e2873eface1bc0}
+
+
+\-Return the last create error. 
+
+
+
+\-Definition at line 167 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_a78dee8076bd41f62307d70273112b54a}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Get\-Socket\-Address\-As\-String@{\-Get\-Socket\-Address\-As\-String}}
+\index{\-Get\-Socket\-Address\-As\-String@{\-Get\-Socket\-Address\-As\-String}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Get\-Socket\-Address\-As\-String}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-Base\-Socket\-::\-Get\-Socket\-Address\-As\-String} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_a78dee8076bd41f62307d70273112b54a}
+
+
+\-Return the socket address as a string. 
+
+
+
+\-Definition at line 271 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_a6f955956a1cd1c94c3ba2a80c1fde41a}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Get\-Socket\-Name@{\-Get\-Socket\-Name}}
+\index{\-Get\-Socket\-Name@{\-Get\-Socket\-Name}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Get\-Socket\-Name}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in $\ast$ {\bf \-C\-Base\-Socket\-::\-Get\-Socket\-Name} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read, virtual\mbox{]}}}}\label{class_c_base_socket_a6f955956a1cd1c94c3ba2a80c1fde41a}
+
+
+\-Return a socket address structure with info currently bound to the socket. 
+
+
+
+\-Definition at line 247 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_a4a6c7866671c019612259f30172cc8c5}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Get\-Socket\-Type@{\-Get\-Socket\-Type}}
+\index{\-Get\-Socket\-Type@{\-Get\-Socket\-Type}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Get\-Socket\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Base\-Socket\-::\-Get\-Socket\-Type} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_a4a6c7866671c019612259f30172cc8c5}
+
+
+\-Get socket type. 
+
+
+
+\-Definition at line 175 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_a65ed29350c1d78a6691404738c07b2c2}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Set\-Blocking\-Mode@{\-Set\-Blocking\-Mode}}
+\index{\-Set\-Blocking\-Mode@{\-Set\-Blocking\-Mode}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Set\-Blocking\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Base\-Socket\-::\-Set\-Blocking\-Mode} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Block = {\ttfamily {\bf \-T\-R\-U\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_base_socket_a65ed29350c1d78a6691404738c07b2c2}
+
+
+\-Make this a blocking socket. 
+
+\-F\-A\-L\-S\-E = system default, \-T\-R\-U\-E = disable \-Nagle algorithm and send partial data 
+
+\-Definition at line 183 of file \-C\-Base\-Socket.\-cpp.
+
+\hypertarget{class_c_base_socket_ab3e4b93f8450b5fa901017d5fddba0e2}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!\-Unprotected\-Close\-Socket@{\-Unprotected\-Close\-Socket}}
+\index{\-Unprotected\-Close\-Socket@{\-Unprotected\-Close\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{\-Unprotected\-Close\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Base\-Socket\-::\-Unprotected\-Close\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_base_socket_ab3e4b93f8450b5fa901017d5fddba0e2}
+
+
+\-Unprotected close socket -\/ called by \-Close\-Socket. 
+
+
+
+\-Reimplemented in \hyperlink{class_c_p_connection_a5c83da25150fd43d9fe4522d34d6cffb}{\-C\-P\-Connection}.
+
+
+
+\-Definition at line 221 of file \-C\-Base\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_base_socket_a57027e1576c0ae6e410c5ccf23724a2d}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!b\-Blocking@{b\-Blocking}}
+\index{b\-Blocking@{b\-Blocking}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{b\-Blocking}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Base\-Socket\-::b\-Blocking}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_a57027e1576c0ae6e410c5ccf23724a2d}
+
+
+\-Definition at line 76 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_ace5626a9274cb3ca77b985e6c5b5af43}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!c\-Critical\-Socket@{c\-Critical\-Socket}}
+\index{c\-Critical\-Socket@{c\-Critical\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{c\-Critical\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-Base\-Socket\-::c\-Critical\-Socket}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_ace5626a9274cb3ca77b985e6c5b5af43}
+
+
+\-Definition at line 75 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_a3f75df97cb5664473c77ec1b323d3407}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!i\-A\-F@{i\-A\-F}}
+\index{i\-A\-F@{i\-A\-F}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{i\-A\-F}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Base\-Socket\-::i\-A\-F}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_a3f75df97cb5664473c77ec1b323d3407}
+
+
+\-Definition at line 80 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_a534d73ca9c9a1a0cd4767efb3b1d0566}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!i\-Create\-Error@{i\-Create\-Error}}
+\index{i\-Create\-Error@{i\-Create\-Error}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{i\-Create\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-Base\-Socket\-::i\-Create\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_a534d73ca9c9a1a0cd4767efb3b1d0566}
+
+
+\-Definition at line 78 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_a4a40d0e510e311d365681f3af20738b8}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!s\-Socket@{s\-Socket}}
+\index{s\-Socket@{s\-Socket}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{s\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-S\-O\-C\-K\-E\-T} {\bf \-C\-Base\-Socket\-::s\-Socket}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_a4a40d0e510e311d365681f3af20738b8}
+
+
+\-Definition at line 74 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_af5f07d3684a2c7876b617885f91a518d}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!s\-T\-Addr@{s\-T\-Addr}}
+\index{s\-T\-Addr@{s\-T\-Addr}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{s\-T\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}struct sockaddr\-\_\-in {\bf \-C\-Base\-Socket\-::s\-T\-Addr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_af5f07d3684a2c7876b617885f91a518d}
+
+
+\-Definition at line 77 of file \-C\-Base\-Socket.\-h.
+
+\hypertarget{class_c_base_socket_af5ea32275a20e337e43689370a9e25ed}{\index{\-C\-Base\-Socket@{\-C\-Base\-Socket}!s\-Unix\-Path@{s\-Unix\-Path}}
+\index{s\-Unix\-Path@{s\-Unix\-Path}!CBaseSocket@{\-C\-Base\-Socket}}
+\subsubsection[{s\-Unix\-Path}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-Base\-Socket\-::s\-Unix\-Path}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_base_socket_af5ea32275a20e337e43689370a9e25ed}
+
+
+\-Definition at line 79 of file \-C\-Base\-Socket.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_base_socket_8h}{\-C\-Base\-Socket.\-h}\item 
+common/\hyperlink{_c_base_socket_8cpp}{\-C\-Base\-Socket.\-cpp}\end{DoxyCompactItemize}

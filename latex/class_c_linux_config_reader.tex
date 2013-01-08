@@ -1,0 +1,123 @@
+\hypertarget{class_c_linux_config_reader}{\section{\-C\-Linux\-Config\-Reader \-Class \-Reference}
+\label{class_c_linux_config_reader}\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}}
+}
+
+
+\-A simple class to read a text configuration file and insert values into a map.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Linux\-Config\-Reader.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_linux_config_reader_ab181efdcb1824be8b1cf38a54053aa7c}{\-C\-Linux\-Config\-Reader} ()
+\item 
+\hyperlink{class_c_linux_config_reader_aefb1c89d21c6d06efb1e02a6ed094b97}{\-C\-Linux\-Config\-Reader} (const \hyperlink{class_c_linux_config_reader}{\-C\-Linux\-Config\-Reader} \&orig)
+\item 
+virtual \hyperlink{class_c_linux_config_reader_ad7396095dad86606810340020a1ff134}{$\sim$\-C\-Linux\-Config\-Reader} ()
+\item 
+string \& \hyperlink{class_c_linux_config_reader_a59518fa860146b7f68ba32cafa2c4273}{\-Read\-Config\-Value} (const char $\ast$p\-Key, const char $\ast$p\-Default=\-N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em \-Read a configuration value. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_linux_config_reader_a829a515ae74b4fffbb4f46f9df5a7b1f}{\-Read\-Config} (const char $\ast$p\-Path)
+\begin{DoxyCompactList}\small\item\em \-Read a configuration file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_linux_config_reader_8h_a7d59549d525077addf7d663740c64211}{\-M\-A\-P\-\_\-\-C\-O\-N\-F\-I\-G} \hyperlink{class_c_linux_config_reader_a5472374c38b0de2e816345f9d4c8112d}{m\-Config}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A simple class to read a text configuration file and insert values into a map. 
+
+\-Definition at line 35 of file \-C\-Linux\-Config\-Reader.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_linux_config_reader_ab181efdcb1824be8b1cf38a54053aa7c}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}}
+\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{\-C\-Linux\-Config\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Linux\-Config\-Reader\-::\-C\-Linux\-Config\-Reader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_linux_config_reader_ab181efdcb1824be8b1cf38a54053aa7c}
+
+
+\-Definition at line 28 of file \-C\-Linux\-Config\-Reader.\-cpp.
+
+\hypertarget{class_c_linux_config_reader_aefb1c89d21c6d06efb1e02a6ed094b97}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}}
+\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{\-C\-Linux\-Config\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Linux\-Config\-Reader\-::\-C\-Linux\-Config\-Reader} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-C\-Linux\-Config\-Reader} \&}]{orig}
+\end{DoxyParamCaption}
+)}}\label{class_c_linux_config_reader_aefb1c89d21c6d06efb1e02a6ed094b97}
+
+
+\-Definition at line 32 of file \-C\-Linux\-Config\-Reader.\-cpp.
+
+\hypertarget{class_c_linux_config_reader_ad7396095dad86606810340020a1ff134}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!$\sim$\-C\-Linux\-Config\-Reader@{$\sim$\-C\-Linux\-Config\-Reader}}
+\index{$\sim$\-C\-Linux\-Config\-Reader@{$\sim$\-C\-Linux\-Config\-Reader}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{$\sim$\-C\-Linux\-Config\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Linux\-Config\-Reader\-::$\sim$\-C\-Linux\-Config\-Reader} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_linux_config_reader_ad7396095dad86606810340020a1ff134}
+
+
+\-Definition at line 37 of file \-C\-Linux\-Config\-Reader.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_linux_config_reader_a829a515ae74b4fffbb4f46f9df5a7b1f}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!\-Read\-Config@{\-Read\-Config}}
+\index{\-Read\-Config@{\-Read\-Config}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{\-Read\-Config}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-Linux\-Config\-Reader\-::\-Read\-Config} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Path}
+\end{DoxyParamCaption}
+)}}\label{class_c_linux_config_reader_a829a515ae74b4fffbb4f46f9df5a7b1f}
+
+
+\-Read a configuration file. 
+
+
+
+\-Definition at line 41 of file \-C\-Linux\-Config\-Reader.\-cpp.
+
+\hypertarget{class_c_linux_config_reader_a59518fa860146b7f68ba32cafa2c4273}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!\-Read\-Config\-Value@{\-Read\-Config\-Value}}
+\index{\-Read\-Config\-Value@{\-Read\-Config\-Value}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{\-Read\-Config\-Value}]{\setlength{\rightskip}{0pt plus 5cm}string \& {\bf \-C\-Linux\-Config\-Reader\-::\-Read\-Config\-Value} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Key, }
+\item[{const char $\ast$}]{p\-Default = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)}}\label{class_c_linux_config_reader_a59518fa860146b7f68ba32cafa2c4273}
+
+
+\-Read a configuration value. 
+
+
+
+\-Definition at line 105 of file \-C\-Linux\-Config\-Reader.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_linux_config_reader_a5472374c38b0de2e816345f9d4c8112d}{\index{\-C\-Linux\-Config\-Reader@{\-C\-Linux\-Config\-Reader}!m\-Config@{m\-Config}}
+\index{m\-Config@{m\-Config}!CLinuxConfigReader@{\-C\-Linux\-Config\-Reader}}
+\subsubsection[{m\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-M\-A\-P\-\_\-\-C\-O\-N\-F\-I\-G} {\bf \-C\-Linux\-Config\-Reader\-::m\-Config}}}\label{class_c_linux_config_reader_a5472374c38b0de2e816345f9d4c8112d}
+
+
+\-Definition at line 48 of file \-C\-Linux\-Config\-Reader.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_linux_config_reader_8h}{\-C\-Linux\-Config\-Reader.\-h}\item 
+common/\hyperlink{_c_linux_config_reader_8cpp}{\-C\-Linux\-Config\-Reader.\-cpp}\end{DoxyCompactItemize}

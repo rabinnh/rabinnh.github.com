@@ -1,0 +1,147 @@
+\hypertarget{class_c_x_plat_critical_section}{\section{\-C\-X\-Plat\-Critical\-Section \-Class \-Reference}
+\label{class_c_x_plat_critical_section}\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}}
+}
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Critical\-Section.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_critical_section_a8188427bafd98f8778ecfbac5e4d962e}{\-C\-X\-Plat\-Critical\-Section} ()
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_critical_section_a17fee86e9af86ff7f2d922a77779651a}{$\sim$\-C\-X\-Plat\-Critical\-Section} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_critical_section_a09abc6317892511112edf7b8978ef670}{\-Lock} (\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Wait=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\begin{DoxyCompactList}\small\item\em \-Tries to obtain exclusive access. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_critical_section_abc3ddf88e89230c7c97e98af9bd7c707}{\-Unlock} ()
+\begin{DoxyCompactList}\small\item\em \-Releases exclusive access. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{class_c_x_plat_critical_section_aa7bacade5b04643e1a50122a0ba38fc5}{m\-\_\-cs\-Handle}
+\item 
+pthread\-\_\-t \hyperlink{class_c_x_plat_critical_section_a90276ecb4828f7c51166fc6588e31d22}{lock\-\_\-id}
+\item 
+int \hyperlink{class_c_x_plat_critical_section_a0bc1b3ef29deaac5438dd6ab245c0b9d}{lock\-\_\-count}
+\end{DoxyCompactItemize}
+\subsection*{\-Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_x_plat_critical_section_a07b9fb7f9e1f7c3e3f6604a7cc379be1}{\-C\-X\-Plat\-Event}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Cross plaform synchronization class
+
+\-On \-Windows, critical sections are \char`\"{}cheaper\char`\"{} than interprocess mutexes (mutii?) 
+
+\-Definition at line 26 of file \-C\-X\-Plat\-Critical\-Section.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_critical_section_a8188427bafd98f8778ecfbac5e4d962e}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}}
+\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{\-C\-X\-Plat\-Critical\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section\-::\-C\-X\-Plat\-Critical\-Section} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_critical_section_a8188427bafd98f8778ecfbac5e4d962e}
+
+
+\-Constructor. 
+
+
+
+\-Definition at line 26 of file \-C\-X\-Plat\-Critical\-Section.\-cpp.
+
+\hypertarget{class_c_x_plat_critical_section_a17fee86e9af86ff7f2d922a77779651a}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!$\sim$\-C\-X\-Plat\-Critical\-Section@{$\sim$\-C\-X\-Plat\-Critical\-Section}}
+\index{$\sim$\-C\-X\-Plat\-Critical\-Section@{$\sim$\-C\-X\-Plat\-Critical\-Section}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Critical\-Section}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section\-::$\sim$\-C\-X\-Plat\-Critical\-Section} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_critical_section_a17fee86e9af86ff7f2d922a77779651a}
+
+
+\-Destructor. 
+
+
+
+\-Definition at line 38 of file \-C\-X\-Plat\-Critical\-Section.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_critical_section_a09abc6317892511112edf7b8978ef670}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!\-Lock@{\-Lock}}
+\index{\-Lock@{\-Lock}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Critical\-Section\-::\-Lock} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Wait = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_critical_section_a09abc6317892511112edf7b8978ef670}
+
+
+\-Tries to obtain exclusive access. 
+
+
+
+\-Definition at line 49 of file \-C\-X\-Plat\-Critical\-Section.\-cpp.
+
+\hypertarget{class_c_x_plat_critical_section_abc3ddf88e89230c7c97e98af9bd7c707}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!\-Unlock@{\-Unlock}}
+\index{\-Unlock@{\-Unlock}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Critical\-Section\-::\-Unlock} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_critical_section_abc3ddf88e89230c7c97e98af9bd7c707}
+
+
+\-Releases exclusive access. 
+
+
+
+\-Definition at line 88 of file \-C\-X\-Plat\-Critical\-Section.\-cpp.
+
+
+
+\subsection{\-Friends \-And \-Related \-Function \-Documentation}
+\hypertarget{class_c_x_plat_critical_section_a07b9fb7f9e1f7c3e3f6604a7cc379be1}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}}
+\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{\-C\-X\-Plat\-Event}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf \-C\-X\-Plat\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}\label{class_c_x_plat_critical_section_a07b9fb7f9e1f7c3e3f6604a7cc379be1}
+
+
+\-Definition at line 28 of file \-C\-X\-Plat\-Critical\-Section.\-h.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_critical_section_a0bc1b3ef29deaac5438dd6ab245c0b9d}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!lock\-\_\-count@{lock\-\_\-count}}
+\index{lock\-\_\-count@{lock\-\_\-count}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{lock\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Critical\-Section\-::lock\-\_\-count}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_critical_section_a0bc1b3ef29deaac5438dd6ab245c0b9d}
+
+
+\-Definition at line 46 of file \-C\-X\-Plat\-Critical\-Section.\-h.
+
+\hypertarget{class_c_x_plat_critical_section_a90276ecb4828f7c51166fc6588e31d22}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!lock\-\_\-id@{lock\-\_\-id}}
+\index{lock\-\_\-id@{lock\-\_\-id}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{lock\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-t {\bf \-C\-X\-Plat\-Critical\-Section\-::lock\-\_\-id}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_critical_section_a90276ecb4828f7c51166fc6588e31d22}
+
+
+\-Definition at line 45 of file \-C\-X\-Plat\-Critical\-Section.\-h.
+
+\hypertarget{class_c_x_plat_critical_section_aa7bacade5b04643e1a50122a0ba38fc5}{\index{\-C\-X\-Plat\-Critical\-Section@{\-C\-X\-Plat\-Critical\-Section}!m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}}
+\index{m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}!CXPlatCriticalSection@{\-C\-X\-Plat\-Critical\-Section}}
+\subsubsection[{m\-\_\-cs\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf \-C\-X\-Plat\-Critical\-Section\-::m\-\_\-cs\-Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_critical_section_aa7bacade5b04643e1a50122a0ba38fc5}
+
+
+\-Definition at line 44 of file \-C\-X\-Plat\-Critical\-Section.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_critical_section_8h}{\-C\-X\-Plat\-Critical\-Section.\-h}\item 
+common/\hyperlink{_c_x_plat_critical_section_8cpp}{\-C\-X\-Plat\-Critical\-Section.\-cpp}\end{DoxyCompactItemize}

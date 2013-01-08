@@ -1,0 +1,115 @@
+\hypertarget{class_c_echo_client}{\section{\-C\-Echo\-Client \-Class \-Reference}
+\label{class_c_echo_client}\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}}
+}
+
+
+{\ttfamily \#include $<$\-C\-Echo\-Client.\-h$>$}
+
+\-Inheritance diagram for \-C\-Echo\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_echo_client}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_echo_client_afb1b50347cc6200df185a1696b88ef57}{\-C\-Echo\-Client} (\hyperlink{_c_p_connection_handler_8h_a05bf2fef946dbf14350a5f45bb28f953}{\-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&c\-P\-C\-Handlers, \hyperlink{_c_p_client_handler_8h_a9babc356867a188aa505ce2ce4a81c46}{\-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&c\-P\-Client\-Handlers)
+\item 
+virtual \hyperlink{class_c_echo_client_a96ca31a53e72940a5aa33905853182d3}{$\sim$\-C\-Echo\-Client} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_echo_client_ad25eb3f1a3cbb2e25fd65b20a5f505ce}{\-Send\-String} (char $\ast$p\-String)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_echo_client_aa4b137b9fab962746d02b70a94a400a8}{\-Process\-Data} (unsigned char $\ast$lp\-Data, int i\-Len)
+\begin{DoxyCompactList}\small\item\em \-Pure virtual function to process data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_c_echo_client_a59d25bf6a4e77c56bbbde61efb795c42}{sz\-Buf} \mbox{[}4096\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 14 of file \-C\-Echo\-Client.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_echo_client_afb1b50347cc6200df185a1696b88ef57}{\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!\-C\-Echo\-Client@{\-C\-Echo\-Client}}
+\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!CEchoClient@{\-C\-Echo\-Client}}
+\subsubsection[{\-C\-Echo\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Echo\-Client\-::\-C\-Echo\-Client} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-P\-C\-Handlers, }
+\item[{{\bf \-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-P\-Client\-Handlers}
+\end{DoxyParamCaption}
+)}}\label{class_c_echo_client_afb1b50347cc6200df185a1696b88ef57}
+
+
+\-Definition at line 12 of file \-C\-Echo\-Client.\-cpp.
+
+\hypertarget{class_c_echo_client_a96ca31a53e72940a5aa33905853182d3}{\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!$\sim$\-C\-Echo\-Client@{$\sim$\-C\-Echo\-Client}}
+\index{$\sim$\-C\-Echo\-Client@{$\sim$\-C\-Echo\-Client}!CEchoClient@{\-C\-Echo\-Client}}
+\subsubsection[{$\sim$\-C\-Echo\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Echo\-Client\-::$\sim$\-C\-Echo\-Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_echo_client_a96ca31a53e72940a5aa33905853182d3}
+
+
+\-Definition at line 17 of file \-C\-Echo\-Client.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_echo_client_aa4b137b9fab962746d02b70a94a400a8}{\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!\-Process\-Data@{\-Process\-Data}}
+\index{\-Process\-Data@{\-Process\-Data}!CEchoClient@{\-C\-Echo\-Client}}
+\subsubsection[{\-Process\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Echo\-Client\-::\-Process\-Data} (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{lp\-Data, }
+\item[{int}]{i\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_echo_client_aa4b137b9fab962746d02b70a94a400a8}
+
+
+\-Pure virtual function to process data. 
+
+
+
+\-Implements \hyperlink{class_c_p_connection_a1b223eab8f518f390b2c01f7c1e33e72}{\-C\-P\-Connection}.
+
+
+
+\-Definition at line 22 of file \-C\-Echo\-Client.\-cpp.
+
+\hypertarget{class_c_echo_client_ad25eb3f1a3cbb2e25fd65b20a5f505ce}{\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!\-Send\-String@{\-Send\-String}}
+\index{\-Send\-String@{\-Send\-String}!CEchoClient@{\-C\-Echo\-Client}}
+\subsubsection[{\-Send\-String}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Echo\-Client\-::\-Send\-String} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\-String}
+\end{DoxyParamCaption}
+)}}\label{class_c_echo_client_ad25eb3f1a3cbb2e25fd65b20a5f505ce}
+
+
+\-Definition at line 33 of file \-C\-Echo\-Client.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_echo_client_a59d25bf6a4e77c56bbbde61efb795c42}{\index{\-C\-Echo\-Client@{\-C\-Echo\-Client}!sz\-Buf@{sz\-Buf}}
+\index{sz\-Buf@{sz\-Buf}!CEchoClient@{\-C\-Echo\-Client}}
+\subsubsection[{sz\-Buf}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-C\-Echo\-Client\-::sz\-Buf}\mbox{[}4096\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_echo_client_a59d25bf6a4e77c56bbbde61efb795c42}
+
+
+\-Definition at line 26 of file \-C\-Echo\-Client.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/examples/\-C\-P\-\_\-examples/\-Test\-Client/\hyperlink{_c_echo_client_8h}{\-C\-Echo\-Client.\-h}\item 
+common/examples/\-C\-P\-\_\-examples/\-Test\-Client/\hyperlink{_c_echo_client_8cpp}{\-C\-Echo\-Client.\-cpp}\end{DoxyCompactItemize}

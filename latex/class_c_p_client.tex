@@ -1,0 +1,395 @@
+\hypertarget{class_c_p_client}{\section{\-C\-P\-Client \-Class \-Reference}
+\label{class_c_p_client}\index{\-C\-P\-Client@{\-C\-P\-Client}}
+}
+
+
+\-Initiate a \-T\-C\-P client connection.  
+
+
+
+
+{\ttfamily \#include $<$\-Cpclient.\-h$>$}
+
+\-Inheritance diagram for \-C\-P\-Client\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_p_client}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_p_client_aa5be4005f9e2cafc97ae40e28ea0bda7}{\-C\-P\-Client} (\hyperlink{_c_p_connection_handler_8h_a05bf2fef946dbf14350a5f45bb28f953}{\-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&c\-P\-C\-Handlers, \hyperlink{_c_p_client_handler_8h_a9babc356867a188aa505ce2ce4a81c46}{\-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&c\-P\-Client\-Handlers, int i\-Max\-Send\-Buffer\-Size=16384)
+\item 
+virtual \hyperlink{class_c_p_client_a8100ec5a3ccf5a3bec05d20f6ba1a3da}{$\sim$\-C\-P\-Client} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_client_ab78ee2bb6fd59f830435f4d3241c25b2}{\-Connect\-To\-Server} (\hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lpsz\-Host\-Address, \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T} n\-Host\-Port, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E}, \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lpsz\-Client\-Address=\-N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em \-Attempt to connect to the server. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_p_client_a503733405e241cade1bebf3a935b296f}{\-Async\-Connect\-To\-Server} (\-C\-P\-C\-L\-I\-E\-N\-T\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K p\-User\-Func, \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$\hyperlink{class_c_p_client_a4c7f8139f898544073f5e535d5022ae6}{p\-User\-Parm}, \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lpsz\-Host\-Address, \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T} n\-Host\-Port, \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Timeout=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E}, \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R} lpsz\-Client\-Address=\-N\-U\-L\-L)
+\begin{DoxyCompactList}\small\item\em \-An asynchronous attempt to connect to the server. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}{\-Disconnected} ()
+\begin{DoxyCompactList}\small\item\em \-If you derive from this, be sure to call the \hyperlink{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}{\-C\-P\-Client\-::\-Disconnected} in your derived method! \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_client_ade37dcde8e52312539263265295b9740}{\-Get\-Connection\-Error} ()
+\begin{DoxyCompactList}\small\item\em \-Get the last error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ \hyperlink{class_c_p_client_a4c7f8139f898544073f5e535d5022ae6}{p\-User\-Parm}
+\item 
+long \hyperlink{class_c_p_client_aa5d2b8ddd7b8ba324be40578ed419c52}{l\-Connect\-Response}
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_a164a717aa6aac79d279d76624366ebcb}{\-Instance\-Connect\-Callback} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Connect\-Result)
+\begin{DoxyCompactList}\small\item\em \-Same as the callback below, but on an instance instead of global level. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_a455c754945a3637cf1efcaaae38f6ebc}{\-Get\-Last\-Connect\-Attempt\-Parms} (string \&s\-Host, int \&i\-Port)
+\begin{DoxyCompactList}\small\item\em \-Get last connect attempt parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_a03b094fc0dba18e2358a237dd2185b32}{\-Connect\-Callback} (\hyperlink{class_c_p_client}{\-C\-P\-Client} $\ast$p\-Client, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Connect\-Result)
+\begin{DoxyCompactList}\small\item\em \-Callback. \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_p_client_ab7da7a76df72c5fc8c281d3477d137b8}{\-Internal\-Callback} (\hyperlink{class_c_p_client}{\-C\-P\-Client} $\ast$p\-Client, \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Connect\-Result, \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_p_client_handler_8h_a9babc356867a188aa505ce2ce4a81c46}{\-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \hyperlink{class_c_p_client_a475af425d617e19f2cd382cfcc6ac063}{c\-Client\-Handlers}
+\begin{DoxyCompactList}\small\item\em \-Array of \-C\-P\-Client\-Handlers using for making connections. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_client_a7299daff3cd3437159533c9011ff96a0}{i\-Num\-Client\-Handlers}
+\item 
+\hyperlink{_c_p_connection_handler_8h_a05bf2fef946dbf14350a5f45bb28f953}{\-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \hyperlink{class_c_p_client_a56e74ec04a07eeaa6761cffdc7ce7e88}{c\-Connection\-Handlers}
+\begin{DoxyCompactList}\small\item\em \-Array of \-C\-P\-Connection\-Handlers. \-Used for servicing successful connetions. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_p_client_a5a9c9fb8e3e0c1faee5c9740fab8c8e7}{i\-Num\-Conn\-Handlers}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_p_client_ad3f5a757a62ce581acb07cbb74deebe0}{c\-Connected\-Event}
+\begin{DoxyCompactList}\small\item\em \-Set when success or failure. \end{DoxyCompactList}\item 
+unsigned long \hyperlink{class_c_p_client_a84c9b4e693df05ea1e4e0621d97ba6e7}{ul\-Attempt\-T\-S}
+\begin{DoxyCompactList}\small\item\em \-Timestamp when the attempt started. \end{DoxyCompactList}\item 
+\-C\-P\-C\-L\-I\-E\-N\-T\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K \hyperlink{class_c_p_client_a4ebdee1edb46b01abdc6a813d709b0b3}{p\-C\-P\-L\-Func}
+\begin{DoxyCompactList}\small\item\em \-User callback function. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ \hyperlink{class_c_p_client_a5eb090c6230b60ebcaf56228746af7f0}{p\-User\-Connect\-Parm}
+\item 
+unsigned long \hyperlink{class_c_p_client_a67a9b34f71126762d953ce9911ba8524}{ul\-Timeout}
+\item 
+int \hyperlink{class_c_p_client_a23443904277d6b94147cdc8edf42b725}{i\-Connect\-Error}
+\item 
+string \hyperlink{class_c_p_client_ac07c25a192add6cf72a751608e1891ad}{s\-Last\-Host}
+\item 
+int \hyperlink{class_c_p_client_a8579466cb047a99e4e3baa735274fb8f}{i\-Last\-Port}
+\item 
+long \hyperlink{class_c_p_client_a8d8282a0802a5d2cc96da57905fa9f81}{l\-Start\-Time}
+\item 
+string \hyperlink{class_c_p_client_a0b054ae566dabb8b7a794f8d53aec83a}{s\-Server}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Initiate a \-T\-C\-P client connection. 
+
+\-Definition at line 40 of file \-Cpclient.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_p_client_aa5be4005f9e2cafc97ae40e28ea0bda7}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-C\-P\-Client@{\-C\-P\-Client}}
+\index{\-C\-P\-Client@{\-C\-P\-Client}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-C\-P\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Client\-::\-C\-P\-Client} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-P\-C\-Handlers, }
+\item[{{\bf \-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} \&}]{c\-P\-Client\-Handlers, }
+\item[{int}]{i\-Max\-Send\-Buffer\-Size = {\ttfamily 16384}}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_client_aa5be4005f9e2cafc97ae40e28ea0bda7}
+
+
+\-Definition at line 27 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_a8100ec5a3ccf5a3bec05d20f6ba1a3da}{\index{\-C\-P\-Client@{\-C\-P\-Client}!$\sim$\-C\-P\-Client@{$\sim$\-C\-P\-Client}}
+\index{$\sim$\-C\-P\-Client@{$\sim$\-C\-P\-Client}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{$\sim$\-C\-P\-Client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-Client\-::$\sim$\-C\-P\-Client} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_client_a8100ec5a3ccf5a3bec05d20f6ba1a3da}
+
+
+\-Definition at line 39 of file \-Cpclient.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_p_client_a503733405e241cade1bebf3a935b296f}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Async\-Connect\-To\-Server@{\-Async\-Connect\-To\-Server}}
+\index{\-Async\-Connect\-To\-Server@{\-Async\-Connect\-To\-Server}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Async\-Connect\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Client\-::\-Async\-Connect\-To\-Server} (
+\begin{DoxyParamCaption}
+\item[{\-C\-P\-C\-L\-I\-E\-N\-T\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K}]{p\-User\-Func, }
+\item[{{\bf void} $\ast$}]{p\-User\-Parm, }
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lpsz\-Host\-Address, }
+\item[{{\bf \-U\-I\-N\-T}}]{n\-Host\-Port, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}, }
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lpsz\-Client\-Address = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_client_a503733405e241cade1bebf3a935b296f}
+
+
+\-An asynchronous attempt to connect to the server. 
+
+
+
+\-Definition at line 72 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_a03b094fc0dba18e2358a237dd2185b32}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Connect\-Callback@{\-Connect\-Callback}}
+\index{\-Connect\-Callback@{\-Connect\-Callback}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Connect\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Client\-::\-Connect\-Callback} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Client} $\ast$}]{p\-Client, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Connect\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_p_client_a03b094fc0dba18e2358a237dd2185b32}
+
+
+\-Callback. 
+
+
+
+\-Definition at line 218 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_ab78ee2bb6fd59f830435f4d3241c25b2}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Connect\-To\-Server@{\-Connect\-To\-Server}}
+\index{\-Connect\-To\-Server@{\-Connect\-To\-Server}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Connect\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-P\-Client\-::\-Connect\-To\-Server} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lpsz\-Host\-Address, }
+\item[{{\bf \-U\-I\-N\-T}}]{n\-Host\-Port, }
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Timeout = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}, }
+\item[{{\bf \-L\-P\-C\-S\-T\-R}}]{lpsz\-Client\-Address = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_client_ab78ee2bb6fd59f830435f4d3241c25b2}
+
+
+\-Attempt to connect to the server. 
+
+
+
+\-Definition at line 45 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Disconnected@{\-Disconnected}}
+\index{\-Disconnected@{\-Disconnected}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Disconnected}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Client\-::\-Disconnected} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}
+
+
+\-If you derive from this, be sure to call the \hyperlink{class_c_p_client_aea1f62c59dfd45e814e9734ece8b0ab8}{\-C\-P\-Client\-::\-Disconnected} in your derived method! 
+
+
+
+\-Reimplemented from \hyperlink{class_c_p_connection_a331c50e83d37b88ac099aa95b6b1523c}{\-C\-P\-Connection}.
+
+
+
+\-Definition at line 225 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_ade37dcde8e52312539263265295b9740}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Get\-Connection\-Error@{\-Get\-Connection\-Error}}
+\index{\-Get\-Connection\-Error@{\-Get\-Connection\-Error}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Get\-Connection\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Client\-::\-Get\-Connection\-Error} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_p_client_ade37dcde8e52312539263265295b9740}
+
+
+\-Get the last error. 
+
+
+
+\-Definition at line 232 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_a455c754945a3637cf1efcaaae38f6ebc}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Get\-Last\-Connect\-Attempt\-Parms@{\-Get\-Last\-Connect\-Attempt\-Parms}}
+\index{\-Get\-Last\-Connect\-Attempt\-Parms@{\-Get\-Last\-Connect\-Attempt\-Parms}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Get\-Last\-Connect\-Attempt\-Parms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Client\-::\-Get\-Last\-Connect\-Attempt\-Parms} (
+\begin{DoxyParamCaption}
+\item[{string \&}]{s\-Host, }
+\item[{int \&}]{i\-Port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a455c754945a3637cf1efcaaae38f6ebc}
+
+
+\-Get last connect attempt parameters. 
+
+
+
+\-Definition at line 239 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_a164a717aa6aac79d279d76624366ebcb}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Instance\-Connect\-Callback@{\-Instance\-Connect\-Callback}}
+\index{\-Instance\-Connect\-Callback@{\-Instance\-Connect\-Callback}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Instance\-Connect\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Client\-::\-Instance\-Connect\-Callback} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Connect\-Result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a164a717aa6aac79d279d76624366ebcb}
+
+
+\-Same as the callback below, but on an instance instead of global level. 
+
+
+
+\-Definition at line 175 of file \-Cpclient.\-cpp.
+
+\hypertarget{class_c_p_client_ab7da7a76df72c5fc8c281d3477d137b8}{\index{\-C\-P\-Client@{\-C\-P\-Client}!\-Internal\-Callback@{\-Internal\-Callback}}
+\index{\-Internal\-Callback@{\-Internal\-Callback}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{\-Internal\-Callback}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-P\-Client\-::\-Internal\-Callback} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-P\-Client} $\ast$}]{p\-Client, }
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Connect\-Result, }
+\item[{{\bf void} $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_p_client_ab7da7a76df72c5fc8c281d3477d137b8}
+
+
+\-Definition at line 247 of file \-Cpclient.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_p_client_a475af425d617e19f2cd382cfcc6ac063}{\index{\-C\-P\-Client@{\-C\-P\-Client}!c\-Client\-Handlers@{c\-Client\-Handlers}}
+\index{c\-Client\-Handlers@{c\-Client\-Handlers}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{c\-Client\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-\_\-\-C\-L\-I\-E\-N\-T\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} {\bf \-C\-P\-Client\-::c\-Client\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a475af425d617e19f2cd382cfcc6ac063}
+
+
+\-Array of \-C\-P\-Client\-Handlers using for making connections. 
+
+
+
+\-Definition at line 86 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_ad3f5a757a62ce581acb07cbb74deebe0}{\index{\-C\-P\-Client@{\-C\-P\-Client}!c\-Connected\-Event@{c\-Connected\-Event}}
+\index{c\-Connected\-Event@{c\-Connected\-Event}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{c\-Connected\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-P\-Client\-::c\-Connected\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_ad3f5a757a62ce581acb07cbb74deebe0}
+
+
+\-Set when success or failure. 
+
+
+
+\-Definition at line 92 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a56e74ec04a07eeaa6761cffdc7ce7e88}{\index{\-C\-P\-Client@{\-C\-P\-Client}!c\-Connection\-Handlers@{c\-Connection\-Handlers}}
+\index{c\-Connection\-Handlers@{c\-Connection\-Handlers}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{c\-Connection\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-P\-\_\-\-C\-O\-N\-N\-E\-C\-T\-I\-O\-N\-\_\-\-H\-A\-N\-D\-L\-E\-R\-\_\-\-A\-R\-R\-A\-Y} {\bf \-C\-P\-Client\-::c\-Connection\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a56e74ec04a07eeaa6761cffdc7ce7e88}
+
+
+\-Array of \-C\-P\-Connection\-Handlers. \-Used for servicing successful connetions. 
+
+
+
+\-Definition at line 89 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a23443904277d6b94147cdc8edf42b725}{\index{\-C\-P\-Client@{\-C\-P\-Client}!i\-Connect\-Error@{i\-Connect\-Error}}
+\index{i\-Connect\-Error@{i\-Connect\-Error}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{i\-Connect\-Error}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Client\-::i\-Connect\-Error}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a23443904277d6b94147cdc8edf42b725}
+
+
+\-Definition at line 99 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a8579466cb047a99e4e3baa735274fb8f}{\index{\-C\-P\-Client@{\-C\-P\-Client}!i\-Last\-Port@{i\-Last\-Port}}
+\index{i\-Last\-Port@{i\-Last\-Port}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{i\-Last\-Port}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Client\-::i\-Last\-Port}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a8579466cb047a99e4e3baa735274fb8f}
+
+
+\-Definition at line 101 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a7299daff3cd3437159533c9011ff96a0}{\index{\-C\-P\-Client@{\-C\-P\-Client}!i\-Num\-Client\-Handlers@{i\-Num\-Client\-Handlers}}
+\index{i\-Num\-Client\-Handlers@{i\-Num\-Client\-Handlers}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{i\-Num\-Client\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Client\-::i\-Num\-Client\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a7299daff3cd3437159533c9011ff96a0}
+
+
+\-Definition at line 87 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a5a9c9fb8e3e0c1faee5c9740fab8c8e7}{\index{\-C\-P\-Client@{\-C\-P\-Client}!i\-Num\-Conn\-Handlers@{i\-Num\-Conn\-Handlers}}
+\index{i\-Num\-Conn\-Handlers@{i\-Num\-Conn\-Handlers}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{i\-Num\-Conn\-Handlers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-P\-Client\-::i\-Num\-Conn\-Handlers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a5a9c9fb8e3e0c1faee5c9740fab8c8e7}
+
+
+\-Definition at line 90 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_aa5d2b8ddd7b8ba324be40578ed419c52}{\index{\-C\-P\-Client@{\-C\-P\-Client}!l\-Connect\-Response@{l\-Connect\-Response}}
+\index{l\-Connect\-Response@{l\-Connect\-Response}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{l\-Connect\-Response}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-P\-Client\-::l\-Connect\-Response}}}\label{class_c_p_client_aa5d2b8ddd7b8ba324be40578ed419c52}
+
+
+\-Definition at line 82 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a8d8282a0802a5d2cc96da57905fa9f81}{\index{\-C\-P\-Client@{\-C\-P\-Client}!l\-Start\-Time@{l\-Start\-Time}}
+\index{l\-Start\-Time@{l\-Start\-Time}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{l\-Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}long {\bf \-C\-P\-Client\-::l\-Start\-Time}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a8d8282a0802a5d2cc96da57905fa9f81}
+
+
+\-Definition at line 102 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a4ebdee1edb46b01abdc6a813d709b0b3}{\index{\-C\-P\-Client@{\-C\-P\-Client}!p\-C\-P\-L\-Func@{p\-C\-P\-L\-Func}}
+\index{p\-C\-P\-L\-Func@{p\-C\-P\-L\-Func}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{p\-C\-P\-L\-Func}]{\setlength{\rightskip}{0pt plus 5cm}\-C\-P\-C\-L\-I\-E\-N\-T\-\_\-\-C\-A\-L\-L\-B\-A\-C\-K {\bf \-C\-P\-Client\-::p\-C\-P\-L\-Func}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a4ebdee1edb46b01abdc6a813d709b0b3}
+
+
+\-User callback function. 
+
+
+
+\-Definition at line 96 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a5eb090c6230b60ebcaf56228746af7f0}{\index{\-C\-P\-Client@{\-C\-P\-Client}!p\-User\-Connect\-Parm@{p\-User\-Connect\-Parm}}
+\index{p\-User\-Connect\-Parm@{p\-User\-Connect\-Parm}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{p\-User\-Connect\-Parm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ {\bf \-C\-P\-Client\-::p\-User\-Connect\-Parm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a5eb090c6230b60ebcaf56228746af7f0}
+
+
+\-Definition at line 97 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a4c7f8139f898544073f5e535d5022ae6}{\index{\-C\-P\-Client@{\-C\-P\-Client}!p\-User\-Parm@{p\-User\-Parm}}
+\index{p\-User\-Parm@{p\-User\-Parm}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{p\-User\-Parm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void}$\ast$ {\bf \-C\-P\-Client\-::p\-User\-Parm}}}\label{class_c_p_client_a4c7f8139f898544073f5e535d5022ae6}
+
+
+\-Definition at line 81 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_ac07c25a192add6cf72a751608e1891ad}{\index{\-C\-P\-Client@{\-C\-P\-Client}!s\-Last\-Host@{s\-Last\-Host}}
+\index{s\-Last\-Host@{s\-Last\-Host}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{s\-Last\-Host}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-P\-Client\-::s\-Last\-Host}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_ac07c25a192add6cf72a751608e1891ad}
+
+
+\-Definition at line 100 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a0b054ae566dabb8b7a794f8d53aec83a}{\index{\-C\-P\-Client@{\-C\-P\-Client}!s\-Server@{s\-Server}}
+\index{s\-Server@{s\-Server}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{s\-Server}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-P\-Client\-::s\-Server}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a0b054ae566dabb8b7a794f8d53aec83a}
+
+
+\-Definition at line 103 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a84c9b4e693df05ea1e4e0621d97ba6e7}{\index{\-C\-P\-Client@{\-C\-P\-Client}!ul\-Attempt\-T\-S@{ul\-Attempt\-T\-S}}
+\index{ul\-Attempt\-T\-S@{ul\-Attempt\-T\-S}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{ul\-Attempt\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-C\-P\-Client\-::ul\-Attempt\-T\-S}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a84c9b4e693df05ea1e4e0621d97ba6e7}
+
+
+\-Timestamp when the attempt started. 
+
+
+
+\-Definition at line 94 of file \-Cpclient.\-h.
+
+\hypertarget{class_c_p_client_a67a9b34f71126762d953ce9911ba8524}{\index{\-C\-P\-Client@{\-C\-P\-Client}!ul\-Timeout@{ul\-Timeout}}
+\index{ul\-Timeout@{ul\-Timeout}!CPClient@{\-C\-P\-Client}}
+\subsubsection[{ul\-Timeout}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-C\-P\-Client\-::ul\-Timeout}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_p_client_a67a9b34f71126762d953ce9911ba8524}
+
+
+\-Definition at line 98 of file \-Cpclient.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_cpclient_8h}{\-Cpclient.\-h}\item 
+common/\hyperlink{_cpclient_8cpp}{\-Cpclient.\-cpp}\end{DoxyCompactItemize}

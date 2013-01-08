@@ -1,0 +1,222 @@
+\hypertarget{class_c_x_plat_mutex}{\section{\-C\-X\-Plat\-Mutex \-Class \-Reference}
+\label{class_c_x_plat_mutex}\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}}
+}
+
+
+\-Cross platform mutex object.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Mutex.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_mutex_a8332df2263138802a93821050fa291da}{\-C\-X\-Plat\-Mutex} ()
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_mutex_a322aa88927a73451cead6578eced7bf7}{\-C\-X\-Plat\-Mutex} (const char $\ast$sz\-Name)
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_mutex_a5b79959df48857967cb97fabc3c3bf1c}{$\sim$\-C\-X\-Plat\-Mutex} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_mutex_aaf22a9ff69812daf8008996f33590e56}{\-Lock} (\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Wait=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\begin{DoxyCompactList}\small\item\em \-Tries to obtain exclusive access. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_mutex_a58115a16e78ebf02687e12a7ea6efdaf}{\-Unlock} ()
+\begin{DoxyCompactList}\small\item\em \-Releases exclusive access. \end{DoxyCompactList}\item 
+pthread\-\_\-mutex\-\_\-t $\ast$ \hyperlink{class_c_x_plat_mutex_a4f0d2a498add4247bf15b8ee754e0b44}{\-Get\-Mutex\-Handle} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+pthread\-\_\-mutex\-\_\-t \hyperlink{class_c_x_plat_mutex_a60c63d60e01fde08a5eeb2989bf96436}{mutex\-\_\-data}
+\item 
+pthread\-\_\-mutex\-\_\-t $\ast$ \hyperlink{class_c_x_plat_mutex_a22ce962174742cd232815a7fcfae5905}{m\-\_\-cs\-Handle}
+\item 
+int \hyperlink{class_c_x_plat_mutex_ab29172075e4697ebb5250c51a49bd1c1}{shared\-\_\-mem\-\_\-id}
+\item 
+pthread\-\_\-mutexattr\-\_\-t \hyperlink{class_c_x_plat_mutex_a6bfc740435b05cfeee78bdf00839e41a}{mutex\-\_\-shared\-\_\-attr}
+\item 
+pthread\-\_\-t \hyperlink{class_c_x_plat_mutex_a9c41baa3d5371a523333843b8149bfc0}{lock\-\_\-id}
+\item 
+pthread\-\_\-t $\ast$ \hyperlink{class_c_x_plat_mutex_ae7191ff25f679a8ea9d29322697d8f6c}{p\-\_\-lock\-\_\-id}
+\item 
+int \hyperlink{class_c_x_plat_mutex_a64d6f2b157694146b3836879ca282050}{lock\-\_\-count}
+\item 
+int $\ast$ \hyperlink{class_c_x_plat_mutex_a15edebbd7d57d152b835053291047500}{p\-\_\-lock\-\_\-count}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{class_c_x_plat_mutex_a495937d1eecf5be5943f7127f5984019}{sz\-Mutex\-Sig} = \char`\"{}\-\_\-\-X\-P\-L\-A\-T\-\_\-\-M\-U\-T\-E\-X\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Cross platform mutex object. 
+
+\-Definition at line 22 of file \-C\-X\-Plat\-Mutex.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_mutex_a8332df2263138802a93821050fa291da}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}}
+\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{\-C\-X\-Plat\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Mutex\-::\-C\-X\-Plat\-Mutex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_a8332df2263138802a93821050fa291da}
+
+
+\-Constructor. 
+
+
+
+\-Definition at line 32 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+\hypertarget{class_c_x_plat_mutex_a322aa88927a73451cead6578eced7bf7}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}}
+\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{\-C\-X\-Plat\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Mutex\-::\-C\-X\-Plat\-Mutex} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_a322aa88927a73451cead6578eced7bf7}
+
+
+\-Constructor. 
+
+intra-\/process mutex 
+
+\-Definition at line 46 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+\hypertarget{class_c_x_plat_mutex_a5b79959df48857967cb97fabc3c3bf1c}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!$\sim$\-C\-X\-Plat\-Mutex@{$\sim$\-C\-X\-Plat\-Mutex}}
+\index{$\sim$\-C\-X\-Plat\-Mutex@{$\sim$\-C\-X\-Plat\-Mutex}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Mutex\-::$\sim$\-C\-X\-Plat\-Mutex} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_a5b79959df48857967cb97fabc3c3bf1c}
+
+
+\-Destructor. 
+
+inter-\/process named mutex 
+
+\-Definition at line 88 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_mutex_a4f0d2a498add4247bf15b8ee754e0b44}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!\-Get\-Mutex\-Handle@{\-Get\-Mutex\-Handle}}
+\index{\-Get\-Mutex\-Handle@{\-Get\-Mutex\-Handle}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{\-Get\-Mutex\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t $\ast$ {\bf \-C\-X\-Plat\-Mutex\-::\-Get\-Mutex\-Handle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_a4f0d2a498add4247bf15b8ee754e0b44}
+
+
+\-Definition at line 148 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+\hypertarget{class_c_x_plat_mutex_aaf22a9ff69812daf8008996f33590e56}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!\-Lock@{\-Lock}}
+\index{\-Lock@{\-Lock}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Mutex\-::\-Lock} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Wait = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_aaf22a9ff69812daf8008996f33590e56}
+
+
+\-Tries to obtain exclusive access. 
+
+
+
+\-Definition at line 100 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+\hypertarget{class_c_x_plat_mutex_a58115a16e78ebf02687e12a7ea6efdaf}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!\-Unlock@{\-Unlock}}
+\index{\-Unlock@{\-Unlock}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{\-Unlock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Mutex\-::\-Unlock} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_mutex_a58115a16e78ebf02687e12a7ea6efdaf}
+
+
+\-Releases exclusive access. 
+
+
+
+\-Definition at line 132 of file \-C\-X\-Plat\-Mutex.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_mutex_a64d6f2b157694146b3836879ca282050}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!lock\-\_\-count@{lock\-\_\-count}}
+\index{lock\-\_\-count@{lock\-\_\-count}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{lock\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Mutex\-::lock\-\_\-count}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a64d6f2b157694146b3836879ca282050}
+
+
+\-Definition at line 54 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a9c41baa3d5371a523333843b8149bfc0}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!lock\-\_\-id@{lock\-\_\-id}}
+\index{lock\-\_\-id@{lock\-\_\-id}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{lock\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-t {\bf \-C\-X\-Plat\-Mutex\-::lock\-\_\-id}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a9c41baa3d5371a523333843b8149bfc0}
+
+
+\-Definition at line 52 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a22ce962174742cd232815a7fcfae5905}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}}
+\index{m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{m\-\_\-cs\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t$\ast$ {\bf \-C\-X\-Plat\-Mutex\-::m\-\_\-cs\-Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a22ce962174742cd232815a7fcfae5905}
+
+
+\-Definition at line 49 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a60c63d60e01fde08a5eeb2989bf96436}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!mutex\-\_\-data@{mutex\-\_\-data}}
+\index{mutex\-\_\-data@{mutex\-\_\-data}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{mutex\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutex\-\_\-t {\bf \-C\-X\-Plat\-Mutex\-::mutex\-\_\-data}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a60c63d60e01fde08a5eeb2989bf96436}
+
+
+\-Definition at line 48 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a6bfc740435b05cfeee78bdf00839e41a}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!mutex\-\_\-shared\-\_\-attr@{mutex\-\_\-shared\-\_\-attr}}
+\index{mutex\-\_\-shared\-\_\-attr@{mutex\-\_\-shared\-\_\-attr}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{mutex\-\_\-shared\-\_\-attr}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-mutexattr\-\_\-t {\bf \-C\-X\-Plat\-Mutex\-::mutex\-\_\-shared\-\_\-attr}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a6bfc740435b05cfeee78bdf00839e41a}
+
+
+\-Definition at line 51 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a15edebbd7d57d152b835053291047500}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!p\-\_\-lock\-\_\-count@{p\-\_\-lock\-\_\-count}}
+\index{p\-\_\-lock\-\_\-count@{p\-\_\-lock\-\_\-count}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{p\-\_\-lock\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf \-C\-X\-Plat\-Mutex\-::p\-\_\-lock\-\_\-count}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_a15edebbd7d57d152b835053291047500}
+
+
+\-Definition at line 55 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_ae7191ff25f679a8ea9d29322697d8f6c}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!p\-\_\-lock\-\_\-id@{p\-\_\-lock\-\_\-id}}
+\index{p\-\_\-lock\-\_\-id@{p\-\_\-lock\-\_\-id}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{p\-\_\-lock\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-t$\ast$ {\bf \-C\-X\-Plat\-Mutex\-::p\-\_\-lock\-\_\-id}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_ae7191ff25f679a8ea9d29322697d8f6c}
+
+
+\-Definition at line 53 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_ab29172075e4697ebb5250c51a49bd1c1}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!shared\-\_\-mem\-\_\-id@{shared\-\_\-mem\-\_\-id}}
+\index{shared\-\_\-mem\-\_\-id@{shared\-\_\-mem\-\_\-id}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{shared\-\_\-mem\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Mutex\-::shared\-\_\-mem\-\_\-id}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_mutex_ab29172075e4697ebb5250c51a49bd1c1}
+
+
+\-Definition at line 50 of file \-C\-X\-Plat\-Mutex.\-h.
+
+\hypertarget{class_c_x_plat_mutex_a495937d1eecf5be5943f7127f5984019}{\index{\-C\-X\-Plat\-Mutex@{\-C\-X\-Plat\-Mutex}!sz\-Mutex\-Sig@{sz\-Mutex\-Sig}}
+\index{sz\-Mutex\-Sig@{sz\-Mutex\-Sig}!CXPlatMutex@{\-C\-X\-Plat\-Mutex}}
+\subsubsection[{sz\-Mutex\-Sig}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-X\-Plat\-Mutex\-::sz\-Mutex\-Sig} = \char`\"{}\-\_\-\-X\-P\-L\-A\-T\-\_\-\-M\-U\-T\-E\-X\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_x_plat_mutex_a495937d1eecf5be5943f7127f5984019}
+
+
+\-Definition at line 44 of file \-C\-X\-Plat\-Mutex.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_mutex_8h}{\-C\-X\-Plat\-Mutex.\-h}\item 
+common/\hyperlink{_c_x_plat_mutex_8cpp}{\-C\-X\-Plat\-Mutex.\-cpp}\end{DoxyCompactItemize}

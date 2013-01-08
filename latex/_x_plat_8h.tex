@@ -1,0 +1,997 @@
+\hypertarget{_x_plat_8h}{\section{common/\-X\-Plat.h \-File \-Reference}
+\label{_x_plat_8h}\index{common/\-X\-Plat.\-h@{common/\-X\-Plat.\-h}}
+}
+{\ttfamily \#include $<$string$>$}\*
+{\ttfamily \#include $<$vector$>$}\*
+{\ttfamily \#include $<$unistd.\-h$>$}\*
+{\ttfamily \#include $<$pthread.\-h$>$}\*
+{\ttfamily \#include $<$signal.\-h$>$}\*
+{\ttfamily \#include $<$errno.\-h$>$}\*
+{\ttfamily \#include $<$sys/time.\-h$>$}\*
+{\ttfamily \#include $<$sys/socket.\-h$>$}\*
+{\ttfamily \#include $<$netinet/in.\-h$>$}\*
+{\ttfamily \#include $<$netinet/tcp.\-h$>$}\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\*
+{\ttfamily \#include $<$sys/param.\-h$>$}\*
+{\ttfamily \#include $<$sys/resource.\-h$>$}\*
+{\ttfamily \#include $<$netdb.\-h$>$}\*
+{\ttfamily \#include $<$semaphore.\-h$>$}\*
+{\ttfamily \#include $<$sys/ioctl.\-h$>$}\*
+{\ttfamily \#include $<$stdio.\-h$>$}\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\*
+{\ttfamily \#include $<$string.\-h$>$}\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\*
+{\ttfamily \#include $<$ctype.\-h$>$}\*
+{\ttfamily \#include $<$assert.\-h$>$}\*
+{\ttfamily \#include $<$time.\-h$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_x_plat_8h_abb2c63c1933cab709a4fd4aef2012bbb}{\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0}~0
+\item 
+\#define \hyperlink{_x_plat_8h_ac6f5c031dbc89b90a2386c3b592f7246}{pthread\-\_\-mutexattr\-\_\-default}~\-N\-U\-L\-L
+\begin{DoxyCompactList}\small\item\em \-C++\-Set compiler. \end{DoxyCompactList}\item 
+\#define \hyperlink{_x_plat_8h_a4142b256f0d65de090c6c474b51555d5}{pthread\-\_\-condattr\-\_\-default}~\-N\-U\-L\-L
+\item 
+\#define \hyperlink{_x_plat_8h_a525093820ec47f09f7700be5229fb0a4}{pthread\-\_\-attr\-\_\-default}~\-N\-U\-L\-L
+\item 
+\#define \hyperlink{_x_plat_8h_ab99ded389af74001a6298fc9e44e74e5}{\-M\-A\-X\-\_\-\-P\-A\-T\-H}~\-P\-A\-T\-H\-\_\-\-M\-A\-X
+\item 
+\#define \hyperlink{_x_plat_8h_a5a3eb971b466278ada4f7f87399a537c}{closesocket}(s)~close(s)
+\item 
+\#define \hyperlink{_x_plat_8h_a633b0396ff93d336a088412a190a5072}{\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R}~-\/1
+\item 
+\#define \hyperlink{_x_plat_8h_abca78e822b855c41037185eec46d9a49}{\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O}~errno
+\item 
+\#define \hyperlink{_x_plat_8h_a3107b1d0ca10d4ae4575d9107d4cbffe}{\-\_\-stdcall}
+\item 
+\#define \hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}~pthread\-\_\-t
+\begin{DoxyCompactList}\small\item\em \-For pthread\-\_\-create. \end{DoxyCompactList}\item 
+\#define \hyperlink{_x_plat_8h_a80165b054b5cfe826b966b7e077811a0}{\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E}~\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_a1a431e1aa01f9a53e173ec848dd5b20e}{\-F\-A\-R\-P\-R\-O\-C}~\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_aaa042e326c83ca63ebb5fc05dfbb3027}{\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}~\-E\-T\-I\-M\-E\-D\-O\-U\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a83cebbffc784c0755f531e4c19abf8d0}{\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R}~'/'
+\item 
+\#define \hyperlink{_x_plat_8h_a82b39ab31637cce2fda850c5661aa1f7}{\-Sleep}(s)~usleep(max((s $\ast$ 1000), 10))
+\item 
+\#define \hyperlink{_x_plat_8h_a6cc044b0bc27c112faa1e1134e1211f9}{\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N}~int
+\item 
+\#define \hyperlink{_x_plat_8h_ad5be4bce696731f60230a366006d0c61}{\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R}~fd\-\_\-set $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_ac202ec6ea492cecf64562d8f5dc1724f}{\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R}~errno
+\item 
+\#define \hyperlink{_x_plat_8h_a08e62b3809c22c0bbfea76d5a19c9a5d}{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}~0
+\item 
+\#define \hyperlink{_x_plat_8h_adb8adb502083409cfb2c1650fccf2420}{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E}~1
+\item 
+\#define \hyperlink{_x_plat_8h_a4f97c5d22bda0a6334084c8d3b7ac1a1}{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E}~2
+\item 
+\#define \hyperlink{_x_plat_8h_ad162cb9da5f09788c88e33cd9486a158}{\-L\-P\-S\-T\-R}~char $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\-L\-P\-C\-S\-T\-R}~const char $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{\-B\-O\-O\-L}~int
+\item 
+\#define \hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D}~unsigned long
+\item 
+\#define \hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E}~0x\-F\-F\-F\-F\-F\-F\-F\-F
+\item 
+\#define \hyperlink{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}~1
+\item 
+\#define \hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}~0
+\item 
+\#define \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T}~unsigned int
+\item 
+\#define \hyperlink{_x_plat_8h_a4cfc63e05db4883dc4b60a1245a9ffc5}{\-W\-O\-R\-D}~unsigned int
+\item 
+\#define \hyperlink{_x_plat_8h_acaa7b8a7167a8214f499c71c413ddcca}{\-L\-O\-N\-G}~long
+\item 
+\#define \hyperlink{_x_plat_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{\-U\-L\-O\-N\-G}~unsigned long
+\item 
+\#define \hyperlink{_x_plat_8h_a3ee5dd06e4802ea196b4c193f002552b}{\-L\-P\-C\-T\-S\-T\-R}~const char $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_a085f5f68a0ee4ab24d9f3954a78e8063}{\-L\-P\-V\-O\-I\-D}~\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\-U\-I\-N\-T}~unsigned int
+\item 
+\#define \hyperlink{_x_plat_8h_aec93e83855ac17c3c25c55c37ca186dd}{\-B\-Y\-T\-E}~unsigned char
+\item 
+\#define \hyperlink{_x_plat_8h_a058e7ed9136b8b24f2065a0bf55c096d}{\-P\-B\-Y\-T\-E}~unsigned char $\ast$
+\item 
+\#define \hyperlink{_x_plat_8h_a78e94ce536fda5f6a18c4002e4125919}{\-I\-N\-\_\-\-A\-D\-D\-R}~struct in\-\_\-addr
+\item 
+\#define \hyperlink{_x_plat_8h_a9aa60e1ead64be77ad551e745cbfd4d3}{\-W\-I\-N\-A\-P\-I}
+\item 
+\#define \hyperlink{_x_plat_8h_a69a11fc07c17e6dd1fa428622bff8d89}{\-\_\-cdecl}
+\item 
+\#define \hyperlink{_x_plat_8h_a42b1fb040048f74a40ff33550db30d11}{\-\_\-itoa}~\hyperlink{_x_plat_8h_a617826385ba90d20bec82f7b23bc6a20}{itoa}
+\item 
+\#define \hyperlink{_x_plat_8h_a8e8ef67f9814c2d632990e2def8f51d3}{\-\_\-itol}~\hyperlink{_x_plat_8h_a617826385ba90d20bec82f7b23bc6a20}{itoa}
+\item 
+\#define \hyperlink{_x_plat_8h_aa492c64e137d90813d423d522abbc9be}{itol}~\hyperlink{_x_plat_8h_a8e8ef67f9814c2d632990e2def8f51d3}{\-\_\-itol}
+\item 
+\#define \hyperlink{_x_plat_8h_a16a19b1831112e876b010468ec15916f}{strnicmp}~strncasecmp
+\item 
+\#define \hyperlink{_x_plat_8h_a4e0be90a3757e352f42612d09a7d1aa5}{stricmp}~strcasecmp
+\item 
+\#define \hyperlink{_x_plat_8h_a42699448fc3b3acbdf9f7bd1f194e9dd}{\-\_\-strnicmp}~\hyperlink{_x_plat_8h_a16a19b1831112e876b010468ec15916f}{strnicmp}
+\item 
+\#define \hyperlink{_x_plat_8h_a3a35e08b2dedf0975d11794eb8de4805}{\-\_\-stricmp}~\hyperlink{_x_plat_8h_a4e0be90a3757e352f42612d09a7d1aa5}{stricmp}
+\item 
+\#define \hyperlink{_x_plat_8h_ab3d902b3b585aeeb61811326cce81cb1}{strlwr}~\hyperlink{_x_plat_8h_a178e27ee86a35167c78c2a9c20ec03c6}{\-\_\-strlwr}
+\item 
+\#define \hyperlink{_x_plat_8h_ad3a5f59416c068c063e1b4e827cae493}{strupr}~\hyperlink{_x_plat_8h_a295fae49a4e6d4cbca818da1050d74b7}{\-\_\-strupr}
+\item 
+\#define \hyperlink{_x_plat_8h_a382d3722a0482437e65de512ff2d38e2}{\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}~c\-Protect\-Call.\-Lock();
+\item 
+\#define \hyperlink{_x_plat_8h_ad45d58c12d8d9f431596714f33068ccf}{\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}~c\-Protect\-Call.\-Unlock();
+\item 
+\#define \hyperlink{_x_plat_8h_a8672d660f8d87eae23aee3da243af824}{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E}~\char`\"{}$\backslash$n\char`\"{}
+\item 
+\#define \hyperlink{_x_plat_8h_a610d6c269e893c89719e1b84adeaa336}{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N}~1
+\item 
+\#define \hyperlink{_x_plat_8h_a17d09bb1c05ef346f7bb14725c8e69d5}{\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}~\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K
+\item 
+\#define \hyperlink{_x_plat_8h_a7d7cc910b9996c7fc3c3a268b2840452}{\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}~\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S
+\item 
+\#define \hyperlink{_x_plat_8h_ad2d6d38c499e58601c8f0876d0fd221a}{\-X\-E\-A\-L\-R\-E\-A\-D\-Y}~\-E\-A\-L\-R\-E\-A\-D\-Y
+\item 
+\#define \hyperlink{_x_plat_8h_a323d84aba0bb9f68ec9a0d0364c84091}{\-X\-E\-N\-O\-T\-S\-O\-C\-K}~\-E\-N\-O\-T\-S\-O\-C\-K
+\item 
+\#define \hyperlink{_x_plat_8h_a2737783398952fcf2ed3abe4c61bc68d}{\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}~\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q
+\item 
+\#define \hyperlink{_x_plat_8h_a245eedc93e1af54f2a6d92c94609bd89}{\-X\-E\-M\-S\-G\-S\-I\-Z\-E}~\-E\-M\-S\-G\-S\-I\-Z\-E
+\item 
+\#define \hyperlink{_x_plat_8h_ad947c6dcfd5b49612def9914f358f058}{\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}~\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E
+\item 
+\#define \hyperlink{_x_plat_8h_aa8df8bc61b095053bb36144595c660c8}{\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}~\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T
+\item 
+\#define \hyperlink{_x_plat_8h_aabb002f7993e3b2468fd7cb0a4557627}{\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T
+\item 
+\#define \hyperlink{_x_plat_8h_ae3d933577763cd3da3d0e406f6649104}{\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a217e251f908a25695f875215e2e41846}{\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}~\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P
+\item 
+\#define \hyperlink{_x_plat_8h_a25c2431a7281618dfbe73857b8e2a7f7}{\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a268990bb701b2407c6b61e7c522ea1f7}{\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a7b6e69dccf514fd2eac967afd60b3ece}{\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}~\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E
+\item 
+\#define \hyperlink{_x_plat_8h_a3a68dc1db484d6e0c364c9ed4b6b3fce}{\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}~\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L
+\item 
+\#define \hyperlink{_x_plat_8h_a57ae6c93c2b76cedc0f7795c1bde78ae}{\-X\-E\-N\-E\-T\-D\-O\-W\-N}~\-E\-N\-E\-T\-D\-O\-W\-N
+\item 
+\#define \hyperlink{_x_plat_8h_a1b39564749f8b950e2364ea62bbbab99}{\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}~\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H
+\item 
+\#define \hyperlink{_x_plat_8h_ae38cd55ec0d78aadd28d536e60c3a40c}{\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T}~\-E\-N\-E\-T\-R\-E\-S\-E\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a51fe1c57cf61117501ac42f274fceb7b}{\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}~\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D
+\item 
+\#define \hyperlink{_x_plat_8h_a299146014970e461a6def44909038a9e}{\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}~\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T
+\item 
+\#define \hyperlink{_x_plat_8h_afdcfd9013cd46325f4ae467adf929d9f}{\-X\-E\-N\-O\-B\-U\-F\-S}~\-E\-N\-O\-B\-U\-F\-S
+\item 
+\#define \hyperlink{_x_plat_8h_a10de872000ac7dd89aadb4d8e371edee}{\-X\-E\-I\-S\-C\-O\-N\-N}~\-E\-I\-S\-C\-O\-N\-N
+\item 
+\#define \hyperlink{_x_plat_8h_a04f9d01a82664ca6a3163f25f32f3589}{\-X\-E\-N\-O\-T\-C\-O\-N\-N}~\-E\-N\-O\-T\-C\-O\-N\-N
+\item 
+\#define \hyperlink{_x_plat_8h_a08001dc7dde78ff0acd8da962b370386}{\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N}~\-E\-S\-H\-U\-T\-D\-O\-W\-N
+\item 
+\#define \hyperlink{_x_plat_8h_aa587082b791cd69bb30f0656118f31c0}{\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}~\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S
+\item 
+\#define \hyperlink{_x_plat_8h_af8fd6f9d13c6550bd15c134e336a2f28}{\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T}~\-E\-T\-I\-M\-E\-D\-O\-U\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a5776f0df8cbcbd8550103e6533d181e2}{\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}~\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D
+\item 
+\#define \hyperlink{_x_plat_8h_a850c5496091f25dd7efb4246b1f61ccf}{\-X\-E\-L\-O\-O\-P}~\-E\-L\-O\-O\-P
+\item 
+\#define \hyperlink{_x_plat_8h_a992d76b4a533a903c9ddd04243c30232}{\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}~\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G
+\item 
+\#define \hyperlink{_x_plat_8h_a0bd154d2acefcbeaaaffb3573257041f}{\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N}~\-E\-H\-O\-S\-T\-D\-O\-W\-N
+\item 
+\#define \hyperlink{_x_plat_8h_a5455035f111b3651388d04ba036597c8}{\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}~\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H
+\item 
+\#define \hyperlink{_x_plat_8h_a7e6a0a549b5706022ddb7b7460f63275}{\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y}~\-E\-N\-O\-T\-E\-M\-P\-T\-Y
+\item 
+\#define \hyperlink{_x_plat_8h_abbb590ed4764aa53052257649e0784f7}{\-X\-E\-P\-R\-O\-C\-L\-I\-M}~\-E\-P\-R\-O\-C\-L\-I\-M
+\item 
+\#define \hyperlink{_x_plat_8h_a3b77b98b6dcd1e7ab818ae9482178713}{\-X\-E\-U\-S\-E\-R\-S}~\-E\-U\-S\-E\-R\-S
+\item 
+\#define \hyperlink{_x_plat_8h_a6880ca1d5ed22d2719ba5e7d1131bae8}{\-X\-E\-D\-Q\-U\-O\-T}~\-E\-D\-Q\-U\-O\-T
+\item 
+\#define \hyperlink{_x_plat_8h_a9b96d3ae11516a5921d71acaaf891e38}{\-X\-E\-S\-T\-A\-L\-E}~\-E\-S\-T\-A\-L\-E
+\item 
+\#define \hyperlink{_x_plat_8h_ad4a941d7e70af17886871ec8ccff5680}{\-X\-E\-R\-E\-M\-O\-T\-E}~\-E\-R\-E\-M\-O\-T\-E
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{_x_plat_8h_a8dc8083897335125630f1af5dafd5831}{\-S\-O\-C\-K\-E\-T}
+\item 
+typedef \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$($\ast$ \hyperlink{_x_plat_8h_a8704141253090953f5b138916bd516c1}{\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E} )(\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$)
+\begin{DoxyCompactList}\small\item\em \#else (\-\_\-\-W\-I\-N32) \end{DoxyCompactList}\item 
+typedef \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void}($\ast$ \hyperlink{_x_plat_8h_a26f8784874728a67c7871aa6732a7ed7}{\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C} )(\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{_x_plat_8h_a295fae49a4e6d4cbca818da1050d74b7}{\-\_\-strupr} (char $\ast$string1)
+\item 
+char $\ast$ \hyperlink{_x_plat_8h_a178e27ee86a35167c78c2a9c20ec03c6}{\-\_\-strlwr} (char $\ast$string1)
+\item 
+char $\ast$ \hyperlink{_x_plat_8h_a617826385ba90d20bec82f7b23bc6a20}{itoa} (int value, char $\ast$sz\-String, int radix)
+\item 
+unsigned long \hyperlink{_x_plat_8h_ae206a3912d5af8d510261521245a9a87}{\-X\-Plat\-Get\-Milliseconds} ()
+\item 
+int \hyperlink{_x_plat_8h_a3a55a9c8cf9c107981386382f842f300}{\-X\-Plat\-Fork\-Hidden\-Process} (const char $\ast$sz\-Process)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{_x_plat_8h_a565966d0b589ee227b2059a6cc750976}{\-Get\-Abstime} (struct timespec \&s\-Timespec, unsigned long l\-Time\-To\-Wait\-M\-S)
+\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{_x_plat_8h_afb33ea28b4163af9f0a419c089291a67}{c\-Protect\-Call}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{_x_plat_8h_a69a11fc07c17e6dd1fa428622bff8d89}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-cdecl@{\-\_\-cdecl}}
+\index{\-\_\-cdecl@{\-\_\-cdecl}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-cdecl}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-cdecl}}}\label{_x_plat_8h_a69a11fc07c17e6dd1fa428622bff8d89}
+
+
+\-Definition at line 174 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a42b1fb040048f74a40ff33550db30d11}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-itoa@{\-\_\-itoa}}
+\index{\-\_\-itoa@{\-\_\-itoa}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-itoa}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-itoa}~{\bf itoa}}}\label{_x_plat_8h_a42b1fb040048f74a40ff33550db30d11}
+
+
+\-Definition at line 182 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a8e8ef67f9814c2d632990e2def8f51d3}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-itol@{\-\_\-itol}}
+\index{\-\_\-itol@{\-\_\-itol}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-itol}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-itol}~{\bf itoa}}}\label{_x_plat_8h_a8e8ef67f9814c2d632990e2def8f51d3}
+
+
+\-Definition at line 183 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a3107b1d0ca10d4ae4575d9107d4cbffe}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-stdcall@{\-\_\-stdcall}}
+\index{\-\_\-stdcall@{\-\_\-stdcall}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-stdcall}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-stdcall}}}\label{_x_plat_8h_a3107b1d0ca10d4ae4575d9107d4cbffe}
+
+
+\-Definition at line 82 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a3a35e08b2dedf0975d11794eb8de4805}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-stricmp@{\-\_\-stricmp}}
+\index{\-\_\-stricmp@{\-\_\-stricmp}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-stricmp}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-stricmp}~{\bf stricmp}}}\label{_x_plat_8h_a3a35e08b2dedf0975d11794eb8de4805}
+
+
+\-Definition at line 188 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a42699448fc3b3acbdf9f7bd1f194e9dd}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-strnicmp@{\-\_\-strnicmp}}
+\index{\-\_\-strnicmp@{\-\_\-strnicmp}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-strnicmp}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-\_\-strnicmp}~{\bf strnicmp}}}\label{_x_plat_8h_a42699448fc3b3acbdf9f7bd1f194e9dd}
+
+
+\-Definition at line 187 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ae4cc35dcc70810fa972cc8a5185a28fa}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-B\-O\-O\-L@{\-B\-O\-O\-L}}
+\index{\-B\-O\-O\-L@{\-B\-O\-O\-L}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-B\-O\-O\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-O\-O\-L}~int}}\label{_x_plat_8h_ae4cc35dcc70810fa972cc8a5185a28fa}
+
+
+\-Definition at line 157 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aec93e83855ac17c3c25c55c37ca186dd}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-B\-Y\-T\-E@{\-B\-Y\-T\-E}}
+\index{\-B\-Y\-T\-E@{\-B\-Y\-T\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-B\-Y\-T\-E}~unsigned char}}\label{_x_plat_8h_aec93e83855ac17c3c25c55c37ca186dd}
+
+
+\-Definition at line 170 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a5a3eb971b466278ada4f7f87399a537c}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!closesocket@{closesocket}}
+\index{closesocket@{closesocket}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{closesocket}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf closesocket}(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~close(s)}}\label{_x_plat_8h_a5a3eb971b466278ada4f7f87399a537c}
+
+
+\-Definition at line 79 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-D\-W\-O\-R\-D@{\-D\-W\-O\-R\-D}}
+\index{\-D\-W\-O\-R\-D@{\-D\-W\-O\-R\-D}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-D\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-D\-W\-O\-R\-D}~unsigned long}}\label{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}
+
+
+\-Definition at line 158 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a08e62b3809c22c0bbfea76d5a19c9a5d}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}}
+\index{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-E\-R\-R\-O\-R\-\_\-\-T\-Y\-P\-E}~0}}\label{_x_plat_8h_a08e62b3809c22c0bbfea76d5a19c9a5d}
+
+
+\-Definition at line 152 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a4f97c5d22bda0a6334084c8d3b7ac1a1}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E}}
+\index{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-I\-N\-F\-O\-R\-M\-A\-T\-I\-O\-N\-\_\-\-T\-Y\-P\-E}~2}}\label{_x_plat_8h_a4f97c5d22bda0a6334084c8d3b7ac1a1}
+
+
+\-Definition at line 154 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_adb8adb502083409cfb2c1650fccf2420}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E}}
+\index{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E@{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-E\-V\-E\-N\-T\-L\-O\-G\-\_\-\-W\-A\-R\-N\-I\-N\-G\-\_\-\-T\-Y\-P\-E}~1}}\label{_x_plat_8h_adb8adb502083409cfb2c1650fccf2420}
+
+
+\-Definition at line 153 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-F\-A\-L\-S\-E@{\-F\-A\-L\-S\-E}}
+\index{\-F\-A\-L\-S\-E@{\-F\-A\-L\-S\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-F\-A\-L\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-A\-L\-S\-E}~0}}\label{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}
+
+
+\-Definition at line 161 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a1a431e1aa01f9a53e173ec848dd5b20e}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-F\-A\-R\-P\-R\-O\-C@{\-F\-A\-R\-P\-R\-O\-C}}
+\index{\-F\-A\-R\-P\-R\-O\-C@{\-F\-A\-R\-P\-R\-O\-C}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-F\-A\-R\-P\-R\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-F\-A\-R\-P\-R\-O\-C}~{\bf void} $\ast$}}\label{_x_plat_8h_a1a431e1aa01f9a53e173ec848dd5b20e}
+
+
+\-Definition at line 119 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_abca78e822b855c41037185eec46d9a49}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O@{\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O}}
+\index{\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O@{\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-G\-E\-T\-\_\-\-E\-R\-R\-N\-O}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-G\-E\-T\-\_\-\-E\-R\-R\-N\-O}~errno}}\label{_x_plat_8h_abca78e822b855c41037185eec46d9a49}
+
+
+\-Definition at line 81 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a78e94ce536fda5f6a18c4002e4125919}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-I\-N\-\_\-\-A\-D\-D\-R@{\-I\-N\-\_\-\-A\-D\-D\-R}}
+\index{\-I\-N\-\_\-\-A\-D\-D\-R@{\-I\-N\-\_\-\-A\-D\-D\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-I\-N\-\_\-\-A\-D\-D\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-\_\-\-A\-D\-D\-R}~struct in\-\_\-addr}}\label{_x_plat_8h_a78e94ce536fda5f6a18c4002e4125919}
+
+
+\-Definition at line 172 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-I\-N\-F\-I\-N\-I\-T\-E@{\-I\-N\-F\-I\-N\-I\-T\-E}}
+\index{\-I\-N\-F\-I\-N\-I\-T\-E@{\-I\-N\-F\-I\-N\-I\-T\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-I\-N\-F\-I\-N\-I\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-I\-N\-F\-I\-N\-I\-T\-E}~0x\-F\-F\-F\-F\-F\-F\-F\-F}}\label{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}
+
+
+\-Definition at line 159 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa492c64e137d90813d423d522abbc9be}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!itol@{itol}}
+\index{itol@{itol}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{itol}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf itol}~{\bf \-\_\-itol}}}\label{_x_plat_8h_aa492c64e137d90813d423d522abbc9be}
+
+
+\-Definition at line 184 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_acaa7b8a7167a8214f499c71c413ddcca}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-L\-O\-N\-G@{\-L\-O\-N\-G}}
+\index{\-L\-O\-N\-G@{\-L\-O\-N\-G}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-O\-N\-G}~long}}\label{_x_plat_8h_acaa7b8a7167a8214f499c71c413ddcca}
+
+
+\-Definition at line 165 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-L\-P\-C\-S\-T\-R@{\-L\-P\-C\-S\-T\-R}}
+\index{\-L\-P\-C\-S\-T\-R@{\-L\-P\-C\-S\-T\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-L\-P\-C\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-P\-C\-S\-T\-R}~const char $\ast$}}\label{_x_plat_8h_a2b72c6037793f6c6381a09c83f27569b}
+
+
+\-Definition at line 156 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a3ee5dd06e4802ea196b4c193f002552b}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-L\-P\-C\-T\-S\-T\-R@{\-L\-P\-C\-T\-S\-T\-R}}
+\index{\-L\-P\-C\-T\-S\-T\-R@{\-L\-P\-C\-T\-S\-T\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-L\-P\-C\-T\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-P\-C\-T\-S\-T\-R}~const char $\ast$}}\label{_x_plat_8h_a3ee5dd06e4802ea196b4c193f002552b}
+
+
+\-Definition at line 167 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad162cb9da5f09788c88e33cd9486a158}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-L\-P\-S\-T\-R@{\-L\-P\-S\-T\-R}}
+\index{\-L\-P\-S\-T\-R@{\-L\-P\-S\-T\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-L\-P\-S\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-P\-S\-T\-R}~char $\ast$}}\label{_x_plat_8h_ad162cb9da5f09788c88e33cd9486a158}
+
+
+\-Definition at line 155 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a085f5f68a0ee4ab24d9f3954a78e8063}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-L\-P\-V\-O\-I\-D@{\-L\-P\-V\-O\-I\-D}}
+\index{\-L\-P\-V\-O\-I\-D@{\-L\-P\-V\-O\-I\-D}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-L\-P\-V\-O\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-L\-P\-V\-O\-I\-D}~{\bf void} $\ast$}}\label{_x_plat_8h_a085f5f68a0ee4ab24d9f3954a78e8063}
+
+
+\-Definition at line 168 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ab99ded389af74001a6298fc9e44e74e5}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-M\-A\-X\-\_\-\-P\-A\-T\-H@{\-M\-A\-X\-\_\-\-P\-A\-T\-H}}
+\index{\-M\-A\-X\-\_\-\-P\-A\-T\-H@{\-M\-A\-X\-\_\-\-P\-A\-T\-H}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-M\-A\-X\-\_\-\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-M\-A\-X\-\_\-\-P\-A\-T\-H}~\-P\-A\-T\-H\-\_\-\-M\-A\-X}}\label{_x_plat_8h_ab99ded389af74001a6298fc9e44e74e5}
+
+
+\-Definition at line 71 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a83cebbffc784c0755f531e4c19abf8d0}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R@{\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R}}
+\index{\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R@{\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-P\-A\-T\-H\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-A\-T\-H\-\_\-\-C\-H\-A\-R}~'/'}}\label{_x_plat_8h_a83cebbffc784c0755f531e4c19abf8d0}
+
+
+\-Definition at line 135 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a058e7ed9136b8b24f2065a0bf55c096d}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-P\-B\-Y\-T\-E@{\-P\-B\-Y\-T\-E}}
+\index{\-P\-B\-Y\-T\-E@{\-P\-B\-Y\-T\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-P\-B\-Y\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-B\-Y\-T\-E}~unsigned char $\ast$}}\label{_x_plat_8h_a058e7ed9136b8b24f2065a0bf55c096d}
+
+
+\-Definition at line 171 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a382d3722a0482437e65de512ff2d38e2}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L@{\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}}
+\index{\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L@{\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}~c\-Protect\-Call.\-Lock();}}\label{_x_plat_8h_a382d3722a0482437e65de512ff2d38e2}
+
+
+\-Definition at line 207 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a525093820ec47f09f7700be5229fb0a4}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!pthread\-\_\-attr\-\_\-default@{pthread\-\_\-attr\-\_\-default}}
+\index{pthread\-\_\-attr\-\_\-default@{pthread\-\_\-attr\-\_\-default}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{pthread\-\_\-attr\-\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf pthread\-\_\-attr\-\_\-default}~\-N\-U\-L\-L}}\label{_x_plat_8h_a525093820ec47f09f7700be5229fb0a4}
+
+
+\-Definition at line 70 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a4142b256f0d65de090c6c474b51555d5}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!pthread\-\_\-condattr\-\_\-default@{pthread\-\_\-condattr\-\_\-default}}
+\index{pthread\-\_\-condattr\-\_\-default@{pthread\-\_\-condattr\-\_\-default}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{pthread\-\_\-condattr\-\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf pthread\-\_\-condattr\-\_\-default}~\-N\-U\-L\-L}}\label{_x_plat_8h_a4142b256f0d65de090c6c474b51555d5}
+
+
+\-Definition at line 69 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ac6f5c031dbc89b90a2386c3b592f7246}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!pthread\-\_\-mutexattr\-\_\-default@{pthread\-\_\-mutexattr\-\_\-default}}
+\index{pthread\-\_\-mutexattr\-\_\-default@{pthread\-\_\-mutexattr\-\_\-default}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{pthread\-\_\-mutexattr\-\_\-default}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf pthread\-\_\-mutexattr\-\_\-default}~\-N\-U\-L\-L}}\label{_x_plat_8h_ac6f5c031dbc89b90a2386c3b592f7246}
+
+
+\-C++\-Set compiler. 
+
+\-Includes \-Defines 
+
+\-Definition at line 68 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a82b39ab31637cce2fda850c5661aa1f7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-Sleep@{\-Sleep}}
+\index{\-Sleep@{\-Sleep}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-Sleep}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-Sleep}(
+\begin{DoxyParamCaption}
+\item[{}]{s}
+\end{DoxyParamCaption}
+)~usleep(max((s $\ast$ 1000), 10))}}\label{_x_plat_8h_a82b39ab31637cce2fda850c5661aa1f7}
+
+
+\-Definition at line 136 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a633b0396ff93d336a088412a190a5072}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R@{\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R}}
+\index{\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R@{\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-S\-O\-C\-K\-E\-T\-\_\-\-E\-R\-R\-O\-R}~-\/1}}\label{_x_plat_8h_a633b0396ff93d336a088412a190a5072}
+
+
+\-Definition at line 80 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a4e0be90a3757e352f42612d09a7d1aa5}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!stricmp@{stricmp}}
+\index{stricmp@{stricmp}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{stricmp}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf stricmp}~strcasecmp}}\label{_x_plat_8h_a4e0be90a3757e352f42612d09a7d1aa5}
+
+
+\-Definition at line 186 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ab3d902b3b585aeeb61811326cce81cb1}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!strlwr@{strlwr}}
+\index{strlwr@{strlwr}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{strlwr}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf strlwr}~{\bf \-\_\-strlwr}}}\label{_x_plat_8h_ab3d902b3b585aeeb61811326cce81cb1}
+
+
+\-Definition at line 189 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a16a19b1831112e876b010468ec15916f}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!strnicmp@{strnicmp}}
+\index{strnicmp@{strnicmp}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{strnicmp}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf strnicmp}~strncasecmp}}\label{_x_plat_8h_a16a19b1831112e876b010468ec15916f}
+
+
+\-Definition at line 185 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad3a5f59416c068c063e1b4e827cae493}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!strupr@{strupr}}
+\index{strupr@{strupr}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{strupr}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf strupr}~{\bf \-\_\-strupr}}}\label{_x_plat_8h_ad3a5f59416c068c063e1b4e827cae493}
+
+
+\-Definition at line 190 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-T\-R\-U\-E@{\-T\-R\-U\-E}}
+\index{\-T\-R\-U\-E@{\-T\-R\-U\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-T\-R\-U\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-T\-R\-U\-E}~1}}\label{_x_plat_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+
+
+\-Definition at line 160 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-U\-I\-N\-T@{\-U\-I\-N\-T}}
+\index{\-U\-I\-N\-T@{\-U\-I\-N\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-U\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-I\-N\-T}~unsigned int}}\label{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}
+
+
+\-Definition at line 169 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-U\-I\-N\-T@{\-U\-I\-N\-T}}
+\index{\-U\-I\-N\-T@{\-U\-I\-N\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-U\-I\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-I\-N\-T}~unsigned int}}\label{_x_plat_8h_a45c20c14d3d8790a22153d08ab2eb2ff}
+
+
+\-Definition at line 169 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a13503cb3b34d9eb71eda8ff4065e80ff}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-U\-L\-O\-N\-G@{\-U\-L\-O\-N\-G}}
+\index{\-U\-L\-O\-N\-G@{\-U\-L\-O\-N\-G}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-U\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-L\-O\-N\-G}~unsigned long}}\label{_x_plat_8h_a13503cb3b34d9eb71eda8ff4065e80ff}
+
+
+\-Definition at line 166 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad45d58c12d8d9f431596714f33068ccf}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L@{\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}}
+\index{\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L@{\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-U\-N\-P\-R\-O\-T\-E\-C\-T\-\_\-\-C\-A\-L\-L}~c\-Protect\-Call.\-Unlock();}}\label{_x_plat_8h_ad45d58c12d8d9f431596714f33068ccf}
+
+
+\-Definition at line 208 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_abb2c63c1933cab709a4fd4aef2012bbb}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0@{\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0}}
+\index{\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0@{\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-A\-I\-T\-\_\-\-O\-B\-J\-E\-C\-T\-\_\-0}~0}}\label{_x_plat_8h_abb2c63c1933cab709a4fd4aef2012bbb}
+
+
+\-Definition at line 38 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a9aa60e1ead64be77ad551e745cbfd4d3}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-W\-I\-N\-A\-P\-I@{\-W\-I\-N\-A\-P\-I}}
+\index{\-W\-I\-N\-A\-P\-I@{\-W\-I\-N\-A\-P\-I}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-W\-I\-N\-A\-P\-I}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-I\-N\-A\-P\-I}}}\label{_x_plat_8h_a9aa60e1ead64be77ad551e745cbfd4d3}
+
+
+\-Definition at line 173 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a4cfc63e05db4883dc4b60a1245a9ffc5}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-W\-O\-R\-D@{\-W\-O\-R\-D}}
+\index{\-W\-O\-R\-D@{\-W\-O\-R\-D}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-W\-O\-R\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-W\-O\-R\-D}~unsigned int}}\label{_x_plat_8h_a4cfc63e05db4883dc4b60a1245a9ffc5}
+
+
+\-Definition at line 163 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a7b6e69dccf514fd2eac967afd60b3ece}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E@{\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}}
+\index{\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E@{\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}~\-E\-A\-D\-D\-R\-I\-N\-U\-S\-E}}\label{_x_plat_8h_a7b6e69dccf514fd2eac967afd60b3ece}
+
+
+\-Definition at line 271 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a3a68dc1db484d6e0c364c9ed4b6b3fce}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L@{\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}}
+\index{\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L@{\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}~\-E\-A\-D\-D\-R\-N\-O\-T\-A\-V\-A\-I\-L}}\label{_x_plat_8h_a3a68dc1db484d6e0c364c9ed4b6b3fce}
+
+
+\-Definition at line 272 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a268990bb701b2407c6b61e7c522ea1f7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}}
+\index{\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-A\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}}\label{_x_plat_8h_a268990bb701b2407c6b61e7c522ea1f7}
+
+
+\-Definition at line 270 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad2d6d38c499e58601c8f0876d0fd221a}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-A\-L\-R\-E\-A\-D\-Y@{\-X\-E\-A\-L\-R\-E\-A\-D\-Y}}
+\index{\-X\-E\-A\-L\-R\-E\-A\-D\-Y@{\-X\-E\-A\-L\-R\-E\-A\-D\-Y}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-A\-L\-R\-E\-A\-D\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-A\-L\-R\-E\-A\-D\-Y}~\-E\-A\-L\-R\-E\-A\-D\-Y}}\label{_x_plat_8h_ad2d6d38c499e58601c8f0876d0fd221a}
+
+
+\-Definition at line 260 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a51fe1c57cf61117501ac42f274fceb7b}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D@{\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}}
+\index{\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D@{\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}~\-E\-C\-O\-N\-N\-A\-B\-O\-R\-T\-E\-D}}\label{_x_plat_8h_a51fe1c57cf61117501ac42f274fceb7b}
+
+
+\-Definition at line 276 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a5776f0df8cbcbd8550103e6533d181e2}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D@{\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}}
+\index{\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D@{\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}~\-E\-C\-O\-N\-N\-R\-E\-F\-U\-S\-E\-D}}\label{_x_plat_8h_a5776f0df8cbcbd8550103e6533d181e2}
+
+
+\-Definition at line 284 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a299146014970e461a6def44909038a9e}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T@{\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}}
+\index{\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T@{\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}~\-E\-C\-O\-N\-N\-R\-E\-S\-E\-T}}\label{_x_plat_8h_a299146014970e461a6def44909038a9e}
+
+
+\-Definition at line 277 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a2737783398952fcf2ed3abe4c61bc68d}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q@{\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}}
+\index{\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q@{\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}~\-E\-D\-E\-S\-T\-A\-D\-D\-R\-R\-E\-Q}}\label{_x_plat_8h_a2737783398952fcf2ed3abe4c61bc68d}
+
+
+\-Definition at line 262 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a6880ca1d5ed22d2719ba5e7d1131bae8}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-D\-Q\-U\-O\-T@{\-X\-E\-D\-Q\-U\-O\-T}}
+\index{\-X\-E\-D\-Q\-U\-O\-T@{\-X\-E\-D\-Q\-U\-O\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-D\-Q\-U\-O\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-D\-Q\-U\-O\-T}~\-E\-D\-Q\-U\-O\-T}}\label{_x_plat_8h_a6880ca1d5ed22d2719ba5e7d1131bae8}
+
+
+\-Definition at line 292 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a0bd154d2acefcbeaaaffb3573257041f}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N@{\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N}}
+\index{\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N@{\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-H\-O\-S\-T\-D\-O\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-H\-O\-S\-T\-D\-O\-W\-N}~\-E\-H\-O\-S\-T\-D\-O\-W\-N}}\label{_x_plat_8h_a0bd154d2acefcbeaaaffb3573257041f}
+
+
+\-Definition at line 287 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a5455035f111b3651388d04ba036597c8}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H@{\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}}
+\index{\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H@{\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}~\-E\-H\-O\-S\-T\-U\-N\-R\-E\-A\-C\-H}}\label{_x_plat_8h_a5455035f111b3651388d04ba036597c8}
+
+
+\-Definition at line 288 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a7d7cc910b9996c7fc3c3a268b2840452}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S@{\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}}
+\index{\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S@{\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}~\-E\-I\-N\-P\-R\-O\-G\-R\-E\-S\-S}}\label{_x_plat_8h_a7d7cc910b9996c7fc3c3a268b2840452}
+
+
+\-Definition at line 259 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a10de872000ac7dd89aadb4d8e371edee}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-I\-S\-C\-O\-N\-N@{\-X\-E\-I\-S\-C\-O\-N\-N}}
+\index{\-X\-E\-I\-S\-C\-O\-N\-N@{\-X\-E\-I\-S\-C\-O\-N\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-I\-S\-C\-O\-N\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-I\-S\-C\-O\-N\-N}~\-E\-I\-S\-C\-O\-N\-N}}\label{_x_plat_8h_a10de872000ac7dd89aadb4d8e371edee}
+
+
+\-Definition at line 279 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a850c5496091f25dd7efb4246b1f61ccf}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-L\-O\-O\-P@{\-X\-E\-L\-O\-O\-P}}
+\index{\-X\-E\-L\-O\-O\-P@{\-X\-E\-L\-O\-O\-P}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-L\-O\-O\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-L\-O\-O\-P}~\-E\-L\-O\-O\-P}}\label{_x_plat_8h_a850c5496091f25dd7efb4246b1f61ccf}
+
+
+\-Definition at line 285 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a245eedc93e1af54f2a6d92c94609bd89}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-M\-S\-G\-S\-I\-Z\-E@{\-X\-E\-M\-S\-G\-S\-I\-Z\-E}}
+\index{\-X\-E\-M\-S\-G\-S\-I\-Z\-E@{\-X\-E\-M\-S\-G\-S\-I\-Z\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-M\-S\-G\-S\-I\-Z\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-M\-S\-G\-S\-I\-Z\-E}~\-E\-M\-S\-G\-S\-I\-Z\-E}}\label{_x_plat_8h_a245eedc93e1af54f2a6d92c94609bd89}
+
+
+\-Definition at line 263 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a992d76b4a533a903c9ddd04243c30232}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G@{\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}}
+\index{\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G@{\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}~\-E\-N\-A\-M\-E\-T\-O\-O\-L\-O\-N\-G}}\label{_x_plat_8h_a992d76b4a533a903c9ddd04243c30232}
+
+
+\-Definition at line 286 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a57ae6c93c2b76cedc0f7795c1bde78ae}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-E\-T\-D\-O\-W\-N@{\-X\-E\-N\-E\-T\-D\-O\-W\-N}}
+\index{\-X\-E\-N\-E\-T\-D\-O\-W\-N@{\-X\-E\-N\-E\-T\-D\-O\-W\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-E\-T\-D\-O\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-E\-T\-D\-O\-W\-N}~\-E\-N\-E\-T\-D\-O\-W\-N}}\label{_x_plat_8h_a57ae6c93c2b76cedc0f7795c1bde78ae}
+
+
+\-Definition at line 273 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ae38cd55ec0d78aadd28d536e60c3a40c}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T@{\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T}}
+\index{\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T@{\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-E\-T\-R\-E\-S\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-E\-T\-R\-E\-S\-E\-T}~\-E\-N\-E\-T\-R\-E\-S\-E\-T}}\label{_x_plat_8h_ae38cd55ec0d78aadd28d536e60c3a40c}
+
+
+\-Definition at line 275 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a1b39564749f8b950e2364ea62bbbab99}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H@{\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}}
+\index{\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H@{\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}~\-E\-N\-E\-T\-U\-N\-R\-E\-A\-C\-H}}\label{_x_plat_8h_a1b39564749f8b950e2364ea62bbbab99}
+
+
+\-Definition at line 274 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_afdcfd9013cd46325f4ae467adf929d9f}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-O\-B\-U\-F\-S@{\-X\-E\-N\-O\-B\-U\-F\-S}}
+\index{\-X\-E\-N\-O\-B\-U\-F\-S@{\-X\-E\-N\-O\-B\-U\-F\-S}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-O\-B\-U\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-O\-B\-U\-F\-S}~\-E\-N\-O\-B\-U\-F\-S}}\label{_x_plat_8h_afdcfd9013cd46325f4ae467adf929d9f}
+
+
+\-Definition at line 278 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa8df8bc61b095053bb36144595c660c8}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T@{\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}}
+\index{\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T@{\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}~\-E\-N\-O\-P\-R\-O\-T\-O\-O\-P\-T}}\label{_x_plat_8h_aa8df8bc61b095053bb36144595c660c8}
+
+
+\-Definition at line 265 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a04f9d01a82664ca6a3163f25f32f3589}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-O\-T\-C\-O\-N\-N@{\-X\-E\-N\-O\-T\-C\-O\-N\-N}}
+\index{\-X\-E\-N\-O\-T\-C\-O\-N\-N@{\-X\-E\-N\-O\-T\-C\-O\-N\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-O\-T\-C\-O\-N\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-O\-T\-C\-O\-N\-N}~\-E\-N\-O\-T\-C\-O\-N\-N}}\label{_x_plat_8h_a04f9d01a82664ca6a3163f25f32f3589}
+
+
+\-Definition at line 280 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a7e6a0a549b5706022ddb7b7460f63275}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y@{\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y}}
+\index{\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y@{\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-O\-T\-E\-M\-P\-T\-Y}~\-E\-N\-O\-T\-E\-M\-P\-T\-Y}}\label{_x_plat_8h_a7e6a0a549b5706022ddb7b7460f63275}
+
+
+\-Definition at line 289 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a323d84aba0bb9f68ec9a0d0364c84091}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-N\-O\-T\-S\-O\-C\-K@{\-X\-E\-N\-O\-T\-S\-O\-C\-K}}
+\index{\-X\-E\-N\-O\-T\-S\-O\-C\-K@{\-X\-E\-N\-O\-T\-S\-O\-C\-K}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-N\-O\-T\-S\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-N\-O\-T\-S\-O\-C\-K}~\-E\-N\-O\-T\-S\-O\-C\-K}}\label{_x_plat_8h_a323d84aba0bb9f68ec9a0d0364c84091}
+
+
+\-Definition at line 261 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a217e251f908a25695f875215e2e41846}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P@{\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}}
+\index{\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P@{\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}~\-E\-O\-P\-N\-O\-T\-S\-U\-P\-P}}\label{_x_plat_8h_a217e251f908a25695f875215e2e41846}
+
+
+\-Definition at line 268 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a25c2431a7281618dfbe73857b8e2a7f7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}}
+\index{\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-P\-F\-N\-O\-S\-U\-P\-P\-O\-R\-T}}\label{_x_plat_8h_a25c2431a7281618dfbe73857b8e2a7f7}
+
+
+\-Definition at line 269 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_abbb590ed4764aa53052257649e0784f7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-P\-R\-O\-C\-L\-I\-M@{\-X\-E\-P\-R\-O\-C\-L\-I\-M}}
+\index{\-X\-E\-P\-R\-O\-C\-L\-I\-M@{\-X\-E\-P\-R\-O\-C\-L\-I\-M}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-P\-R\-O\-C\-L\-I\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-P\-R\-O\-C\-L\-I\-M}~\-E\-P\-R\-O\-C\-L\-I\-M}}\label{_x_plat_8h_abbb590ed4764aa53052257649e0784f7}
+
+
+\-Definition at line 290 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aabb002f7993e3b2468fd7cb0a4557627}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}}
+\index{\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-P\-R\-O\-T\-O\-N\-O\-S\-U\-P\-P\-O\-R\-T}}\label{_x_plat_8h_aabb002f7993e3b2468fd7cb0a4557627}
+
+
+\-Definition at line 266 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad947c6dcfd5b49612def9914f358f058}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E@{\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}}
+\index{\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E@{\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}~\-E\-P\-R\-O\-T\-O\-T\-Y\-P\-E}}\label{_x_plat_8h_ad947c6dcfd5b49612def9914f358f058}
+
+
+\-Definition at line 264 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad4a941d7e70af17886871ec8ccff5680}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-R\-E\-M\-O\-T\-E@{\-X\-E\-R\-E\-M\-O\-T\-E}}
+\index{\-X\-E\-R\-E\-M\-O\-T\-E@{\-X\-E\-R\-E\-M\-O\-T\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-R\-E\-M\-O\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-R\-E\-M\-O\-T\-E}~\-E\-R\-E\-M\-O\-T\-E}}\label{_x_plat_8h_ad4a941d7e70af17886871ec8ccff5680}
+
+
+\-Definition at line 294 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a08001dc7dde78ff0acd8da962b370386}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N@{\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N}}
+\index{\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N@{\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-S\-H\-U\-T\-D\-O\-W\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-S\-H\-U\-T\-D\-O\-W\-N}~\-E\-S\-H\-U\-T\-D\-O\-W\-N}}\label{_x_plat_8h_a08001dc7dde78ff0acd8da962b370386}
+
+
+\-Definition at line 281 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ae3d933577763cd3da3d0e406f6649104}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}}
+\index{\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T@{\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}~\-E\-S\-O\-C\-K\-T\-N\-O\-S\-U\-P\-P\-O\-R\-T}}\label{_x_plat_8h_ae3d933577763cd3da3d0e406f6649104}
+
+
+\-Definition at line 267 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a9b96d3ae11516a5921d71acaaf891e38}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-S\-T\-A\-L\-E@{\-X\-E\-S\-T\-A\-L\-E}}
+\index{\-X\-E\-S\-T\-A\-L\-E@{\-X\-E\-S\-T\-A\-L\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-S\-T\-A\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-S\-T\-A\-L\-E}~\-E\-S\-T\-A\-L\-E}}\label{_x_plat_8h_a9b96d3ae11516a5921d71acaaf891e38}
+
+
+\-Definition at line 293 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_af8fd6f9d13c6550bd15c134e336a2f28}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T@{\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T}}
+\index{\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T@{\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-T\-I\-M\-E\-D\-O\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-T\-I\-M\-E\-D\-O\-U\-T}~\-E\-T\-I\-M\-E\-D\-O\-U\-T}}\label{_x_plat_8h_af8fd6f9d13c6550bd15c134e336a2f28}
+
+
+\-Definition at line 283 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aa587082b791cd69bb30f0656118f31c0}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S@{\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}}
+\index{\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S@{\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}~\-E\-T\-O\-O\-M\-A\-N\-Y\-R\-E\-F\-S}}\label{_x_plat_8h_aa587082b791cd69bb30f0656118f31c0}
+
+
+\-Definition at line 282 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a3b77b98b6dcd1e7ab818ae9482178713}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-U\-S\-E\-R\-S@{\-X\-E\-U\-S\-E\-R\-S}}
+\index{\-X\-E\-U\-S\-E\-R\-S@{\-X\-E\-U\-S\-E\-R\-S}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-U\-S\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-U\-S\-E\-R\-S}~\-E\-U\-S\-E\-R\-S}}\label{_x_plat_8h_a3b77b98b6dcd1e7ab818ae9482178713}
+
+
+\-Definition at line 291 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a17d09bb1c05ef346f7bb14725c8e69d5}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K@{\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}}
+\index{\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K@{\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}~\-E\-W\-O\-U\-L\-D\-B\-L\-O\-C\-K}}\label{_x_plat_8h_a17d09bb1c05ef346f7bb14725c8e69d5}
+
+
+\-Definition at line 258 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a6cc044b0bc27c112faa1e1134e1211f9}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N@{\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N@{\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-A\-D\-D\-R\-\_\-\-F\-R\-O\-M\-\_\-\-L\-E\-N}~int}}\label{_x_plat_8h_a6cc044b0bc27c112faa1e1134e1211f9}
+
+
+\-Definition at line 145 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ad5be4bce696731f60230a366006d0c61}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R@{\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R@{\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-F\-D\-\_\-\-S\-E\-T\-\_\-\-P\-T\-R}~fd\-\_\-set $\ast$}}\label{_x_plat_8h_ad5be4bce696731f60230a366006d0c61}
+
+
+\-Definition at line 148 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E@{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E@{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E}~pthread\-\_\-t}}\label{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}
+
+
+\-For pthread\-\_\-create. 
+
+
+
+\-Definition at line 101 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a80165b054b5cfe826b966b7e077811a0}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E@{\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E@{\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-H\-M\-O\-D\-U\-L\-E}~{\bf void} $\ast$}}\label{_x_plat_8h_a80165b054b5cfe826b966b7e077811a0}
+
+
+\-Definition at line 118 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a8672d660f8d87eae23aee3da243af824}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E@{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E@{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E}~\char`\"{}$\backslash$n\char`\"{}}}\label{_x_plat_8h_a8672d660f8d87eae23aee3da243af824}
+
+
+\-Definition at line 215 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a610d6c269e893c89719e1b84adeaa336}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N@{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N@{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-N\-E\-W\-L\-I\-N\-E\-\_\-\-L\-E\-N}~1}}\label{_x_plat_8h_a610d6c269e893c89719e1b84adeaa336}
+
+
+\-Definition at line 216 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_aaa042e326c83ca63ebb5fc05dfbb3027}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T@{\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T@{\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-T\-I\-M\-E\-O\-U\-T}~\-E\-T\-I\-M\-E\-D\-O\-U\-T}}\label{_x_plat_8h_aaa042e326c83ca63ebb5fc05dfbb3027}
+
+
+\-Definition at line 129 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_ac202ec6ea492cecf64562d8f5dc1724f}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R@{\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R}}
+\index{\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R@{\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-X\-P\-L\-A\-T\-\_\-\-W\-S\-A\-G\-E\-T\-L\-A\-S\-T\-E\-R\-R}~errno}}\label{_x_plat_8h_ac202ec6ea492cecf64562d8f5dc1724f}
+
+
+\-Definition at line 150 of file \-X\-Plat.\-h.
+
+
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{_x_plat_8h_a26f8784874728a67c7871aa6732a7ed7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C@{\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C}}
+\index{\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C@{\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}($\ast$ {\bf \-D\-E\-S\-T\-R\-U\-C\-T\-O\-R\-\_\-\-F\-U\-N\-C})({\bf void} $\ast$)}}\label{_x_plat_8h_a26f8784874728a67c7871aa6732a7ed7}
+
+
+\-Definition at line 164 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a8dc8083897335125630f1af5dafd5831}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-S\-O\-C\-K\-E\-T@{\-S\-O\-C\-K\-E\-T}}
+\index{\-S\-O\-C\-K\-E\-T@{\-S\-O\-C\-K\-E\-T}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-S\-O\-C\-K\-E\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf \-S\-O\-C\-K\-E\-T}}}\label{_x_plat_8h_a8dc8083897335125630f1af5dafd5831}
+
+
+\-Definition at line 75 of file \-X\-Plat.\-h.
+
+\hypertarget{_x_plat_8h_a8704141253090953f5b138916bd516c1}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E@{\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E}}
+\index{\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E@{\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf void}$\ast$($\ast$  {\bf \-S\-T\-A\-R\-T\-\_\-\-R\-O\-U\-T\-I\-N\-E})({\bf void} $\ast$)}}\label{_x_plat_8h_a8704141253090953f5b138916bd516c1}
+
+
+\#else (\-\_\-\-W\-I\-N32) 
+
+
+
+\-Definition at line 95 of file \-X\-Plat.\-h.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{_x_plat_8h_a178e27ee86a35167c78c2a9c20ec03c6}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-strlwr@{\-\_\-strlwr}}
+\index{\-\_\-strlwr@{\-\_\-strlwr}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-strlwr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-\_\-strlwr} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string1}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_a178e27ee86a35167c78c2a9c20ec03c6}
+
+
+\-Definition at line 51 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8h_a295fae49a4e6d4cbca818da1050d74b7}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-\_\-strupr@{\-\_\-strupr}}
+\index{\-\_\-strupr@{\-\_\-strupr}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-\_\-strupr}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf \-\_\-strupr} (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string1}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_a295fae49a4e6d4cbca818da1050d74b7}
+
+
+\-Definition at line 29 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8h_a565966d0b589ee227b2059a6cc750976}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-Get\-Abstime@{\-Get\-Abstime}}
+\index{\-Get\-Abstime@{\-Get\-Abstime}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-Get\-Abstime}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Get\-Abstime} (
+\begin{DoxyParamCaption}
+\item[{struct timespec \&}]{s\-Timespec, }
+\item[{unsigned long}]{l\-Time\-To\-Wait\-M\-S}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_a565966d0b589ee227b2059a6cc750976}
+
+
+\-Definition at line 170 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8h_a617826385ba90d20bec82f7b23bc6a20}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!itoa@{itoa}}
+\index{itoa@{itoa}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{itoa}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf itoa} (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{char $\ast$}]{sz\-String, }
+\item[{int}]{radix}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_a617826385ba90d20bec82f7b23bc6a20}
+
+
+\-Definition at line 72 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8h_a3a55a9c8cf9c107981386382f842f300}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-Plat\-Fork\-Hidden\-Process@{\-X\-Plat\-Fork\-Hidden\-Process}}
+\index{\-X\-Plat\-Fork\-Hidden\-Process@{\-X\-Plat\-Fork\-Hidden\-Process}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-Plat\-Fork\-Hidden\-Process}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-X\-Plat\-Fork\-Hidden\-Process} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Process}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_a3a55a9c8cf9c107981386382f842f300}
+
+
+\-Definition at line 114 of file \-X\-Plat.\-cpp.
+
+\hypertarget{_x_plat_8h_ae206a3912d5af8d510261521245a9a87}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!\-X\-Plat\-Get\-Milliseconds@{\-X\-Plat\-Get\-Milliseconds}}
+\index{\-X\-Plat\-Get\-Milliseconds@{\-X\-Plat\-Get\-Milliseconds}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{\-X\-Plat\-Get\-Milliseconds}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long {\bf \-X\-Plat\-Get\-Milliseconds} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_x_plat_8h_ae206a3912d5af8d510261521245a9a87}
+
+
+\-Definition at line 95 of file \-X\-Plat.\-cpp.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{_x_plat_8h_afb33ea28b4163af9f0a419c089291a67}{\index{\-X\-Plat.\-h@{\-X\-Plat.\-h}!c\-Protect\-Call@{c\-Protect\-Call}}
+\index{c\-Protect\-Call@{c\-Protect\-Call}!XPlat.h@{\-X\-Plat.\-h}}
+\subsubsection[{c\-Protect\-Call}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf c\-Protect\-Call}}}\label{_x_plat_8h_afb33ea28b4163af9f0a419c089291a67}
+
+
+\-Definition at line 25 of file \-X\-Plat.\-cpp.
+

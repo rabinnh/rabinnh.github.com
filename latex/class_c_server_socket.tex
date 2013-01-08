@@ -1,0 +1,244 @@
+\hypertarget{class_c_server_socket}{\section{\-C\-Server\-Socket \-Class \-Reference}
+\label{class_c_server_socket}\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}}
+}
+
+
+\-Server socket listens to establish a connection.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-Server\-Socket.\-h$>$}
+
+\-Inheritance diagram for \-C\-Server\-Socket\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_server_socket}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_server_socket_a3ad9f83aa8aace5b319901abcc3b294b}{\-C\-Server\-Socket} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_server_socket_a2efd5612c3e0258a6c3bb4fccca80bde}{$\sim$\-C\-Server\-Socket} ()
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_server_socket_a0cd67eacfd95ead6bdc8dab72464a5af}{\-Listen} (int n\-Connection\-Backlog=5)
+\begin{DoxyCompactList}\small\item\em methods \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_server_socket_a3992fdf11a055394a230044609d0f73e}{\-Shutdown\-All} ()
+\item 
+time\-\_\-t \hyperlink{class_c_server_socket_a52af0d07399deab64d56dfe10d81982b}{\-Get\-Time\-Started} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_server_socket_a69e9bf0bcdf51797df78cf595cd5c528}{\-Wait\-For\-Exit} ()
+\begin{DoxyCompactList}\small\item\em \-Wait for listening thread to exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_server_socket_aa6bbfa1461e437aa5ab864ee35016aa2}{\-Cleanup\-Array} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} b\-Terminate\-All=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em \-Clean up array. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_server_socket_a3f1a261c6881f150caebd4389233382b}{\-Accept} ()
+\begin{DoxyCompactList}\small\item\em \-Accept connections. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_c_connection_socket}{\-C\-Connection\-Socket} $\ast$ \hyperlink{class_c_server_socket_a5d9a8ba74dff11d71a2090c3fdf7c84a}{\-Allocate\-Socket\-Class} (struct sockaddr $\ast$p\-Addr)=0
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned \hyperlink{class_c_server_socket_a2290c6ce8fa0b268d9c89889a9e3eb89}{\-Accept\-Connection} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Void)
+\begin{DoxyCompactList}\small\item\em \-Listening thread. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$ $>$ \hyperlink{class_c_server_socket_ad231ce44c641ab0b3fa4c0087ea1400e}{c\-Socket\-Array}
+\begin{DoxyCompactList}\small\item\em data member \end{DoxyCompactList}\item 
+\hyperlink{_x_plat_8h_af3c5c1485bb09f4be888d78cdaf93e00}{\-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} \hyperlink{class_c_server_socket_ab42e0206af0388d76aafa6ea9a5e8038}{h\-Thread}
+\item 
+time\-\_\-t \hyperlink{class_c_server_socket_afb05d7651f4d59fdb791e1356721b764}{t\-Started}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_server_socket_a5b6e77b060ed31986a6a36a5f18c65b8}{c\-Crit\-Socket\-Array}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Server socket listens to establish a connection. 
+
+\-T\-C\-P socket server class 
+
+\-Definition at line 27 of file \-C\-Server\-Socket.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_server_socket_a3ad9f83aa8aace5b319901abcc3b294b}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-C\-Server\-Socket@{\-C\-Server\-Socket}}
+\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-C\-Server\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Server\-Socket\-::\-C\-Server\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_server_socket_a3ad9f83aa8aace5b319901abcc3b294b}
+
+
+constructor 
+
+
+
+\-Definition at line 29 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a2efd5612c3e0258a6c3bb4fccca80bde}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!$\sim$\-C\-Server\-Socket@{$\sim$\-C\-Server\-Socket}}
+\index{$\sim$\-C\-Server\-Socket@{$\sim$\-C\-Server\-Socket}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{$\sim$\-C\-Server\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-Server\-Socket\-::$\sim$\-C\-Server\-Socket} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_server_socket_a2efd5612c3e0258a6c3bb4fccca80bde}
+
+
+\-Definition at line 35 of file \-C\-Server\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_server_socket_a3f1a261c6881f150caebd4389233382b}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Accept@{\-Accept}}
+\index{\-Accept@{\-Accept}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Accept}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Server\-Socket\-::\-Accept} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_server_socket_a3f1a261c6881f150caebd4389233382b}
+
+
+\-Accept connections. 
+
+
+
+\-Definition at line 99 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a2290c6ce8fa0b268d9c89889a9e3eb89}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Accept\-Connection@{\-Accept\-Connection}}
+\index{\-Accept\-Connection@{\-Accept\-Connection}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Accept\-Connection}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-Server\-Socket\-::\-Accept\-Connection} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Void}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_server_socket_a2290c6ce8fa0b268d9c89889a9e3eb89}
+
+
+\-Listening thread. 
+
+
+
+\-Definition at line 280 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a5d9a8ba74dff11d71a2090c3fdf7c84a}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Allocate\-Socket\-Class@{\-Allocate\-Socket\-Class}}
+\index{\-Allocate\-Socket\-Class@{\-Allocate\-Socket\-Class}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Allocate\-Socket\-Class}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf \-C\-Connection\-Socket}$\ast$ {\bf \-C\-Server\-Socket\-::\-Allocate\-Socket\-Class} (
+\begin{DoxyParamCaption}
+\item[{struct sockaddr $\ast$}]{p\-Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, pure virtual\mbox{]}}}}\label{class_c_server_socket_a5d9a8ba74dff11d71a2090c3fdf7c84a}
+\-Pure virtual functions allocate and dallocate a derivative of \hyperlink{class_c_connection_socket}{\-C\-Connection\-Socket} \-Redefine in derived class \hypertarget{class_c_server_socket_aa6bbfa1461e437aa5ab864ee35016aa2}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Cleanup\-Array@{\-Cleanup\-Array}}
+\index{\-Cleanup\-Array@{\-Cleanup\-Array}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Cleanup\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Server\-Socket\-::\-Cleanup\-Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Terminate\-All = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_server_socket_aa6bbfa1461e437aa5ab864ee35016aa2}
+
+
+\-Clean up array. 
+
+
+
+\-Definition at line 217 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a52af0d07399deab64d56dfe10d81982b}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Get\-Time\-Started@{\-Get\-Time\-Started}}
+\index{\-Get\-Time\-Started@{\-Get\-Time\-Started}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Get\-Time\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-Server\-Socket\-::\-Get\-Time\-Started} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_server_socket_a52af0d07399deab64d56dfe10d81982b}
+
+
+\-Definition at line 292 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a0cd67eacfd95ead6bdc8dab72464a5af}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Listen@{\-Listen}}
+\index{\-Listen@{\-Listen}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Listen}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-Server\-Socket\-::\-Listen} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Connection\-Backlog = {\ttfamily 5}}
+\end{DoxyParamCaption}
+)}}\label{class_c_server_socket_a0cd67eacfd95ead6bdc8dab72464a5af}
+
+
+methods 
+
+
+
+\-Definition at line 44 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a3992fdf11a055394a230044609d0f73e}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Shutdown\-All@{\-Shutdown\-All}}
+\index{\-Shutdown\-All@{\-Shutdown\-All}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Shutdown\-All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Server\-Socket\-::\-Shutdown\-All} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_server_socket_a3992fdf11a055394a230044609d0f73e}
+
+
+\-Definition at line 261 of file \-C\-Server\-Socket.\-cpp.
+
+\hypertarget{class_c_server_socket_a69e9bf0bcdf51797df78cf595cd5c528}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!\-Wait\-For\-Exit@{\-Wait\-For\-Exit}}
+\index{\-Wait\-For\-Exit@{\-Wait\-For\-Exit}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{\-Wait\-For\-Exit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-Server\-Socket\-::\-Wait\-For\-Exit} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_server_socket_a69e9bf0bcdf51797df78cf595cd5c528}
+
+
+\-Wait for listening thread to exit. 
+
+
+
+\-Definition at line 300 of file \-C\-Server\-Socket.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_server_socket_a5b6e77b060ed31986a6a36a5f18c65b8}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!c\-Crit\-Socket\-Array@{c\-Crit\-Socket\-Array}}
+\index{c\-Crit\-Socket\-Array@{c\-Crit\-Socket\-Array}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{c\-Crit\-Socket\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-Server\-Socket\-::c\-Crit\-Socket\-Array}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_server_socket_a5b6e77b060ed31986a6a36a5f18c65b8}
+
+
+\-Definition at line 62 of file \-C\-Server\-Socket.\-h.
+
+\hypertarget{class_c_server_socket_ad231ce44c641ab0b3fa4c0087ea1400e}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!c\-Socket\-Array@{c\-Socket\-Array}}
+\index{c\-Socket\-Array@{c\-Socket\-Array}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{c\-Socket\-Array}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf void} $\ast$$>$ {\bf \-C\-Server\-Socket\-::c\-Socket\-Array}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_server_socket_ad231ce44c641ab0b3fa4c0087ea1400e}
+
+
+data member 
+
+\-Array of \hyperlink{class_c_connection_socket}{\-C\-Connection\-Socket} objects created 
+
+\-Definition at line 59 of file \-C\-Server\-Socket.\-h.
+
+\hypertarget{class_c_server_socket_ab42e0206af0388d76aafa6ea9a5e8038}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!h\-Thread@{h\-Thread}}
+\index{h\-Thread@{h\-Thread}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{h\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-X\-P\-L\-A\-T\-\_\-\-H\-A\-N\-D\-L\-E} {\bf \-C\-Server\-Socket\-::h\-Thread}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_server_socket_ab42e0206af0388d76aafa6ea9a5e8038}
+
+
+\-Definition at line 60 of file \-C\-Server\-Socket.\-h.
+
+\hypertarget{class_c_server_socket_afb05d7651f4d59fdb791e1356721b764}{\index{\-C\-Server\-Socket@{\-C\-Server\-Socket}!t\-Started@{t\-Started}}
+\index{t\-Started@{t\-Started}!CServerSocket@{\-C\-Server\-Socket}}
+\subsubsection[{t\-Started}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-Server\-Socket\-::t\-Started}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_server_socket_afb05d7651f4d59fdb791e1356721b764}
+
+
+\-Definition at line 61 of file \-C\-Server\-Socket.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_server_socket_8h}{\-C\-Server\-Socket.\-h}\item 
+common/\hyperlink{_c_server_socket_8cpp}{\-C\-Server\-Socket.\-cpp}\end{DoxyCompactItemize}

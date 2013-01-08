@@ -1,0 +1,123 @@
+\hypertarget{class_execute_shell}{\section{\-Execute\-Shell \-Class \-Reference}
+\label{class_execute_shell}\index{\-Execute\-Shell@{\-Execute\-Shell}}
+}
+
+
+{\ttfamily \#include $<$executeshell.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_execute_shell_af585b729cdbe3ca0e028468247fdd788}{\-Execute\-Shell} ()
+\item 
+virtual \hyperlink{class_execute_shell_a8aeca6da175e2239087c4b1495f46afb}{$\sim$\-Execute\-Shell} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_execute_shell_a40c30a548a494978d60c11b6b4ea2387}{\-Execute} (const char $\ast$sz\-Command, string \&s\-Stdout, string $\ast$s\-Stderr=\-N\-U\-L\-L, const char $\ast$str\-Fork\-Exit=\-N\-U\-L\-L)
+\item 
+static const char $\ast$ \hyperlink{class_execute_shell_a545144d7b477ebb452d5133b1981e6d2}{\-Find\-Binary} (const char $\ast$p\-Name)
+\begin{DoxyCompactList}\small\item\em \-Find a command on the machine. \end{DoxyCompactList}\item 
+static \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_execute_shell_a7c1f468edf0872cdaf95a6c49edf7d0d}{\-Write\-Stdout} (bool b\-Newline=true)
+\begin{DoxyCompactList}\small\item\em \-Write to standard out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{class_execute_shell_acd285de44e4ebed60f717e80b26ff530}{sz\-Std\-Out} \mbox{[}\hyperlink{executeshell_8h_af3ff463ba5cc7b03377f51827fffb53b}{\-E\-S\-H\-E\-L\-L\-\_\-\-F\-O\-R\-M\-A\-T\-\_\-\-S\-I\-Z\-E}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+
+
+\-Definition at line 26 of file executeshell.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_execute_shell_af585b729cdbe3ca0e028468247fdd788}{\index{\-Execute\-Shell@{\-Execute\-Shell}!\-Execute\-Shell@{\-Execute\-Shell}}
+\index{\-Execute\-Shell@{\-Execute\-Shell}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{\-Execute\-Shell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Execute\-Shell\-::\-Execute\-Shell} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_execute_shell_af585b729cdbe3ca0e028468247fdd788}
+
+
+\-Definition at line 27 of file executeshell.\-cpp.
+
+\hypertarget{class_execute_shell_a8aeca6da175e2239087c4b1495f46afb}{\index{\-Execute\-Shell@{\-Execute\-Shell}!$\sim$\-Execute\-Shell@{$\sim$\-Execute\-Shell}}
+\index{$\sim$\-Execute\-Shell@{$\sim$\-Execute\-Shell}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{$\sim$\-Execute\-Shell}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Execute\-Shell\-::$\sim$\-Execute\-Shell} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_execute_shell_a8aeca6da175e2239087c4b1495f46afb}
+
+
+\-Definition at line 32 of file executeshell.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_execute_shell_a40c30a548a494978d60c11b6b4ea2387}{\index{\-Execute\-Shell@{\-Execute\-Shell}!\-Execute@{\-Execute}}
+\index{\-Execute@{\-Execute}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{\-Execute}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Execute\-Shell\-::\-Execute} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Command, }
+\item[{string \&}]{s\-Stdout, }
+\item[{string $\ast$}]{s\-Stderr = {\ttfamily \-N\-U\-L\-L}, }
+\item[{const char $\ast$}]{str\-Fork\-Exit = {\ttfamily \-N\-U\-L\-L}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_execute_shell_a40c30a548a494978d60c11b6b4ea2387}
+\-Execute command,return stdout in a string buffer str\-Fork\-Exit is set if the command will fork. \-When \-Execute sees the string it will return. \-Otherwise, stdout doesn't close until all forked processes close. 
+
+\-Definition at line 39 of file executeshell.\-cpp.
+
+\hypertarget{class_execute_shell_a545144d7b477ebb452d5133b1981e6d2}{\index{\-Execute\-Shell@{\-Execute\-Shell}!\-Find\-Binary@{\-Find\-Binary}}
+\index{\-Find\-Binary@{\-Find\-Binary}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{\-Find\-Binary}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-Execute\-Shell\-::\-Find\-Binary} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_execute_shell_a545144d7b477ebb452d5133b1981e6d2}
+
+
+\-Find a command on the machine. 
+
+
+
+\-Definition at line 133 of file executeshell.\-cpp.
+
+\hypertarget{class_execute_shell_a7c1f468edf0872cdaf95a6c49edf7d0d}{\index{\-Execute\-Shell@{\-Execute\-Shell}!\-Write\-Stdout@{\-Write\-Stdout}}
+\index{\-Write\-Stdout@{\-Write\-Stdout}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{\-Write\-Stdout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Execute\-Shell\-::\-Write\-Stdout} (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-Newline = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_execute_shell_a7c1f468edf0872cdaf95a6c49edf7d0d}
+
+
+\-Write to standard out. 
+
+
+
+\-Definition at line 170 of file executeshell.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_execute_shell_acd285de44e4ebed60f717e80b26ff530}{\index{\-Execute\-Shell@{\-Execute\-Shell}!sz\-Std\-Out@{sz\-Std\-Out}}
+\index{sz\-Std\-Out@{sz\-Std\-Out}!ExecuteShell@{\-Execute\-Shell}}
+\subsubsection[{sz\-Std\-Out}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Execute\-Shell\-::sz\-Std\-Out}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_execute_shell_acd285de44e4ebed60f717e80b26ff530}
+
+
+\-Definition at line 43 of file executeshell.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{executeshell_8h}{executeshell.\-h}\item 
+common/\hyperlink{executeshell_8cpp}{executeshell.\-cpp}\end{DoxyCompactItemize}

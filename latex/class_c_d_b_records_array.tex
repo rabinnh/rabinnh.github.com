@@ -1,0 +1,187 @@
+\hypertarget{class_c_d_b_records_array}{\section{\-C\-D\-B\-Records\-Array \-Class \-Reference}
+\label{class_c_d_b_records_array}\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}}
+}
+
+
+{\ttfamily \#include $<$\-C\-D\-B\-Records\-Array.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_d_b_records_array_a1a34c7690fc2d0f4eff418a39c0d0985}{\-C\-D\-B\-Records\-Array} ()
+\item 
+\hyperlink{class_c_d_b_records_array_a2956116f14e5fa19a6386ffd23053c4d}{\-C\-D\-B\-Records\-Array} (const \hyperlink{class_c_d_b_records_array}{\-C\-D\-B\-Records\-Array} \&orig)
+\item 
+virtual \hyperlink{class_c_d_b_records_array_a9b9b7ecd895df030784764291f57537d}{$\sim$\-C\-D\-B\-Records\-Array} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_records_array_ae71da68787e56a916aa4149abd6912b1}{\-D\-B\-Record\-Add} (const char $\ast$p\-Record, float f\-Elapsed=0.\-0f)
+\begin{DoxyCompactList}\small\item\em \-Add a record to the \-D\-B record array.. \-Synchronized with the publisher. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_records_array_a7442b3cefd55b855f6128331b87d1bc5}{\-D\-B\-Record\-Add} (\hyperlink{_c_d_b_records_array_8h_a32e3940d41c32d8e161b8775f6c4296a}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} \&v\-Rec, float f\-Elapsed=0.\-0f)
+\begin{DoxyCompactList}\small\item\em \-Add a whole array of records. \end{DoxyCompactList}\item 
+\hyperlink{_c_d_b_records_array_8h_a32e3940d41c32d8e161b8775f6c4296a}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} $\ast$ \hyperlink{class_c_d_b_records_array_a04a84400f1419abd3dca2cb3834f7071}{\-Lock\-D\-B\-Records} ()
+\begin{DoxyCompactList}\small\item\em \-Get \-D\-B record array -\/ locks the array. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_d_b_records_array_a421c6732b6d17ea3080ad19c3c250478}{\-Clear\-D\-B\-Records} ()
+\begin{DoxyCompactList}\small\item\em \-Clear the array. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_records_array_aeb1530f115743efe2f2d231dcc555ced}{\-Unlock\-D\-B\-Records} ()
+\begin{DoxyCompactList}\small\item\em \-Release \-D\-B record array -\/ must be called after \char`\"{}\-Get\-Record\-Array\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_d_b_records_array_8h_a32e3940d41c32d8e161b8775f6c4296a}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} \hyperlink{class_c_d_b_records_array_a5f29315f1b26188a7b53790b4d65dfda}{v\-D\-B\-Records}
+\begin{DoxyCompactList}\small\item\em \-Array of the records. \end{DoxyCompactList}\item 
+float \hyperlink{class_c_d_b_records_array_aa64819ed7441e3e28fc6cf13e42713d0}{f\-Total\-Elapsed}
+\begin{DoxyCompactList}\small\item\em \-Total elapsed time to publish the records. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_c_d_b_records_array}{\-C\-D\-B\-Records\-Array} \-Class to encapsulate the records that we want to publish to \-Mongo 
+
+\-Definition at line 32 of file \-C\-D\-B\-Records\-Array.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_d_b_records_array_a1a34c7690fc2d0f4eff418a39c0d0985}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}}
+\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-C\-D\-B\-Records\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-D\-B\-Records\-Array\-::\-C\-D\-B\-Records\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_a1a34c7690fc2d0f4eff418a39c0d0985}
+
+
+\-Definition at line 18 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_a2956116f14e5fa19a6386ffd23053c4d}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}}
+\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-C\-D\-B\-Records\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-D\-B\-Records\-Array\-::\-C\-D\-B\-Records\-Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-C\-D\-B\-Records\-Array} \&}]{orig}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_a2956116f14e5fa19a6386ffd23053c4d}
+
+
+\-Definition at line 24 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_a9b9b7ecd895df030784764291f57537d}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!$\sim$\-C\-D\-B\-Records\-Array@{$\sim$\-C\-D\-B\-Records\-Array}}
+\index{$\sim$\-C\-D\-B\-Records\-Array@{$\sim$\-C\-D\-B\-Records\-Array}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{$\sim$\-C\-D\-B\-Records\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-D\-B\-Records\-Array\-::$\sim$\-C\-D\-B\-Records\-Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_d_b_records_array_a9b9b7ecd895df030784764291f57537d}
+
+
+\-Definition at line 32 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_d_b_records_array_a421c6732b6d17ea3080ad19c3c250478}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-Clear\-D\-B\-Records@{\-Clear\-D\-B\-Records}}
+\index{\-Clear\-D\-B\-Records@{\-Clear\-D\-B\-Records}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-Clear\-D\-B\-Records}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-D\-B\-Records\-Array\-::\-Clear\-D\-B\-Records} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_a421c6732b6d17ea3080ad19c3c250478}
+
+
+\-Clear the array. 
+
+
+
+\-Definition at line 76 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_ae71da68787e56a916aa4149abd6912b1}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-D\-B\-Record\-Add@{\-D\-B\-Record\-Add}}
+\index{\-D\-B\-Record\-Add@{\-D\-B\-Record\-Add}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-D\-B\-Record\-Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Records\-Array\-::\-D\-B\-Record\-Add} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Record, }
+\item[{float}]{f\-Elapsed = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_ae71da68787e56a916aa4149abd6912b1}
+
+
+\-Add a record to the \-D\-B record array.. \-Synchronized with the publisher. 
+
+
+
+\-Definition at line 39 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_a7442b3cefd55b855f6128331b87d1bc5}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-D\-B\-Record\-Add@{\-D\-B\-Record\-Add}}
+\index{\-D\-B\-Record\-Add@{\-D\-B\-Record\-Add}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-D\-B\-Record\-Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Records\-Array\-::\-D\-B\-Record\-Add} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} \&}]{v\-Rec, }
+\item[{float}]{f\-Elapsed = {\ttfamily 0.0f}}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_a7442b3cefd55b855f6128331b87d1bc5}
+
+
+\-Add a whole array of records. 
+
+
+
+\-Definition at line 48 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_a04a84400f1419abd3dca2cb3834f7071}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-Lock\-D\-B\-Records@{\-Lock\-D\-B\-Records}}
+\index{\-Lock\-D\-B\-Records@{\-Lock\-D\-B\-Records}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-Lock\-D\-B\-Records}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} $\ast$ {\bf \-C\-D\-B\-Records\-Array\-::\-Lock\-D\-B\-Records} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_a04a84400f1419abd3dca2cb3834f7071}
+
+
+\-Get \-D\-B record array -\/ locks the array. 
+
+
+
+\-Definition at line 58 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+\hypertarget{class_c_d_b_records_array_aeb1530f115743efe2f2d231dcc555ced}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!\-Unlock\-D\-B\-Records@{\-Unlock\-D\-B\-Records}}
+\index{\-Unlock\-D\-B\-Records@{\-Unlock\-D\-B\-Records}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{\-Unlock\-D\-B\-Records}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Records\-Array\-::\-Unlock\-D\-B\-Records} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_records_array_aeb1530f115743efe2f2d231dcc555ced}
+
+
+\-Release \-D\-B record array -\/ must be called after \char`\"{}\-Get\-Record\-Array\char`\"{}. 
+
+
+
+\-Definition at line 69 of file \-C\-D\-B\-Records\-Array.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_d_b_records_array_aa64819ed7441e3e28fc6cf13e42713d0}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!f\-Total\-Elapsed@{f\-Total\-Elapsed}}
+\index{f\-Total\-Elapsed@{f\-Total\-Elapsed}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{f\-Total\-Elapsed}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-C\-D\-B\-Records\-Array\-::f\-Total\-Elapsed}}}\label{class_c_d_b_records_array_aa64819ed7441e3e28fc6cf13e42713d0}
+
+
+\-Total elapsed time to publish the records. 
+
+
+
+\-Definition at line 54 of file \-C\-D\-B\-Records\-Array.\-h.
+
+\hypertarget{class_c_d_b_records_array_a5f29315f1b26188a7b53790b4d65dfda}{\index{\-C\-D\-B\-Records\-Array@{\-C\-D\-B\-Records\-Array}!v\-D\-B\-Records@{v\-D\-B\-Records}}
+\index{v\-D\-B\-Records@{v\-D\-B\-Records}!CDBRecordsArray@{\-C\-D\-B\-Records\-Array}}
+\subsubsection[{v\-D\-B\-Records}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} {\bf \-C\-D\-B\-Records\-Array\-::v\-D\-B\-Records}}}\label{class_c_d_b_records_array_a5f29315f1b26188a7b53790b4d65dfda}
+
+
+\-Array of the records. 
+
+
+
+\-Definition at line 52 of file \-C\-D\-B\-Records\-Array.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_d_b_records_array_8h}{\-C\-D\-B\-Records\-Array.\-h}\item 
+common/\hyperlink{_c_d_b_records_array_8cpp}{\-C\-D\-B\-Records\-Array.\-cpp}\end{DoxyCompactItemize}

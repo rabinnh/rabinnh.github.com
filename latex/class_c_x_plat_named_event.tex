@@ -1,0 +1,138 @@
+\hypertarget{class_c_x_plat_named_event}{\section{\-C\-X\-Plat\-Named\-Event \-Class \-Reference}
+\label{class_c_x_plat_named_event}\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}}
+}
+
+
+\-Cross playform synchronization object.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Named\-Event.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_named_event_a2c23501b98d44972486ec2ab504430d8}{\-C\-X\-Plat\-Named\-Event} (const char $\ast$sz\-Name)
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_named_event_a84768b9983ebe19a402d4ec9f0fe0c9a}{$\sim$\-C\-X\-Plat\-Named\-Event} ()
+\begin{DoxyCompactList}\small\item\em \-Named \-Event (inter-\/process) \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_named_event_af60495948dd3ef3fcd426e7828c21ff6}{\-Lock} ()
+\begin{DoxyCompactList}\small\item\em \-Tries to obtain access. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_named_event_ac938c52f7e79fc016dbfcbb2106ae8bf}{\-Set\-Event} ()
+\begin{DoxyCompactList}\small\item\em \-Set the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_c_x_plat_named_event_afb8505ea92041775d39a44909c214e75}{shared\-\_\-mem\-\_\-id}
+\item 
+sem\-\_\-t $\ast$ \hyperlink{class_c_x_plat_named_event_a4c544bc92f6ba0c67cce7815a225e838}{m\-\_\-cs\-Handle}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{class_c_x_plat_named_event_ab2c98fd3e2ca6ad1a0bf72e18f861512}{sz\-Event\-Sig} = \char`\"{}\-\_\-\-X\-P\-L\-A\-T\-\_\-\-E\-V\-E\-N\-T\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Cross playform synchronization object. 
+
+\-Definition at line 22 of file \-C\-X\-Plat\-Named\-Event.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_named_event_a2c23501b98d44972486ec2ab504430d8}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}}
+\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{\-C\-X\-Plat\-Named\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Named\-Event\-::\-C\-X\-Plat\-Named\-Event} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{sz\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_named_event_a2c23501b98d44972486ec2ab504430d8}
+
+
+\-Constructor. 
+
+
+
+\-Definition at line 35 of file \-C\-X\-Plat\-Named\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_named_event_a84768b9983ebe19a402d4ec9f0fe0c9a}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!$\sim$\-C\-X\-Plat\-Named\-Event@{$\sim$\-C\-X\-Plat\-Named\-Event}}
+\index{$\sim$\-C\-X\-Plat\-Named\-Event@{$\sim$\-C\-X\-Plat\-Named\-Event}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Named\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Named\-Event\-::$\sim$\-C\-X\-Plat\-Named\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_named_event_a84768b9983ebe19a402d4ec9f0fe0c9a}
+
+
+\-Named \-Event (inter-\/process) 
+
+\-Destructor 
+
+\-Definition at line 83 of file \-C\-X\-Plat\-Named\-Event.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_named_event_af60495948dd3ef3fcd426e7828c21ff6}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!\-Lock@{\-Lock}}
+\index{\-Lock@{\-Lock}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Named\-Event\-::\-Lock} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_named_event_af60495948dd3ef3fcd426e7828c21ff6}
+
+
+\-Tries to obtain access. 
+
+
+
+\-Definition at line 100 of file \-C\-X\-Plat\-Named\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_named_event_ac938c52f7e79fc016dbfcbb2106ae8bf}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!\-Set\-Event@{\-Set\-Event}}
+\index{\-Set\-Event@{\-Set\-Event}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{\-Set\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Named\-Event\-::\-Set\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_named_event_ac938c52f7e79fc016dbfcbb2106ae8bf}
+
+
+\-Set the event. 
+
+
+
+\-Definition at line 114 of file \-C\-X\-Plat\-Named\-Event.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_named_event_a4c544bc92f6ba0c67cce7815a225e838}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}}
+\index{m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{m\-\_\-cs\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}sem\-\_\-t$\ast$ {\bf \-C\-X\-Plat\-Named\-Event\-::m\-\_\-cs\-Handle}}}\label{class_c_x_plat_named_event_a4c544bc92f6ba0c67cce7815a225e838}
+
+
+\-Definition at line 43 of file \-C\-X\-Plat\-Named\-Event.\-h.
+
+\hypertarget{class_c_x_plat_named_event_afb8505ea92041775d39a44909c214e75}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!shared\-\_\-mem\-\_\-id@{shared\-\_\-mem\-\_\-id}}
+\index{shared\-\_\-mem\-\_\-id@{shared\-\_\-mem\-\_\-id}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{shared\-\_\-mem\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Named\-Event\-::shared\-\_\-mem\-\_\-id}}}\label{class_c_x_plat_named_event_afb8505ea92041775d39a44909c214e75}
+
+
+\-Definition at line 42 of file \-C\-X\-Plat\-Named\-Event.\-h.
+
+\hypertarget{class_c_x_plat_named_event_ab2c98fd3e2ca6ad1a0bf72e18f861512}{\index{\-C\-X\-Plat\-Named\-Event@{\-C\-X\-Plat\-Named\-Event}!sz\-Event\-Sig@{sz\-Event\-Sig}}
+\index{sz\-Event\-Sig@{sz\-Event\-Sig}!CXPlatNamedEvent@{\-C\-X\-Plat\-Named\-Event}}
+\subsubsection[{sz\-Event\-Sig}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ {\bf \-C\-X\-Plat\-Named\-Event\-::sz\-Event\-Sig} = \char`\"{}\-\_\-\-X\-P\-L\-A\-T\-\_\-\-E\-V\-E\-N\-T\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_c_x_plat_named_event_ab2c98fd3e2ca6ad1a0bf72e18f861512}
+
+
+\-Definition at line 38 of file \-C\-X\-Plat\-Named\-Event.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_named_event_8h}{\-C\-X\-Plat\-Named\-Event.\-h}\item 
+common/\hyperlink{_c_x_plat_named_event_8cpp}{\-C\-X\-Plat\-Named\-Event.\-cpp}\end{DoxyCompactItemize}

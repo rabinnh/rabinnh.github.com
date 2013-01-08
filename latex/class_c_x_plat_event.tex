@@ -1,0 +1,187 @@
+\hypertarget{class_c_x_plat_event}{\section{\-C\-X\-Plat\-Event \-Class \-Reference}
+\label{class_c_x_plat_event}\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}}
+}
+
+
+\-Cross platform event synchronization class.  
+
+
+
+
+{\ttfamily \#include $<$\-C\-X\-Plat\-Event.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_x_plat_event_a818eb0ba93b14314d0a153bad8b9c9ec}{\-C\-X\-Plat\-Event} (\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_event_aa588099a688b7be58346f5b05d55eb91}{b\-Manual\-Reset}=\hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E})
+\begin{DoxyCompactList}\small\item\em \-Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_c_x_plat_event_a448a4eee2fd5ac8e5a5e1550850bdbd9}{$\sim$\-C\-X\-Plat\-Event} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{class_c_x_plat_event_ad053765292f1c8d1f91c730e805b8fa5}{\-Lock} (\hyperlink{_x_plat_8h_aa39b39d94407451a6ec0226479db68cf}{\-D\-W\-O\-R\-D} dw\-Wait=\hyperlink{_x_plat_8h_aa84a29002ab81c719c0d07bb446296e0}{\-I\-N\-F\-I\-N\-I\-T\-E})
+\begin{DoxyCompactList}\small\item\em \-Tries to obtain access. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_event_ad43844482b5cee3b03c6e38680b0a259}{\-Set\-Event} ()
+\begin{DoxyCompactList}\small\item\em \-Set the event. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_x_plat_event_a1191adf0a0631aa8d0c8f78572b456be}{\-Reset\-Event} ()
+\begin{DoxyCompactList}\small\item\em \-Reset event to non-\/signalled. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_event_a252bc188f5077f656cbf2190dbd074b3}{\-Was\-Created\-Successfully} ()
+\begin{DoxyCompactList}\small\item\em \-Was the event created successfully. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_event_ace78909b8e610373b1ffb6fc4fde3ee6}{b\-Event\-Created}
+\item 
+\hyperlink{_cpclient_8h_a3be13892ae7076009afcf121347dd319}{\-B\-O\-O\-L} \hyperlink{class_c_x_plat_event_aa588099a688b7be58346f5b05d55eb91}{b\-Manual\-Reset}
+\item 
+pthread\-\_\-cond\-\_\-t \hyperlink{class_c_x_plat_event_ad452214355d4b5989c30ed1e7f137544}{m\-\_\-cs\-Handle}
+\item 
+sem\-\_\-t \hyperlink{class_c_x_plat_event_aebee3d1cc992443887951cd69642de35}{pt\-Sem}
+\item 
+int \hyperlink{class_c_x_plat_event_aad997af175335943b6eea0ba9f870df6}{i\-Set\-Count}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Cross platform event synchronization class. 
+
+\-Definition at line 28 of file \-C\-X\-Plat\-Event.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_x_plat_event_a818eb0ba93b14314d0a153bad8b9c9ec}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}}
+\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{\-C\-X\-Plat\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event\-::\-C\-X\-Plat\-Event} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-B\-O\-O\-L}}]{b\-Manual\-Reset = {\ttfamily {\bf \-F\-A\-L\-S\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_a818eb0ba93b14314d0a153bad8b9c9ec}
+
+
+\-Constructor. 
+
+
+
+\-Definition at line 32 of file \-C\-X\-Plat\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_event_a448a4eee2fd5ac8e5a5e1550850bdbd9}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!$\sim$\-C\-X\-Plat\-Event@{$\sim$\-C\-X\-Plat\-Event}}
+\index{$\sim$\-C\-X\-Plat\-Event@{$\sim$\-C\-X\-Plat\-Event}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{$\sim$\-C\-X\-Plat\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event\-::$\sim$\-C\-X\-Plat\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_a448a4eee2fd5ac8e5a5e1550850bdbd9}
+
+
+\-Destructor. 
+
+\-Cross platform mutex 
+
+\-Definition at line 54 of file \-C\-X\-Plat\-Event.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_x_plat_event_ad053765292f1c8d1f91c730e805b8fa5}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!\-Lock@{\-Lock}}
+\index{\-Lock@{\-Lock}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{\-Lock}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Event\-::\-Lock} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-D\-W\-O\-R\-D}}]{dw\-Wait = {\ttfamily {\bf \-I\-N\-F\-I\-N\-I\-T\-E}}}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_ad053765292f1c8d1f91c730e805b8fa5}
+
+
+\-Tries to obtain access. 
+
+
+
+\-Definition at line 92 of file \-C\-X\-Plat\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_event_a1191adf0a0631aa8d0c8f78572b456be}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!\-Reset\-Event@{\-Reset\-Event}}
+\index{\-Reset\-Event@{\-Reset\-Event}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{\-Reset\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Event\-::\-Reset\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_a1191adf0a0631aa8d0c8f78572b456be}
+
+
+\-Reset event to non-\/signalled. 
+
+
+
+\-Definition at line 70 of file \-C\-X\-Plat\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_event_ad43844482b5cee3b03c6e38680b0a259}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!\-Set\-Event@{\-Set\-Event}}
+\index{\-Set\-Event@{\-Set\-Event}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{\-Set\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-X\-Plat\-Event\-::\-Set\-Event} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_ad43844482b5cee3b03c6e38680b0a259}
+
+
+\-Set the event. 
+
+
+
+\-Definition at line 121 of file \-C\-X\-Plat\-Event.\-cpp.
+
+\hypertarget{class_c_x_plat_event_a252bc188f5077f656cbf2190dbd074b3}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!\-Was\-Created\-Successfully@{\-Was\-Created\-Successfully}}
+\index{\-Was\-Created\-Successfully@{\-Was\-Created\-Successfully}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{\-Was\-Created\-Successfully}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Event\-::\-Was\-Created\-Successfully} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_x_plat_event_a252bc188f5077f656cbf2190dbd074b3}
+
+
+\-Was the event created successfully. 
+
+
+
+\-Definition at line 139 of file \-C\-X\-Plat\-Event.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_x_plat_event_ace78909b8e610373b1ffb6fc4fde3ee6}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!b\-Event\-Created@{b\-Event\-Created}}
+\index{b\-Event\-Created@{b\-Event\-Created}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{b\-Event\-Created}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Event\-::b\-Event\-Created}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_event_ace78909b8e610373b1ffb6fc4fde3ee6}
+
+
+\-Definition at line 45 of file \-C\-X\-Plat\-Event.\-h.
+
+\hypertarget{class_c_x_plat_event_aa588099a688b7be58346f5b05d55eb91}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!b\-Manual\-Reset@{b\-Manual\-Reset}}
+\index{b\-Manual\-Reset@{b\-Manual\-Reset}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{b\-Manual\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-B\-O\-O\-L} {\bf \-C\-X\-Plat\-Event\-::b\-Manual\-Reset}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_event_aa588099a688b7be58346f5b05d55eb91}
+
+
+\-Definition at line 46 of file \-C\-X\-Plat\-Event.\-h.
+
+\hypertarget{class_c_x_plat_event_aad997af175335943b6eea0ba9f870df6}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!i\-Set\-Count@{i\-Set\-Count}}
+\index{i\-Set\-Count@{i\-Set\-Count}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{i\-Set\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-C\-X\-Plat\-Event\-::i\-Set\-Count}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_event_aad997af175335943b6eea0ba9f870df6}
+
+
+\-Definition at line 58 of file \-C\-X\-Plat\-Event.\-h.
+
+\hypertarget{class_c_x_plat_event_ad452214355d4b5989c30ed1e7f137544}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}}
+\index{m\-\_\-cs\-Handle@{m\-\_\-cs\-Handle}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{m\-\_\-cs\-Handle}]{\setlength{\rightskip}{0pt plus 5cm}pthread\-\_\-cond\-\_\-t {\bf \-C\-X\-Plat\-Event\-::m\-\_\-cs\-Handle}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_event_ad452214355d4b5989c30ed1e7f137544}
+
+
+\-Definition at line 51 of file \-C\-X\-Plat\-Event.\-h.
+
+\hypertarget{class_c_x_plat_event_aebee3d1cc992443887951cd69642de35}{\index{\-C\-X\-Plat\-Event@{\-C\-X\-Plat\-Event}!pt\-Sem@{pt\-Sem}}
+\index{pt\-Sem@{pt\-Sem}!CXPlatEvent@{\-C\-X\-Plat\-Event}}
+\subsubsection[{pt\-Sem}]{\setlength{\rightskip}{0pt plus 5cm}sem\-\_\-t {\bf \-C\-X\-Plat\-Event\-::pt\-Sem}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_x_plat_event_aebee3d1cc992443887951cd69642de35}
+
+
+\-Definition at line 56 of file \-C\-X\-Plat\-Event.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_x_plat_event_8h}{\-C\-X\-Plat\-Event.\-h}\item 
+common/\hyperlink{_c_x_plat_event_8cpp}{\-C\-X\-Plat\-Event.\-cpp}\end{DoxyCompactItemize}

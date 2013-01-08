@@ -1,0 +1,322 @@
+\hypertarget{class_c_d_b_publisher}{\section{\-C\-D\-B\-Publisher \-Class \-Reference}
+\label{class_c_d_b_publisher}\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}}
+}
+
+
+{\ttfamily \#include $<$\-C\-D\-B\-Publisher.\-h$>$}
+
+\-Inheritance diagram for \-C\-D\-B\-Publisher\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_d_b_publisher}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_d_b_publisher_a9a8efc4caa9c43a26d3cad455c492f4e}{\-C\-D\-B\-Publisher} ()
+\item 
+virtual \hyperlink{class_c_d_b_publisher_a2d60a06ada8b48aea982b9c57742242a}{$\sim$\-C\-D\-B\-Publisher} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_publisher_a4acf6ea6c628b0387980481a91308d34}{\-Start\-Publishing} (const char $\ast$p\-Database, const char $\ast$p\-Collection, \hyperlink{_c_d_b_publisher_8h_a4663229004d120a06c202e46db5d2d4d}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-K\-E\-Y\-S} \&\hyperlink{class_c_d_b_publisher_a05607846e2fc5c63010536113ca2534e}{v\-Keys}, const char $\ast$p\-Host, const char $\ast$p\-User, const char $\ast$p\-Password)
+\begin{DoxyCompactList}\small\item\em to ensure that the indices exist in the collection. \-Starts publishing thread. \end{DoxyCompactList}\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_publisher_abb90cd8717d2e9dbd54773b93656e84d}{\-Stop\-Publishing} ()
+\begin{DoxyCompactList}\small\item\em \-Stop publishing. \-Stops the publishing thread. \end{DoxyCompactList}\item 
+bool \hyperlink{class_c_d_b_publisher_a8bc747ffa64b62a88b74c760a2a2597c}{\-Publish} (\hyperlink{class_c_d_b_records_array}{\-C\-D\-B\-Records\-Array} \&c\-Records)
+\item 
+\hyperlink{class_d_b_stats}{\-D\-B\-Stats} \& \hyperlink{class_c_d_b_publisher_a55177dd8e98fae569d4b8c23a79b570e}{\-Get\-D\-B\-Stats} ()
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_c_d_b_publisher_a7591f857cb6edfb1a45e5d27ae1be81b}{\-Set\-Upsert} (bool b\-On\-Off)
+\item 
+bool \hyperlink{class_c_d_b_publisher_ad9b39dde0e69485ff6ce0ddeb008f127}{\-Get\-Upsert} ()
+\begin{DoxyCompactList}\small\item\em \-See if the upsert flag is set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+time\-\_\-t \hyperlink{class_c_d_b_publisher_a2cf425adefacf57d8ab03b3c77a7de8c}{t\-Last\-Published}
+\begin{DoxyCompactList}\small\item\em \-Our last published timestamp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual unsigned \hyperlink{class_c_d_b_publisher_afc97488b3517b0d78331b6c54475ab81}{\-Worker\-Function} (\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} $\ast$p\-Param)
+\begin{DoxyCompactList}\small\item\em \-Called by \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} to start work in object context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_b_stats}{\-D\-B\-Stats} \hyperlink{class_c_d_b_publisher_a6b1709641e8a184c32ce1776547c43ca}{c\-D\-B\-Stats}
+\item 
+\hyperlink{class_c_x_plat_critical_section}{\-C\-X\-Plat\-Critical\-Section} \hyperlink{class_c_d_b_publisher_adbf98e64ef485c1d32d758e3935f9746}{c\-Publish\-Mutex}
+\item 
+\hyperlink{class_c_x_plat_event}{\-C\-X\-Plat\-Event} \hyperlink{class_c_d_b_publisher_a09ae2e573252d271614d487a8db7313f}{c\-Start\-Event}
+\item 
+string \hyperlink{class_c_d_b_publisher_ab5978dae8e2b51382c7b754b00eb6f37}{s\-Host}
+\item 
+string \hyperlink{class_c_d_b_publisher_a70c6a70a3eac533267cd6c09d7e4cfe4}{s\-User}
+\item 
+string \hyperlink{class_c_d_b_publisher_af7857687fa866673f59598535a191139}{s\-Password}
+\item 
+bool \hyperlink{class_c_d_b_publisher_a067f21d227664a36fcccfba89a03b89c}{b\-Terminate}
+\item 
+string \hyperlink{class_c_d_b_publisher_ab5f77007ed9fe5e7dae2fc4adf5f3661}{s\-Database}
+\item 
+\hyperlink{_c_d_b_records_array_8h_a32e3940d41c32d8e161b8775f6c4296a}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} \hyperlink{class_c_d_b_publisher_af3c16b9ccfd3d1df26c1ebf91bd6a987}{v\-D\-B\-Records}
+\item 
+\hyperlink{_c_d_b_publisher_8h_a4663229004d120a06c202e46db5d2d4d}{\-V\-E\-C\-\_\-\-D\-B\-\_\-\-K\-E\-Y\-S} \hyperlink{class_c_d_b_publisher_a05607846e2fc5c63010536113ca2534e}{v\-Keys}
+\item 
+string \hyperlink{class_c_d_b_publisher_ac6db2d0df8562fa55c15d7aa5414e285}{s\-Collection}
+\item 
+string \hyperlink{class_c_d_b_publisher_a10c344b92ca8af51800352cdb99c47c6}{s\-D\-B\-\_\-\-Collection}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_d_b_stats}{\-D\-B\-Stats} \hyperlink{class_c_d_b_publisher_a3a63670d4729d713995f05fd4a83a2ba}{c\-D\-B\-Copy}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{class_c_d_b_publisher}{\-C\-D\-B\-Publisher} -\/ publisher thread \-This class takes a set of records to be published to the \-Mongo\-D\-B and writes them in bulk on a schedule 
+
+\-Definition at line 63 of file \-C\-D\-B\-Publisher.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_c_d_b_publisher_a9a8efc4caa9c43a26d3cad455c492f4e}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}}
+\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-C\-D\-B\-Publisher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-D\-B\-Publisher\-::\-C\-D\-B\-Publisher} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_a9a8efc4caa9c43a26d3cad455c492f4e}
+
+
+\-Definition at line 26 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_a2d60a06ada8b48aea982b9c57742242a}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!$\sim$\-C\-D\-B\-Publisher@{$\sim$\-C\-D\-B\-Publisher}}
+\index{$\sim$\-C\-D\-B\-Publisher@{$\sim$\-C\-D\-B\-Publisher}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{$\sim$\-C\-D\-B\-Publisher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-D\-B\-Publisher\-::$\sim$\-C\-D\-B\-Publisher} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_c_d_b_publisher_a2d60a06ada8b48aea982b9c57742242a}
+
+
+\-Definition at line 34 of file \-C\-D\-B\-Publisher.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_c_d_b_publisher_a55177dd8e98fae569d4b8c23a79b570e}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Get\-D\-B\-Stats@{\-Get\-D\-B\-Stats}}
+\index{\-Get\-D\-B\-Stats@{\-Get\-D\-B\-Stats}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Get\-D\-B\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-B\-Stats} \& {\bf \-C\-D\-B\-Publisher\-::\-Get\-D\-B\-Stats} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_a55177dd8e98fae569d4b8c23a79b570e}
+\-Get and clear statistics. \-This returns a call to a static variable, which means the next call changes it. 
+
+\-Definition at line 215 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_ad9b39dde0e69485ff6ce0ddeb008f127}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Get\-Upsert@{\-Get\-Upsert}}
+\index{\-Get\-Upsert@{\-Get\-Upsert}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Get\-Upsert}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-D\-B\-Publisher\-::\-Get\-Upsert} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_ad9b39dde0e69485ff6ce0ddeb008f127}
+
+
+\-See if the upsert flag is set. 
+
+
+
+\-Definition at line 76 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_a8bc747ffa64b62a88b74c760a2a2597c}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Publish@{\-Publish}}
+\index{\-Publish@{\-Publish}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Publish}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-D\-B\-Publisher\-::\-Publish} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-C\-D\-B\-Records\-Array} \&}]{c\-Records}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_a8bc747ffa64b62a88b74c760a2a2597c}
+\-Publish records. \-This will copy the data from the passed in array, clear the array, and return immediately while connecting and writing in the background. 
+
+\-Definition at line 83 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_a7591f857cb6edfb1a45e5d27ae1be81b}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Set\-Upsert@{\-Set\-Upsert}}
+\index{\-Set\-Upsert@{\-Set\-Upsert}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Set\-Upsert}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Publisher\-::\-Set\-Upsert} (
+\begin{DoxyParamCaption}
+\item[{bool}]{b\-On\-Off}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_a7591f857cb6edfb1a45e5d27ae1be81b}
+\-Set upsert. \-Since \-Mongo doesn't have an \char`\"{}upsert\char`\"{} per se, this is a very expensive setting, performance wise. \-It will bulk delete all records before an insert is done. 
+
+\-Definition at line 70 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_a4acf6ea6c628b0387980481a91308d34}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Start\-Publishing@{\-Start\-Publishing}}
+\index{\-Start\-Publishing@{\-Start\-Publishing}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Start\-Publishing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Publisher\-::\-Start\-Publishing} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\-Database, }
+\item[{const char $\ast$}]{p\-Collection, }
+\item[{{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-K\-E\-Y\-S} \&}]{v\-Keys, }
+\item[{const char $\ast$}]{p\-Host, }
+\item[{const char $\ast$}]{p\-User, }
+\item[{const char $\ast$}]{p\-Password}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_a4acf6ea6c628b0387980481a91308d34}
+
+
+to ensure that the indices exist in the collection. \-Starts publishing thread. 
+
+\-Set \-D\-B config. v\-Keys is an array of index strings (\-J\-S\-O\-N, ex. \char`\"{}\{'node'\-: 1 \}\char`\"{}) 
+
+\-Definition at line 42 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_abb90cd8717d2e9dbd54773b93656e84d}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Stop\-Publishing@{\-Stop\-Publishing}}
+\index{\-Stop\-Publishing@{\-Stop\-Publishing}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Stop\-Publishing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-C\-D\-B\-Publisher\-::\-Stop\-Publishing} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_d_b_publisher_abb90cd8717d2e9dbd54773b93656e84d}
+
+
+\-Stop publishing. \-Stops the publishing thread. 
+
+
+
+\-Definition at line 60 of file \-C\-D\-B\-Publisher.\-cpp.
+
+\hypertarget{class_c_d_b_publisher_afc97488b3517b0d78331b6c54475ab81}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!\-Worker\-Function@{\-Worker\-Function}}
+\index{\-Worker\-Function@{\-Worker\-Function}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{\-Worker\-Function}]{\setlength{\rightskip}{0pt plus 5cm}unsigned {\bf \-C\-D\-B\-Publisher\-::\-Worker\-Function} (
+\begin{DoxyParamCaption}
+\item[{{\bf void} $\ast$}]{p\-Param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_c_d_b_publisher_afc97488b3517b0d78331b6c54475ab81}
+
+
+\-Called by \hyperlink{class_c_x_plat_thread}{\-C\-X\-Plat\-Thread} to start work in object context. 
+
+
+
+\-Implements \hyperlink{class_c_x_plat_thread_af8a15900817f9673c6fd8e85cdedf27d}{\-C\-X\-Plat\-Thread}.
+
+
+
+\-Definition at line 113 of file \-C\-D\-B\-Publisher.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_c_d_b_publisher_a067f21d227664a36fcccfba89a03b89c}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!b\-Terminate@{b\-Terminate}}
+\index{b\-Terminate@{b\-Terminate}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{b\-Terminate}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-C\-D\-B\-Publisher\-::b\-Terminate}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a067f21d227664a36fcccfba89a03b89c}
+
+
+\-Definition at line 102 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a3a63670d4729d713995f05fd4a83a2ba}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!c\-D\-B\-Copy@{c\-D\-B\-Copy}}
+\index{c\-D\-B\-Copy@{c\-D\-B\-Copy}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{c\-D\-B\-Copy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-B\-Stats} {\bf \-C\-D\-B\-Publisher\-::c\-D\-B\-Copy}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_c_d_b_publisher_a3a63670d4729d713995f05fd4a83a2ba}
+
+
+\-Definition at line 96 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a6b1709641e8a184c32ce1776547c43ca}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!c\-D\-B\-Stats@{c\-D\-B\-Stats}}
+\index{c\-D\-B\-Stats@{c\-D\-B\-Stats}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{c\-D\-B\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-D\-B\-Stats} {\bf \-C\-D\-B\-Publisher\-::c\-D\-B\-Stats}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a6b1709641e8a184c32ce1776547c43ca}
+
+
+\-Definition at line 95 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_adbf98e64ef485c1d32d758e3935f9746}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!c\-Publish\-Mutex@{c\-Publish\-Mutex}}
+\index{c\-Publish\-Mutex@{c\-Publish\-Mutex}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{c\-Publish\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Critical\-Section} {\bf \-C\-D\-B\-Publisher\-::c\-Publish\-Mutex}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_adbf98e64ef485c1d32d758e3935f9746}
+
+
+\-Definition at line 97 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a09ae2e573252d271614d487a8db7313f}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!c\-Start\-Event@{c\-Start\-Event}}
+\index{c\-Start\-Event@{c\-Start\-Event}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{c\-Start\-Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-C\-X\-Plat\-Event} {\bf \-C\-D\-B\-Publisher\-::c\-Start\-Event}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a09ae2e573252d271614d487a8db7313f}
+
+
+\-Definition at line 98 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_ac6db2d0df8562fa55c15d7aa5414e285}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-Collection@{s\-Collection}}
+\index{s\-Collection@{s\-Collection}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-Collection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_ac6db2d0df8562fa55c15d7aa5414e285}
+
+
+\-Definition at line 106 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_ab5f77007ed9fe5e7dae2fc4adf5f3661}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-Database@{s\-Database}}
+\index{s\-Database@{s\-Database}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-Database}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-Database}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_ab5f77007ed9fe5e7dae2fc4adf5f3661}
+
+
+\-Definition at line 103 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a10c344b92ca8af51800352cdb99c47c6}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-D\-B\-\_\-\-Collection@{s\-D\-B\-\_\-\-Collection}}
+\index{s\-D\-B\-\_\-\-Collection@{s\-D\-B\-\_\-\-Collection}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-D\-B\-\_\-\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-D\-B\-\_\-\-Collection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a10c344b92ca8af51800352cdb99c47c6}
+
+
+\-Definition at line 107 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_ab5978dae8e2b51382c7b754b00eb6f37}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-Host@{s\-Host}}
+\index{s\-Host@{s\-Host}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-Host}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-Host}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_ab5978dae8e2b51382c7b754b00eb6f37}
+
+
+\-Definition at line 99 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_af7857687fa866673f59598535a191139}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-Password@{s\-Password}}
+\index{s\-Password@{s\-Password}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-Password}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-Password}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_af7857687fa866673f59598535a191139}
+
+
+\-Definition at line 101 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a70c6a70a3eac533267cd6c09d7e4cfe4}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!s\-User@{s\-User}}
+\index{s\-User@{s\-User}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{s\-User}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf \-C\-D\-B\-Publisher\-::s\-User}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a70c6a70a3eac533267cd6c09d7e4cfe4}
+
+
+\-Definition at line 100 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a2cf425adefacf57d8ab03b3c77a7de8c}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!t\-Last\-Published@{t\-Last\-Published}}
+\index{t\-Last\-Published@{t\-Last\-Published}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{t\-Last\-Published}]{\setlength{\rightskip}{0pt plus 5cm}time\-\_\-t {\bf \-C\-D\-B\-Publisher\-::t\-Last\-Published}}}\label{class_c_d_b_publisher_a2cf425adefacf57d8ab03b3c77a7de8c}
+
+
+\-Our last published timestamp. 
+
+
+
+\-Definition at line 89 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_af3c16b9ccfd3d1df26c1ebf91bd6a987}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!v\-D\-B\-Records@{v\-D\-B\-Records}}
+\index{v\-D\-B\-Records@{v\-D\-B\-Records}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{v\-D\-B\-Records}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-R\-E\-C\-O\-R\-D\-S} {\bf \-C\-D\-B\-Publisher\-::v\-D\-B\-Records}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_af3c16b9ccfd3d1df26c1ebf91bd6a987}
+
+
+\-Definition at line 104 of file \-C\-D\-B\-Publisher.\-h.
+
+\hypertarget{class_c_d_b_publisher_a05607846e2fc5c63010536113ca2534e}{\index{\-C\-D\-B\-Publisher@{\-C\-D\-B\-Publisher}!v\-Keys@{v\-Keys}}
+\index{v\-Keys@{v\-Keys}!CDBPublisher@{\-C\-D\-B\-Publisher}}
+\subsubsection[{v\-Keys}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-V\-E\-C\-\_\-\-D\-B\-\_\-\-K\-E\-Y\-S} {\bf \-C\-D\-B\-Publisher\-::v\-Keys}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_c_d_b_publisher_a05607846e2fc5c63010536113ca2534e}
+
+
+\-Definition at line 105 of file \-C\-D\-B\-Publisher.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_c_d_b_publisher_8h}{\-C\-D\-B\-Publisher.\-h}\item 
+common/\hyperlink{_c_d_b_publisher_8cpp}{\-C\-D\-B\-Publisher.\-cpp}\end{DoxyCompactItemize}

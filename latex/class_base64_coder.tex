@@ -1,0 +1,352 @@
+\hypertarget{class_base64_coder}{\section{\-Base64\-Coder \-Class \-Reference}
+\label{class_base64_coder}\index{\-Base64\-Coder@{\-Base64\-Coder}}
+}
+
+
+\hyperlink{_base64_coder_8h}{\-Base64\-Coder.\-h}\-: interface for the \hyperlink{class_base64_coder}{\-Base64\-Coder} class.  
+
+
+
+
+{\ttfamily \#include $<$\-Base64\-Coder.\-h$>$}
+
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries \-Temp\-Bucket}
+\begin{DoxyCompactList}\small\item\em \-Internal bucket class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base64_coder_afdb24cf364c7fa026b7c3f56b6d425ed}{\-Base64\-Coder} ()
+\item 
+virtual \hyperlink{class_base64_coder_a8dadb735570ffcc6af8274c3ea6f6b94}{$\sim$\-Base64\-Coder} ()
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_aa8343de3fa88497b5d5ecda89e112939}{\-Encode} (const unsigned char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em \-Encode a buffer, given length. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a04b9debcf2cb14ed762163516ab490e7}{\-Decode} (const unsigned char $\ast$, int)
+\begin{DoxyCompactList}\small\item\em \-Decode a buffer, given length. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_ae17c300b87ee92c9d4e7efee23cd67cb}{\-Encode} (const char $\ast$s\-Message)
+\begin{DoxyCompactList}\small\item\em \-Encode a string. \end{DoxyCompactList}\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_aa2a021c1e68e63239d9d9a514ede36c4}{\-Decode} (const char $\ast$s\-Message)
+\begin{DoxyCompactList}\small\item\em \-Decode a string. \end{DoxyCompactList}\item 
+virtual unsigned char $\ast$ \hyperlink{class_base64_coder_a352c8253107d1bda61641cbdc5a18e48}{\-Decoded\-Message} () const 
+\item 
+virtual char $\ast$ \hyperlink{class_base64_coder_a996897850a667bac903210cb66fb8874}{\-Encoded\-Message} () const 
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a011aa925b194f82968922b4b3dcff3b8}{\-Alloc\-Encode} (int)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a1af7910063d69c2062b10e28450b24aa}{\-Alloc\-Decode} (int)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a7d519beb341591333bb9ec208e38ec90}{\-Set\-Encode\-Buffer} (const unsigned char $\ast$p\-Buffer, int n\-Buf\-Len)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a7b35eab965e2047acf8eb0741b164f06}{\-Set\-Decode\-Buffer} (const unsigned char $\ast$p\-Buffer, int n\-Buf\-Len)
+\item 
+virtual int \hyperlink{class_base64_coder_adcbf12bb740d6fd4833fd11228ce1735}{\-Get\-Encoded\-Message\-Length} ()
+\item 
+virtual int \hyperlink{class_base64_coder_ad909c6b09dbdf59e4b420fac61ea7376}{\-Get\-Decoded\-Message\-Length} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a0fc2eb33c2601a43e1d99acd46ce73ab}{\-\_\-\-Encode\-To\-Buffer} (const \-Temp\-Bucket \&\hyperlink{class_base64_coder_a04b9debcf2cb14ed762163516ab490e7}{\-Decode}, unsigned char $\ast$p\-Buffer)
+\item 
+virtual int \hyperlink{class_base64_coder_ace37dfbbc4e34bacf42682b6bbaffc2d}{\-\_\-\-Decode\-To\-Buffer} (const \-Temp\-Bucket \&\hyperlink{class_base64_coder_a04b9debcf2cb14ed762163516ab490e7}{\-Decode}, unsigned char $\ast$p\-Buffer)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_af997d322ce88184b7c2592528bd55a21}{\-\_\-\-Encode\-Raw} (\-Temp\-Bucket \&, const \-Temp\-Bucket \&)
+\item 
+virtual \hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_a38d1d903a1d5f0063834fc293d2187f2}{\-\_\-\-Decode\-Raw} (\-Temp\-Bucket \&, const \-Temp\-Bucket \&)
+\item 
+virtual bool \hyperlink{class_base64_coder_a8feb3708d843ce51427d4a7b1e758200}{\-\_\-\-Is\-Bad\-Mime\-Char} (unsigned char)
+\item 
+\hyperlink{_cpclient_8h_a6464f7480a0fd0ee170cba12b2c0497f}{void} \hyperlink{class_base64_coder_ac0ccfdaba7db7e5a1a53489ae339bfeb}{\-\_\-\-Init} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static char \hyperlink{class_base64_coder_a1ca341e0dd93d70d6c3f94a4af646767}{m\-\_\-\-Decode\-Table} \mbox{[}256\mbox{]}
+\item 
+static bool \hyperlink{class_base64_coder_a6adc082be63d663a153c73712a8a1612}{m\-\_\-\-Init} = \hyperlink{_x_plat_8h_aa93f0eb578d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\hyperlink{_base64_coder_8h}{\-Base64\-Coder.\-h}\-: interface for the \hyperlink{class_base64_coder}{\-Base64\-Coder} class. 
+
+\-\_\-\-M\-S\-C\-\_\-\-V\-E\-R $>$= 1000 \-Class to implement \-Base64 encoding and decoding 
+
+\-Definition at line 29 of file \-Base64\-Coder.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_base64_coder_afdb24cf364c7fa026b7c3f56b6d425ed}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Base64\-Coder@{\-Base64\-Coder}}
+\index{\-Base64\-Coder@{\-Base64\-Coder}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Base64\-Coder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base64\-Coder\-::\-Base64\-Coder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_base64_coder_afdb24cf364c7fa026b7c3f56b6d425ed}
+
+
+\-Definition at line 42 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a8dadb735570ffcc6af8274c3ea6f6b94}{\index{\-Base64\-Coder@{\-Base64\-Coder}!$\sim$\-Base64\-Coder@{$\sim$\-Base64\-Coder}}
+\index{$\sim$\-Base64\-Coder@{$\sim$\-Base64\-Coder}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{$\sim$\-Base64\-Coder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base64\-Coder\-::$\sim$\-Base64\-Coder} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a8dadb735570ffcc6af8274c3ea6f6b94}
+
+
+\-Definition at line 46 of file \-Base64\-Coder.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_base64_coder_a38d1d903a1d5f0063834fc293d2187f2}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Decode\-Raw@{\-\_\-\-Decode\-Raw}}
+\index{\-\_\-\-Decode\-Raw@{\-\_\-\-Decode\-Raw}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Decode\-Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-\_\-\-Decode\-Raw} (
+\begin{DoxyParamCaption}
+\item[{\-Temp\-Bucket \&}]{\-Data, }
+\item[{const \-Temp\-Bucket \&}]{\-Decode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_base64_coder_a38d1d903a1d5f0063834fc293d2187f2}
+
+
+\-Definition at line 221 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_ace37dfbbc4e34bacf42682b6bbaffc2d}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Decode\-To\-Buffer@{\-\_\-\-Decode\-To\-Buffer}}
+\index{\-\_\-\-Decode\-To\-Buffer@{\-\_\-\-Decode\-To\-Buffer}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Decode\-To\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Base64\-Coder\-::\-\_\-\-Decode\-To\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{const \-Temp\-Bucket \&}]{\-Decode, }
+\item[{unsigned char $\ast$}]{p\-Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_base64_coder_ace37dfbbc4e34bacf42682b6bbaffc2d}
+
+
+\-Definition at line 190 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_af997d322ce88184b7c2592528bd55a21}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Encode\-Raw@{\-\_\-\-Encode\-Raw}}
+\index{\-\_\-\-Encode\-Raw@{\-\_\-\-Encode\-Raw}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Encode\-Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-\_\-\-Encode\-Raw} (
+\begin{DoxyParamCaption}
+\item[{\-Temp\-Bucket \&}]{\-Data, }
+\item[{const \-Temp\-Bucket \&}]{\-Decode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_base64_coder_af997d322ce88184b7c2592528bd55a21}
+
+
+\-Definition at line 247 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a0fc2eb33c2601a43e1d99acd46ce73ab}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Encode\-To\-Buffer@{\-\_\-\-Encode\-To\-Buffer}}
+\index{\-\_\-\-Encode\-To\-Buffer@{\-\_\-\-Encode\-To\-Buffer}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Encode\-To\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-\_\-\-Encode\-To\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{const \-Temp\-Bucket \&}]{\-Decode, }
+\item[{unsigned char $\ast$}]{p\-Buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_base64_coder_a0fc2eb33c2601a43e1d99acd46ce73ab}
+
+
+\-Definition at line 205 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_ac0ccfdaba7db7e5a1a53489ae339bfeb}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Init@{\-\_\-\-Init}}
+\index{\-\_\-\-Init@{\-\_\-\-Init}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-\_\-\-Init} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_base64_coder_ac0ccfdaba7db7e5a1a53489ae339bfeb}
+
+
+\-Definition at line 283 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a8feb3708d843ce51427d4a7b1e758200}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-\_\-\-Is\-Bad\-Mime\-Char@{\-\_\-\-Is\-Bad\-Mime\-Char}}
+\index{\-\_\-\-Is\-Bad\-Mime\-Char@{\-\_\-\-Is\-Bad\-Mime\-Char}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-\_\-\-Is\-Bad\-Mime\-Char}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Base64\-Coder\-::\-\_\-\-Is\-Bad\-Mime\-Char} (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{n\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_base64_coder_a8feb3708d843ce51427d4a7b1e758200}
+
+
+\-Definition at line 273 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a1af7910063d69c2062b10e28450b24aa}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Alloc\-Decode@{\-Alloc\-Decode}}
+\index{\-Alloc\-Decode@{\-Alloc\-Decode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Alloc\-Decode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Alloc\-Decode} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a1af7910063d69c2062b10e28450b24aa}
+
+
+\-Definition at line 75 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a011aa925b194f82968922b4b3dcff3b8}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Alloc\-Encode@{\-Alloc\-Encode}}
+\index{\-Alloc\-Encode@{\-Alloc\-Encode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Alloc\-Encode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Alloc\-Encode} (
+\begin{DoxyParamCaption}
+\item[{int}]{n\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a011aa925b194f82968922b4b3dcff3b8}
+
+
+\-Definition at line 62 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a04b9debcf2cb14ed762163516ab490e7}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Decode@{\-Decode}}
+\index{\-Decode@{\-Decode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Decode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Decode} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{p\-Buffer, }
+\item[{int}]{dw\-Buf\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a04b9debcf2cb14ed762163516ab490e7}
+
+
+\-Decode a buffer, given length. 
+
+
+
+\-Definition at line 138 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_aa2a021c1e68e63239d9d9a514ede36c4}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Decode@{\-Decode}}
+\index{\-Decode@{\-Decode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Decode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Decode} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s\-Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_aa2a021c1e68e63239d9d9a514ede36c4}
+
+
+\-Decode a string. 
+
+
+
+\-Definition at line 185 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a352c8253107d1bda61641cbdc5a18e48}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Decoded\-Message@{\-Decoded\-Message}}
+\index{\-Decoded\-Message@{\-Decoded\-Message}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Decoded\-Message}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char $\ast$ {\bf \-Base64\-Coder\-::\-Decoded\-Message} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a352c8253107d1bda61641cbdc5a18e48}
+
+
+\-Definition at line 54 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_aa8343de3fa88497b5d5ecda89e112939}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Encode@{\-Encode}}
+\index{\-Encode@{\-Encode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Encode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Encode} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{p\-Buffer, }
+\item[{int}]{n\-Buf\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_aa8343de3fa88497b5d5ecda89e112939}
+
+
+\-Encode a buffer, given length. 
+
+
+
+\-Definition at line 108 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_ae17c300b87ee92c9d4e7efee23cd67cb}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Encode@{\-Encode}}
+\index{\-Encode@{\-Encode}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Encode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Encode} (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{s\-Message}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_ae17c300b87ee92c9d4e7efee23cd67cb}
+
+
+\-Encode a string. 
+
+
+
+\-Definition at line 133 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a996897850a667bac903210cb66fb8874}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Encoded\-Message@{\-Encoded\-Message}}
+\index{\-Encoded\-Message@{\-Encoded\-Message}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Encoded\-Message}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ {\bf \-Base64\-Coder\-::\-Encoded\-Message} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a996897850a667bac903210cb66fb8874}
+
+
+\-Definition at line 58 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_ad909c6b09dbdf59e4b420fac61ea7376}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Get\-Decoded\-Message\-Length@{\-Get\-Decoded\-Message\-Length}}
+\index{\-Get\-Decoded\-Message\-Length@{\-Get\-Decoded\-Message\-Length}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Get\-Decoded\-Message\-Length}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-Base64\-Coder\-::\-Get\-Decoded\-Message\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_base64_coder_ad909c6b09dbdf59e4b420fac61ea7376}
+
+
+\-Definition at line 76 of file \-Base64\-Coder.\-h.
+
+\hypertarget{class_base64_coder_adcbf12bb740d6fd4833fd11228ce1735}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Get\-Encoded\-Message\-Length@{\-Get\-Encoded\-Message\-Length}}
+\index{\-Get\-Encoded\-Message\-Length@{\-Get\-Encoded\-Message\-Length}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Get\-Encoded\-Message\-Length}]{\setlength{\rightskip}{0pt plus 5cm}virtual int {\bf \-Base64\-Coder\-::\-Get\-Encoded\-Message\-Length} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, virtual\mbox{]}}}}\label{class_base64_coder_adcbf12bb740d6fd4833fd11228ce1735}
+
+
+\-Definition at line 72 of file \-Base64\-Coder.\-h.
+
+\hypertarget{class_base64_coder_a7b35eab965e2047acf8eb0741b164f06}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Set\-Decode\-Buffer@{\-Set\-Decode\-Buffer}}
+\index{\-Set\-Decode\-Buffer@{\-Set\-Decode\-Buffer}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Set\-Decode\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Set\-Decode\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{p\-Buffer, }
+\item[{int}]{n\-Buf\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a7b35eab965e2047acf8eb0741b164f06}
+
+
+\-Definition at line 102 of file \-Base64\-Coder.\-cpp.
+
+\hypertarget{class_base64_coder_a7d519beb341591333bb9ec208e38ec90}{\index{\-Base64\-Coder@{\-Base64\-Coder}!\-Set\-Encode\-Buffer@{\-Set\-Encode\-Buffer}}
+\index{\-Set\-Encode\-Buffer@{\-Set\-Encode\-Buffer}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{\-Set\-Encode\-Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf void} {\bf \-Base64\-Coder\-::\-Set\-Encode\-Buffer} (
+\begin{DoxyParamCaption}
+\item[{const unsigned char $\ast$}]{p\-Buffer, }
+\item[{int}]{n\-Buf\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base64_coder_a7d519beb341591333bb9ec208e38ec90}
+
+
+\-Definition at line 88 of file \-Base64\-Coder.\-cpp.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_base64_coder_a1ca341e0dd93d70d6c3f94a4af646767}{\index{\-Base64\-Coder@{\-Base64\-Coder}!m\-\_\-\-Decode\-Table@{m\-\_\-\-Decode\-Table}}
+\index{m\-\_\-\-Decode\-Table@{m\-\_\-\-Decode\-Table}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{m\-\_\-\-Decode\-Table}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf \-Base64\-Coder\-::m\-\_\-\-Decode\-Table}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base64_coder_a1ca341e0dd93d70d6c3f94a4af646767}
+
+
+\-Definition at line 87 of file \-Base64\-Coder.\-h.
+
+\hypertarget{class_base64_coder_a6adc082be63d663a153c73712a8a1612}{\index{\-Base64\-Coder@{\-Base64\-Coder}!m\-\_\-\-Init@{m\-\_\-\-Init}}
+\index{m\-\_\-\-Init@{m\-\_\-\-Init}!Base64Coder@{\-Base64\-Coder}}
+\subsubsection[{m\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Base64\-Coder\-::m\-\_\-\-Init} = {\bf \-F\-A\-L\-S\-E}\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base64_coder_a6adc082be63d663a153c73712a8a1612}
+
+
+\-Definition at line 88 of file \-Base64\-Coder.\-h.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+common/\hyperlink{_base64_coder_8h}{\-Base64\-Coder.\-h}\item 
+common/\hyperlink{_base64_coder_8cpp}{\-Base64\-Coder.\-cpp}\end{DoxyCompactItemize}
